@@ -1,0 +1,36 @@
+Exception during reset or similar
+Traceback (most recent call last):
+  File "<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 986, in _finalize_fairy
+    fairy._reset(
+  File "<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1441, in _reset
+    pool._dialect.do_rollback(self)
+  File "<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 712, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+Exception during reset or similar
+Traceback (most recent call last):
+  File "<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 986, in _finalize_fairy
+    fairy._reset(
+  File "<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1441, in _reset
+    pool._dialect.do_rollback(self)
+  File "<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 712, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+Exception during reset or similar
+Traceback (most recent call last):
+  File "<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 986, in _finalize_fairy
+    fairy._reset(
+  File "<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1441, in _reset
+    pool._dialect.do_rollback(self)
+  File "<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 712, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+Exception during reset or similar
+Traceback (most recent call last):
+  File "<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 986, in _finalize_fairy
+    fairy._reset(
+  File "<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1441, in _reset
+    pool._dialect.do_rollback(self)
+  File "<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 712, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: Cannot operate on a closed database.

@@ -1,0 +1,43 @@
+py312-dbt2-duckdb: uv-sync> /usr/local/bin/uv sync --python-preference system --extra dbt --no-default-groups --group test-bare --frozen -p cpython3.12
+py312-dbt2-duckdb: freeze> /usr/local/bin/uv --color never pip freeze
+py312-dbt2-duckdb: commands[0]> /bin/bash -c '! uv pip list --exclude-editable | grep -e dagster'
+Using Python 3.12.14 environment at: <ENV_ROOT>/.tox/py312-dbt2-duckdb
+py312-dbt2-duckdb: commands[1]> pytest --ignore=./kitchen-sink -vv --durations 10 -m fusion
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- <ENV_ROOT>/.tox/py312-dbt2-duckdb/bin/python3
+cachedir: <ENV_ROOT>/.tox/py312-dbt2-duckdb/.pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: syrupy-5.1.0, xdist-3.6.1, timeout-2.4.0, split-0.11.0, mock-3.14.0, cov-5.0.0, asyncio-1.3.0, anyio-4.14.2, rerunfailures-16.1, order-1.4.0
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+collecting ... collected 769 items / 766 deselected / 2 skipped / 3 selected
+
+dagster_dbt_tests/core/test_fusion_support.py::test_basic[True] PASSED   [ 33%]
+dagster_dbt_tests/core/test_fusion_support.py::test_basic[False] PASSED  [ 66%]
+dagster_dbt_tests/core/test_fusion_support.py::test_adapter_backed_postprocessing_is_skipped PASSED [100%]
+
+=============================== warnings summary ===============================
+dagster_dbt_tests/core/test_asset_decorator.py:513
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_decorator.py:513: BetaWarning: Class `MultiPartitionMapping` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    MultiPartitionMapping(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 10 durations =============================
+7.79s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_fusion_support.py::test_basic[True]
+1.48s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_fusion_support.py::test_basic[True]
+1.35s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_fusion_support.py::test_basic[False]
+1.34s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_fusion_support.py::test_adapter_backed_postprocessing_is_skipped
+0.00s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_fusion_support.py::test_adapter_backed_postprocessing_is_skipped
+0.00s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_fusion_support.py::test_basic[False]
+0.00s teardown python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_fusion_support.py::test_adapter_backed_postprocessing_is_skipped
+0.00s teardown python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_fusion_support.py::test_basic[True]
+0.00s teardown python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_fusion_support.py::test_basic[False]
+=========================== short test summary info ============================
+SKIPPED [1] dagster_dbt_tests/core/test_asset_check_selection.py:9: could not import 'dbt.version': No module named 'dbt.version'
+SKIPPED [1] dagster_dbt_tests/core/test_asset_checks.py:32: could not import 'dbt.version': No module named 'dbt.version'
+=========== 3 passed, 2 skipped, 766 deselected, 1 warning in 12.41s ===========
+  py312-dbt2-duckdb: OK (13.79=setup[0.03]+cmd[0.01,13.75] seconds)
+  congratulations :) (13.82 seconds)

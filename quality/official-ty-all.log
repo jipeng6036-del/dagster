@@ -1,0 +1,1575 @@
+Creating virtualenv for ty environment airflow...
+Using CPython 3.12.14 interpreter at: /usr/local/bin/python
+Creating virtual environment at: .venv
+Installed 395 packages in 9.58s
+ + agate==1.9.1
+ + aiofile==3.12.3
+ + aiohappyeyeballs==2.7.1
+ + aiohttp==3.14.3
+ + aiohttp-jinja2==1.6
+ + aiosignal==1.4.0
+ + aiosmtplib==5.1.3
+ + airlift-federation-tutorial==1!0+dev (from file://<SOURCE>/examples/airlift-federation-tutorial)
+ + airlift-migration-tutorial==1!0+dev (from file://<SOURCE>/examples/airlift-migration-tutorial)
+ + airlift-mwaa-example==1!0+dev (from file://<SOURCE>/examples/airlift-mwaa-example)
+ + alembic==1.19.2
+ + amqp==5.4.0
+ + annotated-doc==0.0.5
+ + annotated-types==0.8.0
+ + antlr4-python3-runtime==4.13.2
+ + anyio==4.15.1
+ + apache-airflow==2.11.2
+ + apache-airflow-providers-common-compat==1.19.0
+ + apache-airflow-providers-common-io==1.9.0
+ + apache-airflow-providers-common-sql==2.1.1
+ + apache-airflow-providers-fab==1.5.4
+ + apache-airflow-providers-ftp==3.15.2
+ + apache-airflow-providers-http==6.1.0
+ + apache-airflow-providers-imap==3.12.1
+ + apache-airflow-providers-smtp==3.0.4
+ + apache-airflow-providers-sqlite==4.3.3
+ + apispec==6.10.0
+ + argcomplete==3.7.2
+ + asgiref==3.12.1
+ + asttokens==3.0.2
+ + attrs==26.1.0
+ + babel==2.18.0
+ + backoff==2.2.1
+ + beautifulsoup4==4.15.0
+ + billiard==4.3.0
+ + bleach==6.4.0
+ + blinker==1.9.0
+ + boto3==1.43.103
+ + boto3-stubs-lite==1.43.103
+ + botocore==1.43.103
+ + botocore-stubs==1.43.67
+ + cachelib==0.17.0
+ + cachetools==7.2.0
+ + caio==0.12.9
+ + celery==5.6.3
+ + certifi==2026.7.22
+ + cffi==2.1.1
+ + charset-normalizer==3.5.1
+ + click==8.5.0
+ + click-aliases==1.0.7
+ + click-didyoumean==0.3.1
+ + click-plugins==1.1.1.2
+ + click-repl==0.4.0
+ + click-spinner==0.2.0
+ + clickclick==20.10.2
+ + colorama==0.4.6
+ + coloredlogs==14.0
+ + colorlog==6.12.0
+ + comm==0.2.3
+ + configupdater==3.2
+ + connexion==2.15.1
+ + coverage==7.16.2
+ + create-dagster==1!0+dev (from file://<SOURCE>/python_modules/libraries/create-dagster)
+ + cron-descriptor==2.1.0
+ + croniter==6.2.4
+ + cryptography==50.0.1
+ + daff==1.4.2
+ + dagster==1!0+dev (from file://<SOURCE>/python_modules/dagster)
+ + dagster-airflow==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-airflow)
+ + dagster-airlift==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-airlift)
+ + dagster-aws==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-aws)
+ + dagster-celery==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-celery)
+ + dagster-celery-docker==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-celery-docker)
+ + dagster-celery-k8s==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-celery-k8s)
+ + dagster-cloud-cli==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-cloud-cli)
+ + dagster-dbt==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dbt)
+ + dagster-dg-cli==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dg-cli)
+ + dagster-dg-core==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dg-core)
+ + dagster-docker==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-docker)
+ + dagster-duckdb==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-duckdb)
+ + dagster-duckdb-pandas==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-duckdb-pandas)
+ + dagster-fivetran==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-fivetran)
+ + dagster-gcp==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-gcp)
+ + dagster-graphql==1!0+dev (from file://<SOURCE>/python_modules/dagster-graphql)
+ + dagster-k8s==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-k8s)
+ + dagster-managed-elements==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-managed-elements)
+ + dagster-pandas==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-pandas)
+ + dagster-pipes==1!0+dev (from file://<SOURCE>/python_modules/dagster-pipes)
+ + dagster-postgres==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-postgres)
+ + dagster-pyspark==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-pyspark)
+ + dagster-rest-resources==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-rest-resources)
+ + dagster-shared==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-shared)
+ + dagster-slack==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-slack)
+ + dagster-sling==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-sling)
+ + dagster-spark==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-spark)
+ + dagster-test==1!0+dev (from file://<SOURCE>/python_modules/dagster-test)
+ + dagster-webserver==1!0+dev (from file://<SOURCE>/python_modules/dagster-webserver)
+ + dagstermill==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagstermill)
+ + db-dtypes==1.7.1
+ + dbt-adapters==1.24.5
+ + dbt-common==1.39.0
+ + dbt-core==1.12.5
+ + dbt-core-experimental-parser==2.0.5
+ + dbt-duckdb==1.11.0
+ + dbt-extractor==0.6.0
+ + dbt-protos==1.0.565
+ + debugpy==1.8.22
+ + deepdiff==8.6.2
+ + defusedxml==0.7.1
+ + deprecated==3.0.0
+ + dill==0.4.1
+ + distlib==0.4.3
+ + dnspython==2.8.0
+ + docker==7.2.0
+ + docker-image-py==0.2.0
+ + docstring-parser==0.18.0
+ + duckdb==1.5.5
+ + durationpy==0.11
+ + email-validator==2.3.0
+ + entrypoints==0.4
+ + execnet==2.1.2
+ + executing==2.2.1
+ + fastjsonschema==2.22.2
+ + filelock==4.0.4
+ + flask==2.3.3
+ + flask-appbuilder==4.5.4
+ + flask-babel==2.0.0
+ + flask-caching==2.4.1
+ + flask-jwt-extended==4.7.4
+ + flask-limiter==3.12
+ + flask-login==0.6.3
+ + flask-session==0.8.0
+ + flask-sqlalchemy==2.5.1
+ + flask-wtf==1.3.0
+ + frozenlist==1.8.0
+ + fsspec==2026.9.0
+ + gitdb==4.0.12
+ + github3-py==4.0.1
+ + gitpython==3.1.62
+ + google-api-core==2.39.0
+ + google-api-python-client==2.200.0
+ + google-auth==2.58.1
+ + google-auth-httplib2==0.4.2
+ + google-cloud-bigquery==3.45.2
+ + google-cloud-core==2.7.0
+ + google-cloud-storage==3.15.0
+ + google-crc32c==1.9.0
+ + google-re2==1.1.20251105
+ + google-resumable-media==2.10.2
+ + googleapis-common-protos==1.75.4
+ + gql==4.0.0
+ + graphene==3.4.3
+ + graphql-core==3.2.13
+ + graphql-relay==3.2.0
+ + greenlet==3.5.6
+ + grpcio==1.84.0
+ + grpcio-health-checking==1.81.1
+ + grpcio-status==1.84.0
+ + grpcio-tools==1.76.0
+ + gunicorn==26.2.0
+ + h11==0.16.0
+ + httpcore==1.0.9
+ + httplib2==0.32.0
+ + httptools==0.8.0
+ + httpx==0.28.1
+ + humanfriendly==10.0
+ + idna==3.20
+ + importlib-metadata==9.0.1
+ + inflection==0.5.1
+ + iniconfig==2.3.0
+ + ipykernel==6.29.5
+ + ipython==9.17.1
+ + ipython-genutils==0.2.0
+ + ipython-pygments-lexers==1.1.1
+ + isodate==0.7.2
+ + itsdangerous==2.2.0
+ + jedi==0.20.0
+ + jinja2==3.1.6
+ + jmespath==1.1.0
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + jupyter-client==7.4.9
+ + jupyter-core==5.9.1
+ + jupyterlab-pygments==0.3.0
+ + kitchen-sink==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-airlift/kitchen-sink)
+ + kombu==5.6.2
+ + kubernetes==36.0.3
+ + lazy-object-proxy==1.12.0
+ + leather==0.4.1
+ + limits==5.8.0
+ + linkify-it-py==2.2.0
+ + lockfile==0.12.2
+ + mako==1.4.3
+ + markdown==3.11
+ + markdown-it-py==4.2.0
+ + markupsafe==3.0.3
+ + marshmallow==3.26.2
+ + marshmallow-oneofschema==3.2.0
+ + marshmallow-sqlalchemy==0.28.2
+ + mashumaro==3.17
+ + matplotlib-inline==0.2.2
+ + mdit-py-plugins==0.6.1
+ + mdurl==0.1.2
+ + methodtools==0.4.7
+ + metricflow==0.213.0
+ + mistune==3.3.4
+ + more-itertools==10.8.0
+ + morefs==0.2.2
+ + msgpack==1.2.2
+ + msgspec==0.21.1
+ + multidict==6.9.1
+ + mypy-boto3-ecs==1.43.93
+ + mypy-boto3-emr==1.43.50
+ + mypy-boto3-emr-containers==1.43.57
+ + mypy-boto3-emr-serverless==1.43.24
+ + mypy-boto3-glue==1.43.103
+ + mypy-boto3-logs==1.43.82
+ + mypy-boto3-s3==1.43.93
+ + mypy-protobuf==5.1.0
+ + nbclient==0.11.0
+ + nbconvert==7.17.1
+ + nbformat==5.11.1
+ + nest-asyncio==1.6.0
+ + networkx==3.7
+ + nodeenv==1.11.0
+ + numpy==2.5.3
+ + oauth2client==4.1.3
+ + oauthlib==4.0.0
+ + objgraph==3.6.2
+ + opentelemetry-api==1.45.0
+ + opentelemetry-exporter-http-transport==0.66b0
+ + opentelemetry-exporter-otlp==1.45.0
+ + opentelemetry-exporter-otlp-common==0.66b0
+ + opentelemetry-exporter-otlp-proto-common==1.45.0
+ + opentelemetry-exporter-otlp-proto-grpc==1.45.0
+ + opentelemetry-exporter-otlp-proto-http==1.45.0
+ + opentelemetry-proto==1.45.0
+ + opentelemetry-sdk==1.45.0
+ + opentelemetry-semantic-conventions==0.66b0
+ + ordered-set==4.1.0
+ + orderly-set==5.5.0
+ + orjson==3.12.0
+ + packaging==26.3
+ + pandas==2.3.3
+ + pandas-stubs==3.0.5.260914
+ + pandocfilters==1.5.1
+ + papermill==2.7.0
+ + parsedatetime==2.6
+ + parso==0.8.7
+ + pathspec==1.0.4
+ + pendulum==3.2.0
+ + perf-harness==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-airlift/perf-harness)
+ + pexpect==4.9.0
+ + platformdirs==4.12.0
+ + pluggy==1.6.0
+ + prison==0.2.1
+ + prompt-toolkit==3.0.53
+ + propcache==0.5.4
+ + proto-plus==1.28.4
+ + protobuf==6.33.6
+ + psutil==7.2.2
+ + psycopg2-binary==2.9.13
+ + ptyprocess==0.7.0
+ + pure-eval==0.2.4
+ + py4j==0.10.9.9
+ + pyarrow==25.0.1
+ + pyasn1==0.6.4
+ + pyasn1-modules==0.4.2
+ + pycparser==3.0
+ + pydantic==2.13.5
+ + pydantic-core==2.46.5
+ + pygments==2.21.0
+ + pyjwt==2.15.1
+ + pyparsing==3.3.3
+ + pyproject-api==1.11.2
+ + pyright==1.1.389
+ + pyspark==4.2.0
+ + pytest==9.1.1
+ + pytest-asyncio==1.4.0
+ + pytest-cov==5.0.0
+ + pytest-mock==3.14.0
+ + pytest-rerunfailures==16.7
+ + pytest-split==0.11.0
+ + pytest-timeout==2.4.0
+ + pytest-xdist==3.6.1
+ + python-daemon==3.1.2
+ + python-dateutil==2.9.0.post0
+ + python-discovery==1.6.1
+ + python-dotenv==1.2.3
+ + python-multipart==0.0.32
+ + python-nvd3==0.16.0
+ + python-slugify==9.1.1
+ + pytimeparse==1.1.8
+ + pytz==2026.4
+ + pyyaml==6.0.3
+ + pyzmq==27.2.0
+ + questionary==2.1.1
+ + rapidfuzz==3.14.6
+ + referencing==0.37.0
+ + regex==2026.9.10
+ + requests==2.34.2
+ + requests-oauthlib==2.0.0
+ + requests-toolbelt==1.0.0
+ + responses==0.23.1
+ + rfc3339-validator==0.1.4
+ + rich==13.9.4
+ + rich-argparse==1.8.0
+ + rpds-py==2026.6.3
+ + rsa==4.9.1
+ + ruff==0.17.2
+ + s3transfer==0.19.2
+ + scrapbook==0.5.0
+ + setproctitle==1.3.7
+ + setuptools==70.3.0
+ + shellingham==1.5.4
+ + six==1.17.0
+ + slack-sdk==3.44.1
+ + sling==1.6.3
+ + smmap==5.0.3
+ + snowplow-tracker==1.1.0
+ + soupsieve==2.10
+ + sqlalchemy==1.4.54
+ + sqlalchemy-jsonfield==1.0.3
+ + sqlalchemy-utils==0.42.1
+ + sqlglot==28.0.0
+ + sqlglotrs==0.7.3
+ + sqlparse==0.6.0
+ + stack-data==0.6.3
+ + starlette==1.7.0
+ + starlift-demo==1!0+dev (from file://<SOURCE>/examples/starlift-demo)
+ + structlog==26.1.0
+ + syrupy==6.1.1
+ + tabulate==0.10.0
+ + tenacity==9.1.4
+ + termcolor==3.3.0
+ + text-unidecode==1.3
+ + tinycss2==1.5.1
+ + tomli==2.4.1
+ + tomli-w==1.2.0
+ + tomlkit==0.15.1
+ + toposort==1.10
+ + tornado==6.5.10
+ + tox==4.64.3
+ + tox-uv==1.36.0
+ + tox-uv-bare==1.36.0
+ + tqdm==4.70.1
+ + traitlets==5.16.1
+ + typer==0.27.2
+ + types-backports==0.1.3
+ + types-certifi==2021.10.8.3
+ + types-cffi==2.1.0.20260827
+ + types-chardet==5.0.4.6
+ + types-cryptography==3.3.23.2
+ + types-mock==5.2.0.20260518
+ + types-paramiko==5.0.0.20260724
+ + types-protobuf==7.35.1.20260906
+ + types-pyopenssl==24.1.0.20240722
+ + types-python-dateutil==2.9.0.20260807
+ + types-pytz==2026.4.0.20260926
+ + types-pyyaml==6.0.12.20260906
+ + types-requests==2.33.0.20260906
+ + types-s3transfer==0.16.0
+ + types-setuptools==84.0.0.20260812
+ + types-simplejson==4.1.0.20260724
+ + types-six==1.17.0.20260724
+ + types-sqlalchemy==1.4.53.34
+ + types-tabulate==0.10.0.20260508
+ + types-toml==0.10.8.20260518
+ + types-tzlocal==5.1.0.1
+ + typing-extensions==4.16.0
+ + typing-inspection==0.4.4
+ + tzdata==2026.4
+ + tzlocal==5.4.4
+ + universal-pathlib==0.2.6
+ + uritemplate==4.2.0
+ + urllib3==2.8.0
+ + uv==0.12.19
+ + uvicorn==0.54.0
+ + uvloop==0.22.1
+ + validators==0.35.0
+ + vine==5.1.0
+ + virtualenv==21.14.0
+ + watchdog==6.0.0
+ + watchfiles==1.3.0
+ + wcwidth==0.9.1
+ + webencodings==0.6.1
+ + websocket-client==1.9.2
+ + websockets==17.1
+ + werkzeug==3.1.8
+ + wirerope==1.0.0
+ + wrapt==2.5.0
+ + wtforms==3.2.2
+ + yarl==1.25.1
+ + yaspin==3.5.1
+ + zipp==4.1.0
+Creating virtualenv for ty environment master...
+Using CPython 3.12.14 interpreter at: /usr/local/bin/python
+Creating virtual environment at: .venv
+   Building dagit @ file://<SOURCE>/python_modules/dagit
+   Building shared @ file://<SOURCE>/examples/docs_projects/project_mini/shared
+   Building assets-dynamic-partitions @ file://<SOURCE>/examples/assets_dynamic_partitions
+   Building with-wandb @ file://<SOURCE>/examples/with_wandb
+   Building with-pyspark-emr @ file://<SOURCE>/examples/with_pyspark_emr
+   Building with-pyspark @ file://<SOURCE>/examples/with_pyspark
+   Building with-openai @ file://<SOURCE>/examples/with_openai
+   Building with-great-expectations @ file://<SOURCE>/examples/with_great_expectations
+   Building use-case-repository @ file://<SOURCE>/examples/use_case_repository
+   Building snowflake-medallion @ file://<SOURCE>/examples/project_databricks_and_snowflake/projects/snowflake-medallion
+   Building sling-decorator @ file://<SOURCE>/examples/experimental/sling_decorator
+   Building tutorial-notebook-assets @ file://<SOURCE>/examples/tutorial_notebook_assets
+   Building project-multi-workspace-databricks @ file://<SOURCE>/examples/docs_projects/project_multi_workspace_databricks
+   Building project-mini @ file://<SOURCE>/examples/docs_projects/project_mini
+   Building project-multi-tenant @ file://<SOURCE>/examples/project_multi_tenant
+   Building project-prompt-eng @ file://<SOURCE>/examples/docs_projects/project_prompt_eng
+   Building project-ml @ file://<SOURCE>/examples/docs_projects/project_ml
+   Building project-llm-fine-tune @ file://<SOURCE>/examples/docs_projects/project_llm_fine_tune
+   Building project-fully-featured @ file://<SOURCE>/examples/project_fully_featured
+   Building project-elt-pipeline @ file://<SOURCE>/examples/docs_projects/project_elt_pipeline
+   Building project-dbt @ file://<SOURCE>/examples/docs_projects/project_dbt
+   Building project-datastage @ file://<SOURCE>/examples/docs_projects/project_datastage
+   Building project-dagster-modal-pipes @ file://<SOURCE>/examples/docs_projects/project_dagster_modal_pipes
+   Building project-components-pdf-extraction @ file://<SOURCE>/examples/docs_projects/project_components_pdf_extraction
+   Building project-atproto-dashboard @ file://<SOURCE>/examples/docs_projects/project_atproto_dashboard
+   Building project-ask-ai-dagster @ file://<SOURCE>/examples/docs_projects/project_ask_ai_dagster
+   Building ingestion-patterns @ file://<SOURCE>/examples/ingestion-patterns
+   Building feature-graph-backed-assets @ file://<SOURCE>/examples/feature_graph_backed_assets
+   Building external-assets @ file://<SOURCE>/examples/experimental/external_assets
+   Building etl-tutorial @ file://<SOURCE>/examples/docs_projects/project_etl_tutorial
+   Building development-to-production @ file://<SOURCE>/examples/development_to_production
+   Building deploy-ecs @ file://<SOURCE>/examples/deploy_ecs
+   Building deploy-docker @ file://<SOURCE>/examples/deploy_docker
+   Building databricks-delta @ file://<SOURCE>/examples/project_databricks_and_snowflake/projects/databricks-delta
+   Building data-quality-patterns @ file://<SOURCE>/examples/data-quality-patterns
+   Building dagster-wandb @ file://<SOURCE>/python_modules/libraries/dagster-wandb
+   Building dagster-census @ file://<SOURCE>/python_modules/libraries/dagster-census
+   Building assets-smoke-test @ file://<SOURCE>/examples/assets_smoke_test
+   Building assets-yaml-dsl @ file://<SOURCE>/examples/experimental/assets_yaml_dsl
+   Building assets-pandas-type-metadata @ file://<SOURCE>/examples/assets_pandas_type_metadata
+   Building automation @ file://<SOURCE>/python_modules/automation
+   Building dagster-airbyte @ file://<SOURCE>/python_modules/libraries/dagster-airbyte
+   Building dagster-azure @ file://<SOURCE>/python_modules/libraries/dagster-azure
+   Building assets-pandas-pyspark @ file://<SOURCE>/examples/assets_pandas_pyspark
+   Building dagster-clickhouse @ file://<SOURCE>/python_modules/libraries/dagster-clickhouse
+   Building dagster-clickhouse-pandas @ file://<SOURCE>/python_modules/libraries/dagster-clickhouse-pandas
+   Building dagster-clickhouse-polars @ file://<SOURCE>/python_modules/libraries/dagster-clickhouse-polars
+   Building dagster-dask @ file://<SOURCE>/python_modules/libraries/dagster-dask
+   Building dagster-databricks @ file://<SOURCE>/python_modules/libraries/dagster-databricks
+   Building dagster-datadog @ file://<SOURCE>/python_modules/libraries/dagster-datadog
+   Building dagster-datahub @ file://<SOURCE>/python_modules/libraries/dagster-datahub
+   Building dagster-dbt-cloud-kitchen-sink @ file://<SOURCE>/python_modules/libraries/dagster-dbt/kitchen-sink
+   Building dagster-deltalake @ file://<SOURCE>/python_modules/libraries/dagster-deltalake
+   Building dagster-deltalake-pandas @ file://<SOURCE>/python_modules/libraries/dagster-deltalake-pandas
+   Building dagster-deltalake-polars @ file://<SOURCE>/python_modules/libraries/dagster-deltalake-polars
+   Building dagster-dlt @ file://<SOURCE>/python_modules/libraries/dagster-dlt
+   Building dagster-duckdb-polars @ file://<SOURCE>/python_modules/libraries/dagster-duckdb-polars
+   Building dagster-duckdb-pyspark @ file://<SOURCE>/python_modules/libraries/dagster-duckdb-pyspark
+   Building dagster-gcp-pandas @ file://<SOURCE>/python_modules/libraries/dagster-gcp-pandas
+   Building dagster-gcp-pyspark @ file://<SOURCE>/python_modules/libraries/dagster-gcp-pyspark
+   Building dagster-ge @ file://<SOURCE>/python_modules/libraries/dagster-ge
+   Building dagster-github @ file://<SOURCE>/python_modules/libraries/dagster-github
+   Building dagster-helm @ file://<SOURCE>/helm/dagster/schema
+   Building dagster-k8s-test-infra @ file://<SOURCE>/integration_tests/python_modules/dagster-k8s-test-infra
+   Building dagster-looker @ file://<SOURCE>/python_modules/libraries/dagster-looker
+   Building dagster-mlflow @ file://<SOURCE>/python_modules/libraries/dagster-mlflow
+   Building dagster-msteams @ file://<SOURCE>/python_modules/libraries/dagster-msteams
+   Building dagster-mysql @ file://<SOURCE>/python_modules/libraries/dagster-mysql
+   Building dagster-openai @ file://<SOURCE>/python_modules/libraries/dagster-openai
+   Building dagster-pagerduty @ file://<SOURCE>/python_modules/libraries/dagster-pagerduty
+   Building dagster-pandera @ file://<SOURCE>/python_modules/libraries/dagster-pandera
+   Building dagster-papertrail @ file://<SOURCE>/python_modules/libraries/dagster-papertrail
+   Building dagster-polytomic @ file://<SOURCE>/python_modules/libraries/dagster-polytomic
+   Building dagster-powerbi @ file://<SOURCE>/python_modules/libraries/dagster-powerbi
+   Building dagster-prefect @ file://<SOURCE>/python_modules/libraries/dagster-prefect
+   Building dagster-prometheus @ file://<SOURCE>/python_modules/libraries/dagster-prometheus
+   Building dagster-sigma @ file://<SOURCE>/python_modules/libraries/dagster-sigma
+   Building dagster-snowflake @ file://<SOURCE>/python_modules/libraries/dagster-snowflake
+   Building dagster-snowflake-ai @ file://<SOURCE>/examples/snowflake_cortex/dagster_snowflake
+   Building dagster-snowflake-pandas @ file://<SOURCE>/python_modules/libraries/dagster-snowflake-pandas
+   Building dagster-snowflake-polars @ file://<SOURCE>/python_modules/libraries/dagster-snowflake-polars
+   Building dagster-snowflake-pyspark @ file://<SOURCE>/python_modules/libraries/dagster-snowflake-pyspark
+   Building dagster-soda @ file://<SOURCE>/python_modules/libraries/dagster-soda
+   Building dagster-sphinx @ file://<SOURCE>/docs/sphinx/_ext/dagster-sphinx
+   Building dagster-ssh @ file://<SOURCE>/python_modules/libraries/dagster-ssh
+   Building dagster-twilio @ file://<SOURCE>/python_modules/libraries/dagster-twilio
+   Building dagster-tableau @ file://<SOURCE>/python_modules/libraries/dagster-tableau
+Downloading nvidia-cuda-cupti (10.2MiB)
+Downloading opencv-python (69.5MiB)
+Downloading zstandard (5.3MiB)
+Downloading ml-dtypes (4.8MiB)
+Downloading nvidia-cusparse (139.2MiB)
+Downloading great-expectations (5.1MiB)
+Downloading nvidia-cusparselt-cu13 (162.3MiB)
+Downloading mypy (13.0MiB)
+Downloading onnx (18.2MiB)
+Downloading torchvision (7.3MiB)
+Downloading pillow (6.6MiB)
+Downloading scipy (33.6MiB)
+Downloading nvidia-cufft (204.2MiB)
+Downloading matplotlib (8.4MiB)
+Downloading deltalake (39.7MiB)
+Downloading nvidia-nvshmem-cu13 (57.6MiB)
+Downloading sympy (6.0MiB)
+Downloading notebook (5.3MiB)
+Downloading nvidia-nccl-cu13 (196.4MiB)
+Downloading triton (188.6MiB)
+Downloading skein (6.8MiB)
+Downloading nvidia-nvjitlink (38.8MiB)
+Downloading jupyterlab (16.4MiB)
+Downloading prefect (6.6MiB)
+Downloading botocore (14.3MiB)
+Downloading nvidia-cublas (403.5MiB)
+Downloading duckdb (20.4MiB)
+Downloading fonttools (4.8MiB)
+Downloading hf-xet (4.3MiB)
+Downloading google-api-python-client (14.5MiB)
+Downloading wandb (25.9MiB)
+Downloading mysql-connector-python (20.7MiB)
+Downloading bokeh (6.1MiB)
+Downloading scikit-learn (8.5MiB)
+Downloading cuda-bindings (6.0MiB)
+Downloading nvidia-curand (56.8MiB)
+Downloading nvidia-cudnn-cu13 (349.2MiB)
+Downloading faiss-cpu (25.8MiB)
+Downloading lxml (5.0MiB)
+Downloading torch (507.6MiB)
+Downloading adbc-driver-snowflake (26.3MiB)
+Downloading onnxruntime (17.3MiB)
+Downloading moto (6.5MiB)
+Downloading chromadb (22.2MiB)
+Downloading nvidia-cusolver (191.6MiB)
+Downloading mlflow (10.7MiB)
+Downloading nvidia-cuda-nvrtc (86.0MiB)
+Downloading azure-ai-ml (11.3MiB)
+Downloading adbc-driver-manager (4.5MiB)
+Downloading polars-runtime-32 (53.6MiB)
+ Downloaded hf-xet
+Downloading debugpy (4.1MiB)
+ Downloaded adbc-driver-manager
+Downloading psycopg2-binary (4.1MiB)
+ Downloaded ml-dtypes
+ Downloaded fonttools
+Downloading confluent-kafka (3.8MiB)
+Downloading acryl-datahub (3.8MiB)
+ Downloaded great-expectations
+ Downloaded lxml
+Downloading sphinx (3.7MiB)
+Downloading mlflow-skinny (3.5MiB)
+ Downloaded zstandard
+Downloading asyncpg (3.4MiB)
+ Downloaded notebook
+Downloading sqlalchemy (3.3MiB)
+ Downloaded bokeh
+ Downloaded sympy
+Downloading fastavro (3.3MiB)
+Downloading tokenizers (3.2MiB)
+ Downloaded cuda-bindings
+Downloading arro3-core (2.9MiB)
+ Downloaded prefect
+ Downloaded pillow
+Downloading pinecone (2.8MiB)
+Downloading kubernetes-asyncio (2.7MiB)
+ Downloaded moto
+Downloading snowflake-connector-python (2.6MiB)
+ Downloaded skein
+Downloading langchain-community (2.4MiB)
+ Downloaded torchvision
+Downloading grpcio-tools (2.4MiB)
+ Downloaded scikit-learn
+ Downloaded debugpy
+ Downloaded matplotlib
+Downloading twilio (2.3MiB)
+Downloading nvidia-cuda-runtime (2.1MiB)
+Downloading widgetsnbextension (2.1MiB)
+ Downloaded mlflow-skinny
+ Downloaded acryl-datahub
+ Downloaded confluent-kafka
+Downloading kubernetes (1.9MiB)
+Downloading snowflake-snowpark-python (1.8MiB)
+Downloading apprise (1.7MiB)
+ Downloaded sqlalchemy
+Downloading pyfiglet (1.7MiB)
+ Downloaded psycopg2-binary
+ Downloaded asyncpg
+Downloading mlflow-tracing (1.7MiB)
+Downloading snowflake-core (1.7MiB)
+ Downloaded sphinx
+ Downloaded arro3-core
+Downloading dask (1.4MiB)
+Downloading kiwisolver (1.4MiB)
+ Downloaded langchain-community
+Downloading pynacl (1.3MiB)
+ Downloaded kubernetes-asyncio
+ Downloaded snowflake-connector-python
+ Downloaded tokenizers
+Downloading lz4 (1.3MiB)
+Downloading burner-redis (1.3MiB)
+ Downloaded fastavro
+ Downloaded pinecone
+Downloading beartype (1.3MiB)
+Downloading google-ai-generativelanguage (1.3MiB)
+Downloading dlt (1.3MiB)
+ Downloaded grpcio-tools
+Downloading openai (1.2MiB)
+ Downloaded nvidia-cuda-cupti
+Downloading nvidia-cufile (1.2MiB)
+ Downloaded dask
+ Downloaded apprise
+ Downloaded snowflake-snowpark-python
+Downloading tiktoken (1.1MiB)
+Downloading databricks-sdk (1.1MiB)
+ Downloaded pyfiglet
+ Downloaded kiwisolver
+ Downloaded mlflow-tracing
+ Downloaded kubernetes
+ Downloaded snowflake-core
+ Downloaded pynacl
+ Downloaded widgetsnbextension
+ Downloaded beartype
+ Downloaded mlflow
+ Downloaded burner-redis
+ Downloaded lz4
+ Downloaded nvidia-cuda-runtime
+ Downloaded google-ai-generativelanguage
+ Downloaded dlt
+ Downloaded twilio
+ Downloaded openai
+ Downloaded azure-ai-ml
+ Downloaded nvidia-cufile
+ Downloaded databricks-sdk
+ Downloaded tiktoken
+ Downloaded mypy
+ Downloaded botocore
+ Downloaded google-api-python-client
+   Building sgmllib3k==1.0.0
+   Building callee==0.3.1
+   Building pypd==1.1.0
+ Downloaded jupyterlab
+   Building tool==0.8.0
+      Built dagster-sigma @ file://<SOURCE>/python_modules/libraries/dagster-sigma
+      Built databricks-delta @ file://<SOURCE>/examples/project_databricks_and_snowflake/projects/databricks-delta
+      Built dagster-gcp-pandas @ file://<SOURCE>/python_modules/libraries/dagster-gcp-pandas
+      Built dagster-soda @ file://<SOURCE>/python_modules/libraries/dagster-soda
+      Built project-datastage @ file://<SOURCE>/examples/docs_projects/project_datastage
+      Built dagster-gcp-pyspark @ file://<SOURCE>/python_modules/libraries/dagster-gcp-pyspark
+      Built dagster-databricks @ file://<SOURCE>/python_modules/libraries/dagster-databricks
+      Built dagster-k8s-test-infra @ file://<SOURCE>/integration_tests/python_modules/dagster-k8s-test-infra
+      Built dagit @ file://<SOURCE>/python_modules/dagit
+      Built project-elt-pipeline @ file://<SOURCE>/examples/docs_projects/project_elt_pipeline
+      Built deploy-docker @ file://<SOURCE>/examples/deploy_docker
+      Built project-atproto-dashboard @ file://<SOURCE>/examples/docs_projects/project_atproto_dashboard
+      Built dagster-pandera @ file://<SOURCE>/python_modules/libraries/dagster-pandera
+      Built automation @ file://<SOURCE>/python_modules/automation
+ Downloaded onnxruntime
+ Downloaded onnx
+      Built project-ask-ai-dagster @ file://<SOURCE>/examples/docs_projects/project_ask_ai_dagster
+      Built dagster-msteams @ file://<SOURCE>/python_modules/libraries/dagster-msteams
+      Built dagster-ge @ file://<SOURCE>/python_modules/libraries/dagster-ge
+      Built assets-yaml-dsl @ file://<SOURCE>/examples/experimental/assets_yaml_dsl
+      Built with-openai @ file://<SOURCE>/examples/with_openai
+      Built dagster-clickhouse-polars @ file://<SOURCE>/python_modules/libraries/dagster-clickhouse-polars
+      Built dagster-looker @ file://<SOURCE>/python_modules/libraries/dagster-looker
+      Built dagster-mlflow @ file://<SOURCE>/python_modules/libraries/dagster-mlflow
+      Built assets-pandas-pyspark @ file://<SOURCE>/examples/assets_pandas_pyspark
+      Built feature-graph-backed-assets @ file://<SOURCE>/examples/feature_graph_backed_assets
+      Built development-to-production @ file://<SOURCE>/examples/development_to_production
+      Built dagster-snowflake-ai @ file://<SOURCE>/examples/snowflake_cortex/dagster_snowflake
+      Built assets-pandas-type-metadata @ file://<SOURCE>/examples/assets_pandas_type_metadata
+      Built dagster-dask @ file://<SOURCE>/python_modules/libraries/dagster-dask
+      Built dagster-github @ file://<SOURCE>/python_modules/libraries/dagster-github
+      Built project-components-pdf-extraction @ file://<SOURCE>/examples/docs_projects/project_components_pdf_extraction
+      Built dagster-snowflake-pyspark @ file://<SOURCE>/python_modules/libraries/dagster-snowflake-pyspark
+      Built dagster-tableau @ file://<SOURCE>/python_modules/libraries/dagster-tableau
+      Built dagster-deltalake @ file://<SOURCE>/python_modules/libraries/dagster-deltalake
+      Built project-multi-workspace-databricks @ file://<SOURCE>/examples/docs_projects/project_multi_workspace_databricks
+      Built dagster-polytomic @ file://<SOURCE>/python_modules/libraries/dagster-polytomic
+      Built dagster-airbyte @ file://<SOURCE>/python_modules/libraries/dagster-airbyte
+      Built project-dbt @ file://<SOURCE>/examples/docs_projects/project_dbt
+      Built dagster-datahub @ file://<SOURCE>/python_modules/libraries/dagster-datahub
+      Built dagster-papertrail @ file://<SOURCE>/python_modules/libraries/dagster-papertrail
+      Built dagster-sphinx @ file://<SOURCE>/docs/sphinx/_ext/dagster-sphinx
+      Built dagster-mysql @ file://<SOURCE>/python_modules/libraries/dagster-mysql
+      Built dagster-snowflake-polars @ file://<SOURCE>/python_modules/libraries/dagster-snowflake-polars
+      Built dagster-dlt @ file://<SOURCE>/python_modules/libraries/dagster-dlt
+      Built dagster-dbt-cloud-kitchen-sink @ file://<SOURCE>/python_modules/libraries/dagster-dbt/kitchen-sink
+      Built dagster-datadog @ file://<SOURCE>/python_modules/libraries/dagster-datadog
+      Built dagster-pagerduty @ file://<SOURCE>/python_modules/libraries/dagster-pagerduty
+      Built dagster-snowflake @ file://<SOURCE>/python_modules/libraries/dagster-snowflake
+      Built dagster-azure @ file://<SOURCE>/python_modules/libraries/dagster-azure
+      Built dagster-prometheus @ file://<SOURCE>/python_modules/libraries/dagster-prometheus
+      Built dagster-ssh @ file://<SOURCE>/python_modules/libraries/dagster-ssh
+      Built callee==0.3.1
+      Built dagster-duckdb-pyspark @ file://<SOURCE>/python_modules/libraries/dagster-duckdb-pyspark
+      Built sgmllib3k==1.0.0
+      Built dagster-clickhouse @ file://<SOURCE>/python_modules/libraries/dagster-clickhouse
+      Built dagster-deltalake-pandas @ file://<SOURCE>/python_modules/libraries/dagster-deltalake-pandas
+      Built dagster-deltalake-polars @ file://<SOURCE>/python_modules/libraries/dagster-deltalake-polars
+      Built dagster-clickhouse-pandas @ file://<SOURCE>/python_modules/libraries/dagster-clickhouse-pandas
+      Built assets-smoke-test @ file://<SOURCE>/examples/assets_smoke_test
+      Built project-llm-fine-tune @ file://<SOURCE>/examples/docs_projects/project_llm_fine_tune
+      Built use-case-repository @ file://<SOURCE>/examples/use_case_repository
+      Built pypd==1.1.0
+      Built etl-tutorial @ file://<SOURCE>/examples/docs_projects/project_etl_tutorial
+      Built tool==0.8.0
+      Built dagster-duckdb-polars @ file://<SOURCE>/python_modules/libraries/dagster-duckdb-polars
+      Built dagster-helm @ file://<SOURCE>/helm/dagster/schema
+      Built dagster-prefect @ file://<SOURCE>/python_modules/libraries/dagster-prefect
+      Built dagster-twilio @ file://<SOURCE>/python_modules/libraries/dagster-twilio
+      Built project-dagster-modal-pipes @ file://<SOURCE>/examples/docs_projects/project_dagster_modal_pipes
+      Built dagster-census @ file://<SOURCE>/python_modules/libraries/dagster-census
+      Built with-wandb @ file://<SOURCE>/examples/with_wandb
+      Built with-pyspark-emr @ file://<SOURCE>/examples/with_pyspark_emr
+      Built sling-decorator @ file://<SOURCE>/examples/experimental/sling_decorator
+      Built project-prompt-eng @ file://<SOURCE>/examples/docs_projects/project_prompt_eng
+      Built dagster-openai @ file://<SOURCE>/python_modules/libraries/dagster-openai
+      Built deploy-ecs @ file://<SOURCE>/examples/deploy_ecs
+      Built data-quality-patterns @ file://<SOURCE>/examples/data-quality-patterns
+      Built dagster-snowflake-pandas @ file://<SOURCE>/python_modules/libraries/dagster-snowflake-pandas
+      Built dagster-powerbi @ file://<SOURCE>/python_modules/libraries/dagster-powerbi
+      Built project-fully-featured @ file://<SOURCE>/examples/project_fully_featured
+      Built ingestion-patterns @ file://<SOURCE>/examples/ingestion-patterns
+      Built project-multi-tenant @ file://<SOURCE>/examples/project_multi_tenant
+      Built tutorial-notebook-assets @ file://<SOURCE>/examples/tutorial_notebook_assets
+      Built with-pyspark @ file://<SOURCE>/examples/with_pyspark
+      Built shared @ file://<SOURCE>/examples/docs_projects/project_mini/shared
+      Built external-assets @ file://<SOURCE>/examples/experimental/external_assets
+      Built project-mini @ file://<SOURCE>/examples/docs_projects/project_mini
+      Built dagster-wandb @ file://<SOURCE>/python_modules/libraries/dagster-wandb
+      Built assets-dynamic-partitions @ file://<SOURCE>/examples/assets_dynamic_partitions
+      Built project-ml @ file://<SOURCE>/examples/docs_projects/project_ml
+      Built with-great-expectations @ file://<SOURCE>/examples/with_great_expectations
+      Built snowflake-medallion @ file://<SOURCE>/examples/project_databricks_and_snowflake/projects/snowflake-medallion
+ Downloaded duckdb
+ Downloaded mysql-connector-python
+ Downloaded chromadb
+ Downloaded faiss-cpu
+ Downloaded wandb
+ Downloaded adbc-driver-snowflake
+ Downloaded scipy
+ Downloaded nvidia-nvjitlink
+ Downloaded deltalake
+ Downloaded polars-runtime-32
+ Downloaded nvidia-curand
+ Downloaded nvidia-nvshmem-cu13
+ Downloaded opencv-python
+ Downloaded nvidia-cuda-nvrtc
+ Downloaded nvidia-cusparse
+ Downloaded nvidia-cusparselt-cu13
+ Downloaded triton
+ Downloaded nvidia-cusolver
+ Downloaded nvidia-nccl-cu13
+ Downloaded nvidia-cufft
+   Building pyspark==3.5.8
+ Downloaded nvidia-cudnn-cu13
+      Built pyspark==3.5.8
+ Downloaded nvidia-cublas
+ Downloaded torch
+Prepared 578 packages in 7m 04s
+Installed 803 packages in 15m 50s
+ + acryl-datahub==1.5.0.19
+ + adbc-driver-manager==1.11.0
+ + adbc-driver-snowflake==1.11.0
+ + agate==1.9.1
+ + aiofile==3.9.0
+ + aiohappyeyeballs==2.6.1
+ + aiohttp==3.14.3
+ + aiohttp-retry==2.9.1
+ + aioresponses==0.7.8
+ + aiosignal==1.4.0
+ + aiosqlite==0.22.1
+ + alabaster==1.0.0
+ + alembic==1.18.4
+ + altair==4.2.2
+ + amplitude-analytics==1.2.3
+ + amqp==5.3.1
+ + annotated-doc==0.0.4
+ + annotated-types==0.7.0
+ + anthropic==0.101.0
+ + antlr4-python3-runtime==4.11.1
+ + anyio==4.14.2
+ + apeye==1.4.1
+ + apeye-core==1.1.5
+ + appdirs==1.4.4
+ + apprise==1.13.1
+ + argh==0.31.3
+ + argon2-cffi==25.1.0
+ + argon2-cffi-bindings==25.1.0
+ + arro3-core==0.8.0
+ + arrow==1.4.0
+ + asgi-lifespan==2.1.0
+ + asgiref==3.11.1
+ + asn1crypto==1.5.1
+ + assets-dynamic-partitions==1!0+dev (from file://<SOURCE>/examples/assets_dynamic_partitions)
+ + assets-pandas-pyspark==1!0+dev (from file://<SOURCE>/examples/assets_pandas_pyspark)
+ + assets-pandas-type-metadata==1!0+dev (from file://<SOURCE>/examples/assets_pandas_type_metadata)
+ + assets-smoke-test==1!0+dev (from file://<SOURCE>/examples/assets_smoke_test)
+ + assets-yaml-dsl==1!0+dev (from file://<SOURCE>/examples/experimental/assets_yaml_dsl)
+ + astroid==4.0.4
+ + asttokens==3.0.1
+ + async-lru==2.3.0
+ + asyncpg==0.31.0
+ + atproto==0.0.65
+ + attrs==26.1.0
+ + authlib==1.7.2
+ + autodocsumm==0.2.15
+ + autoflake==2.3.3
+ + automation==0.0.1 (from file://<SOURCE>/python_modules/automation)
+ + avro==1.12.1
+ + avro-gen3==0.7.16
+ + azure-ai-ml==1.33.0
+ + azure-core==1.41.0
+ + azure-core-tracing-opentelemetry==1.0.0b13
+ + azure-identity==1.25.3
+ + azure-mgmt-appcontainers==4.0.0
+ + azure-mgmt-core==1.6.0
+ + azure-monitor-opentelemetry==1.8.2
+ + azure-monitor-opentelemetry-exporter==1.0.0b45
+ + azure-storage-blob==12.28.0
+ + azure-storage-file-datalake==12.23.0
+ + azure-storage-file-share==12.24.0
+ + babel==2.18.0
+ + backoff==2.2.1
+ + bcrypt==5.0.0
+ + beartype==0.22.9
+ + beautifulsoup4==4.14.3
+ + billiard==4.2.4
+ + bleach==6.4.0
+ + blinker==1.9.0
+ + bokeh==3.9.0
+ + boto3==1.43.6
+ + boto3-stubs-lite==1.43.6
+ + botocore==1.43.6
+ + botocore-stubs==1.42.41
+ + bs4==0.0.2
+ + build==1.5.0
+ + burner-redis==0.1.7
+ + cachecontrol==0.14.4
+ + cached-property==2.0.1
+ + cachetools==7.1.1
+ + caio==0.9.25
+ + callee==0.3.1
+ + cattrs==23.1.2
+ + cbor2==6.1.0
+ + celery==5.6.3
+ + certifi==2025.1.31
+ + cffi==1.17.1
+ + chardet==6.0.0.post1
+ + charset-normalizer==3.4.7
+ + chromadb==1.5.9
+ + claude-code-sdk==0.0.25
+ + click==8.3.3
+ + click-aliases==1.0.5
+ + click-default-group==1.2.4
+ + click-didyoumean==0.3.1
+ + click-plugins==1.1.1.2
+ + click-repl==0.3.0
+ + click-spinner==0.1.10
+ + clickhouse-driver==0.2.9
+ + cloudpickle==3.1.1
+ + colorama==0.4.6
+ + coloredlogs==14.0
+ + comm==0.2.3
+ + confluent-kafka==2.14.0
+ + contourpy==1.3.3
+ + coolname==5.0.0
+ + coverage==7.14.0
+ + create-dagster==1!0+dev (from file://<SOURCE>/python_modules/libraries/create-dagster)
+ + cronsim==2.7
+ + cryptography==46.0.0
+ + cssselect==1.4.0
+ + cssutils==2.15.0
+ + cuda-bindings==13.2.0
+ + cuda-pathfinder==1.5.4
+ + cuda-toolkit==13.0.2
+ + cycler==0.12.1
+ + cyclopts==5.0.0
+ + daff==1.4.2
+ + dagit==1!0+dev (from file://<SOURCE>/python_modules/dagit)
+ + dagster==1!0+dev (from file://<SOURCE>/python_modules/dagster)
+ + dagster-airbyte==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-airbyte)
+ + dagster-anthropic==0.0.5
+ + dagster-aws==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-aws)
+ + dagster-azure==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-azure)
+ + dagster-celery==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-celery)
+ + dagster-celery-docker==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-celery-docker)
+ + dagster-celery-k8s==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-celery-k8s)
+ + dagster-census==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-census)
+ + dagster-chroma==0.0.4
+ + dagster-clickhouse==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-clickhouse)
+ + dagster-clickhouse-pandas==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-clickhouse-pandas)
+ + dagster-clickhouse-polars==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-clickhouse-polars)
+ + dagster-cloud-cli==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-cloud-cli)
+ + dagster-dask==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dask)
+ + dagster-databricks==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-databricks)
+ + dagster-datadog==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-datadog)
+ + dagster-datahub==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-datahub)
+ + dagster-dbt==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dbt)
+ + dagster-dbt-cloud-kitchen-sink==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dbt/kitchen-sink)
+ + dagster-deltalake==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-deltalake)
+ + dagster-deltalake-pandas==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-deltalake-pandas)
+ + dagster-deltalake-polars==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-deltalake-polars)
+ + dagster-dg-cli==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dg-cli)
+ + dagster-dg-core==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dg-core)
+ + dagster-dlt==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dlt)
+ + dagster-docker==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-docker)
+ + dagster-duckdb==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-duckdb)
+ + dagster-duckdb-pandas==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-duckdb-pandas)
+ + dagster-duckdb-polars==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-duckdb-polars)
+ + dagster-duckdb-pyspark==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-duckdb-pyspark)
+ + dagster-evidence==0.2.0
+ + dagster-fivetran==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-fivetran)
+ + dagster-gcp==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-gcp)
+ + dagster-gcp-pandas==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-gcp-pandas)
+ + dagster-gcp-pyspark==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-gcp-pyspark)
+ + dagster-ge==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-ge)
+ + dagster-gemini==0.0.4
+ + dagster-github==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-github)
+ + dagster-graphql==1!0+dev (from file://<SOURCE>/python_modules/dagster-graphql)
+ + dagster-helm==0.0.1 (from file://<SOURCE>/helm/dagster/schema)
+ + dagster-k8s==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-k8s)
+ + dagster-k8s-test-infra==1!0+dev (from file://<SOURCE>/integration_tests/python_modules/dagster-k8s-test-infra)
+ + dagster-looker==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-looker)
+ + dagster-managed-elements==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-managed-elements)
+ + dagster-mlflow==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-mlflow)
+ + dagster-modal==0.0.4
+ + dagster-msteams==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-msteams)
+ + dagster-mysql==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-mysql)
+ + dagster-openai==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-openai)
+ + dagster-pagerduty==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-pagerduty)
+ + dagster-pandas==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-pandas)
+ + dagster-pandera==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-pandera)
+ + dagster-papertrail==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-papertrail)
+ + dagster-pipes==1!0+dev (from file://<SOURCE>/python_modules/dagster-pipes)
+ + dagster-polytomic==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-polytomic)
+ + dagster-postgres==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-postgres)
+ + dagster-powerbi==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-powerbi)
+ + dagster-prefect==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-prefect)
+ + dagster-prometheus==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-prometheus)
+ + dagster-pyspark==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-pyspark)
+ + dagster-qdrant==0.0.3
+ + dagster-rest-resources==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-rest-resources)
+ + dagster-shared==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-shared)
+ + dagster-sigma==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-sigma)
+ + dagster-slack==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-slack)
+ + dagster-sling==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-sling)
+ + dagster-snowflake==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-snowflake)
+ + dagster-snowflake-ai==0.1.0 (from file://<SOURCE>/examples/snowflake_cortex/dagster_snowflake)
+ + dagster-snowflake-pandas==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-snowflake-pandas)
+ + dagster-snowflake-polars==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-snowflake-polars)
+ + dagster-snowflake-pyspark==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-snowflake-pyspark)
+ + dagster-soda==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-soda)
+ + dagster-spark==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-spark)
+ + dagster-sphinx==0.0.1 (from file://<SOURCE>/docs/sphinx/_ext/dagster-sphinx)
+ + dagster-ssh==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-ssh)
+ + dagster-tableau==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-tableau)
+ + dagster-test==1!0+dev (from file://<SOURCE>/python_modules/dagster-test)
+ + dagster-twilio==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-twilio)
+ + dagster-wandb==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-wandb)
+ + dagster-weaviate==0.0.3
+ + dagster-webserver==1!0+dev (from file://<SOURCE>/python_modules/dagster-webserver)
+ + dagstermill==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagstermill)
+ + dask==2026.3.0
+ + dask-jobqueue==0.9.0
+ + dask-kubernetes==2022.9.0
+ + dask-yarn==0.9
+ + data-quality-patterns==0.1.0 (from file://<SOURCE>/examples/data-quality-patterns)
+ + databricks-delta==0.1.0 (from file://<SOURCE>/examples/project_databricks_and_snowflake/projects/databricks-delta)
+ + databricks-sdk==0.154.0
+ + databricks-sql-connector==4.4.0
+ + dataclasses-json==0.6.7
+ + datadog==0.52.1
+ + dataproperty==1.1.1
+ + dateparser==1.4.3
+ + db-dtypes==1.6.0
+ + dbt-adapters==1.16.3
+ + dbt-common==1.27.1
+ + dbt-core==1.10.8
+ + dbt-duckdb==1.10.1
+ + dbt-extractor==0.6.0
+ + dbt-protos==1.0.491
+ + dbt-semantic-interfaces==0.9.0
+ + dbt-snowflake==1.10.1
+ + debugpy==1.8.20
+ + decorator==5.2.1
+ + deepdiff==7.0.1
+ + deepeval==4.0.2
+ + defusedxml==0.7.1
+ + deltalake==1.5.1
+ + deploy-docker==1!0+dev (from file://<SOURCE>/examples/deploy_docker)
+ + deploy-ecs==1!0+dev (from file://<SOURCE>/examples/deploy_ecs)
+ + deprecated==1.3.1
+ + deprecation==2.1.0
+ + development-to-production==1!0+dev (from file://<SOURCE>/examples/development_to_production)
+ + dict2css==0.3.0.post1
+ + dill==0.4.1
+ + distlib==0.4.0
+ + distributed==2026.3.0
+ + distro==1.9.0
+ + dlt==1.26.0
+ + dnspython==2.8.0
+ + docker==7.1.0
+ + docker-image-py==0.1.13
+ + docstring-parser==0.18.0
+ + docutils==0.22.4
+ + domdf-python-tools==3.10.0
+ + duckdb==1.5.2
+ + durationpy==0.10
+ + encutils==1.0.0
+ + entrypoints==0.4
+ + et-xmlfile==2.0.0
+ + etl-tutorial==0.1.0 (from file://<SOURCE>/examples/docs_projects/project_etl_tutorial)
+ + exceptiongroup==1.3.1
+ + execnet==2.1.2
+ + executing==2.2.1
+ + expandvars==1.1.2
+ + external-assets==1!0+dev (from file://<SOURCE>/examples/experimental/external_assets)
+ + faiss-cpu==1.8.0
+ + fastapi==0.141.1
+ + fastavro==1.12.2
+ + fastjsonschema==2.21.2
+ + feature-graph-backed-assets==1!0+dev (from file://<SOURCE>/examples/feature_graph_backed_assets)
+ + feedparser==6.0.12
+ + ffmpeg-python==0.2.0
+ + filelock==3.32.4
+ + flask==2.3.3
+ + flask-cors==6.0.5
+ + flatbuffers==25.12.19
+ + fonttools==4.63.0
+ + fqdn==1.5.1
+ + freezegun==1.5.5
+ + frozenlist==1.8.0
+ + fs==2.4.16
+ + fsspec==2024.3.0
+ + future==1.0.0
+ + gcp-storage-emulator==2024.8.3
+ + gcsfs==0.8.0
+ + gitdb==4.0.12
+ + github3-py==4.0.1
+ + gitpython==3.1.62
+ + giturlparse==0.14.0
+ + google-ai-generativelanguage==0.6.15
+ + google-api-core==2.30.3
+ + google-api-python-client==2.196.0
+ + google-auth==2.52.0
+ + google-auth-httplib2==0.4.0
+ + google-auth-oauthlib==1.4.0
+ + google-cloud-bigquery==3.41.0
+ + google-cloud-core==2.6.0
+ + google-cloud-dataproc==5.27.0
+ + google-cloud-storage==3.10.1
+ + google-crc32c==1.8.0
+ + google-generativeai==0.8.6
+ + google-resumable-media==2.9.0
+ + googleapis-common-protos==1.75.0
+ + gql==4.0.0
+ + graphene==3.4.3
+ + graphql-core==3.2.8
+ + graphql-relay==3.2.0
+ + graphviz==0.21
+ + great-expectations==0.18.8
+ + greenlet==3.5.0
+ + griffe==2.3.0
+ + griffecli==2.3.0
+ + griffelib==2.3.0
+ + grpc-google-iam-v1==0.14.4
+ + grpcio==1.80.0
+ + grpcio-health-checking==1.71.2
+ + grpcio-status==1.71.2
+ + grpcio-tools==1.71.2
+ + grpclib==0.4.9
+ + gunicorn==25.3.0
+ + h11==0.16.0
+ + h2==4.4.1
+ + hf-xet==1.5.0
+ + hpack==4.2.0
+ + html5lib==1.1
+ + httpcore==1.0.9
+ + httpcore2==2.12.0
+ + httplib2==0.32.0
+ + httptools==0.7.1
+ + httpx==0.28.1
+ + httpx-sse==0.4.3
+ + httpx2==2.12.0
+ + huey==2.6.0
+ + huggingface-hub==1.14.0
+ + humanfriendly==10.0
+ + humanize==4.15.0
+ + hyperframe==6.1.0
+ + id==1.6.1
+ + idna==3.19
+ + ijson==3.5.0
+ + imagesize==2.0.0
+ + importlib-metadata==8.7.1
+ + importlib-resources==7.1.0
+ + inflect==7.5.0
+ + ingestion-patterns==0.1.0 (from file://<SOURCE>/examples/ingestion-patterns)
+ + iniconfig==2.3.0
+ + invoke==3.0.3
+ + ipykernel==6.29.5
+ + ipython==9.6.0
+ + ipython-genutils==0.2.0
+ + ipython-pygments-lexers==1.1.1
+ + ipywidgets==8.1.8
+ + iso8601==2.1.0
+ + isodate==0.6.1
+ + isoduration==20.11.0
+ + isort==8.0.1
+ + itsdangerous==2.2.0
+ + jaraco-classes==3.4.0
+ + jaraco-context==6.1.2
+ + jaraco-functools==4.4.0
+ + jedi==0.20.0
+ + jeepney==0.9.0
+ + jinja2==3.1.6
+ + jinja2-humanize-extension==0.4.0
+ + jiter==0.14.0
+ + jmespath==1.1.0
+ + joblib==1.5.3
+ + joserfc==1.7.5
+ + json5==0.14.0
+ + jsonpatch==1.33
+ + jsonpath-ng==1.7.0
+ + jsonpointer==3.1.1
+ + jsonref==1.1.0
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + jupyter-builder==1.2.2
+ + jupyter-client==7.4.9
+ + jupyter-core==5.9.1
+ + jupyter-events==0.12.1
+ + jupyter-lsp==2.3.1
+ + jupyter-server==2.21.0
+ + jupyter-server-terminals==0.5.4
+ + jupyterlab==4.6.3
+ + jupyterlab-pygments==0.3.0
+ + jupyterlab-server==2.28.0
+ + jupyterlab-widgets==3.0.16
+ + kafka-python==2.3.2
+ + keyring==25.7.0
+ + kiwisolver==1.5.0
+ + kombu==5.6.2
+ + kopf==1.44.5
+ + kubernetes==35.0.0
+ + kubernetes-asyncio==35.0.1
+ + langchain==0.3.30
+ + langchain-chroma==0.2.6
+ + langchain-community==0.3.31
+ + langchain-core==0.3.86
+ + langchain-openai==0.3.35
+ + langchain-text-splitters==0.3.11
+ + langsmith==0.11.2
+ + lark==1.3.1
+ + leather==0.4.1
+ + libipld==3.3.2
+ + librt==0.11.0
+ + lkml==1.3.7
+ + locket==1.0.0
+ + looker-sdk==24.16.2
+ + lxml==6.1.2
+ + lz4==4.4.5
+ + makefun==1.16.0
+ + mako==1.4.1
+ + markdown==3.10.3
+ + markdown-it-py==4.2.0
+ + markupsafe==3.0.3
+ + marshmallow==3.26.2
+ + mashumaro==3.14
+ + matplotlib==3.10.9
+ + matplotlib-inline==0.1.3
+ + mbstrdecoder==1.1.5
+ + mccabe==0.7.0
+ + mcp==2.1.1
+ + mcp-types==2.1.1
+ + mdurl==0.1.2
+ + mistune==3.3.4
+ + mixpanel==5.0.0
+ + ml-dtypes==0.5.4
+ + mlflow==3.15.2
+ + mlflow-skinny==3.15.2
+ + mlflow-tracing==3.15.2
+ + mmh3==5.2.1
+ + modal==1.4.2
+ + more-itertools==10.8.0
+ + morefs==0.2.2
+ + moto==5.2.3
+ + mpmath==1.3.0
+ + msal==1.36.0
+ + msal-extensions==1.3.1
+ + msgpack==1.2.2
+ + msgspec==0.21.1
+ + msrest==0.7.1
+ + multidict==6.7.1
+ + mypy==1.19.1
+ + mypy-boto3-ecs==1.43.0
+ + mypy-boto3-emr==1.43.0
+ + mypy-boto3-emr-containers==1.43.0
+ + mypy-boto3-emr-serverless==1.43.0
+ + mypy-boto3-glue==1.43.5
+ + mypy-boto3-logs==1.43.3
+ + mypy-boto3-s3==1.43.5
+ + mypy-extensions==1.1.0
+ + mypy-protobuf==5.1.0
+ + mysql-connector-python==9.7.0
+ + narwhals==2.21.0
+ + natsort==8.4.0
+ + nbclient==0.10.4
+ + nbconvert==7.17.1
+ + nbformat==5.10.4
+ + nest-asyncio==1.6.0
+ + networkx==3.6.1
+ + nh3==0.3.5
+ + nodeenv==1.10.0
+ + notebook==7.6.2
+ + notebook-shim==0.2.4
+ + numpy==2.4.4
+ + nvidia-cublas==13.1.1.3
+ + nvidia-cuda-cupti==13.0.85
+ + nvidia-cuda-nvrtc==13.0.88
+ + nvidia-cuda-runtime==13.0.96
+ + nvidia-cudnn-cu13==9.20.0.48
+ + nvidia-cufft==12.0.0.61
+ + nvidia-cufile==1.15.1.6
+ + nvidia-curand==10.4.0.35
+ + nvidia-cusolver==12.0.4.66
+ + nvidia-cusparse==12.6.3.3
+ + nvidia-cusparselt-cu13==0.8.1
+ + nvidia-nccl-cu13==2.29.7
+ + nvidia-nvjitlink==13.0.88
+ + nvidia-nvshmem-cu13==3.4.5
+ + nvidia-nvtx==13.0.85
+ + oauth2client==4.1.3
+ + oauthlib==3.3.1
+ + objgraph==3.6.2
+ + onnx==1.22.0
+ + onnxruntime==1.26.0
+ + openai==2.36.0
+ + opencv-python==4.13.0.92
+ + openpyxl==3.1.5
+ + opentelemetry-api==1.41.1
+ + opentelemetry-exporter-otlp-proto-common==1.41.1
+ + opentelemetry-exporter-otlp-proto-grpc==1.41.1
+ + opentelemetry-exporter-otlp-proto-http==1.41.1
+ + opentelemetry-instrumentation==0.62b1
+ + opentelemetry-instrumentation-asgi==0.62b1
+ + opentelemetry-instrumentation-dbapi==0.62b1
+ + opentelemetry-instrumentation-django==0.62b1
+ + opentelemetry-instrumentation-fastapi==0.62b1
+ + opentelemetry-instrumentation-flask==0.62b1
+ + opentelemetry-instrumentation-psycopg2==0.62b1
+ + opentelemetry-instrumentation-requests==0.62b1
+ + opentelemetry-instrumentation-urllib==0.62b1
+ + opentelemetry-instrumentation-urllib3==0.62b1
+ + opentelemetry-instrumentation-wsgi==0.62b1
+ + opentelemetry-proto==1.41.1
+ + opentelemetry-resource-detector-azure==0.1.5
+ + opentelemetry-sdk==1.41.1
+ + opentelemetry-semantic-conventions==0.62b1
+ + opentelemetry-util-http==0.62b1
+ + ordered-set==4.1.0
+ + orjson==3.12.0
+ + overrides==7.7.0
+ + packaging==25.0
+ + pandas==2.3.3
+ + pandas-gbq==0.35.0
+ + pandas-stubs==3.0.0.260204
+ + pandera==0.31.1
+ + pandocfilters==1.5.1
+ + papermill==2.7.0
+ + paramiko==5.0.0
+ + parsedatetime==2.6
+ + parso==0.8.7
+ + partd==1.4.2
+ + path==16.16.0
+ + pathspec==0.12.1
+ + pathvalidate==3.3.1
+ + pdf2image==1.17.0
+ + pendulum==3.2.0
+ + pexpect==4.9.0
+ + pillow==12.3.0
+ + pinecone==9.0.0
+ + platformdirs==4.9.6
+ + pluggy==1.6.0
+ + ply==3.11
+ + polars==1.40.1
+ + polars-runtime-32==1.40.1
+ + polytomic==1.18.0
+ + portalocker==3.2.0
+ + posthog==7.14.2
+ + prefect==3.8.7
+ + premailer==3.10.0
+ + prettytable==3.17.0
+ + progressbar2==4.5.0
+ + project-ask-ai-dagster==0.0.1 (from file://<SOURCE>/examples/docs_projects/project_ask_ai_dagster)
+ + project-atproto-dashboard==0.0.1 (from file://<SOURCE>/examples/docs_projects/project_atproto_dashboard)
+ + project-components-pdf-extraction==0.1.0 (from file://<SOURCE>/examples/docs_projects/project_components_pdf_extraction)
+ + project-dagster-modal-pipes==0.0.1 (from file://<SOURCE>/examples/docs_projects/project_dagster_modal_pipes)
+ + project-datastage==0.1.0 (from file://<SOURCE>/examples/docs_projects/project_datastage)
+ + project-dbt==0.1.0 (from file://<SOURCE>/examples/docs_projects/project_dbt)
+ + project-elt-pipeline==0.1.0 (from file://<SOURCE>/examples/docs_projects/project_elt_pipeline)
+ + project-fully-featured==1!0+dev (from file://<SOURCE>/examples/project_fully_featured)
+ + project-llm-fine-tune==0.0.1 (from file://<SOURCE>/examples/docs_projects/project_llm_fine_tune)
+ + project-mini==0.1.0 (from file://<SOURCE>/examples/docs_projects/project_mini)
+ + project-ml==0.1.0 (from file://<SOURCE>/examples/docs_projects/project_ml)
+ + project-multi-tenant==1!0+dev (from file://<SOURCE>/examples/project_multi_tenant)
+ + project-multi-workspace-databricks==0.1.0 (from file://<SOURCE>/examples/docs_projects/project_multi_workspace_databricks)
+ + project-prompt-eng==0.0.1 (from file://<SOURCE>/examples/docs_projects/project_prompt_eng)
+ + prometheus-client==0.25.0
+ + prompt-toolkit==3.0.52
+ + propcache==0.5.2
+ + proto-plus==1.28.0
+ + protobuf==5.29.6
+ + psutil==7.2.2
+ + psycopg2-binary==2.9.12
+ + ptyprocess==0.7.0
+ + pure-eval==0.2.3
+ + py-key-value-aio==0.4.6
+ + py-partiql-parser==0.6.3
+ + py4j==0.10.9.9
+ + pyarrow==25.0.1
+ + pyasn1==0.6.4
+ + pyasn1-modules==0.4.2
+ + pybase64==1.4.3
+ + pybreaker==1.4.1
+ + pycparser==3.0
+ + pydantic==2.13.4
+ + pydantic-core==2.46.4
+ + pydantic-extra-types==2.11.1
+ + pydantic-settings==2.15.0
+ + pydash==8.0.6
+ + pydata-google-auth==1.9.1
+ + pydispatcher==2.0.7
+ + pydocket==0.25.2
+ + pyfiglet==1.0.4
+ + pyflakes==3.4.0
+ + pygments==2.21.0
+ + pyjwt==2.15.1
+ + pylint==4.0.5
+ + pymdown-extensions==11.0.2
+ + pynacl==1.6.0
+ + pyopenssl==25.3.0
+ + pyparsing==3.3.2
+ + pypd==1.1.0
+ + pypika==0.51.1
+ + pyproject-api==1.10.0
+ + pyproject-hooks==1.2.0
+ + pyright==1.1.389
+ + pyspark==3.5.8
+ + pytablereader==0.31.4
+ + pytesseract==0.3.13
+ + pytest==9.1.1
+ + pytest-asyncio==1.3.0
+ + pytest-cov==5.0.0
+ + pytest-mock==3.14.0
+ + pytest-repeat==0.9.4
+ + pytest-rerunfailures==16.2
+ + pytest-split==0.11.0
+ + pytest-timeout==2.4.0
+ + pytest-xdist==3.6.1
+ + python-dateutil==2.9.0.post0
+ + python-discovery==1.6.0
+ + python-dotenv==1.2.3
+ + python-frontmatter==1.1.0
+ + python-json-logger==4.1.0
+ + python-liquid==2.3.1
+ + python-multipart==0.0.32
+ + python-slugify==9.0.0
+ + python-utils==3.9.1
+ + pytimeparse==1.1.8
+ + pytz==2026.2
+ + pyyaml==6.0.3
+ + pyzmq==27.1.0
+ + qdrant-client==1.18.0
+ + questionary==2.1.1
+ + rapidfuzz==3.14.5
+ + readchar==4.2.2
+ + readme-renderer==44.0
+ + redis==8.1.0
+ + referencing==0.37.0
+ + regex==2026.5.9
+ + requests==2.34.2
+ + requests-file==3.0.1
+ + requests-mock==1.12.1
+ + requests-oauthlib==2.0.0
+ + requests-toolbelt==1.0.0
+ + requirements-parser==0.13.0
+ + responses==0.23.1
+ + rfc3339-validator==0.1.4
+ + rfc3986==2.0.0
+ + rfc3986-validator==0.1.1
+ + rfc3987-syntax==1.1.0
+ + rich==13.9.4
+ + rich-argparse==1.8.0
+ + rich-rst==2.1.0
+ + roman==5.2
+ + roman-numerals==4.1.0
+ + rpds-py==0.30.0
+ + rsa==4.9.1
+ + ruamel-yaml==0.17.17
+ + ruamel-yaml-clib==0.2.15
+ + ruff==0.17.2
+ + s3fs==0.4.2
+ + s3transfer==0.17.0
+ + scikit-learn==1.8.0
+ + scipy==1.17.1
+ + scrapbook==0.5.0
+ + seaborn==0.13.2
+ + secretstorage==3.5.0
+ + semver==3.0.4
+ + send2trash==2.1.0
+ + sentry-sdk==2.60.0
+ + setuptools==70.3.0
+ + sgmllib3k==1.0.0
+ + shared==0.1.0 (from file://<SOURCE>/examples/docs_projects/project_mini/shared)
+ + shellingham==1.5.4
+ + simplejson==4.1.1
+ + six==1.17.0
+ + skein==0.8.2
+ + skl2onnx==1.20.0
+ + skops==0.14.0
+ + slack-sdk==3.41.0
+ + sling==1.5.18
+ + sling-decorator==0.1.0 (from file://<SOURCE>/examples/experimental/sling_decorator)
+ + smmap==5.0.3
+ + sniffio==1.3.1
+ + snowballstemmer==3.0.1
+ + snowflake-connector-python==3.18.1
+ + snowflake-core==1.12.0
+ + snowflake-medallion==0.1.0 (from file://<SOURCE>/examples/project_databricks_and_snowflake/projects/snowflake-medallion)
+ + snowflake-snowpark-python==1.50.1
+ + snowflake-sqlalchemy==1.9.0
+ + snowplow-tracker==1.1.0
+ + soda-core==3.5.6
+ + sortedcontainers==2.4.0
+ + soupsieve==2.9.2
+ + sphinx==9.1.0
+ + sphinx-autodoc-typehints==3.10.2
+ + sphinx-jinja2-compat==0.4.1
+ + sphinx-prompt==1.10.2
+ + sphinx-tabs==3.4.5
+ + sphinx-toolbox==4.1.2
+ + sphinxcontrib-applehelp==2.0.0
+ + sphinxcontrib-devhelp==2.0.0
+ + sphinxcontrib-htmlhelp==2.1.0
+ + sphinxcontrib-jsmath==1.0.1
+ + sphinxcontrib-qthelp==2.0.0
+ + sphinxcontrib-serializinghtml==2.0.0
+ + sqlalchemy==2.0.54
+ + sqlglot==28.0.0
+ + sqlglotrs==0.7.3
+ + sqlparse==0.5.5
+ + sse-starlette==3.4.4
+ + sshtunnel==0.4.0
+ + stack-data==0.6.3
+ + starlette==1.6.0
+ + strictyaml==1.7.3
+ + structlog==25.5.0
+ + sympy==1.14.0
+ + synchronicity==0.12.2
+ + syrupy==5.1.0
+ + tableauserverclient==0.40
+ + tabledata==1.3.5
+ + tabulate==0.9.0
+ + tblib==3.2.2
+ + tenacity==9.1.4
+ + termcolor==3.3.0
+ + terminado==0.18.1
+ + testcontainers==4.9.1
+ + text-unidecode==1.3
+ + threadpoolctl==3.6.0
+ + thrift==0.24.0
+ + tiktoken==0.12.0
+ + tinycss2==1.4.0
+ + tokenizers==0.23.1
+ + toml==0.10.2
+ + tomli==2.4.1
+ + tomlkit==0.13.2
+ + tool==0.8.0
+ + toolz==1.1.0
+ + toposort==1.10
+ + torch==2.12.1
+ + torchvision==0.27.1
+ + tornado==6.5.10
+ + tox==4.34.1
+ + tox-uv==1.29.0
+ + tqdm==4.67.3
+ + traitlets==5.15.0
+ + triton==3.7.1
+ + truststore==0.10.4
+ + tutorial-notebook-assets==1!0+dev (from file://<SOURCE>/examples/tutorial_notebook_assets)
+ + twilio==9.10.9
+ + twine==6.2.0
+ + typeguard==4.5.1
+ + typepy==1.3.5
+ + typer==0.25.1
+ + types-awscrt==0.31.3
+ + types-backports==0.1.3
+ + types-certifi==2021.10.8.3
+ + types-cffi==2.0.0.20260508
+ + types-chardet==5.0.4.6
+ + types-cryptography==3.3.23.2
+ + types-mock==5.2.0.20260508
+ + types-paramiko==4.0.0.20260508
+ + types-protobuf==7.34.1.20260508
+ + types-pyopenssl==24.1.0.20240722
+ + types-python-dateutil==2.9.0.20260508
+ + types-pytz==2026.2.0.20260506
+ + types-pyyaml==6.0.12.20260510
+ + types-requests==2.33.0.20260513
+ + types-s3transfer==0.16.0
+ + types-setuptools==80.9.0.20250822
+ + types-simplejson==3.20.0.20260508
+ + types-six==1.17.0.20260408
+ + types-tabulate==0.10.0.20260508
+ + types-toml==0.10.8.20260508
+ + types-tzlocal==5.1.0.1
+ + typing-extensions==4.15.0
+ + typing-inspect==0.9.0
+ + typing-inspection==0.4.2
+ + tzdata==2026.2
+ + tzlocal==5.3.1
+ + ujson==5.13.0
+ + uncalled-for==0.4.0
+ + universal-pathlib==0.2.6
+ + uri-template==1.3.0
+ + uritemplate==4.2.0
+ + urllib3==2.8.0
+ + use-case-repository==1!0+dev (from file://<SOURCE>/examples/use_case_repository)
+ + uuid-utils==0.15.0
+ + uv==0.12.7
+ + uvicorn==0.46.0
+ + uvloop==0.22.1
+ + validators==0.35.0
+ + vine==5.1.0
+ + virtualenv==21.14.0
+ + wandb==0.26.1
+ + watchdog==6.0.0
+ + watchfiles==1.1.1
+ + wcwidth==0.7.0
+ + weaviate-client==4.16.2
+ + webcolors==25.10.0
+ + webencodings==0.5.1
+ + websocket-client==1.9.0
+ + websockets==15.0.1
+ + werkzeug==3.1.8
+ + wheel==0.48.0
+ + widgetsnbextension==4.0.15
+ + with-great-expectations==1!0+dev (from file://<SOURCE>/examples/with_great_expectations)
+ + with-openai==1!0+dev (from file://<SOURCE>/examples/with_openai)
+ + with-pyspark==1!0+dev (from file://<SOURCE>/examples/with_pyspark)
+ + with-pyspark-emr==1!0+dev (from file://<SOURCE>/examples/with_pyspark_emr)
+ + with-wandb==1!0+dev (from file://<SOURCE>/examples/with_wandb)
+ + wordcloud==1.9.6
+ + wrapt==2.1.2
+ + xmltodict==1.0.4
+ + xxhash==3.7.0
+ + xyzservices==2026.3.0
+ + yagmail==0.15.293
+ + yarl==1.23.0
+ + yaspin==3.4.0
+ + zict==3.0.0
+ + zipp==3.23.1
+ + zstandard==0.25.0
+Running ty for environment `airflow`...
+  uv tool run --from ty==0.0.91 ty check --config-file=<SOURCE>/.ty-airflow.toml --python=<SOURCE>/ty/airflow/.venv/bin/python --force-exclude --output-format=gitlab --error-on-warning -v
+Running ty for environment `master`...
+  uv tool run --from ty==0.0.91 ty check --config-file=<SOURCE>/.ty-master.toml --python=<SOURCE>/ty/master/.venv/bin/python --force-exclude --output-format=gitlab --error-on-warning -v
+
+ty ty 0.0.91
+Finished in 56.89 seconds
+Analyzed 4911 files
+Found 0 errors
+Found 0 warnings

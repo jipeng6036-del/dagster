@@ -1,0 +1,53 @@
+py312-dbt112-core-main: uv-sync> /usr/local/bin/uv sync --python-preference system --no-default-groups --group test --group test-dbt112 --frozen -p cpython3.12
+py312-dbt112-core-main: freeze> /usr/local/bin/uv --color never pip freeze
+py312-dbt112-core-main: commands[0]> /bin/bash -c '! uv pip list --exclude-editable | grep -e dagster'
+Using Python 3.12.14 environment at: <ENV_ROOT>/.tox/py312-dbt112-core-main
+py312-dbt112-core-main: commands[1]> pytest --ignore=./kitchen-sink --durations 10 -m 'core and not snowflake and not bigquery and not derived_metadata and not fusion' -vv --splits 2 --group 2 --durations-path .test_durations/dbt112-core-main-test_asset_checks dagster_dbt_tests/core/test_asset_checks.py
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- <ENV_ROOT>/.tox/py312-dbt112-core-main/bin/python3
+cachedir: <ENV_ROOT>/.tox/py312-dbt112-core-main/.pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: syrupy-5.1.0, xdist-3.6.1, timeout-2.4.0, split-0.11.0, mock-3.14.0, cov-5.0.0, asyncio-1.3.0, anyio-4.14.2, rerunfailures-16.1, order-1.4.0
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+collecting ... 
+
+[pytest-split] Splitting tests with algorithm: duration_based_chunks
+[pytest-split] Running group 2/2 (estimated duration: 105.42s)
+
+collected 34 items / 18 deselected / 16 selected
+
+dagster_dbt_tests/core/test_asset_checks.py::test_materialize_checks_no_asset[seed-run-test-dagster_dbt_translator1] PASSED [  6%]
+dagster_dbt_tests/core/test_asset_checks.py::test_extra_checks[build] PASSED [ 12%]
+dagster_dbt_tests/core/test_asset_checks.py::test_extra_checks[seed-run-test] PASSED [ 18%]
+dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_results[build] PASSED [ 25%]
+dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_results[seed-run-test] PASSED [ 31%]
+dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_evaluations[build] PASSED [ 37%]
+dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_evaluations[seed-run-test] PASSED [ 43%]
+dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[build-customers] PASSED [ 50%]
+dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[build-tag:customer_info] PASSED [ 56%]
+dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[seed-run-test-customers] PASSED [ 62%]
+dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[seed-run-test-tag:customer_info] PASSED [ 68%]
+dagster_dbt_tests/core/test_asset_checks.py::test_dbt_with_dotted_dependency_names PASSED [ 75%]
+dagster_dbt_tests/core/test_asset_checks.py::test_dbt_source_tests PASSED [ 81%]
+dagster_dbt_tests/core/test_asset_checks.py::test_dbt_source_tests_checks_enabled[select_all] PASSED [ 87%]
+dagster_dbt_tests/core/test_asset_checks.py::test_dbt_source_tests_checks_enabled[select_downstream_of_source] PASSED [ 93%]
+dagster_dbt_tests/core/test_asset_checks.py::test_dbt_source_tests_checks_enabled[select_non_source] PASSED [100%]
+
+============================= slowest 10 durations =============================
+20.00s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[seed-run-test-customers]
+12.52s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_results[seed-run-test]
+12.44s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_evaluations[seed-run-test]
+12.11s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[seed-run-test-tag:customer_info]
+11.64s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_materialize_checks_no_asset[seed-run-test-dagster_dbt_translator1]
+11.62s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_extra_checks[seed-run-test]
+10.79s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_materialize_checks_no_asset[seed-run-test-dagster_dbt_translator1]
+6.35s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_dbt_with_dotted_dependency_names
+5.91s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_evaluations[build]
+5.80s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_results[build]
+================ 16 passed, 18 deselected in 149.71s (0:02:29) =================
+  py312-dbt112-core-main: OK (152.94=setup[0.04]+cmd[0.01,152.89] seconds)
+  congratulations :) (152.97 seconds)

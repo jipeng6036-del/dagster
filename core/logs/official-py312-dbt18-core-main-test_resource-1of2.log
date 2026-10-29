@@ -1,0 +1,54 @@
+py312-dbt18-core-main: uv-sync> /usr/local/bin/uv sync --python-preference system --no-default-groups --group test --group test-dbt18 --frozen -p cpython3.12
+py312-dbt18-core-main: freeze> /usr/local/bin/uv --color never pip freeze
+py312-dbt18-core-main: commands[0]> /bin/bash -c '! uv pip list --exclude-editable | grep -e dagster'
+Using Python 3.12.14 environment at: <ENV_ROOT>/.tox/py312-dbt18-core-main
+py312-dbt18-core-main: commands[1]> pytest --ignore=./kitchen-sink --durations 10 -m 'core and not snowflake and not bigquery and not derived_metadata and not fusion' -vv --splits 2 --group 1 --durations-path .test_durations/dbt18-core-main-test_resource dagster_dbt_tests/core/test_resource.py
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- <ENV_ROOT>/.tox/py312-dbt18-core-main/bin/python3
+cachedir: <ENV_ROOT>/.tox/py312-dbt18-core-main/.pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: syrupy-5.1.0, xdist-3.6.1, timeout-2.4.0, split-0.11.0, mock-3.14.0, cov-5.0.0, asyncio-1.3.0, anyio-4.14.2, rerunfailures-16.1, order-1.4.0
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+collecting ... 
+
+[pytest-split] Splitting tests with algorithm: duration_based_chunks
+[pytest-split] Running group 1/2 (estimated duration: 122.53s)
+
+collected 33 items / 16 deselected / 17 selected
+
+dagster_dbt_tests/core/test_resource.py::test_dbt_cli[global_config_flags0] PASSED [  5%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_cli[global_config_flags1] PASSED [ 11%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_cli_executable PASSED  [ 17%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_cli_project_dir_path PASSED [ 23%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_cli_failure PASSED     [ 29%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_cli_failure_no_raise PASSED [ 35%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_cli_subprocess_cleanup PASSED [ 41%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_cli_get_artifact PASSED [ 47%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_cli_target_path PASSED [ 52%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_cli_target_path_env_var[target_path0] PASSED [ 58%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_cli_target_path_env_var[target_path1] PASSED [ 64%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_profile_configuration PASSED [ 70%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_profiles_dir_configuration[None] PASSED [ 76%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_profiles_dir_configuration[profiles_dir1] PASSED [ 82%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_profiles_dir_configuration[<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/jaffle_shop] PASSED [ 88%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_project_dir_conflicting_env_var PASSED [ 94%]
+dagster_dbt_tests/core/test_resource.py::test_dbt_partial_parse PASSED   [100%]
+
+============================= slowest 10 durations =============================
+13.06s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_resource.py::test_dbt_profiles_dir_configuration[<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/jaffle_shop]
+12.95s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_resource.py::test_dbt_profiles_dir_configuration[None]
+12.62s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_resource.py::test_dbt_profiles_dir_configuration[profiles_dir1]
+10.22s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_resource.py::test_dbt_cli_failure
+8.62s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_resource.py::test_dbt_cli_executable
+8.34s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_resource.py::test_dbt_profile_configuration
+6.20s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_resource.py::test_dbt_partial_parse
+5.09s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_resource.py::test_dbt_cli_get_artifact
+4.76s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_resource.py::test_dbt_cli[global_config_flags0]
+4.56s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_resource.py::test_dbt_project_dir_conflicting_env_var
+================ 17 passed, 16 deselected in 110.98s (0:01:50) =================
+  py312-dbt18-core-main: OK (114.20=setup[0.03]+cmd[0.01,114.16] seconds)
+  congratulations :) (114.23 seconds)

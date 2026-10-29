@@ -1,0 +1,2255 @@
+{
+  "atInterpreterStartUtc": "2026-10-29T17:58:40.265028+00:00",
+  "argv0": "<DG_RUNTIME>/.tox/py312-general/bin/pytest",
+  "prefix": "<DG_RUNTIME>/.tox/py312-general",
+  "UV_PROJECT_ENVIRONMENT_at_start": "<DG_RUNTIME>/.tox/py312-general",
+  "outerEnvironmentBefore": {
+    "sha256": "d92430d2b10e996b5c8b501bb77b9e45cd058a886ac5190d63e05a615df3edef",
+    "content": {
+      "distributions": [
+        {
+          "directory": "agate-1.9.1.dist-info",
+          "METADATA": "4f2e0503fd1ebd7fb56c571b0e18077f91a16f650c4f1a615f16cce3c22f6c8a",
+          "RECORD": "f11f82a75f52ca7914299f66b896f1a62736b7a37724b82d4acbb4512ae4ffa8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "aiofile-3.9.0.dist-info",
+          "METADATA": "ce5ae6768911f93bcf31a313786be9f6bb69aaaa1290c206efa40fa9f079d252",
+          "RECORD": "1b0109fed7e4cda68ab86deab887babd0f9531a5e507aee1eeb9e1d5ac30334c",
+          "direct_url.json": null
+        },
+        {
+          "directory": "alembic-1.18.4.dist-info",
+          "METADATA": "b0f1f766ae5e11a36d6e7235a2cf51be4ede05b14948c3ead77a6834d6b1bdfb",
+          "RECORD": "e2afeb97cc9a9c34959d2955b44d116e9a18a390d57cef50783bb99b2e0e7642",
+          "direct_url.json": null
+        },
+        {
+          "directory": "annotated_doc-0.0.4.dist-info",
+          "METADATA": "22b9b9289b9adf7758daa28a02327e3a129a5415487f01467a3fdd49edd9d535",
+          "RECORD": "1d924fb80688852ae450acc786e6fcd63a752dd045e2f1e4ec7341367fac06a8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "annotated_types-0.7.0.dist-info",
+          "METADATA": "ee5b6ac64b09274c026051813484025939564067801f485115d9cadc207cf791",
+          "RECORD": "5bb4f1ca72420634ebd566dafd9d5fbce3051b0c1c1d13980f6ceeb5c4dbb843",
+          "direct_url.json": null
+        },
+        {
+          "directory": "anthropic-0.101.0.dist-info",
+          "METADATA": "9c8ff129b4ac2bdcd32b152a29f42fbdae1ca4e2b7cfdf34c47f579d8b39384e",
+          "RECORD": "970c067158520e4f40cdd1a813509df59e27c5e1f4bd5a6676de3646c3b305d9",
+          "direct_url.json": null
+        },
+        {
+          "directory": "antlr4_python3_runtime-4.13.2.dist-info",
+          "METADATA": "43cb68514b022c6d240c72f166d7a3c6075f3b854565f0cbe0263bc7d70dd14e",
+          "RECORD": "096b5c31c0c73f20bd353cd80b156880814416593fdef51de11b41d3c9006541",
+          "direct_url.json": null
+        },
+        {
+          "directory": "anyio-4.14.2.dist-info",
+          "METADATA": "c5e6fc4dfd833319913b287be7a30d9935e9208c7ef917630621855aaac4d419",
+          "RECORD": "722d3bb1432c0f34f49dca8ac66fa132db1e4a2151f7104ee66a8cd44222c0b6",
+          "direct_url.json": null
+        },
+        {
+          "directory": "attrs-26.1.0.dist-info",
+          "METADATA": "4cd40e690f23bf37cbcad34efd6758e062df1df07c86833f7e3ce95bf1fa38cc",
+          "RECORD": "6b0b326d4b4ee0fac27909ac7cbb066fc4bdf8e93d87031e27e770db059e5a04",
+          "direct_url.json": null
+        },
+        {
+          "directory": "babel-2.18.0.dist-info",
+          "METADATA": "11399bc03a6b81fd20e8b82823392052a8db969a8ef150382b0cf5996afcf41a",
+          "RECORD": "7475d12eb2a57efc5c318aa237c2487e9c3144f74f94b1721c7461def13a5678",
+          "direct_url.json": null
+        },
+        {
+          "directory": "backoff-2.2.1.dist-info",
+          "METADATA": "5a07df92ccbe75c0c9e066a8a97ca373c5f1ac4d03433dc56d6c26ac3aa8fba5",
+          "RECORD": "bcc7259a5ce2df22ffa48690844ec950ffef129bd18ed9488818dcfd33c906d8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "cachetools-7.1.1.dist-info",
+          "METADATA": "763fdf1bf61a21c3999c50dba465b70375dff6e70d85839d5a9818375cff758d",
+          "RECORD": "79b28806500afa11f47fe565aaa9e851603aa905d63ea78f20f4efe634a807e9",
+          "direct_url.json": null
+        },
+        {
+          "directory": "caio-0.9.25.dist-info",
+          "METADATA": "3759f4084aa558c85b4f3616150ca35eba9d388dc6b103629d5f7580ee2cc672",
+          "RECORD": "4e3bc9c38cae0782035ecf7ca284c819c6c19c287ca425c9f7636d8f9ae87358",
+          "direct_url.json": null
+        },
+        {
+          "directory": "certifi-2026.4.22.dist-info",
+          "METADATA": "4ed6ffe9ccbed05046ab7bff2024cd3ca717295b368bed1fe20a73e365bc415a",
+          "RECORD": "e1a60a1fad94c4d8be94cd14ade2554991d96b969c56cf479d09cb270e84bcf0",
+          "direct_url.json": null
+        },
+        {
+          "directory": "cffi-2.0.0.dist-info",
+          "METADATA": "b98ce7e3417af089bc12d5c73412d9b3b1683ccf8ec73c986c35ac8c9be1ba39",
+          "RECORD": "9d78802828bdcf6bc7b8ca907af54cea1db7007902b682982ed4097d40625972",
+          "direct_url.json": null
+        },
+        {
+          "directory": "charset_normalizer-3.4.7.dist-info",
+          "METADATA": "2bc94af0bf0b699d5898abd62eddf3124a48c6208e0b9f31361cc542b7d02714",
+          "RECORD": "0e31b3450d90a123e757ef1bd1867bf00fd391eb627b599cf0428c1ae4797f7a",
+          "direct_url.json": null
+        },
+        {
+          "directory": "claude_code_sdk-0.0.25.dist-info",
+          "METADATA": "e3b4c51bb4c2e3077d9ce7e813a6eb8e4863cde7bff53b4684b3351614f3f393",
+          "RECORD": "f49f132f4945768428e0c8968be1b7ec00e7ec056a0180a1c3c09c8c558ff257",
+          "direct_url.json": null
+        },
+        {
+          "directory": "click-8.3.3.dist-info",
+          "METADATA": "fec8e14fbfd9298932b1ea9b589b5003c780715d8278325d70dad7ffdda94826",
+          "RECORD": "82d722059abda728c389e4a535ff870ca3c414d6d91be7db61cad9310cac398f",
+          "direct_url.json": null
+        },
+        {
+          "directory": "click_aliases-1.0.5.dist-info",
+          "METADATA": "3d3a2f558fb753d33a04f5ca089f3b543f90376c60868c15bc98e0413bbcb5d1",
+          "RECORD": "64dc098ece7793fd872022009b6946ef8128deba259f242bc4cd3e94a6fd4449",
+          "direct_url.json": null
+        },
+        {
+          "directory": "colorama-0.4.6.dist-info",
+          "METADATA": "7baed29eb50c3b29bdb33ff84e3177bf1bc05784f7685ecdcaa4471c7dd810cc",
+          "RECORD": "88413e126edc8a81419b409279ef89424081f27bccd4aeec0140d6f03f1ade7f",
+          "direct_url.json": null
+        },
+        {
+          "directory": "coloredlogs-14.0.dist-info",
+          "METADATA": "e49a9150f1cd38bba3ce08d5ab0c2359d43eadd00318655c3c69dd26776a13b0",
+          "RECORD": "db5dbdfb694420c90ed684ffe938993c01b18ca66bee84571f654dc2f68df8ca",
+          "direct_url.json": null
+        },
+        {
+          "directory": "coverage-7.14.0.dist-info",
+          "METADATA": "3aa8d6601b219563946226c3924f17e8fe985bcd8de8acae6673e80422ddc0e3",
+          "RECORD": "f98de77c776df70dd7f0ea2c311b84cc6d6cb78377b2c9fdc33f68fea3fa36c8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "create_dagster-1!0+dev.dist-info",
+          "METADATA": "419b030170d08c064e94041604a7f5f59b6a6887c98d4df0c26f4a705de7ad87",
+          "RECORD": "0c78e4d9b97c5f4f31784f163bbf871dbbb64e3c7b2576adf7220a38659eb9b3",
+          "direct_url.json": "bc2cb93a438594e31b555779e2c59c647c028e4029152dfb025055935cf5c5d9"
+        },
+        {
+          "directory": "cryptography-50.0.1.dist-info",
+          "METADATA": "8e9b5570da4686848ee5c6bb83fffc224bcddf9793136731dd050ce0c05fffe2",
+          "RECORD": "7ab1ead99ccb58584efc331dd9874e4845092e9c73c14791f85e8934dd9b7e08",
+          "direct_url.json": null
+        },
+        {
+          "directory": "daff-1.4.2.dist-info",
+          "METADATA": "5b98602764ea1820d4a7405513a64a89d7b5e4e051062a5c15c6a2d8e3200c0e",
+          "RECORD": "b22af5d43e8be73c82e7e3c130a2dab12ca8e71f720e01dc51166be318f30f7b",
+          "direct_url.json": null
+        },
+        {
+          "directory": "dagster-1!0+dev.dist-info",
+          "METADATA": "70ec9b68984438a18157a0489596325c3384def6b8cb9d9e48ae2d87cf6efc74",
+          "RECORD": "39c49d35497c320c48afd452719b22488c7c02ada519e4cc5b8ae30783a507c7",
+          "direct_url.json": "b67306183bf4cae69fa27cf6cc0b0d84061148a81f79dada36e25b82c2039687"
+        },
+        {
+          "directory": "dagster_cloud_cli-1!0+dev.dist-info",
+          "METADATA": "9414b01b4551b521f9daf2a9bbe04f7fcde979bb8b455424e65fa30893576d54",
+          "RECORD": "1275bb4cff2c636ba31b9072af30739c5bc01225812ef3857a5af2021c2e5640",
+          "direct_url.json": "ff2612a35f3ff87a4c5f231d04f2ddb74bd0be15815923c52d28a1f92e9a437a"
+        },
+        {
+          "directory": "dagster_dbt-1!0+dev.dist-info",
+          "METADATA": "bf2d1986322ff5c7181894137bbbbb173835fb49cc06dc0a1eb42c9782121159",
+          "RECORD": "89e0039f2424d47f7490824beecdbad799d685f75b05871b4c9babaf7dfc1e06",
+          "direct_url.json": "dfee129b2ea983aa72e35e532ce30444e3dece9da07388ed4321031a9fec911c"
+        },
+        {
+          "directory": "dagster_dg_cli-1!0+dev.dist-info",
+          "METADATA": "4657d2030383b0c1ef3f7328bbc30cb85f338e7d42c869e13dfed3ad7e4569a2",
+          "RECORD": "c01a0bc188f7e99bf6a7e0bb014a93e7dbf8b04e795148079f4682bda9b00d51",
+          "direct_url.json": "640518e2f260a63a705425a084aa1ceff24f362cda363e58578ef59b07659c59"
+        },
+        {
+          "directory": "dagster_dg_core-1!0+dev.dist-info",
+          "METADATA": "0b8583bea349c63a353645c209db8a65167f4ed35e9fd228b939214fbc5a4089",
+          "RECORD": "50101ade7caca29ea3661afeae17f0425f1d360e5bb2e3a4e47d319ea31436ab",
+          "direct_url.json": "b46d813ea6c46af0f9d188c697b98d4d540f9b9f9b720bfab717dbb9f104b01d"
+        },
+        {
+          "directory": "dagster_fivetran-1!0+dev.dist-info",
+          "METADATA": "523dc96df7290817e466d1e276dbe6738bd1e95a7bcfe55580d45e42d9cd8f42",
+          "RECORD": "2388c1c0e5a4edbe6473a46be7f93e4aebf8335a2039ad5fbaa4939144a77866",
+          "direct_url.json": "5955a213a7747e781d259ef83d327acafec818f6d738fdd07a9d9185f1d478f9"
+        },
+        {
+          "directory": "dagster_graphql-1!0+dev.dist-info",
+          "METADATA": "c6b4a3ff2e9b6742129e8ff077eee5745a79dc3a046cd1da8f5a0e14cefe9a56",
+          "RECORD": "68583663991c299d27aa7239ad421693687e4d211126f26e4a7532ae5a9d91fd",
+          "direct_url.json": "4dc25208d5e9b8188f0e542c50cfdb8780c1200cb36cf19517562f7e6b38ef56"
+        },
+        {
+          "directory": "dagster_pipes-1!0+dev.dist-info",
+          "METADATA": "6cc15304469f06514b06ef375f62c6ff7f225cc3c8c6461d7a1bfe5a2bf7abc8",
+          "RECORD": "e360a0cdd47058afbc6c6228e28db53c3427f318ad8b679c953ee013ca5ce399",
+          "direct_url.json": "3fb56726b4b382da89a17a86c513ad2c48ef0bec29989f9f8fc4e4e700995aaa"
+        },
+        {
+          "directory": "dagster_rest_resources-1!0+dev.dist-info",
+          "METADATA": "c03b9de7d4102e432bda0529c25b256c6a07ada4e1c737e0e26bdefedd4a12dc",
+          "RECORD": "587820c9c23ef40f043e2c2fc42086ae8db4852ce7a33fff77821dc339e3f55d",
+          "direct_url.json": "155e741f1fe1d84973ce8a000c824f1c02de692f3e0e20116b0a9956fd039f43"
+        },
+        {
+          "directory": "dagster_shared-1!0+dev.dist-info",
+          "METADATA": "214a62bf5b64693cfba5943b5ff82a70cc78796c017395af0b4e1aa2cb9b8f4b",
+          "RECORD": "f5e0259ac1db27650704efea933f5127d9403238273f5bb9c7bc7efe2ab06ff9",
+          "direct_url.json": "afca1e8079c548258ed956cdf3f63402694b446049530d8b5dcb92e8f4b3029a"
+        },
+        {
+          "directory": "dagster_sling-1!0+dev.dist-info",
+          "METADATA": "c92691a89cc7eaf593f899b257841694eccaa6824ed98f65c4405f7dcdabc780",
+          "RECORD": "dd74f9b2bf3e2e76966bca3c2764c2a3f92b7596e75b1113b51b1801cf9c3834",
+          "direct_url.json": "ff40161ad9f1f8579beb044ec1abe2fdb0882fe391791bac6501724be78a77a1"
+        },
+        {
+          "directory": "dagster_test-1!0+dev.dist-info",
+          "METADATA": "e50b1dfc1e675987ce5bf42b90b0d3c89cd4a22716f22b023ea7ff6a3f5d1c8d",
+          "RECORD": "c2a049ba8f052e6dbfb964961dcfe0bec901be94b9ee4817f70b6b04a467e6bd",
+          "direct_url.json": "884faa7b1775d9c7ac656c89cd8552793808256436230308b5e8110cd89ae794"
+        },
+        {
+          "directory": "dbt_adapters-1.24.5.dist-info",
+          "METADATA": "dc5472335d8d7b22349214bb1a225b61d3f89f0d3af37efa6a491ddb33ee394e",
+          "RECORD": "990828e8c87d6bdff54e22a08c98d6d01d0bb49c734b2b8dada1501732b82d45",
+          "direct_url.json": null
+        },
+        {
+          "directory": "dbt_common-1.39.0.dist-info",
+          "METADATA": "c68b802b5b10ea269e8601169b98147ecbb53e4be6029715a6734d662fc4b7bd",
+          "RECORD": "9a95a3007490db357f9b3916a2a16d99c14be5f978145b574c374d899e637648",
+          "direct_url.json": null
+        },
+        {
+          "directory": "dbt_core-1.12.6.dist-info",
+          "METADATA": "37b36aff38c9466a70f54dd0f2f59da05b334cc254141f451d497a5a486a60dc",
+          "RECORD": "2097e63ca99d8121b89e335f5c505f002b26a194f5d39b713cb83f70e6d5dbe3",
+          "direct_url.json": null
+        },
+        {
+          "directory": "dbt_core_experimental_parser-2.0.8.dist-info",
+          "METADATA": "252279af10bfea43841b4bff6c71c9ae3f13279e1dab1aa529d23ea7863e656b",
+          "RECORD": "8bbb9d01c82296860f3ae6344395d3cc7661440afcb22ba9af3a25c79e7ab57d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "dbt_extractor-0.6.0.dist-info",
+          "METADATA": "c1f2290402e2dcbd5f447a953427b20df0f882e1ab3b46dd1c8a8a404d21962a",
+          "RECORD": "4554d92fc84643cda0dab5d4264c8400a640dce44d0589de6d14542dbd7f3260",
+          "direct_url.json": null
+        },
+        {
+          "directory": "dbt_protos-1.0.615.dist-info",
+          "METADATA": "75b2293292022a4a4d52ff122619ae722b43357052cfcd4bcbb1919c95a84037",
+          "RECORD": "a01b96af4508ec078c208a859218cb27685a21094b355a071d11f392cf150f61",
+          "direct_url.json": null
+        },
+        {
+          "directory": "deepdiff-8.6.2.dist-info",
+          "METADATA": "83ec455a5404ee5424e0a05477d78ff4f83f97cee6625d3e59f20e684b59391f",
+          "RECORD": "bfaed976c5b384f24c2e834f6390755d190073662c00550ab2d446deced2d471",
+          "direct_url.json": null
+        },
+        {
+          "directory": "distlib-0.4.0.dist-info",
+          "METADATA": "8c3ae3fc9faff13706d3357ec3750777f0c50054abc026c9c24ce5882ef1dde7",
+          "RECORD": "60af8f48b647ff20740eba3ae52de2515bea6cd53a92bb70236a138bac1ea07f",
+          "direct_url.json": null
+        },
+        {
+          "directory": "distro-1.9.0.dist-info",
+          "METADATA": "31632ab2de5591131091b3397bdcdf797718579d85a75186f06839dd0c09e81d",
+          "RECORD": "f99d6211fc32fcba4a0b87980229db3867cc32bc20b82a149945802f47fbe482",
+          "direct_url.json": null
+        },
+        {
+          "directory": "docker-7.1.0.dist-info",
+          "METADATA": "aa509131354c84bd49b5293e3246f89615e5233994714dc949b464cfae246d0b",
+          "RECORD": "6494cf4e958dcaa1a29f6ef64846e0b35bad6e36da81c4678b2ca8dc660d9f06",
+          "direct_url.json": null
+        },
+        {
+          "directory": "docstring_parser-0.18.0.dist-info",
+          "METADATA": "cbc42027997fd4b194ae5fd064a4d1e57b92976941d0c26d369561a7c016a333",
+          "RECORD": "ed0a3538437bb77b4efc7e9b93ed802ac99acf1dedd7b1c5b36d0b0ef0f11398",
+          "direct_url.json": null
+        },
+        {
+          "directory": "execnet-2.1.2.dist-info",
+          "METADATA": "7343015d62b2eaa1841ec06a7c7c132aeb482921f73ab6e0fd18331495684c61",
+          "RECORD": "99eb1e122fae4023274964af2a5c53d765712a9f1ad5d8a3a74423712f639770",
+          "direct_url.json": null
+        },
+        {
+          "directory": "filelock-3.32.4.dist-info",
+          "METADATA": "3537e7b9982e7c24c535067af50a7d7ecb2ca4abba8aac40616793f2956d6482",
+          "RECORD": "796da31bf841be3bf3d8e85482af02def053c15c311e506a3171c929f8027c0d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "freezegun-1.5.5.dist-info",
+          "METADATA": "e2aee03a14c12a0270834e774be1334a935da61039525ab4cce142cc83ff2b52",
+          "RECORD": "42a56aa83c51375f8fdda9409ed73c67f0ffd0aea20b71e5ba42f584c0d6574b",
+          "direct_url.json": null
+        },
+        {
+          "directory": "fsspec-2024.3.0.dist-info",
+          "METADATA": "65f21fe3f23c6a9127a6564b403703bce0aeed574eaf760a5dbcd6f833466496",
+          "RECORD": "ba49aa87642e180157189eb3d120b609d07c524ce86db0fbad6d15b8199a4279",
+          "direct_url.json": null
+        },
+        {
+          "directory": "gitdb-4.0.12.dist-info",
+          "METADATA": "9670d2dc866039d6b7c91f52cd81c7f224cd7467f7685c7c29e6c4691d1bf3d9",
+          "RECORD": "43a905544c66c64b47d683d76eb347afb791001674e5a774d51e673f7945f834",
+          "direct_url.json": null
+        },
+        {
+          "directory": "github3.py-4.0.1.dist-info",
+          "METADATA": "0f1713eb73a9351183bede76092c11d5631488b38097b6ca6d0681a734e4e016",
+          "RECORD": "8a40c6d8c3b93787cc4c002040175a3a4a07577c9d8559003eae42c477f054cf",
+          "direct_url.json": null
+        },
+        {
+          "directory": "gitpython-3.1.62.dist-info",
+          "METADATA": "aca32c0f7c2ea2bfac8afcd42b44ab92f79352b788222270cf9ac01fd8956c61",
+          "RECORD": "d9cbb8ba5d9098ffd57ae4b8ecdb36820a370690c403b75b6d170318ec6c49b4",
+          "direct_url.json": null
+        },
+        {
+          "directory": "gql-4.0.0.dist-info",
+          "METADATA": "90e5ae19126b7a4ec1102e9bca359044ce5a2020b66754b586b7aae98fb529fb",
+          "RECORD": "85d587ea1e6af6e80700df45ab9456768bb163da42e5e6243886923a581ba4d9",
+          "direct_url.json": null
+        },
+        {
+          "directory": "graphene-3.4.3.dist-info",
+          "METADATA": "ddd8d4e90c4321e6c07b3937c93acad3fab876b293c5fd20af7e65c2874a6e80",
+          "RECORD": "59fdbf4b736edff8c0c9c8c920e441a23b4710d729b94f29b3d5d10a1689a7cc",
+          "direct_url.json": null
+        },
+        {
+          "directory": "graphql_core-3.2.8.dist-info",
+          "METADATA": "ab0347553b55438d7470d9a88f69120aebc907f383cce03b5531cf6d59309340",
+          "RECORD": "c96a12878ba1c694c72a5b5920cacc7fc6742cd48bd8d12fbbb5c5b618a62b11",
+          "direct_url.json": null
+        },
+        {
+          "directory": "graphql_relay-3.2.0.dist-info",
+          "METADATA": "3027b56f7a7988117635ba48fc4815b7026e8b13a1963bcd992f2584ba1ff022",
+          "RECORD": "6a2bf241fa5646c61b2b8ec2e888281424acb3fd2748687d0bbedbb669807c1e",
+          "direct_url.json": null
+        },
+        {
+          "directory": "greenlet-3.5.0.dist-info",
+          "METADATA": "94e66319bc00683f95249a5e1e8fd7b49bf5b3b8d6f2b93c47107ed00525a214",
+          "RECORD": "94eee60d55b03fd54400cda9614a8bae9e1a6caaf9750f6a72169683179142a1",
+          "direct_url.json": null
+        },
+        {
+          "directory": "grpcio-1.80.0.dist-info",
+          "METADATA": "2e117b7f8d084d88aeca5f1a92eb6ad754e6ee87364333afc5abcc59d0f44fd7",
+          "RECORD": "38d37d3fc962a4ca78c3d7a58aab81104cf6002211082fe5707a8e1c14d61bb5",
+          "direct_url.json": null
+        },
+        {
+          "directory": "grpcio_health_checking-1.80.0.dist-info",
+          "METADATA": "ca4e4fa08888b765282193790ac2ee800eaea031be8e12d415a6c2598af21824",
+          "RECORD": "fbb8527687f196a163920c336faf4a3b028f0280e691b0bc5b84f46a16d1f6c8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "grpcio_tools-1.80.0.dist-info",
+          "METADATA": "315669db31dafc59a01f80e8031ff68bf4230a91433c635e1b41aa12a06b3b86",
+          "RECORD": "6fe1f5ebdb3ebb38e3f7b723ef2c66fee600e446ea490088497d5264d69727dc",
+          "direct_url.json": null
+        },
+        {
+          "directory": "h11-0.16.0.dist-info",
+          "METADATA": "28f326098ac09fcba79b8f180f96087c841fe2456215cb7b872a9c7d5cd19d64",
+          "RECORD": "3779e13c17d8e21c769ed9ee8780af123cc3f8656185f5f8d3af258ff5639b3e",
+          "direct_url.json": null
+        },
+        {
+          "directory": "httpcore-1.0.9.dist-info",
+          "METADATA": "fe2d4fda6199128978779e0cf27f3c045c531863fcdd987eacc74f3a18d41c21",
+          "RECORD": "67cb4644d84fef1df8c5a0862c57c3380eff058a153bac7a4ba2722779982554",
+          "direct_url.json": null
+        },
+        {
+          "directory": "httpcore2-2.12.0.dist-info",
+          "METADATA": "3e53e54ab7d82f13b6325aac5c7919f1fa29867aeb4ad8338252d448881ad24a",
+          "RECORD": "5447fd0d163a88cf894e2a7db9955c961051ad3115585fa2109f5bc387fb36c1",
+          "direct_url.json": null
+        },
+        {
+          "directory": "httpx-0.28.1.dist-info",
+          "METADATA": "febb9b0f8f3e80d57c8199c304f35c4336e8581d1d18d7983c92766b82793b25",
+          "RECORD": "f29cb0be4a83bc33e3c1d03f041fd01e665d7983b53e9d89ad328e601c97ca04",
+          "direct_url.json": null
+        },
+        {
+          "directory": "httpx2-2.12.0.dist-info",
+          "METADATA": "3dd7f2c6bed53e5c9109cca84c57802610d4eb2ff1dfb87db393b8d0cfa33483",
+          "RECORD": "33740e0697032d8c3fa95ce7bed69e5d0ad839454f1708d1d84091c01bbebe0d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "humanfriendly-10.0.dist-info",
+          "METADATA": "68bb349388cdfeca602acc3455b83a7b2fe3cbe84025e27493bcbe76f3ab6c82",
+          "RECORD": "420a594e925b9fb227203aa619e85da137527780712be80a826f370cda1177d6",
+          "direct_url.json": null
+        },
+        {
+          "directory": "idna-3.19.dist-info",
+          "METADATA": "4d113161aca8582e8d28fddf3ea50f19b607209c2b3e4364379a163454680084",
+          "RECORD": "3bcb2ebf30d8f42d93658d052797fdec427c8aba15c54cc22a6e2d8f14c126c8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "importlib_metadata-10.1.0.dist-info",
+          "METADATA": "a04b8f32e2e85e49fa1f55314d93ae4e4e6dd6a17182fee8bda69467cf2db5d5",
+          "RECORD": "86cc4e4c444ff54a5db359bba9352d345da1930c5b7fea4990c8ce188fb2cd7a",
+          "direct_url.json": null
+        },
+        {
+          "directory": "iniconfig-2.3.0.dist-info",
+          "METADATA": "40d773f84e4e112f495bbf4f1be9cbd2d456c0aeb6ef5311f75d1bf322f2165b",
+          "RECORD": "4b560f65489a4dc0f32d8403da676d2e6338c371fe844160934b3fe469785185",
+          "direct_url.json": null
+        },
+        {
+          "directory": "isodate-0.7.2.dist-info",
+          "METADATA": "90bc9d1eee7c3c97fd3a52001dece07c0f9b480cfc8fbbf767ca4ae0ab848529",
+          "RECORD": "2267272fa76737a2d212419e285ec88da6ba108431fd06c677041909261ad079",
+          "direct_url.json": null
+        },
+        {
+          "directory": "jinja2-3.1.6.dist-info",
+          "METADATA": "68c5548fb67c4132a13898d9b31ec50c6bea2abdd915d921f214355c3a6499c8",
+          "RECORD": "4551b3fb657b85a9f01e961c0f8a235da65d758149b619400211964b3ac02bdc",
+          "direct_url.json": null
+        },
+        {
+          "directory": "jiter-0.14.0.dist-info",
+          "METADATA": "d25c8a2f5c7d1aeefcbf94d82fa320b8df935cad1f748cca2d20bc9a6210bd92",
+          "RECORD": "667c64e7f52c989b758f6fe6a3005e4d0e056fd254f6034a9d3a6364b88161a0",
+          "direct_url.json": null
+        },
+        {
+          "directory": "jsonschema-4.26.0.dist-info",
+          "METADATA": "05b189866ca98a96da3934bf6b83687ced3ff85325273b77e16b705f6d8b26d2",
+          "RECORD": "914d71d9f311bdc8b824f5a9f1de3058a1172186843d4906b19a829d65c25c80",
+          "direct_url.json": null
+        },
+        {
+          "directory": "jsonschema_specifications-2025.9.1.dist-info",
+          "METADATA": "35abd41757f32b4ea24756920ded47b70173d77cbc052a5a6d3ab583b2e8d89d",
+          "RECORD": "0b1047ee6c7d5d7c242b642d689820f4572860ecf7886b2074f821ed85cbe7b6",
+          "direct_url.json": null
+        },
+        {
+          "directory": "leather-0.4.1.dist-info",
+          "METADATA": "fd79e0feaca99f83f90550bc0af42d929319d583611af73c92ce34548ddc2b60",
+          "RECORD": "e58d8fd0f203b5763f8921c0cec30c438476599bd9de5a2418413d0df63e2b2d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "mako-1.4.1.dist-info",
+          "METADATA": "1f427af53f47988519af11a1a04136154eadbda5b9607fe30a64eb653d5118a8",
+          "RECORD": "e8917d23024c368b09faf73a8d394219665058410c27cc2b4dae439df1eacb2c",
+          "direct_url.json": null
+        },
+        {
+          "directory": "markdown-3.10.3.dist-info",
+          "METADATA": "bc042410d66775c021e253fe22ef2247df9f9d3ef47fa619b604f1d3bdd83915",
+          "RECORD": "2189895eab10dddb95654c23f22d883927b36d8eb3ffad79470645810ae0969a",
+          "direct_url.json": null
+        },
+        {
+          "directory": "markdown_it_py-4.2.0.dist-info",
+          "METADATA": "72c36ff516755443b1ecb61e17b2567a990230b49a504b0eb0c42d5f82448a9c",
+          "RECORD": "d866e372b41c3647444225361bb36e81215ebb6f3d5d5fa59fa297aa843d0d78",
+          "direct_url.json": null
+        },
+        {
+          "directory": "markupsafe-3.0.3.dist-info",
+          "METADATA": "12b4cc61a7fa288cf7667ee3f213786d9619db57fb33ff6f934afbcb5c12ec81",
+          "RECORD": "3e96bcf1c73245c4ff9be34b7df22f705b615b7980b7b984fd2feba5032127b6",
+          "direct_url.json": null
+        },
+        {
+          "directory": "mashumaro-3.17.dist-info",
+          "METADATA": "23c6abe7fad851cae93b4d89270cbbd37006c494144bd1efb7eaffd713204a4b",
+          "RECORD": "b2beb98acb6e903aa297edfa9e39bb8b139be39cbc96410d268d97534bb584a1",
+          "direct_url.json": null
+        },
+        {
+          "directory": "mcp-2.1.1.dist-info",
+          "METADATA": "22c12f15ae303ff3d860c6c89442843ced9799fbb6f4f018cf9d75911794f26a",
+          "RECORD": "5fa89c29aa73d3b961d37cf93a97d308c3269b4df18746b3d8f6cfefbd63d920",
+          "direct_url.json": null
+        },
+        {
+          "directory": "mcp_types-2.1.1.dist-info",
+          "METADATA": "8a5b55b55cfd1476fd517e454a93646760b2cd4d4d22da10def8e56fe4c2aed3",
+          "RECORD": "1310a87a5dac95ee783a31cf9bed358f860811e1eb5d57270b7c3f26da2ad3c5",
+          "direct_url.json": null
+        },
+        {
+          "directory": "mdurl-0.1.2.dist-info",
+          "METADATA": "b53b29d48f499367053fda3c81e7ce27d2558380ebbf83e66023b02eb7ddd25d",
+          "RECORD": "9a1b05128e711beabd7684e116fcf408ce8cff7ef10e7e8b359b248924fe529c",
+          "direct_url.json": null
+        },
+        {
+          "directory": "metricflow-0.213.0.dist-info",
+          "METADATA": "e6fd7854bc043be48c80be9ad1b04ad9fc0b67283ab296670ff1ee28058ef5fc",
+          "RECORD": "50a1df045062228c91690810c3fffa1da6d3442dadd0a480e7c96bde3b68ec26",
+          "direct_url.json": null
+        },
+        {
+          "directory": "more_itertools-10.8.0.dist-info",
+          "METADATA": "6ab3515145abe58b067f087c867631cf4cf5d653fed81b9642ee12086c3904b8",
+          "RECORD": "9ed1b134c0aa83722f36e99f3918aa9610ce3a0a514d793bbb74a368d441a01d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "morefs-0.2.2.dist-info",
+          "METADATA": "3a4102197bea0856de073b5475c9adc2a76ede57db1a9a0a64db3585e5fa1194",
+          "RECORD": "2f74eab5234475fb2c2e6ddf86c51523af410ed8e13d7d9fa24120f6a3965bb5",
+          "direct_url.json": null
+        },
+        {
+          "directory": "msgpack-1.2.3.dist-info",
+          "METADATA": "f47c09192e9f4f81b8b4a63979473a13f7a63c67dcdc41be2e0f97353a9dc5b4",
+          "RECORD": "ff9868515179046ef892f3b571eda82dab9dc112697ad5ebae045fc9867698ad",
+          "direct_url.json": null
+        },
+        {
+          "directory": "multidict-6.7.1.dist-info",
+          "METADATA": "4913fdaae936a309c29b89b98c2dbebd237203fb27ab9e68ae5e4ec17ba3024f",
+          "RECORD": "00df5867e4b6ddcb88675199117a50f3784270ec62e22efc964cd091c65a2edf",
+          "direct_url.json": null
+        },
+        {
+          "directory": "mypy_protobuf-5.1.0.dist-info",
+          "METADATA": "6d88f023f271b194cd550889fdb395b714f1190db86474c986bd8eff3423cabd",
+          "RECORD": "9c68d7f69e83fc4211c907e5e5192032fb5f7350e8ccac9097b62ef93c81c59f",
+          "direct_url.json": null
+        },
+        {
+          "directory": "networkx-3.6.1.dist-info",
+          "METADATA": "aca5d94a97d1f70f301d033addb635f6e66be8973a00aba4127637eed2ef316a",
+          "RECORD": "f6833bb525b720a7809dd6280817601af3dbd78efef02d9e55d4b887ec1f52da",
+          "direct_url.json": null
+        },
+        {
+          "directory": "objgraph-3.6.2.dist-info",
+          "METADATA": "c99257ad02e7caa974ab8ef4a2353ff703a72512da1aa7666740b6fe0005f3d4",
+          "RECORD": "3ad959dbaf867e91157229ebddd9503da4e0625a1cd8b9f5ea34f114e93cdeda",
+          "direct_url.json": null
+        },
+        {
+          "directory": "opentelemetry_api-1.44.0.dist-info",
+          "METADATA": "42aabbbacd266627b5c3839a515150ca90c18f80c9d85ca6f6fa10d440a7eeaa",
+          "RECORD": "8fc686374999a083eb0efe08cee273ba623863153834268ed6233eca624d92f3",
+          "direct_url.json": null
+        },
+        {
+          "directory": "orderly_set-5.5.0.dist-info",
+          "METADATA": "87b74bf17b6396725bf314cc67568085c52caf32e4292bcecd8cfe585408c3eb",
+          "RECORD": "5e906807598c285424802e548dedea3773eaf0275cd9b09f16ae169310be039e",
+          "direct_url.json": null
+        },
+        {
+          "directory": "orjson-3.12.0.dist-info",
+          "METADATA": "3a04b81906c2ac8f535b0a4fb8371eea786718fbca08a75ff13f6c734f43b778",
+          "RECORD": "9f27141be4dae35cd6d13e6c487b3f30598a556b8cedf6f808b7ccbb8d0848fc",
+          "direct_url.json": null
+        },
+        {
+          "directory": "packaging-26.2.dist-info",
+          "METADATA": "4f9cbcd7933415a4793f7767c98a2b6a512c823fc81c87337815705f230ecabf",
+          "RECORD": "34a791dcc687723f1d7601aa68319f6d51aa00e44d85818995dd33a1b7c5a49c",
+          "direct_url.json": null
+        },
+        {
+          "directory": "parsedatetime-2.6.dist-info",
+          "METADATA": "218f23d194d6220261e320377ced6ab88c75cc042b39a99c3429c1b096ae4997",
+          "RECORD": "6c0753fe2362d8bdca5b7fdc50637cdc52768cf8f4a72f130c63048b5f009409",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pathspec-1.0.4.dist-info",
+          "METADATA": "a5e9075598e9a7f5475650e8ed4d37dbe7c88521846d8fd5f238e662b1206963",
+          "RECORD": "7e4507d4b033af29e6d9c1d878b0fd341f3ba12a3d6c1fe0a637d2acff43a30f",
+          "direct_url.json": null
+        },
+        {
+          "directory": "platformdirs-4.9.6.dist-info",
+          "METADATA": "7dc437d6904fab5d1b6527ac1bdfe03044e9ad53649dadc143471a6f2472927c",
+          "RECORD": "2066c8e57815d4124568be7af2b199cae5e2b31694e15cf925cf7017c598368a",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pluggy-1.6.0.dist-info",
+          "METADATA": "7438c35ee25a095eb7416f84b461c2d74425c5e734ad54c3912453c65244e01c",
+          "RECORD": "a42a63bcba12ddb7e7db19158c8d05d8fc41d51f48686b411ad3a0213fbd7721",
+          "direct_url.json": null
+        },
+        {
+          "directory": "prompt_toolkit-3.0.52.dist-info",
+          "METADATA": "80d4bd40a6a171dfd25c332baebee1fd8722342f133db5385e2d5719a5da2e29",
+          "RECORD": "d9763ce59edf45150a60528745aec92b9c608eb7422df445ae8c1a6f5cf2aec0",
+          "direct_url.json": null
+        },
+        {
+          "directory": "propcache-0.5.2.dist-info",
+          "METADATA": "f534495cdd2f915af8e649783d95fddcb1a05a1ac181850f0c973c0a78f7bbae",
+          "RECORD": "5b47b5249186957cc332c6bc948cae117846f92e3561d6a8835888d6da3ba392",
+          "direct_url.json": null
+        },
+        {
+          "directory": "protobuf-6.33.6.dist-info",
+          "METADATA": "6f3b31fd64380f5e60ed10f5a2954699bcc1f6266eb74316f0ba96702d30546f",
+          "RECORD": "eec74a7da0f936d6cc8b5a98671c627a9a75e0f2775f6318a7dcec6338347fd9",
+          "direct_url.json": null
+        },
+        {
+          "directory": "psutil-7.2.2.dist-info",
+          "METADATA": "525f8ba78523cf7bc3759d62a105e7c57fd679ea702402b9449fb0746aa0217f",
+          "RECORD": "2af7e87b12ad6542c1eaaf20a299c109fa09b9dc5d69faf745219bd61e8cfca6",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pycparser-3.0.dist-info",
+          "METADATA": "f547a60b0ab54cc2f242213d1f87960ad80df7dd5dfeb98d17a444d48bfb6b93",
+          "RECORD": "e752c5c64ce06f508a80e0edeef0c165df849587b829cb9a7b7bb22ac43b0c7e",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pydantic-2.13.4.dist-info",
+          "METADATA": "d1e56c3412492512fb6b59a9dfc25ab7af2a8204585cd7bca000513023133394",
+          "RECORD": "d0cbe0f34b294885175920bc8f2ece0b3ed6d9874347dc9cfb2caf4931329272",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pydantic_core-2.46.4.dist-info",
+          "METADATA": "135fa8b2f89473e9191c7078c2164e3ec6c8927a61c2379c2fddcc07f11f3bae",
+          "RECORD": "3e55a95c4577dcb5dfd08cb8740db06dad7117273dd4885c090413888e606fc0",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pygments-2.21.0.dist-info",
+          "METADATA": "1dde075570136774c706bf0009183a793fe0ee262e4a5590cc6eff8453eedd43",
+          "RECORD": "cfaadf7653595c31fa961d08ed7c5dc27f34817b389142c2554f67666c7a7aac",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pyjwt-2.15.1.dist-info",
+          "METADATA": "1ea0c9f139b8c928276b3628af165955f6f764491448a6ad8f103cdcbb382da3",
+          "RECORD": "c38214546c80b4d215bee801e57689a2a8b1f1e6afdbbb8d57b6c43db557f17e",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pyproject_api-1.10.0.dist-info",
+          "METADATA": "0cb496afe85ded31d74ae6964d50ec5da0d75acdc8ea640387929f94367fb2a8",
+          "RECORD": "c2465f682c2f22e8a840a18f7f7b6ed5c8b610bcfb9fd21c92b51ab35cf8fb59",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest-9.1.1.dist-info",
+          "METADATA": "c5d032518012789cabc870d46589aca3aeda36cf9fa4399ee88bda3d10438451",
+          "RECORD": "a46283b3fc287ea0a09dfcf5b37c53794a80b3467bb5d965cad4d54bc19a458c",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_asyncio-1.3.0.dist-info",
+          "METADATA": "68d7250fb7d8f0cde8b57ed6797c4eb9de74325d80c362fccfe55e57966981b9",
+          "RECORD": "14b6f3e855d545222d94d1ceaa1a9764327bf754e3b224239485827588d18cf3",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_cov-5.0.0.dist-info",
+          "METADATA": "62539af807834dda07340bab459bd596f0c3b59de3eb270f058b77fabbf8ab5a",
+          "RECORD": "2da00111fdb2f5b117090b99df88421b6ac1edf0efb34469799db39058063793",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_mock-3.14.0.dist-info",
+          "METADATA": "75ffb619b12a00e284c33a1bc8e0d0068c8d84a8a43bd30a86c8781440bbea8f",
+          "RECORD": "d977970b9cbd20aabd03aab7295f6752e895d7256d889e782a8805fd9230bc5b",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_rerunfailures-16.1.dist-info",
+          "METADATA": "d35cfa846769c9c2b85822febe571093e86690cb3b3c805b1d847d4f198cd677",
+          "RECORD": "33ff25a01a005f81579b7353e3de8aa7f079e031aee04eff366821f585233df4",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_split-0.11.0.dist-info",
+          "METADATA": "a7f7a0f458b064aa0cd4316b51e69d18474d58600599a0af7b090ed976cf07f6",
+          "RECORD": "cfabcd87108f2f48aaa63202cb09d943483f1926c3dcec7239832dbaffbabf61",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_timeout-2.4.0.dist-info",
+          "METADATA": "8b79be0dfb1db4a0166b9d997ad95553e7a7e61445bcfc0ddbfbd409bae421ff",
+          "RECORD": "ef2fac9b77c7e19d9f0232fdc32cbc2e1ddbee70d957a24eba85a1a234e4688d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_xdist-3.6.1.dist-info",
+          "METADATA": "21398298e415f23c9a52a85c18c8b0e96444e709b2336825456c39a82321bc32",
+          "RECORD": "045a444c192f111a9d0a094c3790a32ec6dd9bdcb52faeff14a040e742006905",
+          "direct_url.json": null
+        },
+        {
+          "directory": "python_dateutil-2.9.0.post0.dist-info",
+          "METADATA": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93",
+          "RECORD": "e15e868a50b9c4e71df17b31369843617780146ac5adb1bbfdcced0ebe501824",
+          "direct_url.json": null
+        },
+        {
+          "directory": "python_discovery-1.6.0.dist-info",
+          "METADATA": "6c11ebe87e7dde1facb306405e15565ebc48a755df3d93a871905ff341f68515",
+          "RECORD": "7d9e165dec380442d724c470ec96dbf792604bcb74400bdd1450a35f9b5f69be",
+          "direct_url.json": null
+        },
+        {
+          "directory": "python_dotenv-1.2.3.dist-info",
+          "METADATA": "2380ea9700796b7398fd8156e22f9028afe5eebf918eb84a6bd5ebb0a8fdd3b5",
+          "RECORD": "4718be1f4e11b7ea48fb1e5f6df3b813663c29ec7373da99676a015154e44706",
+          "direct_url.json": null
+        },
+        {
+          "directory": "python_multipart-0.0.32.dist-info",
+          "METADATA": "e9d399d7dea5eddf0e4d24b5c24687a82e7e50bf2c2b30f8f8a06a64d887dd86",
+          "RECORD": "5c11c391e44fdc2dbec56603265b8af273dae504ee2e6143d3b9d3bab2bc12df",
+          "direct_url.json": null
+        },
+        {
+          "directory": "python_slugify-9.1.3.dist-info",
+          "METADATA": "29f8b673b715c82ad8fc1c841df2bbc4582a1cd5941a745b3cf529b3934105b5",
+          "RECORD": "9ee92b37935b5bdd2ebb2a55b724286cd63ab579046620cc5a7e982d673f63ed",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytimeparse-1.1.10.dist-info",
+          "METADATA": "0a7c401cf544924e18d45c9b79d96a96501e9e9ba8d38945a10d911c99bb76b3",
+          "RECORD": "d98b88265e5e29da95f53c2d8e3cd4e816e5021b7691e027061f1cedf2029598",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytz-2026.2.dist-info",
+          "METADATA": "56b1e4933e430bf524cc2cc6621bcd64cda12947ed22978d0ee241cd7f02f588",
+          "RECORD": "adc676b9082d897c0133402d9e9bd5f1b73b12d49ea750dfccee3ca2365d10ca",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pyyaml-6.0.3.dist-info",
+          "METADATA": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34",
+          "RECORD": "7d0856221a182f5b25fde9bb976af79b4883090f54680d86a42b35fc8d6735a2",
+          "direct_url.json": null
+        },
+        {
+          "directory": "questionary-2.1.1.dist-info",
+          "METADATA": "059db52845098a29c62ee19a27391f8ece7f9b1e677030b2cab3c2c470d0c2b6",
+          "RECORD": "13ee83f9de7b7849f43bb04b6dbca1fadbfea4b59d09e797075d024fc1a66ddd",
+          "direct_url.json": null
+        },
+        {
+          "directory": "rapidfuzz-3.14.5.dist-info",
+          "METADATA": "51dae324caa606a75cc7e7c22f08e7f12d76c341a43e969fffdaab7f056e0291",
+          "RECORD": "204108eed1370733ea092a7f51a3f3c10c1dadf1bb9ca59a638912680d91452b",
+          "direct_url.json": null
+        },
+        {
+          "directory": "referencing-0.37.0.dist-info",
+          "METADATA": "c93b00e6ab1524fd60848376604c189a114374776475c25a31d57be47b29de6a",
+          "RECORD": "d7ecf9906a4a4ea4837d16e324e344f9f00b328570cf695a96a8de46b8766982",
+          "direct_url.json": null
+        },
+        {
+          "directory": "requests-2.34.2.dist-info",
+          "METADATA": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27",
+          "RECORD": "fc8c5216d0e865d815bd04cc240b5adc5d56f6c3dbe9aef3b4ea3b83d735bdfe",
+          "direct_url.json": null
+        },
+        {
+          "directory": "requests_toolbelt-1.0.0.dist-info",
+          "METADATA": "fa52f26237cc8d148d25c5746fdca499a56d0e765e69095cc3564a07cce23967",
+          "RECORD": "fed817b8bd98101990c9bf46cb01dc5ab2771dc039d5581f510fc8aacf415c21",
+          "direct_url.json": null
+        },
+        {
+          "directory": "responses-0.23.1.dist-info",
+          "METADATA": "4436b2a37c5f568bc29551e36e3a6cfd92d1fd44071793eefc53978f8866df38",
+          "RECORD": "45fc5207390370172fe825db641b6b9d07a33170be8fce4e2076d8781de93be2",
+          "direct_url.json": null
+        },
+        {
+          "directory": "rich-14.3.4.dist-info",
+          "METADATA": "efb5f04704b438de828e9e44d88b9f5ab91f6006acf55a7b40911ea43c230a41",
+          "RECORD": "705cd0178942332d0a77ca8bc8146f57ecbfeed66aa79fddda7ef4bde107926b",
+          "direct_url.json": null
+        },
+        {
+          "directory": "rpds_py-0.30.0.dist-info",
+          "METADATA": "cc01d097ddb9c7e07a29c9553ee8dd35cf920e85fb574f7b0c23d68138a716bf",
+          "RECORD": "04a350e56746e262b9dc62b1de89868bba93e542d9d191f3b8dc05a70914e5b5",
+          "direct_url.json": null
+        },
+        {
+          "directory": "ruff-0.17.2.dist-info",
+          "METADATA": "61812a386fb940f04eb51af6ebd7f908dda19bdc648bc17302ecb2b45cec0c72",
+          "RECORD": "d1d82601c528a635e1d8b2dbaa2bdc4c6340d9438bddcf4777602a9a5e2aeccd",
+          "direct_url.json": null
+        },
+        {
+          "directory": "setuptools-84.0.0.dist-info",
+          "METADATA": "3ef2975718dd31cabdd5829455e9b868ca14dbf79ed8fed2de0af4e87347006e",
+          "RECORD": "26b6656e2a9d04f4c1cc1e8580636454733af03d8dc2dac4b2d4636ff1ed6da8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "shellingham-1.5.4.dist-info",
+          "METADATA": "183d80220a37493262795739dd357cc5bb3f49bd390cc9198d5180e5451a07fa",
+          "RECORD": "2a878ed08ec32adc6b08a9b6a83754cd7c30ffb8a67e26527292456da9ff2fee",
+          "direct_url.json": null
+        },
+        {
+          "directory": "six-1.17.0.dist-info",
+          "METADATA": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468",
+          "RECORD": "d16e50f347969b1e1919fb0c88bac4b9c644f5305bcfcfb00f72b646dbd4065d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sling-1.5.17.dist-info",
+          "METADATA": "c594f47ea233ae3425dedf711d211521058eca3b4bdc8ccbeb6c3c3a15fc97bc",
+          "RECORD": "62489c650a9f7e926a8b37b1070cce0e786fe2e280919fc567eb3f5b8d3c505d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "smmap-5.0.3.dist-info",
+          "METADATA": "761d62d78dbca38efb80f17b95a5aef5224d8288aedf980ca99c453db95047b9",
+          "RECORD": "e0be5b36472d7e88192f32c26612bf97eb4162bb1e7f76fc7feb8cc671817358",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sniffio-1.3.1.dist-info",
+          "METADATA": "0b318b57098edeccf585e60a889a6b6a7b5c4086f3a9aa62eff76a1d3cee12d9",
+          "RECORD": "e6c97953661def7ab6dac78f83c86f31e622bee38ff55ea508cb04e1a604d4ff",
+          "direct_url.json": null
+        },
+        {
+          "directory": "snowplow_tracker-1.1.0.dist-info",
+          "METADATA": "a10a78a8ea187d70e9e755a4f57b0b54586d4cefcb00bd56f7f0c3b90aa880b2",
+          "RECORD": "d512cf3322a9434030286f9099df52738d845fe874d34b7d3631857a3b1a35c5",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sqlalchemy-2.0.49.dist-info",
+          "METADATA": "8d203f0e137c9d42709f5f6c184d23ceb64e11cffc8ed3d1c41b5412e86274c1",
+          "RECORD": "f87736fcacb92b2f9269093de2618a7a838124515f5af97657bf78b94e9baf7c",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sqlglot-28.0.0.dist-info",
+          "METADATA": "1332b31c08278dd26f70c69aee58e32c9f19fec8dfbfe7468c773ce9184887b6",
+          "RECORD": "7b3dc86b602fbccbe5719bd97349cd54497122d44509a6b372ffa62b33220239",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sqlglotrs-0.7.3.dist-info",
+          "METADATA": "b480ef328ff13f9d6bac6d903dac6d8638c8027f1a31c4201f17610e45dcf7d7",
+          "RECORD": "8a42da08bc69bc1776610b3b4cea0aa29e3b90544f34000655da7864d606da7e",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sqlparse-0.6.0.dist-info",
+          "METADATA": "e6602750b4216135d9a788ac53c4caaf9f4534f9f8347ba73f92e37509b1b24f",
+          "RECORD": "a96be6a9b08880503a71a3ef87662796ea039de4f281344346ed23aaddf99048",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sse_starlette-3.4.2.dist-info",
+          "METADATA": "56515dab12000774a76953c1ddc26b648db87344f861224d18ad9fc08b84bc6f",
+          "RECORD": "75bdeaee67e1ad512d52eccbb9a7cb2f133d553de8f9592b732db939c249d14b",
+          "direct_url.json": null
+        },
+        {
+          "directory": "starlette-1.6.0.dist-info",
+          "METADATA": "43f6240f976044f4cf9a573506d96d895391094717c55682700c931d5cd3c5a2",
+          "RECORD": "ce00b84cd91bcb3a3c9d05d0acb8d879ad8f28232ef1941cf82e2cb0661e4be1",
+          "direct_url.json": null
+        },
+        {
+          "directory": "structlog-25.5.0.dist-info",
+          "METADATA": "bec5f360bcf0eb40e207e72b9ec2c86f2a8df54028603fba2f29a9c040df95e8",
+          "RECORD": "9dcdd0728f0892f093c8dff720b1b50b13e4d5cc9682f8fb90fad7dbd7ef6c46",
+          "direct_url.json": null
+        },
+        {
+          "directory": "syrupy-5.1.0.dist-info",
+          "METADATA": "aa7dbdc45e6cf958480a1c7599b3794847d90aa336775eb0ca13a14d273d31dd",
+          "RECORD": "1e30dea8ae13c5b670f0792f4d7cfb87b8b0841ef74f37cd1b7bff4fe77938f8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tabulate-0.9.0.dist-info",
+          "METADATA": "f2802aade2612091b45951f265af29174f90c3236f68cc8ccdeb646941e62969",
+          "RECORD": "91084349b288d1c8f98cad00c5ce3db17ef8982b253fa0580c5bd6f0530b3ff8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "termcolor-3.3.0.dist-info",
+          "METADATA": "880aeaba6300677d4ecc022fb63f8adcd57a753b6fd2b5ec17841f722f910196",
+          "RECORD": "37e14730fcdfd0c6b874f854ca5d0e086fb0b0fba96068ee80ab01d2269b30f0",
+          "direct_url.json": null
+        },
+        {
+          "directory": "text_unidecode-1.3.dist-info",
+          "METADATA": "07d8fed65e3ec8df4fe5ef26a41ad70aa010b11527038233cb2d211bb272ae7e",
+          "RECORD": "31459b079c3dab63102419899470109f053dd066ea86559e14a41026be55e145",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tomli-2.4.1.dist-info",
+          "METADATA": "1428a97e0c90b9ed2958e9e487db976c4c450932f7334630aebb5bc04e01aa59",
+          "RECORD": "b3753a7bd7ead091b575b3c0e8b98976ff853bff7df95dd1f7ec4007201b6f2a",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tomli_w-1.2.0.dist-info",
+          "METADATA": "66e81ac2e41775b5ebddcfbb9f4ae77158e4c5739fd52d231e14f2fffda9c8de",
+          "RECORD": "6758ea1fa917909e7f6f8f313e168e3627f1d480167ff78174dea2d7e1b501d3",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tomlkit-0.13.2.dist-info",
+          "METADATA": "3bbf920f38b0aa68206cdfa92967f8ad12d5324e4d6c2e8b7ae9e5a851c84c69",
+          "RECORD": "ce4b62fd58a464a40520445c8952723adfe621aa76ba62aaedcabfd2a01b3925",
+          "direct_url.json": null
+        },
+        {
+          "directory": "toposort-1.10.dist-info",
+          "METADATA": "4aca424a92c57ba0aeb08f444c8ca43daa775679f4b507384502b0e25ed64170",
+          "RECORD": "8f64744243b593f11491974e6c7298f34af90611ec99f975f733891a074331ab",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tox-4.53.1.dist-info",
+          "METADATA": "cf61200f9595147dd66542aade7a53a2f2aaa675910c9106ff911ef5d6d5aebb",
+          "RECORD": "1589100472b2cfcf793a0f1319c5363c33484e5d4ad59d6ba933e3850fe5b77d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tox_uv-1.35.2.dist-info",
+          "METADATA": "722d1fd52c9be7377e189bb20a89921b3fc6cc3cbe7d8fc80f2d643f1be305ae",
+          "RECORD": "030b7036cd6e775d64ada366cc15a0eb6190d16282388b1f1463e0f9a4a8e1c7",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tox_uv_bare-1.35.2.dist-info",
+          "METADATA": "e327470d447795a1f605b4347e7234dcc9ab8dc58993dba3b664aee1f4e7d299",
+          "RECORD": "52557a1f8fba5331f7980876d1a4d18b40b90bb41d2e9ca079cf4f9f8f26dc4d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tqdm-4.67.3.dist-info",
+          "METADATA": "7c0e9a662c19095f339a4b761201eb06cff9c61fb9581535b2f96f44e718ed29",
+          "RECORD": "eb5be03f91c0ace8912c011156ce5a7c4089c19fca7dd2ec64bd21303520c198",
+          "direct_url.json": null
+        },
+        {
+          "directory": "truststore-0.10.4.dist-info",
+          "METADATA": "509a7b67bff99f2d04f57251b5bdb761bd9429467e1cebc453b7f96be4108f5b",
+          "RECORD": "78e60fe51ee9228a9a31d401f4cf7dcca5b7363a893b65f30e957de919e9f01a",
+          "direct_url.json": null
+        },
+        {
+          "directory": "typer-0.25.1.dist-info",
+          "METADATA": "304553e1baf26f16bcefa5b52dd7dad869e750b5967dfd774b8966748f5d36ff",
+          "RECORD": "c5e8a218e9dc04f344e960c7385089b4a7b794079589b76848210c7ba696a456",
+          "direct_url.json": null
+        },
+        {
+          "directory": "types_protobuf-7.34.1.20260508.dist-info",
+          "METADATA": "d421bbcbe43a70bacc51eec23bfc04d3b5c5a9fd4622619e5a0f10ef8d6a5f4c",
+          "RECORD": "b86e732b7b598a63bd97f40c75917e7658287671ac940e879df1528d4cbbcf66",
+          "direct_url.json": null
+        },
+        {
+          "directory": "types_pyyaml-6.0.12.20260510.dist-info",
+          "METADATA": "d80b2f66b1528c96703b8f35a7c5081e34e16ceb30d71439e367f854b138a7d5",
+          "RECORD": "25c57d4f0c0f71a923743db5ba9b1b7e589c9b71a873b928802dfb52e0cb52e1",
+          "direct_url.json": null
+        },
+        {
+          "directory": "typing_extensions-4.15.0.dist-info",
+          "METADATA": "c138378fe8f18934ac99de060535c53ec6c13aeed65e94c32641da7ee3192a72",
+          "RECORD": "c42db5851c3a20efb41dbe1a0d03c18db577a5449c7e685f6b139df34b98e62f",
+          "direct_url.json": null
+        },
+        {
+          "directory": "typing_inspection-0.4.2.dist-info",
+          "METADATA": "61096cd0bfe3c7040b6f98c22b02d190fe01936d0ff7616c5134fed02891953a",
+          "RECORD": "96edfd27f64244b308dd9b63a60613ad2a04e5012066fdbd1aeebe85b348ba29",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tzdata-2026.2.dist-info",
+          "METADATA": "1f197d996db42bf40a79d3578084963f6204506dfee9809af81586dbb9607061",
+          "RECORD": "e439beb6cef6de137fc0cb32a6723e22bb739032813e4095350791c7d3c46807",
+          "direct_url.json": null
+        },
+        {
+          "directory": "universal_pathlib-0.2.6.dist-info",
+          "METADATA": "60133c89680d956a49b9b9eb6992c8f0655b105105042204c16d23d4dd071c5c",
+          "RECORD": "2b3c4faabff58636adb4c2ecf5d424b781a78609dc10d245509e4de4a05cf280",
+          "direct_url.json": null
+        },
+        {
+          "directory": "uritemplate-4.2.0.dist-info",
+          "METADATA": "352afd43b6f1ab8f94ca31af2a1ad4f0d1a94dbd712c1b6d9e44e35d4bb3a962",
+          "RECORD": "b06d84680bc9ed70b2a79703745de7129784a2309ab11c4e588da9452d635b63",
+          "direct_url.json": null
+        },
+        {
+          "directory": "urllib3-2.8.0.dist-info",
+          "METADATA": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4",
+          "RECORD": "1753d325c8936a612ecdc947e686ade56b21f591fbb7518330cb0f2f7619c330",
+          "direct_url.json": null
+        },
+        {
+          "directory": "uv-0.12.7.dist-info",
+          "METADATA": "67bcca84b12bc7959178d509648fa2038eff75067c439dec12016eec7e078f59",
+          "RECORD": "07f14c71446acf06cd76b787a16eb4aa9917ad90503b671daf44930307aa05ac",
+          "direct_url.json": null
+        },
+        {
+          "directory": "uvicorn-0.46.0.dist-info",
+          "METADATA": "fcb34026216a0feebfaef791adab4b8c1e78c9fc35bc42d8d3856e54565dc6c4",
+          "RECORD": "cccc16e14ce8ce3c4fe2652be67abb7189e1be4ff58e16615816d7c64d6479dd",
+          "direct_url.json": null
+        },
+        {
+          "directory": "validators-0.35.0.dist-info",
+          "METADATA": "222afc20388850b607dd463b166255c5a731d870a9ae26ff4280fa67fc1a5db8",
+          "RECORD": "a2e740753606f5799ee098f97716e3290ac791d55da92fa37be839e670b4c8f4",
+          "direct_url.json": null
+        },
+        {
+          "directory": "virtualenv-21.14.0.dist-info",
+          "METADATA": "813289712e90631bdb21af54b4d1b0f17187ed15ef9f7e2ce3b2e3d718a83dd7",
+          "RECORD": "f9de0c2b275d942e4a051d7f5bf78ece270040af3c5eb9053d6d5d0e4b3cafe2",
+          "direct_url.json": null
+        },
+        {
+          "directory": "watchdog-6.0.0.dist-info",
+          "METADATA": "ecfde023047e7761dce06d4488abcede89e398399961a052f2fccb39b001e279",
+          "RECORD": "32434f5d0e21220bb13235256fbe3c5b47635b8762af0de14f8da339098ea071",
+          "direct_url.json": null
+        },
+        {
+          "directory": "wcwidth-0.7.0.dist-info",
+          "METADATA": "611878142d836a2111d580d4debbfa2507bb290952811b6226a9c5989a4453b2",
+          "RECORD": "eecab60abd157f0de728a8f803a5aa18548af4e217af9a149d7a3a64b3ff1196",
+          "direct_url.json": null
+        },
+        {
+          "directory": "yarl-1.23.0.dist-info",
+          "METADATA": "da3fb5321e2de5b2766214002d5003112ecb18bd4d85f415b413efdd10ef80a3",
+          "RECORD": "8997d508810026545d9ca518d0230ac5c1753e16c00cf35e28cf02a5663a01b7",
+          "direct_url.json": null
+        },
+        {
+          "directory": "yaspin-3.4.0.dist-info",
+          "METADATA": "0b18e994743911f30fbf07ffc8a7137e83de0e8ab5ea0b42f57d4261ec35021a",
+          "RECORD": "705471452781f95ec70f67738b06f73b9c6b7fe5a3959103bb273a7bcc16c5de",
+          "direct_url.json": null
+        },
+        {
+          "directory": "zipp-4.1.2.dist-info",
+          "METADATA": "f84611a1ae509959f8a60875c24ff61793a67ca575cb5fdfa98076d3531bdbf9",
+          "RECORD": "a20f0343c48c6776c03fdb6394f826a6a97f8aff95858cf553a88d3e320572a7",
+          "direct_url.json": null
+        }
+      ],
+      "pth": {
+        "_editable_impl_create_dagster.pth": "46087f3ab6634a39c7a87b6ab6d004e1faff635afb91f843e3258da701a3d1a9",
+        "_editable_impl_dagster.pth": "60bf1983ee974e8023517586e3e608edddacec723eb3127c591d85618a011424",
+        "_editable_impl_dagster_cloud_cli.pth": "1890e0f646cd77a709604776ef620ae6aac827d5f4347c69b7d7289fb08ccf98",
+        "_editable_impl_dagster_dbt.pth": "87759d43e0050d84a2655964009ac21399c1c481a9a6a6c7a434f69a09899f10",
+        "_editable_impl_dagster_dg_cli.pth": "1235076f8f5211335a6497fe00a1fbe63772c5a2dfa8ec48474ebb55768e6d7e",
+        "_editable_impl_dagster_dg_core.pth": "1726c3494e81cecc36b0e58626b8c0cc27c185f20109abae01a0f4024b1b11c7",
+        "_editable_impl_dagster_fivetran.pth": "93547ccc723e5165408f7d37a3b71058a6b3acc65bb81c472c950cf4565f96d4",
+        "_editable_impl_dagster_graphql.pth": "6abcfc78ff6ac3824b961973525845dfd6e1420cd812b81557dea56335e28096",
+        "_editable_impl_dagster_pipes.pth": "c05a3bf8b27cde7be54b5c1a609510fed387f851f3fc41e2d66a3f56ebf0bf21",
+        "_editable_impl_dagster_rest_resources.pth": "4ee51bf4fc92166ac9abeb214e719fabb56dbdfc16f6489120aa98a95bc552b2",
+        "_editable_impl_dagster_shared.pth": "eb4b4ea101378c87792afbd6224f30926dbd323cca96e23cf893c8c5524a9a85",
+        "_editable_impl_dagster_sling.pth": "fcde088c4c2831900dd355dcb4f7281fa97c2926d4be1b85b35d57d5cc5c33d5",
+        "_editable_impl_dagster_test.pth": "c85269427c70417b2dd9fca9bb7f6ac71562c293e42471d5ba26f50ba6bf5012",
+        "_virtualenv.pth": "69ac3d8f27e679c81b94ab30b3b56e9cd138219b1ba94a1fa3606d5a76a1433d",
+        "a1_coverage.pth": "ef2ed06d19867ec669c09a804060666a9cd5e383af0a9d11aa2de79b77d448e8",
+        "coloredlogs.pth": "dda83a855986efa5cd87f0248b0199c0086eb0e8e7fece7d6741959c5ce39536",
+        "distutils-precedence.pth": "2638ce9e2500e572a5e0de7faed6661eb569d1b696fcba07b0dd223da5f5d224",
+        "pytest-cov.pth": "f47446a60fdf5905e84e7d7c892baf92f8d5a3226d0da1599b9c014eab6c7ddb"
+      }
+    }
+  },
+  "observerScope": "No original function/arguments/environment/return values modified; profile removed immediately after original scrub return.",
+  "originalProfileWasNone": true,
+  "scrubReturn": {
+    "atUtc": "2026-10-29T17:58:43.941088+00:00",
+    "originalFunctionFile": "<SOURCE>/python_modules/dagster-test/dagster_test/dg_utils/utils.py",
+    "UV_PROJECT_ENVIRONMENT_after_original_return": null,
+    "guardActuallyCleared": true,
+    "profileRemovedImmediately": true
+  },
+  "outerEnvironmentAfter": {
+    "sha256": "d92430d2b10e996b5c8b501bb77b9e45cd058a886ac5190d63e05a615df3edef",
+    "content": {
+      "distributions": [
+        {
+          "directory": "agate-1.9.1.dist-info",
+          "METADATA": "4f2e0503fd1ebd7fb56c571b0e18077f91a16f650c4f1a615f16cce3c22f6c8a",
+          "RECORD": "f11f82a75f52ca7914299f66b896f1a62736b7a37724b82d4acbb4512ae4ffa8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "aiofile-3.9.0.dist-info",
+          "METADATA": "ce5ae6768911f93bcf31a313786be9f6bb69aaaa1290c206efa40fa9f079d252",
+          "RECORD": "1b0109fed7e4cda68ab86deab887babd0f9531a5e507aee1eeb9e1d5ac30334c",
+          "direct_url.json": null
+        },
+        {
+          "directory": "alembic-1.18.4.dist-info",
+          "METADATA": "b0f1f766ae5e11a36d6e7235a2cf51be4ede05b14948c3ead77a6834d6b1bdfb",
+          "RECORD": "e2afeb97cc9a9c34959d2955b44d116e9a18a390d57cef50783bb99b2e0e7642",
+          "direct_url.json": null
+        },
+        {
+          "directory": "annotated_doc-0.0.4.dist-info",
+          "METADATA": "22b9b9289b9adf7758daa28a02327e3a129a5415487f01467a3fdd49edd9d535",
+          "RECORD": "1d924fb80688852ae450acc786e6fcd63a752dd045e2f1e4ec7341367fac06a8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "annotated_types-0.7.0.dist-info",
+          "METADATA": "ee5b6ac64b09274c026051813484025939564067801f485115d9cadc207cf791",
+          "RECORD": "5bb4f1ca72420634ebd566dafd9d5fbce3051b0c1c1d13980f6ceeb5c4dbb843",
+          "direct_url.json": null
+        },
+        {
+          "directory": "anthropic-0.101.0.dist-info",
+          "METADATA": "9c8ff129b4ac2bdcd32b152a29f42fbdae1ca4e2b7cfdf34c47f579d8b39384e",
+          "RECORD": "970c067158520e4f40cdd1a813509df59e27c5e1f4bd5a6676de3646c3b305d9",
+          "direct_url.json": null
+        },
+        {
+          "directory": "antlr4_python3_runtime-4.13.2.dist-info",
+          "METADATA": "43cb68514b022c6d240c72f166d7a3c6075f3b854565f0cbe0263bc7d70dd14e",
+          "RECORD": "096b5c31c0c73f20bd353cd80b156880814416593fdef51de11b41d3c9006541",
+          "direct_url.json": null
+        },
+        {
+          "directory": "anyio-4.14.2.dist-info",
+          "METADATA": "c5e6fc4dfd833319913b287be7a30d9935e9208c7ef917630621855aaac4d419",
+          "RECORD": "722d3bb1432c0f34f49dca8ac66fa132db1e4a2151f7104ee66a8cd44222c0b6",
+          "direct_url.json": null
+        },
+        {
+          "directory": "attrs-26.1.0.dist-info",
+          "METADATA": "4cd40e690f23bf37cbcad34efd6758e062df1df07c86833f7e3ce95bf1fa38cc",
+          "RECORD": "6b0b326d4b4ee0fac27909ac7cbb066fc4bdf8e93d87031e27e770db059e5a04",
+          "direct_url.json": null
+        },
+        {
+          "directory": "babel-2.18.0.dist-info",
+          "METADATA": "11399bc03a6b81fd20e8b82823392052a8db969a8ef150382b0cf5996afcf41a",
+          "RECORD": "7475d12eb2a57efc5c318aa237c2487e9c3144f74f94b1721c7461def13a5678",
+          "direct_url.json": null
+        },
+        {
+          "directory": "backoff-2.2.1.dist-info",
+          "METADATA": "5a07df92ccbe75c0c9e066a8a97ca373c5f1ac4d03433dc56d6c26ac3aa8fba5",
+          "RECORD": "bcc7259a5ce2df22ffa48690844ec950ffef129bd18ed9488818dcfd33c906d8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "cachetools-7.1.1.dist-info",
+          "METADATA": "763fdf1bf61a21c3999c50dba465b70375dff6e70d85839d5a9818375cff758d",
+          "RECORD": "79b28806500afa11f47fe565aaa9e851603aa905d63ea78f20f4efe634a807e9",
+          "direct_url.json": null
+        },
+        {
+          "directory": "caio-0.9.25.dist-info",
+          "METADATA": "3759f4084aa558c85b4f3616150ca35eba9d388dc6b103629d5f7580ee2cc672",
+          "RECORD": "4e3bc9c38cae0782035ecf7ca284c819c6c19c287ca425c9f7636d8f9ae87358",
+          "direct_url.json": null
+        },
+        {
+          "directory": "certifi-2026.4.22.dist-info",
+          "METADATA": "4ed6ffe9ccbed05046ab7bff2024cd3ca717295b368bed1fe20a73e365bc415a",
+          "RECORD": "e1a60a1fad94c4d8be94cd14ade2554991d96b969c56cf479d09cb270e84bcf0",
+          "direct_url.json": null
+        },
+        {
+          "directory": "cffi-2.0.0.dist-info",
+          "METADATA": "b98ce7e3417af089bc12d5c73412d9b3b1683ccf8ec73c986c35ac8c9be1ba39",
+          "RECORD": "9d78802828bdcf6bc7b8ca907af54cea1db7007902b682982ed4097d40625972",
+          "direct_url.json": null
+        },
+        {
+          "directory": "charset_normalizer-3.4.7.dist-info",
+          "METADATA": "2bc94af0bf0b699d5898abd62eddf3124a48c6208e0b9f31361cc542b7d02714",
+          "RECORD": "0e31b3450d90a123e757ef1bd1867bf00fd391eb627b599cf0428c1ae4797f7a",
+          "direct_url.json": null
+        },
+        {
+          "directory": "claude_code_sdk-0.0.25.dist-info",
+          "METADATA": "e3b4c51bb4c2e3077d9ce7e813a6eb8e4863cde7bff53b4684b3351614f3f393",
+          "RECORD": "f49f132f4945768428e0c8968be1b7ec00e7ec056a0180a1c3c09c8c558ff257",
+          "direct_url.json": null
+        },
+        {
+          "directory": "click-8.3.3.dist-info",
+          "METADATA": "fec8e14fbfd9298932b1ea9b589b5003c780715d8278325d70dad7ffdda94826",
+          "RECORD": "82d722059abda728c389e4a535ff870ca3c414d6d91be7db61cad9310cac398f",
+          "direct_url.json": null
+        },
+        {
+          "directory": "click_aliases-1.0.5.dist-info",
+          "METADATA": "3d3a2f558fb753d33a04f5ca089f3b543f90376c60868c15bc98e0413bbcb5d1",
+          "RECORD": "64dc098ece7793fd872022009b6946ef8128deba259f242bc4cd3e94a6fd4449",
+          "direct_url.json": null
+        },
+        {
+          "directory": "colorama-0.4.6.dist-info",
+          "METADATA": "7baed29eb50c3b29bdb33ff84e3177bf1bc05784f7685ecdcaa4471c7dd810cc",
+          "RECORD": "88413e126edc8a81419b409279ef89424081f27bccd4aeec0140d6f03f1ade7f",
+          "direct_url.json": null
+        },
+        {
+          "directory": "coloredlogs-14.0.dist-info",
+          "METADATA": "e49a9150f1cd38bba3ce08d5ab0c2359d43eadd00318655c3c69dd26776a13b0",
+          "RECORD": "db5dbdfb694420c90ed684ffe938993c01b18ca66bee84571f654dc2f68df8ca",
+          "direct_url.json": null
+        },
+        {
+          "directory": "coverage-7.14.0.dist-info",
+          "METADATA": "3aa8d6601b219563946226c3924f17e8fe985bcd8de8acae6673e80422ddc0e3",
+          "RECORD": "f98de77c776df70dd7f0ea2c311b84cc6d6cb78377b2c9fdc33f68fea3fa36c8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "create_dagster-1!0+dev.dist-info",
+          "METADATA": "419b030170d08c064e94041604a7f5f59b6a6887c98d4df0c26f4a705de7ad87",
+          "RECORD": "0c78e4d9b97c5f4f31784f163bbf871dbbb64e3c7b2576adf7220a38659eb9b3",
+          "direct_url.json": "bc2cb93a438594e31b555779e2c59c647c028e4029152dfb025055935cf5c5d9"
+        },
+        {
+          "directory": "cryptography-50.0.1.dist-info",
+          "METADATA": "8e9b5570da4686848ee5c6bb83fffc224bcddf9793136731dd050ce0c05fffe2",
+          "RECORD": "7ab1ead99ccb58584efc331dd9874e4845092e9c73c14791f85e8934dd9b7e08",
+          "direct_url.json": null
+        },
+        {
+          "directory": "daff-1.4.2.dist-info",
+          "METADATA": "5b98602764ea1820d4a7405513a64a89d7b5e4e051062a5c15c6a2d8e3200c0e",
+          "RECORD": "b22af5d43e8be73c82e7e3c130a2dab12ca8e71f720e01dc51166be318f30f7b",
+          "direct_url.json": null
+        },
+        {
+          "directory": "dagster-1!0+dev.dist-info",
+          "METADATA": "70ec9b68984438a18157a0489596325c3384def6b8cb9d9e48ae2d87cf6efc74",
+          "RECORD": "39c49d35497c320c48afd452719b22488c7c02ada519e4cc5b8ae30783a507c7",
+          "direct_url.json": "b67306183bf4cae69fa27cf6cc0b0d84061148a81f79dada36e25b82c2039687"
+        },
+        {
+          "directory": "dagster_cloud_cli-1!0+dev.dist-info",
+          "METADATA": "9414b01b4551b521f9daf2a9bbe04f7fcde979bb8b455424e65fa30893576d54",
+          "RECORD": "1275bb4cff2c636ba31b9072af30739c5bc01225812ef3857a5af2021c2e5640",
+          "direct_url.json": "ff2612a35f3ff87a4c5f231d04f2ddb74bd0be15815923c52d28a1f92e9a437a"
+        },
+        {
+          "directory": "dagster_dbt-1!0+dev.dist-info",
+          "METADATA": "bf2d1986322ff5c7181894137bbbbb173835fb49cc06dc0a1eb42c9782121159",
+          "RECORD": "89e0039f2424d47f7490824beecdbad799d685f75b05871b4c9babaf7dfc1e06",
+          "direct_url.json": "dfee129b2ea983aa72e35e532ce30444e3dece9da07388ed4321031a9fec911c"
+        },
+        {
+          "directory": "dagster_dg_cli-1!0+dev.dist-info",
+          "METADATA": "4657d2030383b0c1ef3f7328bbc30cb85f338e7d42c869e13dfed3ad7e4569a2",
+          "RECORD": "c01a0bc188f7e99bf6a7e0bb014a93e7dbf8b04e795148079f4682bda9b00d51",
+          "direct_url.json": "640518e2f260a63a705425a084aa1ceff24f362cda363e58578ef59b07659c59"
+        },
+        {
+          "directory": "dagster_dg_core-1!0+dev.dist-info",
+          "METADATA": "0b8583bea349c63a353645c209db8a65167f4ed35e9fd228b939214fbc5a4089",
+          "RECORD": "50101ade7caca29ea3661afeae17f0425f1d360e5bb2e3a4e47d319ea31436ab",
+          "direct_url.json": "b46d813ea6c46af0f9d188c697b98d4d540f9b9f9b720bfab717dbb9f104b01d"
+        },
+        {
+          "directory": "dagster_fivetran-1!0+dev.dist-info",
+          "METADATA": "523dc96df7290817e466d1e276dbe6738bd1e95a7bcfe55580d45e42d9cd8f42",
+          "RECORD": "2388c1c0e5a4edbe6473a46be7f93e4aebf8335a2039ad5fbaa4939144a77866",
+          "direct_url.json": "5955a213a7747e781d259ef83d327acafec818f6d738fdd07a9d9185f1d478f9"
+        },
+        {
+          "directory": "dagster_graphql-1!0+dev.dist-info",
+          "METADATA": "c6b4a3ff2e9b6742129e8ff077eee5745a79dc3a046cd1da8f5a0e14cefe9a56",
+          "RECORD": "68583663991c299d27aa7239ad421693687e4d211126f26e4a7532ae5a9d91fd",
+          "direct_url.json": "4dc25208d5e9b8188f0e542c50cfdb8780c1200cb36cf19517562f7e6b38ef56"
+        },
+        {
+          "directory": "dagster_pipes-1!0+dev.dist-info",
+          "METADATA": "6cc15304469f06514b06ef375f62c6ff7f225cc3c8c6461d7a1bfe5a2bf7abc8",
+          "RECORD": "e360a0cdd47058afbc6c6228e28db53c3427f318ad8b679c953ee013ca5ce399",
+          "direct_url.json": "3fb56726b4b382da89a17a86c513ad2c48ef0bec29989f9f8fc4e4e700995aaa"
+        },
+        {
+          "directory": "dagster_rest_resources-1!0+dev.dist-info",
+          "METADATA": "c03b9de7d4102e432bda0529c25b256c6a07ada4e1c737e0e26bdefedd4a12dc",
+          "RECORD": "587820c9c23ef40f043e2c2fc42086ae8db4852ce7a33fff77821dc339e3f55d",
+          "direct_url.json": "155e741f1fe1d84973ce8a000c824f1c02de692f3e0e20116b0a9956fd039f43"
+        },
+        {
+          "directory": "dagster_shared-1!0+dev.dist-info",
+          "METADATA": "214a62bf5b64693cfba5943b5ff82a70cc78796c017395af0b4e1aa2cb9b8f4b",
+          "RECORD": "f5e0259ac1db27650704efea933f5127d9403238273f5bb9c7bc7efe2ab06ff9",
+          "direct_url.json": "afca1e8079c548258ed956cdf3f63402694b446049530d8b5dcb92e8f4b3029a"
+        },
+        {
+          "directory": "dagster_sling-1!0+dev.dist-info",
+          "METADATA": "c92691a89cc7eaf593f899b257841694eccaa6824ed98f65c4405f7dcdabc780",
+          "RECORD": "dd74f9b2bf3e2e76966bca3c2764c2a3f92b7596e75b1113b51b1801cf9c3834",
+          "direct_url.json": "ff40161ad9f1f8579beb044ec1abe2fdb0882fe391791bac6501724be78a77a1"
+        },
+        {
+          "directory": "dagster_test-1!0+dev.dist-info",
+          "METADATA": "e50b1dfc1e675987ce5bf42b90b0d3c89cd4a22716f22b023ea7ff6a3f5d1c8d",
+          "RECORD": "c2a049ba8f052e6dbfb964961dcfe0bec901be94b9ee4817f70b6b04a467e6bd",
+          "direct_url.json": "884faa7b1775d9c7ac656c89cd8552793808256436230308b5e8110cd89ae794"
+        },
+        {
+          "directory": "dbt_adapters-1.24.5.dist-info",
+          "METADATA": "dc5472335d8d7b22349214bb1a225b61d3f89f0d3af37efa6a491ddb33ee394e",
+          "RECORD": "990828e8c87d6bdff54e22a08c98d6d01d0bb49c734b2b8dada1501732b82d45",
+          "direct_url.json": null
+        },
+        {
+          "directory": "dbt_common-1.39.0.dist-info",
+          "METADATA": "c68b802b5b10ea269e8601169b98147ecbb53e4be6029715a6734d662fc4b7bd",
+          "RECORD": "9a95a3007490db357f9b3916a2a16d99c14be5f978145b574c374d899e637648",
+          "direct_url.json": null
+        },
+        {
+          "directory": "dbt_core-1.12.6.dist-info",
+          "METADATA": "37b36aff38c9466a70f54dd0f2f59da05b334cc254141f451d497a5a486a60dc",
+          "RECORD": "2097e63ca99d8121b89e335f5c505f002b26a194f5d39b713cb83f70e6d5dbe3",
+          "direct_url.json": null
+        },
+        {
+          "directory": "dbt_core_experimental_parser-2.0.8.dist-info",
+          "METADATA": "252279af10bfea43841b4bff6c71c9ae3f13279e1dab1aa529d23ea7863e656b",
+          "RECORD": "8bbb9d01c82296860f3ae6344395d3cc7661440afcb22ba9af3a25c79e7ab57d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "dbt_extractor-0.6.0.dist-info",
+          "METADATA": "c1f2290402e2dcbd5f447a953427b20df0f882e1ab3b46dd1c8a8a404d21962a",
+          "RECORD": "4554d92fc84643cda0dab5d4264c8400a640dce44d0589de6d14542dbd7f3260",
+          "direct_url.json": null
+        },
+        {
+          "directory": "dbt_protos-1.0.615.dist-info",
+          "METADATA": "75b2293292022a4a4d52ff122619ae722b43357052cfcd4bcbb1919c95a84037",
+          "RECORD": "a01b96af4508ec078c208a859218cb27685a21094b355a071d11f392cf150f61",
+          "direct_url.json": null
+        },
+        {
+          "directory": "deepdiff-8.6.2.dist-info",
+          "METADATA": "83ec455a5404ee5424e0a05477d78ff4f83f97cee6625d3e59f20e684b59391f",
+          "RECORD": "bfaed976c5b384f24c2e834f6390755d190073662c00550ab2d446deced2d471",
+          "direct_url.json": null
+        },
+        {
+          "directory": "distlib-0.4.0.dist-info",
+          "METADATA": "8c3ae3fc9faff13706d3357ec3750777f0c50054abc026c9c24ce5882ef1dde7",
+          "RECORD": "60af8f48b647ff20740eba3ae52de2515bea6cd53a92bb70236a138bac1ea07f",
+          "direct_url.json": null
+        },
+        {
+          "directory": "distro-1.9.0.dist-info",
+          "METADATA": "31632ab2de5591131091b3397bdcdf797718579d85a75186f06839dd0c09e81d",
+          "RECORD": "f99d6211fc32fcba4a0b87980229db3867cc32bc20b82a149945802f47fbe482",
+          "direct_url.json": null
+        },
+        {
+          "directory": "docker-7.1.0.dist-info",
+          "METADATA": "aa509131354c84bd49b5293e3246f89615e5233994714dc949b464cfae246d0b",
+          "RECORD": "6494cf4e958dcaa1a29f6ef64846e0b35bad6e36da81c4678b2ca8dc660d9f06",
+          "direct_url.json": null
+        },
+        {
+          "directory": "docstring_parser-0.18.0.dist-info",
+          "METADATA": "cbc42027997fd4b194ae5fd064a4d1e57b92976941d0c26d369561a7c016a333",
+          "RECORD": "ed0a3538437bb77b4efc7e9b93ed802ac99acf1dedd7b1c5b36d0b0ef0f11398",
+          "direct_url.json": null
+        },
+        {
+          "directory": "execnet-2.1.2.dist-info",
+          "METADATA": "7343015d62b2eaa1841ec06a7c7c132aeb482921f73ab6e0fd18331495684c61",
+          "RECORD": "99eb1e122fae4023274964af2a5c53d765712a9f1ad5d8a3a74423712f639770",
+          "direct_url.json": null
+        },
+        {
+          "directory": "filelock-3.32.4.dist-info",
+          "METADATA": "3537e7b9982e7c24c535067af50a7d7ecb2ca4abba8aac40616793f2956d6482",
+          "RECORD": "796da31bf841be3bf3d8e85482af02def053c15c311e506a3171c929f8027c0d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "freezegun-1.5.5.dist-info",
+          "METADATA": "e2aee03a14c12a0270834e774be1334a935da61039525ab4cce142cc83ff2b52",
+          "RECORD": "42a56aa83c51375f8fdda9409ed73c67f0ffd0aea20b71e5ba42f584c0d6574b",
+          "direct_url.json": null
+        },
+        {
+          "directory": "fsspec-2024.3.0.dist-info",
+          "METADATA": "65f21fe3f23c6a9127a6564b403703bce0aeed574eaf760a5dbcd6f833466496",
+          "RECORD": "ba49aa87642e180157189eb3d120b609d07c524ce86db0fbad6d15b8199a4279",
+          "direct_url.json": null
+        },
+        {
+          "directory": "gitdb-4.0.12.dist-info",
+          "METADATA": "9670d2dc866039d6b7c91f52cd81c7f224cd7467f7685c7c29e6c4691d1bf3d9",
+          "RECORD": "43a905544c66c64b47d683d76eb347afb791001674e5a774d51e673f7945f834",
+          "direct_url.json": null
+        },
+        {
+          "directory": "github3.py-4.0.1.dist-info",
+          "METADATA": "0f1713eb73a9351183bede76092c11d5631488b38097b6ca6d0681a734e4e016",
+          "RECORD": "8a40c6d8c3b93787cc4c002040175a3a4a07577c9d8559003eae42c477f054cf",
+          "direct_url.json": null
+        },
+        {
+          "directory": "gitpython-3.1.62.dist-info",
+          "METADATA": "aca32c0f7c2ea2bfac8afcd42b44ab92f79352b788222270cf9ac01fd8956c61",
+          "RECORD": "d9cbb8ba5d9098ffd57ae4b8ecdb36820a370690c403b75b6d170318ec6c49b4",
+          "direct_url.json": null
+        },
+        {
+          "directory": "gql-4.0.0.dist-info",
+          "METADATA": "90e5ae19126b7a4ec1102e9bca359044ce5a2020b66754b586b7aae98fb529fb",
+          "RECORD": "85d587ea1e6af6e80700df45ab9456768bb163da42e5e6243886923a581ba4d9",
+          "direct_url.json": null
+        },
+        {
+          "directory": "graphene-3.4.3.dist-info",
+          "METADATA": "ddd8d4e90c4321e6c07b3937c93acad3fab876b293c5fd20af7e65c2874a6e80",
+          "RECORD": "59fdbf4b736edff8c0c9c8c920e441a23b4710d729b94f29b3d5d10a1689a7cc",
+          "direct_url.json": null
+        },
+        {
+          "directory": "graphql_core-3.2.8.dist-info",
+          "METADATA": "ab0347553b55438d7470d9a88f69120aebc907f383cce03b5531cf6d59309340",
+          "RECORD": "c96a12878ba1c694c72a5b5920cacc7fc6742cd48bd8d12fbbb5c5b618a62b11",
+          "direct_url.json": null
+        },
+        {
+          "directory": "graphql_relay-3.2.0.dist-info",
+          "METADATA": "3027b56f7a7988117635ba48fc4815b7026e8b13a1963bcd992f2584ba1ff022",
+          "RECORD": "6a2bf241fa5646c61b2b8ec2e888281424acb3fd2748687d0bbedbb669807c1e",
+          "direct_url.json": null
+        },
+        {
+          "directory": "greenlet-3.5.0.dist-info",
+          "METADATA": "94e66319bc00683f95249a5e1e8fd7b49bf5b3b8d6f2b93c47107ed00525a214",
+          "RECORD": "94eee60d55b03fd54400cda9614a8bae9e1a6caaf9750f6a72169683179142a1",
+          "direct_url.json": null
+        },
+        {
+          "directory": "grpcio-1.80.0.dist-info",
+          "METADATA": "2e117b7f8d084d88aeca5f1a92eb6ad754e6ee87364333afc5abcc59d0f44fd7",
+          "RECORD": "38d37d3fc962a4ca78c3d7a58aab81104cf6002211082fe5707a8e1c14d61bb5",
+          "direct_url.json": null
+        },
+        {
+          "directory": "grpcio_health_checking-1.80.0.dist-info",
+          "METADATA": "ca4e4fa08888b765282193790ac2ee800eaea031be8e12d415a6c2598af21824",
+          "RECORD": "fbb8527687f196a163920c336faf4a3b028f0280e691b0bc5b84f46a16d1f6c8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "grpcio_tools-1.80.0.dist-info",
+          "METADATA": "315669db31dafc59a01f80e8031ff68bf4230a91433c635e1b41aa12a06b3b86",
+          "RECORD": "6fe1f5ebdb3ebb38e3f7b723ef2c66fee600e446ea490088497d5264d69727dc",
+          "direct_url.json": null
+        },
+        {
+          "directory": "h11-0.16.0.dist-info",
+          "METADATA": "28f326098ac09fcba79b8f180f96087c841fe2456215cb7b872a9c7d5cd19d64",
+          "RECORD": "3779e13c17d8e21c769ed9ee8780af123cc3f8656185f5f8d3af258ff5639b3e",
+          "direct_url.json": null
+        },
+        {
+          "directory": "httpcore-1.0.9.dist-info",
+          "METADATA": "fe2d4fda6199128978779e0cf27f3c045c531863fcdd987eacc74f3a18d41c21",
+          "RECORD": "67cb4644d84fef1df8c5a0862c57c3380eff058a153bac7a4ba2722779982554",
+          "direct_url.json": null
+        },
+        {
+          "directory": "httpcore2-2.12.0.dist-info",
+          "METADATA": "3e53e54ab7d82f13b6325aac5c7919f1fa29867aeb4ad8338252d448881ad24a",
+          "RECORD": "5447fd0d163a88cf894e2a7db9955c961051ad3115585fa2109f5bc387fb36c1",
+          "direct_url.json": null
+        },
+        {
+          "directory": "httpx-0.28.1.dist-info",
+          "METADATA": "febb9b0f8f3e80d57c8199c304f35c4336e8581d1d18d7983c92766b82793b25",
+          "RECORD": "f29cb0be4a83bc33e3c1d03f041fd01e665d7983b53e9d89ad328e601c97ca04",
+          "direct_url.json": null
+        },
+        {
+          "directory": "httpx2-2.12.0.dist-info",
+          "METADATA": "3dd7f2c6bed53e5c9109cca84c57802610d4eb2ff1dfb87db393b8d0cfa33483",
+          "RECORD": "33740e0697032d8c3fa95ce7bed69e5d0ad839454f1708d1d84091c01bbebe0d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "humanfriendly-10.0.dist-info",
+          "METADATA": "68bb349388cdfeca602acc3455b83a7b2fe3cbe84025e27493bcbe76f3ab6c82",
+          "RECORD": "420a594e925b9fb227203aa619e85da137527780712be80a826f370cda1177d6",
+          "direct_url.json": null
+        },
+        {
+          "directory": "idna-3.19.dist-info",
+          "METADATA": "4d113161aca8582e8d28fddf3ea50f19b607209c2b3e4364379a163454680084",
+          "RECORD": "3bcb2ebf30d8f42d93658d052797fdec427c8aba15c54cc22a6e2d8f14c126c8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "importlib_metadata-10.1.0.dist-info",
+          "METADATA": "a04b8f32e2e85e49fa1f55314d93ae4e4e6dd6a17182fee8bda69467cf2db5d5",
+          "RECORD": "86cc4e4c444ff54a5db359bba9352d345da1930c5b7fea4990c8ce188fb2cd7a",
+          "direct_url.json": null
+        },
+        {
+          "directory": "iniconfig-2.3.0.dist-info",
+          "METADATA": "40d773f84e4e112f495bbf4f1be9cbd2d456c0aeb6ef5311f75d1bf322f2165b",
+          "RECORD": "4b560f65489a4dc0f32d8403da676d2e6338c371fe844160934b3fe469785185",
+          "direct_url.json": null
+        },
+        {
+          "directory": "isodate-0.7.2.dist-info",
+          "METADATA": "90bc9d1eee7c3c97fd3a52001dece07c0f9b480cfc8fbbf767ca4ae0ab848529",
+          "RECORD": "2267272fa76737a2d212419e285ec88da6ba108431fd06c677041909261ad079",
+          "direct_url.json": null
+        },
+        {
+          "directory": "jinja2-3.1.6.dist-info",
+          "METADATA": "68c5548fb67c4132a13898d9b31ec50c6bea2abdd915d921f214355c3a6499c8",
+          "RECORD": "4551b3fb657b85a9f01e961c0f8a235da65d758149b619400211964b3ac02bdc",
+          "direct_url.json": null
+        },
+        {
+          "directory": "jiter-0.14.0.dist-info",
+          "METADATA": "d25c8a2f5c7d1aeefcbf94d82fa320b8df935cad1f748cca2d20bc9a6210bd92",
+          "RECORD": "667c64e7f52c989b758f6fe6a3005e4d0e056fd254f6034a9d3a6364b88161a0",
+          "direct_url.json": null
+        },
+        {
+          "directory": "jsonschema-4.26.0.dist-info",
+          "METADATA": "05b189866ca98a96da3934bf6b83687ced3ff85325273b77e16b705f6d8b26d2",
+          "RECORD": "914d71d9f311bdc8b824f5a9f1de3058a1172186843d4906b19a829d65c25c80",
+          "direct_url.json": null
+        },
+        {
+          "directory": "jsonschema_specifications-2025.9.1.dist-info",
+          "METADATA": "35abd41757f32b4ea24756920ded47b70173d77cbc052a5a6d3ab583b2e8d89d",
+          "RECORD": "0b1047ee6c7d5d7c242b642d689820f4572860ecf7886b2074f821ed85cbe7b6",
+          "direct_url.json": null
+        },
+        {
+          "directory": "leather-0.4.1.dist-info",
+          "METADATA": "fd79e0feaca99f83f90550bc0af42d929319d583611af73c92ce34548ddc2b60",
+          "RECORD": "e58d8fd0f203b5763f8921c0cec30c438476599bd9de5a2418413d0df63e2b2d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "mako-1.4.1.dist-info",
+          "METADATA": "1f427af53f47988519af11a1a04136154eadbda5b9607fe30a64eb653d5118a8",
+          "RECORD": "e8917d23024c368b09faf73a8d394219665058410c27cc2b4dae439df1eacb2c",
+          "direct_url.json": null
+        },
+        {
+          "directory": "markdown-3.10.3.dist-info",
+          "METADATA": "bc042410d66775c021e253fe22ef2247df9f9d3ef47fa619b604f1d3bdd83915",
+          "RECORD": "2189895eab10dddb95654c23f22d883927b36d8eb3ffad79470645810ae0969a",
+          "direct_url.json": null
+        },
+        {
+          "directory": "markdown_it_py-4.2.0.dist-info",
+          "METADATA": "72c36ff516755443b1ecb61e17b2567a990230b49a504b0eb0c42d5f82448a9c",
+          "RECORD": "d866e372b41c3647444225361bb36e81215ebb6f3d5d5fa59fa297aa843d0d78",
+          "direct_url.json": null
+        },
+        {
+          "directory": "markupsafe-3.0.3.dist-info",
+          "METADATA": "12b4cc61a7fa288cf7667ee3f213786d9619db57fb33ff6f934afbcb5c12ec81",
+          "RECORD": "3e96bcf1c73245c4ff9be34b7df22f705b615b7980b7b984fd2feba5032127b6",
+          "direct_url.json": null
+        },
+        {
+          "directory": "mashumaro-3.17.dist-info",
+          "METADATA": "23c6abe7fad851cae93b4d89270cbbd37006c494144bd1efb7eaffd713204a4b",
+          "RECORD": "b2beb98acb6e903aa297edfa9e39bb8b139be39cbc96410d268d97534bb584a1",
+          "direct_url.json": null
+        },
+        {
+          "directory": "mcp-2.1.1.dist-info",
+          "METADATA": "22c12f15ae303ff3d860c6c89442843ced9799fbb6f4f018cf9d75911794f26a",
+          "RECORD": "5fa89c29aa73d3b961d37cf93a97d308c3269b4df18746b3d8f6cfefbd63d920",
+          "direct_url.json": null
+        },
+        {
+          "directory": "mcp_types-2.1.1.dist-info",
+          "METADATA": "8a5b55b55cfd1476fd517e454a93646760b2cd4d4d22da10def8e56fe4c2aed3",
+          "RECORD": "1310a87a5dac95ee783a31cf9bed358f860811e1eb5d57270b7c3f26da2ad3c5",
+          "direct_url.json": null
+        },
+        {
+          "directory": "mdurl-0.1.2.dist-info",
+          "METADATA": "b53b29d48f499367053fda3c81e7ce27d2558380ebbf83e66023b02eb7ddd25d",
+          "RECORD": "9a1b05128e711beabd7684e116fcf408ce8cff7ef10e7e8b359b248924fe529c",
+          "direct_url.json": null
+        },
+        {
+          "directory": "metricflow-0.213.0.dist-info",
+          "METADATA": "e6fd7854bc043be48c80be9ad1b04ad9fc0b67283ab296670ff1ee28058ef5fc",
+          "RECORD": "50a1df045062228c91690810c3fffa1da6d3442dadd0a480e7c96bde3b68ec26",
+          "direct_url.json": null
+        },
+        {
+          "directory": "more_itertools-10.8.0.dist-info",
+          "METADATA": "6ab3515145abe58b067f087c867631cf4cf5d653fed81b9642ee12086c3904b8",
+          "RECORD": "9ed1b134c0aa83722f36e99f3918aa9610ce3a0a514d793bbb74a368d441a01d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "morefs-0.2.2.dist-info",
+          "METADATA": "3a4102197bea0856de073b5475c9adc2a76ede57db1a9a0a64db3585e5fa1194",
+          "RECORD": "2f74eab5234475fb2c2e6ddf86c51523af410ed8e13d7d9fa24120f6a3965bb5",
+          "direct_url.json": null
+        },
+        {
+          "directory": "msgpack-1.2.3.dist-info",
+          "METADATA": "f47c09192e9f4f81b8b4a63979473a13f7a63c67dcdc41be2e0f97353a9dc5b4",
+          "RECORD": "ff9868515179046ef892f3b571eda82dab9dc112697ad5ebae045fc9867698ad",
+          "direct_url.json": null
+        },
+        {
+          "directory": "multidict-6.7.1.dist-info",
+          "METADATA": "4913fdaae936a309c29b89b98c2dbebd237203fb27ab9e68ae5e4ec17ba3024f",
+          "RECORD": "00df5867e4b6ddcb88675199117a50f3784270ec62e22efc964cd091c65a2edf",
+          "direct_url.json": null
+        },
+        {
+          "directory": "mypy_protobuf-5.1.0.dist-info",
+          "METADATA": "6d88f023f271b194cd550889fdb395b714f1190db86474c986bd8eff3423cabd",
+          "RECORD": "9c68d7f69e83fc4211c907e5e5192032fb5f7350e8ccac9097b62ef93c81c59f",
+          "direct_url.json": null
+        },
+        {
+          "directory": "networkx-3.6.1.dist-info",
+          "METADATA": "aca5d94a97d1f70f301d033addb635f6e66be8973a00aba4127637eed2ef316a",
+          "RECORD": "f6833bb525b720a7809dd6280817601af3dbd78efef02d9e55d4b887ec1f52da",
+          "direct_url.json": null
+        },
+        {
+          "directory": "objgraph-3.6.2.dist-info",
+          "METADATA": "c99257ad02e7caa974ab8ef4a2353ff703a72512da1aa7666740b6fe0005f3d4",
+          "RECORD": "3ad959dbaf867e91157229ebddd9503da4e0625a1cd8b9f5ea34f114e93cdeda",
+          "direct_url.json": null
+        },
+        {
+          "directory": "opentelemetry_api-1.44.0.dist-info",
+          "METADATA": "42aabbbacd266627b5c3839a515150ca90c18f80c9d85ca6f6fa10d440a7eeaa",
+          "RECORD": "8fc686374999a083eb0efe08cee273ba623863153834268ed6233eca624d92f3",
+          "direct_url.json": null
+        },
+        {
+          "directory": "orderly_set-5.5.0.dist-info",
+          "METADATA": "87b74bf17b6396725bf314cc67568085c52caf32e4292bcecd8cfe585408c3eb",
+          "RECORD": "5e906807598c285424802e548dedea3773eaf0275cd9b09f16ae169310be039e",
+          "direct_url.json": null
+        },
+        {
+          "directory": "orjson-3.12.0.dist-info",
+          "METADATA": "3a04b81906c2ac8f535b0a4fb8371eea786718fbca08a75ff13f6c734f43b778",
+          "RECORD": "9f27141be4dae35cd6d13e6c487b3f30598a556b8cedf6f808b7ccbb8d0848fc",
+          "direct_url.json": null
+        },
+        {
+          "directory": "packaging-26.2.dist-info",
+          "METADATA": "4f9cbcd7933415a4793f7767c98a2b6a512c823fc81c87337815705f230ecabf",
+          "RECORD": "34a791dcc687723f1d7601aa68319f6d51aa00e44d85818995dd33a1b7c5a49c",
+          "direct_url.json": null
+        },
+        {
+          "directory": "parsedatetime-2.6.dist-info",
+          "METADATA": "218f23d194d6220261e320377ced6ab88c75cc042b39a99c3429c1b096ae4997",
+          "RECORD": "6c0753fe2362d8bdca5b7fdc50637cdc52768cf8f4a72f130c63048b5f009409",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pathspec-1.0.4.dist-info",
+          "METADATA": "a5e9075598e9a7f5475650e8ed4d37dbe7c88521846d8fd5f238e662b1206963",
+          "RECORD": "7e4507d4b033af29e6d9c1d878b0fd341f3ba12a3d6c1fe0a637d2acff43a30f",
+          "direct_url.json": null
+        },
+        {
+          "directory": "platformdirs-4.9.6.dist-info",
+          "METADATA": "7dc437d6904fab5d1b6527ac1bdfe03044e9ad53649dadc143471a6f2472927c",
+          "RECORD": "2066c8e57815d4124568be7af2b199cae5e2b31694e15cf925cf7017c598368a",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pluggy-1.6.0.dist-info",
+          "METADATA": "7438c35ee25a095eb7416f84b461c2d74425c5e734ad54c3912453c65244e01c",
+          "RECORD": "a42a63bcba12ddb7e7db19158c8d05d8fc41d51f48686b411ad3a0213fbd7721",
+          "direct_url.json": null
+        },
+        {
+          "directory": "prompt_toolkit-3.0.52.dist-info",
+          "METADATA": "80d4bd40a6a171dfd25c332baebee1fd8722342f133db5385e2d5719a5da2e29",
+          "RECORD": "d9763ce59edf45150a60528745aec92b9c608eb7422df445ae8c1a6f5cf2aec0",
+          "direct_url.json": null
+        },
+        {
+          "directory": "propcache-0.5.2.dist-info",
+          "METADATA": "f534495cdd2f915af8e649783d95fddcb1a05a1ac181850f0c973c0a78f7bbae",
+          "RECORD": "5b47b5249186957cc332c6bc948cae117846f92e3561d6a8835888d6da3ba392",
+          "direct_url.json": null
+        },
+        {
+          "directory": "protobuf-6.33.6.dist-info",
+          "METADATA": "6f3b31fd64380f5e60ed10f5a2954699bcc1f6266eb74316f0ba96702d30546f",
+          "RECORD": "eec74a7da0f936d6cc8b5a98671c627a9a75e0f2775f6318a7dcec6338347fd9",
+          "direct_url.json": null
+        },
+        {
+          "directory": "psutil-7.2.2.dist-info",
+          "METADATA": "525f8ba78523cf7bc3759d62a105e7c57fd679ea702402b9449fb0746aa0217f",
+          "RECORD": "2af7e87b12ad6542c1eaaf20a299c109fa09b9dc5d69faf745219bd61e8cfca6",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pycparser-3.0.dist-info",
+          "METADATA": "f547a60b0ab54cc2f242213d1f87960ad80df7dd5dfeb98d17a444d48bfb6b93",
+          "RECORD": "e752c5c64ce06f508a80e0edeef0c165df849587b829cb9a7b7bb22ac43b0c7e",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pydantic-2.13.4.dist-info",
+          "METADATA": "d1e56c3412492512fb6b59a9dfc25ab7af2a8204585cd7bca000513023133394",
+          "RECORD": "d0cbe0f34b294885175920bc8f2ece0b3ed6d9874347dc9cfb2caf4931329272",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pydantic_core-2.46.4.dist-info",
+          "METADATA": "135fa8b2f89473e9191c7078c2164e3ec6c8927a61c2379c2fddcc07f11f3bae",
+          "RECORD": "3e55a95c4577dcb5dfd08cb8740db06dad7117273dd4885c090413888e606fc0",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pygments-2.21.0.dist-info",
+          "METADATA": "1dde075570136774c706bf0009183a793fe0ee262e4a5590cc6eff8453eedd43",
+          "RECORD": "cfaadf7653595c31fa961d08ed7c5dc27f34817b389142c2554f67666c7a7aac",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pyjwt-2.15.1.dist-info",
+          "METADATA": "1ea0c9f139b8c928276b3628af165955f6f764491448a6ad8f103cdcbb382da3",
+          "RECORD": "c38214546c80b4d215bee801e57689a2a8b1f1e6afdbbb8d57b6c43db557f17e",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pyproject_api-1.10.0.dist-info",
+          "METADATA": "0cb496afe85ded31d74ae6964d50ec5da0d75acdc8ea640387929f94367fb2a8",
+          "RECORD": "c2465f682c2f22e8a840a18f7f7b6ed5c8b610bcfb9fd21c92b51ab35cf8fb59",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest-9.1.1.dist-info",
+          "METADATA": "c5d032518012789cabc870d46589aca3aeda36cf9fa4399ee88bda3d10438451",
+          "RECORD": "a46283b3fc287ea0a09dfcf5b37c53794a80b3467bb5d965cad4d54bc19a458c",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_asyncio-1.3.0.dist-info",
+          "METADATA": "68d7250fb7d8f0cde8b57ed6797c4eb9de74325d80c362fccfe55e57966981b9",
+          "RECORD": "14b6f3e855d545222d94d1ceaa1a9764327bf754e3b224239485827588d18cf3",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_cov-5.0.0.dist-info",
+          "METADATA": "62539af807834dda07340bab459bd596f0c3b59de3eb270f058b77fabbf8ab5a",
+          "RECORD": "2da00111fdb2f5b117090b99df88421b6ac1edf0efb34469799db39058063793",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_mock-3.14.0.dist-info",
+          "METADATA": "75ffb619b12a00e284c33a1bc8e0d0068c8d84a8a43bd30a86c8781440bbea8f",
+          "RECORD": "d977970b9cbd20aabd03aab7295f6752e895d7256d889e782a8805fd9230bc5b",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_rerunfailures-16.1.dist-info",
+          "METADATA": "d35cfa846769c9c2b85822febe571093e86690cb3b3c805b1d847d4f198cd677",
+          "RECORD": "33ff25a01a005f81579b7353e3de8aa7f079e031aee04eff366821f585233df4",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_split-0.11.0.dist-info",
+          "METADATA": "a7f7a0f458b064aa0cd4316b51e69d18474d58600599a0af7b090ed976cf07f6",
+          "RECORD": "cfabcd87108f2f48aaa63202cb09d943483f1926c3dcec7239832dbaffbabf61",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_timeout-2.4.0.dist-info",
+          "METADATA": "8b79be0dfb1db4a0166b9d997ad95553e7a7e61445bcfc0ddbfbd409bae421ff",
+          "RECORD": "ef2fac9b77c7e19d9f0232fdc32cbc2e1ddbee70d957a24eba85a1a234e4688d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytest_xdist-3.6.1.dist-info",
+          "METADATA": "21398298e415f23c9a52a85c18c8b0e96444e709b2336825456c39a82321bc32",
+          "RECORD": "045a444c192f111a9d0a094c3790a32ec6dd9bdcb52faeff14a040e742006905",
+          "direct_url.json": null
+        },
+        {
+          "directory": "python_dateutil-2.9.0.post0.dist-info",
+          "METADATA": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93",
+          "RECORD": "e15e868a50b9c4e71df17b31369843617780146ac5adb1bbfdcced0ebe501824",
+          "direct_url.json": null
+        },
+        {
+          "directory": "python_discovery-1.6.0.dist-info",
+          "METADATA": "6c11ebe87e7dde1facb306405e15565ebc48a755df3d93a871905ff341f68515",
+          "RECORD": "7d9e165dec380442d724c470ec96dbf792604bcb74400bdd1450a35f9b5f69be",
+          "direct_url.json": null
+        },
+        {
+          "directory": "python_dotenv-1.2.3.dist-info",
+          "METADATA": "2380ea9700796b7398fd8156e22f9028afe5eebf918eb84a6bd5ebb0a8fdd3b5",
+          "RECORD": "4718be1f4e11b7ea48fb1e5f6df3b813663c29ec7373da99676a015154e44706",
+          "direct_url.json": null
+        },
+        {
+          "directory": "python_multipart-0.0.32.dist-info",
+          "METADATA": "e9d399d7dea5eddf0e4d24b5c24687a82e7e50bf2c2b30f8f8a06a64d887dd86",
+          "RECORD": "5c11c391e44fdc2dbec56603265b8af273dae504ee2e6143d3b9d3bab2bc12df",
+          "direct_url.json": null
+        },
+        {
+          "directory": "python_slugify-9.1.3.dist-info",
+          "METADATA": "29f8b673b715c82ad8fc1c841df2bbc4582a1cd5941a745b3cf529b3934105b5",
+          "RECORD": "9ee92b37935b5bdd2ebb2a55b724286cd63ab579046620cc5a7e982d673f63ed",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytimeparse-1.1.10.dist-info",
+          "METADATA": "0a7c401cf544924e18d45c9b79d96a96501e9e9ba8d38945a10d911c99bb76b3",
+          "RECORD": "d98b88265e5e29da95f53c2d8e3cd4e816e5021b7691e027061f1cedf2029598",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pytz-2026.2.dist-info",
+          "METADATA": "56b1e4933e430bf524cc2cc6621bcd64cda12947ed22978d0ee241cd7f02f588",
+          "RECORD": "adc676b9082d897c0133402d9e9bd5f1b73b12d49ea750dfccee3ca2365d10ca",
+          "direct_url.json": null
+        },
+        {
+          "directory": "pyyaml-6.0.3.dist-info",
+          "METADATA": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34",
+          "RECORD": "7d0856221a182f5b25fde9bb976af79b4883090f54680d86a42b35fc8d6735a2",
+          "direct_url.json": null
+        },
+        {
+          "directory": "questionary-2.1.1.dist-info",
+          "METADATA": "059db52845098a29c62ee19a27391f8ece7f9b1e677030b2cab3c2c470d0c2b6",
+          "RECORD": "13ee83f9de7b7849f43bb04b6dbca1fadbfea4b59d09e797075d024fc1a66ddd",
+          "direct_url.json": null
+        },
+        {
+          "directory": "rapidfuzz-3.14.5.dist-info",
+          "METADATA": "51dae324caa606a75cc7e7c22f08e7f12d76c341a43e969fffdaab7f056e0291",
+          "RECORD": "204108eed1370733ea092a7f51a3f3c10c1dadf1bb9ca59a638912680d91452b",
+          "direct_url.json": null
+        },
+        {
+          "directory": "referencing-0.37.0.dist-info",
+          "METADATA": "c93b00e6ab1524fd60848376604c189a114374776475c25a31d57be47b29de6a",
+          "RECORD": "d7ecf9906a4a4ea4837d16e324e344f9f00b328570cf695a96a8de46b8766982",
+          "direct_url.json": null
+        },
+        {
+          "directory": "requests-2.34.2.dist-info",
+          "METADATA": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27",
+          "RECORD": "fc8c5216d0e865d815bd04cc240b5adc5d56f6c3dbe9aef3b4ea3b83d735bdfe",
+          "direct_url.json": null
+        },
+        {
+          "directory": "requests_toolbelt-1.0.0.dist-info",
+          "METADATA": "fa52f26237cc8d148d25c5746fdca499a56d0e765e69095cc3564a07cce23967",
+          "RECORD": "fed817b8bd98101990c9bf46cb01dc5ab2771dc039d5581f510fc8aacf415c21",
+          "direct_url.json": null
+        },
+        {
+          "directory": "responses-0.23.1.dist-info",
+          "METADATA": "4436b2a37c5f568bc29551e36e3a6cfd92d1fd44071793eefc53978f8866df38",
+          "RECORD": "45fc5207390370172fe825db641b6b9d07a33170be8fce4e2076d8781de93be2",
+          "direct_url.json": null
+        },
+        {
+          "directory": "rich-14.3.4.dist-info",
+          "METADATA": "efb5f04704b438de828e9e44d88b9f5ab91f6006acf55a7b40911ea43c230a41",
+          "RECORD": "705cd0178942332d0a77ca8bc8146f57ecbfeed66aa79fddda7ef4bde107926b",
+          "direct_url.json": null
+        },
+        {
+          "directory": "rpds_py-0.30.0.dist-info",
+          "METADATA": "cc01d097ddb9c7e07a29c9553ee8dd35cf920e85fb574f7b0c23d68138a716bf",
+          "RECORD": "04a350e56746e262b9dc62b1de89868bba93e542d9d191f3b8dc05a70914e5b5",
+          "direct_url.json": null
+        },
+        {
+          "directory": "ruff-0.17.2.dist-info",
+          "METADATA": "61812a386fb940f04eb51af6ebd7f908dda19bdc648bc17302ecb2b45cec0c72",
+          "RECORD": "d1d82601c528a635e1d8b2dbaa2bdc4c6340d9438bddcf4777602a9a5e2aeccd",
+          "direct_url.json": null
+        },
+        {
+          "directory": "setuptools-84.0.0.dist-info",
+          "METADATA": "3ef2975718dd31cabdd5829455e9b868ca14dbf79ed8fed2de0af4e87347006e",
+          "RECORD": "26b6656e2a9d04f4c1cc1e8580636454733af03d8dc2dac4b2d4636ff1ed6da8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "shellingham-1.5.4.dist-info",
+          "METADATA": "183d80220a37493262795739dd357cc5bb3f49bd390cc9198d5180e5451a07fa",
+          "RECORD": "2a878ed08ec32adc6b08a9b6a83754cd7c30ffb8a67e26527292456da9ff2fee",
+          "direct_url.json": null
+        },
+        {
+          "directory": "six-1.17.0.dist-info",
+          "METADATA": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468",
+          "RECORD": "d16e50f347969b1e1919fb0c88bac4b9c644f5305bcfcfb00f72b646dbd4065d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sling-1.5.17.dist-info",
+          "METADATA": "c594f47ea233ae3425dedf711d211521058eca3b4bdc8ccbeb6c3c3a15fc97bc",
+          "RECORD": "62489c650a9f7e926a8b37b1070cce0e786fe2e280919fc567eb3f5b8d3c505d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "smmap-5.0.3.dist-info",
+          "METADATA": "761d62d78dbca38efb80f17b95a5aef5224d8288aedf980ca99c453db95047b9",
+          "RECORD": "e0be5b36472d7e88192f32c26612bf97eb4162bb1e7f76fc7feb8cc671817358",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sniffio-1.3.1.dist-info",
+          "METADATA": "0b318b57098edeccf585e60a889a6b6a7b5c4086f3a9aa62eff76a1d3cee12d9",
+          "RECORD": "e6c97953661def7ab6dac78f83c86f31e622bee38ff55ea508cb04e1a604d4ff",
+          "direct_url.json": null
+        },
+        {
+          "directory": "snowplow_tracker-1.1.0.dist-info",
+          "METADATA": "a10a78a8ea187d70e9e755a4f57b0b54586d4cefcb00bd56f7f0c3b90aa880b2",
+          "RECORD": "d512cf3322a9434030286f9099df52738d845fe874d34b7d3631857a3b1a35c5",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sqlalchemy-2.0.49.dist-info",
+          "METADATA": "8d203f0e137c9d42709f5f6c184d23ceb64e11cffc8ed3d1c41b5412e86274c1",
+          "RECORD": "f87736fcacb92b2f9269093de2618a7a838124515f5af97657bf78b94e9baf7c",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sqlglot-28.0.0.dist-info",
+          "METADATA": "1332b31c08278dd26f70c69aee58e32c9f19fec8dfbfe7468c773ce9184887b6",
+          "RECORD": "7b3dc86b602fbccbe5719bd97349cd54497122d44509a6b372ffa62b33220239",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sqlglotrs-0.7.3.dist-info",
+          "METADATA": "b480ef328ff13f9d6bac6d903dac6d8638c8027f1a31c4201f17610e45dcf7d7",
+          "RECORD": "8a42da08bc69bc1776610b3b4cea0aa29e3b90544f34000655da7864d606da7e",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sqlparse-0.6.0.dist-info",
+          "METADATA": "e6602750b4216135d9a788ac53c4caaf9f4534f9f8347ba73f92e37509b1b24f",
+          "RECORD": "a96be6a9b08880503a71a3ef87662796ea039de4f281344346ed23aaddf99048",
+          "direct_url.json": null
+        },
+        {
+          "directory": "sse_starlette-3.4.2.dist-info",
+          "METADATA": "56515dab12000774a76953c1ddc26b648db87344f861224d18ad9fc08b84bc6f",
+          "RECORD": "75bdeaee67e1ad512d52eccbb9a7cb2f133d553de8f9592b732db939c249d14b",
+          "direct_url.json": null
+        },
+        {
+          "directory": "starlette-1.6.0.dist-info",
+          "METADATA": "43f6240f976044f4cf9a573506d96d895391094717c55682700c931d5cd3c5a2",
+          "RECORD": "ce00b84cd91bcb3a3c9d05d0acb8d879ad8f28232ef1941cf82e2cb0661e4be1",
+          "direct_url.json": null
+        },
+        {
+          "directory": "structlog-25.5.0.dist-info",
+          "METADATA": "bec5f360bcf0eb40e207e72b9ec2c86f2a8df54028603fba2f29a9c040df95e8",
+          "RECORD": "9dcdd0728f0892f093c8dff720b1b50b13e4d5cc9682f8fb90fad7dbd7ef6c46",
+          "direct_url.json": null
+        },
+        {
+          "directory": "syrupy-5.1.0.dist-info",
+          "METADATA": "aa7dbdc45e6cf958480a1c7599b3794847d90aa336775eb0ca13a14d273d31dd",
+          "RECORD": "1e30dea8ae13c5b670f0792f4d7cfb87b8b0841ef74f37cd1b7bff4fe77938f8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tabulate-0.9.0.dist-info",
+          "METADATA": "f2802aade2612091b45951f265af29174f90c3236f68cc8ccdeb646941e62969",
+          "RECORD": "91084349b288d1c8f98cad00c5ce3db17ef8982b253fa0580c5bd6f0530b3ff8",
+          "direct_url.json": null
+        },
+        {
+          "directory": "termcolor-3.3.0.dist-info",
+          "METADATA": "880aeaba6300677d4ecc022fb63f8adcd57a753b6fd2b5ec17841f722f910196",
+          "RECORD": "37e14730fcdfd0c6b874f854ca5d0e086fb0b0fba96068ee80ab01d2269b30f0",
+          "direct_url.json": null
+        },
+        {
+          "directory": "text_unidecode-1.3.dist-info",
+          "METADATA": "07d8fed65e3ec8df4fe5ef26a41ad70aa010b11527038233cb2d211bb272ae7e",
+          "RECORD": "31459b079c3dab63102419899470109f053dd066ea86559e14a41026be55e145",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tomli-2.4.1.dist-info",
+          "METADATA": "1428a97e0c90b9ed2958e9e487db976c4c450932f7334630aebb5bc04e01aa59",
+          "RECORD": "b3753a7bd7ead091b575b3c0e8b98976ff853bff7df95dd1f7ec4007201b6f2a",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tomli_w-1.2.0.dist-info",
+          "METADATA": "66e81ac2e41775b5ebddcfbb9f4ae77158e4c5739fd52d231e14f2fffda9c8de",
+          "RECORD": "6758ea1fa917909e7f6f8f313e168e3627f1d480167ff78174dea2d7e1b501d3",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tomlkit-0.13.2.dist-info",
+          "METADATA": "3bbf920f38b0aa68206cdfa92967f8ad12d5324e4d6c2e8b7ae9e5a851c84c69",
+          "RECORD": "ce4b62fd58a464a40520445c8952723adfe621aa76ba62aaedcabfd2a01b3925",
+          "direct_url.json": null
+        },
+        {
+          "directory": "toposort-1.10.dist-info",
+          "METADATA": "4aca424a92c57ba0aeb08f444c8ca43daa775679f4b507384502b0e25ed64170",
+          "RECORD": "8f64744243b593f11491974e6c7298f34af90611ec99f975f733891a074331ab",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tox-4.53.1.dist-info",
+          "METADATA": "cf61200f9595147dd66542aade7a53a2f2aaa675910c9106ff911ef5d6d5aebb",
+          "RECORD": "1589100472b2cfcf793a0f1319c5363c33484e5d4ad59d6ba933e3850fe5b77d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tox_uv-1.35.2.dist-info",
+          "METADATA": "722d1fd52c9be7377e189bb20a89921b3fc6cc3cbe7d8fc80f2d643f1be305ae",
+          "RECORD": "030b7036cd6e775d64ada366cc15a0eb6190d16282388b1f1463e0f9a4a8e1c7",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tox_uv_bare-1.35.2.dist-info",
+          "METADATA": "e327470d447795a1f605b4347e7234dcc9ab8dc58993dba3b664aee1f4e7d299",
+          "RECORD": "52557a1f8fba5331f7980876d1a4d18b40b90bb41d2e9ca079cf4f9f8f26dc4d",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tqdm-4.67.3.dist-info",
+          "METADATA": "7c0e9a662c19095f339a4b761201eb06cff9c61fb9581535b2f96f44e718ed29",
+          "RECORD": "eb5be03f91c0ace8912c011156ce5a7c4089c19fca7dd2ec64bd21303520c198",
+          "direct_url.json": null
+        },
+        {
+          "directory": "truststore-0.10.4.dist-info",
+          "METADATA": "509a7b67bff99f2d04f57251b5bdb761bd9429467e1cebc453b7f96be4108f5b",
+          "RECORD": "78e60fe51ee9228a9a31d401f4cf7dcca5b7363a893b65f30e957de919e9f01a",
+          "direct_url.json": null
+        },
+        {
+          "directory": "typer-0.25.1.dist-info",
+          "METADATA": "304553e1baf26f16bcefa5b52dd7dad869e750b5967dfd774b8966748f5d36ff",
+          "RECORD": "c5e8a218e9dc04f344e960c7385089b4a7b794079589b76848210c7ba696a456",
+          "direct_url.json": null
+        },
+        {
+          "directory": "types_protobuf-7.34.1.20260508.dist-info",
+          "METADATA": "d421bbcbe43a70bacc51eec23bfc04d3b5c5a9fd4622619e5a0f10ef8d6a5f4c",
+          "RECORD": "b86e732b7b598a63bd97f40c75917e7658287671ac940e879df1528d4cbbcf66",
+          "direct_url.json": null
+        },
+        {
+          "directory": "types_pyyaml-6.0.12.20260510.dist-info",
+          "METADATA": "d80b2f66b1528c96703b8f35a7c5081e34e16ceb30d71439e367f854b138a7d5",
+          "RECORD": "25c57d4f0c0f71a923743db5ba9b1b7e589c9b71a873b928802dfb52e0cb52e1",
+          "direct_url.json": null
+        },
+        {
+          "directory": "typing_extensions-4.15.0.dist-info",
+          "METADATA": "c138378fe8f18934ac99de060535c53ec6c13aeed65e94c32641da7ee3192a72",
+          "RECORD": "c42db5851c3a20efb41dbe1a0d03c18db577a5449c7e685f6b139df34b98e62f",
+          "direct_url.json": null
+        },
+        {
+          "directory": "typing_inspection-0.4.2.dist-info",
+          "METADATA": "61096cd0bfe3c7040b6f98c22b02d190fe01936d0ff7616c5134fed02891953a",
+          "RECORD": "96edfd27f64244b308dd9b63a60613ad2a04e5012066fdbd1aeebe85b348ba29",
+          "direct_url.json": null
+        },
+        {
+          "directory": "tzdata-2026.2.dist-info",
+          "METADATA": "1f197d996db42bf40a79d3578084963f6204506dfee9809af81586dbb9607061",
+          "RECORD": "e439beb6cef6de137fc0cb32a6723e22bb739032813e4095350791c7d3c46807",
+          "direct_url.json": null
+        },
+        {
+          "directory": "universal_pathlib-0.2.6.dist-info",
+          "METADATA": "60133c89680d956a49b9b9eb6992c8f0655b105105042204c16d23d4dd071c5c",
+          "RECORD": "2b3c4faabff58636adb4c2ecf5d424b781a78609dc10d245509e4de4a05cf280",
+          "direct_url.json": null
+        },
+        {
+          "directory": "uritemplate-4.2.0.dist-info",
+          "METADATA": "352afd43b6f1ab8f94ca31af2a1ad4f0d1a94dbd712c1b6d9e44e35d4bb3a962",
+          "RECORD": "b06d84680bc9ed70b2a79703745de7129784a2309ab11c4e588da9452d635b63",
+          "direct_url.json": null
+        },
+        {
+          "directory": "urllib3-2.8.0.dist-info",
+          "METADATA": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4",
+          "RECORD": "1753d325c8936a612ecdc947e686ade56b21f591fbb7518330cb0f2f7619c330",
+          "direct_url.json": null
+        },
+        {
+          "directory": "uv-0.12.7.dist-info",
+          "METADATA": "67bcca84b12bc7959178d509648fa2038eff75067c439dec12016eec7e078f59",
+          "RECORD": "07f14c71446acf06cd76b787a16eb4aa9917ad90503b671daf44930307aa05ac",
+          "direct_url.json": null
+        },
+        {
+          "directory": "uvicorn-0.46.0.dist-info",
+          "METADATA": "fcb34026216a0feebfaef791adab4b8c1e78c9fc35bc42d8d3856e54565dc6c4",
+          "RECORD": "cccc16e14ce8ce3c4fe2652be67abb7189e1be4ff58e16615816d7c64d6479dd",
+          "direct_url.json": null
+        },
+        {
+          "directory": "validators-0.35.0.dist-info",
+          "METADATA": "222afc20388850b607dd463b166255c5a731d870a9ae26ff4280fa67fc1a5db8",
+          "RECORD": "a2e740753606f5799ee098f97716e3290ac791d55da92fa37be839e670b4c8f4",
+          "direct_url.json": null
+        },
+        {
+          "directory": "virtualenv-21.14.0.dist-info",
+          "METADATA": "813289712e90631bdb21af54b4d1b0f17187ed15ef9f7e2ce3b2e3d718a83dd7",
+          "RECORD": "f9de0c2b275d942e4a051d7f5bf78ece270040af3c5eb9053d6d5d0e4b3cafe2",
+          "direct_url.json": null
+        },
+        {
+          "directory": "watchdog-6.0.0.dist-info",
+          "METADATA": "ecfde023047e7761dce06d4488abcede89e398399961a052f2fccb39b001e279",
+          "RECORD": "32434f5d0e21220bb13235256fbe3c5b47635b8762af0de14f8da339098ea071",
+          "direct_url.json": null
+        },
+        {
+          "directory": "wcwidth-0.7.0.dist-info",
+          "METADATA": "611878142d836a2111d580d4debbfa2507bb290952811b6226a9c5989a4453b2",
+          "RECORD": "eecab60abd157f0de728a8f803a5aa18548af4e217af9a149d7a3a64b3ff1196",
+          "direct_url.json": null
+        },
+        {
+          "directory": "yarl-1.23.0.dist-info",
+          "METADATA": "da3fb5321e2de5b2766214002d5003112ecb18bd4d85f415b413efdd10ef80a3",
+          "RECORD": "8997d508810026545d9ca518d0230ac5c1753e16c00cf35e28cf02a5663a01b7",
+          "direct_url.json": null
+        },
+        {
+          "directory": "yaspin-3.4.0.dist-info",
+          "METADATA": "0b18e994743911f30fbf07ffc8a7137e83de0e8ab5ea0b42f57d4261ec35021a",
+          "RECORD": "705471452781f95ec70f67738b06f73b9c6b7fe5a3959103bb273a7bcc16c5de",
+          "direct_url.json": null
+        },
+        {
+          "directory": "zipp-4.1.2.dist-info",
+          "METADATA": "f84611a1ae509959f8a60875c24ff61793a67ca575cb5fdfa98076d3531bdbf9",
+          "RECORD": "a20f0343c48c6776c03fdb6394f826a6a97f8aff95858cf553a88d3e320572a7",
+          "direct_url.json": null
+        }
+      ],
+      "pth": {
+        "_editable_impl_create_dagster.pth": "46087f3ab6634a39c7a87b6ab6d004e1faff635afb91f843e3258da701a3d1a9",
+        "_editable_impl_dagster.pth": "60bf1983ee974e8023517586e3e608edddacec723eb3127c591d85618a011424",
+        "_editable_impl_dagster_cloud_cli.pth": "1890e0f646cd77a709604776ef620ae6aac827d5f4347c69b7d7289fb08ccf98",
+        "_editable_impl_dagster_dbt.pth": "87759d43e0050d84a2655964009ac21399c1c481a9a6a6c7a434f69a09899f10",
+        "_editable_impl_dagster_dg_cli.pth": "1235076f8f5211335a6497fe00a1fbe63772c5a2dfa8ec48474ebb55768e6d7e",
+        "_editable_impl_dagster_dg_core.pth": "1726c3494e81cecc36b0e58626b8c0cc27c185f20109abae01a0f4024b1b11c7",
+        "_editable_impl_dagster_fivetran.pth": "93547ccc723e5165408f7d37a3b71058a6b3acc65bb81c472c950cf4565f96d4",
+        "_editable_impl_dagster_graphql.pth": "6abcfc78ff6ac3824b961973525845dfd6e1420cd812b81557dea56335e28096",
+        "_editable_impl_dagster_pipes.pth": "c05a3bf8b27cde7be54b5c1a609510fed387f851f3fc41e2d66a3f56ebf0bf21",
+        "_editable_impl_dagster_rest_resources.pth": "4ee51bf4fc92166ac9abeb214e719fabb56dbdfc16f6489120aa98a95bc552b2",
+        "_editable_impl_dagster_shared.pth": "eb4b4ea101378c87792afbd6224f30926dbd323cca96e23cf893c8c5524a9a85",
+        "_editable_impl_dagster_sling.pth": "fcde088c4c2831900dd355dcb4f7281fa97c2926d4be1b85b35d57d5cc5c33d5",
+        "_editable_impl_dagster_test.pth": "c85269427c70417b2dd9fca9bb7f6ac71562c293e42471d5ba26f50ba6bf5012",
+        "_virtualenv.pth": "69ac3d8f27e679c81b94ab30b3b56e9cd138219b1ba94a1fa3606d5a76a1433d",
+        "a1_coverage.pth": "ef2ed06d19867ec669c09a804060666a9cd5e383af0a9d11aa2de79b77d448e8",
+        "coloredlogs.pth": "dda83a855986efa5cd87f0248b0199c0086eb0e8e7fece7d6741959c5ce39536",
+        "distutils-precedence.pth": "2638ce9e2500e572a5e0de7faed6661eb569d1b696fcba07b0dd223da5f5d224",
+        "pytest-cov.pth": "f47446a60fdf5905e84e7d7c892baf92f8d5a3226d0da1599b9c014eab6c7ddb"
+      }
+    }
+  },
+  "outerDistributionMetadataRecordPthUnchanged": true,
+  "finishedAtUtc": "2026-10-29T17:58:53.191895+00:00"
+}

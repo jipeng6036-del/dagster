@@ -1,0 +1,74 @@
+{
+  "repository": "dagster-io/dagster",
+  "baseBranch": "master",
+  "base": "9f23277a83945062eec5f7d9c3b052bc91b5c7c6",
+  "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+  "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "commitsInOrder": [
+    "45ab289b8a578cbe3695505f4b0608547bf47540",
+    "1987ddaae1df9a6516e74e6699e359428f462a7d",
+    "c824e2ed45f16cbde49458638821f7eef6d76433"
+  ],
+  "files": [
+    {
+      "path": "python_modules/libraries/dagster-dbt/dagster_dbt/cloud/asset_defs.py",
+      "mode": "100644",
+      "gitBlob": "5bd92c94e87af661acb5930a60ed1455e6c25566",
+      "sha256": "229b3d639533f33a61d0990ddde66db8b95d5cbbea77142de8b7308feda8ab1d"
+    },
+    {
+      "path": "python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py",
+      "mode": "100644",
+      "gitBlob": "fa0279259f7db6c407a7c801c4bbeda9afff83a8",
+      "sha256": "71e9f248f79f1499662300b143a76c2bc931ba93751008104fd18a498872d27b"
+    }
+  ],
+  "sourceCommits": [
+    {
+      "original": {
+        "sha": "1987eae078a6be9d3fe87122f55f4ab7d8dc21cd",
+        "authorName": "bunnysayzz",
+        "authorEmail": "stfuazzo@gmail.com",
+        "authorDate": "2026-10-16T22:55:38+05:30",
+        "authorTimestamp": "1792171538",
+        "subject": "fix(dagster-dbt): guard against null job in dbt Cloud run details",
+        "files": [
+          "python_modules/libraries/dagster-dbt/dagster_dbt/cloud/asset_defs.py"
+        ]
+      },
+      "applied": {
+        "sha": "45ab289b8a578cbe3695505f4b0608547bf47540",
+        "authorName": "bunnysayzz",
+        "authorEmail": "stfuazzo@gmail.com",
+        "authorDate": "2026-10-16T22:55:38+05:30",
+        "authorTimestamp": "1792171538",
+        "tree": "796df8dca646b75b41fd553c96164308cd1d8c7d"
+      },
+      "message": "fix(dagster-dbt): guard against null job in dbt Cloud run details\n\n(cherry picked from commit 1987eae078a6be9d3fe87122f55f4ab7d8dc21cd)",
+      "authorAndDatePreserved": true
+    },
+    {
+      "original": {
+        "sha": "adb43a35d08b3cbd447aeab89b6dce9ea95f8896",
+        "authorName": "bunnysayzz",
+        "authorEmail": "bunnysayzz@users.noreply.github.com",
+        "authorDate": "2026-10-17T11:19:33+05:30",
+        "authorTimestamp": "1792216173",
+        "subject": "test: add regression test for null job in dbt Cloud run details (#34317)",
+        "files": [
+          "python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py"
+        ]
+      },
+      "applied": {
+        "sha": "1987ddaae1df9a6516e74e6699e359428f462a7d",
+        "authorName": "bunnysayzz",
+        "authorEmail": "bunnysayzz@users.noreply.github.com",
+        "authorDate": "2026-10-17T11:19:33+05:30",
+        "authorTimestamp": "1792216173",
+        "tree": "a15f0afdc073db4a4b7463c3adefa5ec353d75c7"
+      },
+      "message": "test: add regression test for null job in dbt Cloud run details (#34317)\n\n(cherry picked from commit adb43a35d08b3cbd447aeab89b6dce9ea95f8896)",
+      "authorAndDatePreserved": true
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<EVIDENCE>/core-validation/canonical_clean_ram.py", line 18, in <module>
+    assert not any(x.endswith((b'/bin/pytest',b'/bin/dbt')) for x in args[:2]),'A test/dbt process is still active'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: A test/dbt process is still active

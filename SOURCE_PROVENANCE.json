@@ -1,0 +1,54 @@
+{
+  "originalPR": 34318,
+  "originalHead": "adb43a35d08b3cbd447aeab89b6dce9ea95f8896",
+  "license": "Apache-2.0",
+  "licenseGitBlob": "82b6b68d6ad4d65757310c2e7dab12ccae01de36",
+  "commits": [
+    {
+      "original": {
+        "sha": "1987eae078a6be9d3fe87122f55f4ab7d8dc21cd",
+        "authorName": "bunnysayzz",
+        "authorEmail": "stfuazzo@gmail.com",
+        "authorDate": "2026-10-16T22:55:38+05:30",
+        "authorTimestamp": "1792171538",
+        "subject": "fix(dagster-dbt): guard against null job in dbt Cloud run details",
+        "files": [
+          "python_modules/libraries/dagster-dbt/dagster_dbt/cloud/asset_defs.py"
+        ]
+      },
+      "applied": {
+        "sha": "45ab289b8a578cbe3695505f4b0608547bf47540",
+        "authorName": "bunnysayzz",
+        "authorEmail": "stfuazzo@gmail.com",
+        "authorDate": "2026-10-16T22:55:38+05:30",
+        "authorTimestamp": "1792171538",
+        "tree": "796df8dca646b75b41fd553c96164308cd1d8c7d"
+      },
+      "message": "fix(dagster-dbt): guard against null job in dbt Cloud run details\n\n(cherry picked from commit 1987eae078a6be9d3fe87122f55f4ab7d8dc21cd)",
+      "authorAndDatePreserved": true
+    },
+    {
+      "original": {
+        "sha": "adb43a35d08b3cbd447aeab89b6dce9ea95f8896",
+        "authorName": "bunnysayzz",
+        "authorEmail": "bunnysayzz@users.noreply.github.com",
+        "authorDate": "2026-10-17T11:19:33+05:30",
+        "authorTimestamp": "1792216173",
+        "subject": "test: add regression test for null job in dbt Cloud run details (#34317)",
+        "files": [
+          "python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py"
+        ]
+      },
+      "applied": {
+        "sha": "1987ddaae1df9a6516e74e6699e359428f462a7d",
+        "authorName": "bunnysayzz",
+        "authorEmail": "bunnysayzz@users.noreply.github.com",
+        "authorDate": "2026-10-17T11:19:33+05:30",
+        "authorTimestamp": "1792216173",
+        "tree": "a15f0afdc073db4a4b7463c3adefa5ec353d75c7"
+      },
+      "message": "test: add regression test for null job in dbt Cloud run details (#34317)\n\n(cherry picked from commit adb43a35d08b3cbd447aeab89b6dce9ea95f8896)",
+      "authorAndDatePreserved": true
+    }
+  ]
+}

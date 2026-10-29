@@ -1,0 +1,20 @@
+Using Python 3.12.14 environment at: /usr/local
+Resolved 149 packages in 1.33s
+   Building dagster-shared @ file://<SOURCE>/python_modules/libraries/dagster-shared
+   Building dagster @ file://<SOURCE>/python_modules/dagster
+   Building dagster-pipes @ file://<SOURCE>/python_modules/dagster-pipes
+   Building automation @ file://<SOURCE>/python_modules/automation
+      Built automation @ file://<SOURCE>/python_modules/automation
+      Built dagster-shared @ file://<SOURCE>/python_modules/libraries/dagster-shared
+      Built dagster-pipes @ file://<SOURCE>/python_modules/dagster-pipes
+      Built dagster @ file://<SOURCE>/python_modules/dagster
+Prepared 4 packages in 635ms
+Uninstalled 4 packages in 161ms
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 4 packages in 30ms
+ ~ automation==0.0.1 (from file://<SOURCE>/python_modules/automation)
+ ~ dagster==1!0+dev (from file://<SOURCE>/python_modules/dagster)
+ ~ dagster-pipes==1!0+dev (from file://<SOURCE>/python_modules/dagster-pipes)
+ ~ dagster-shared==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-shared)

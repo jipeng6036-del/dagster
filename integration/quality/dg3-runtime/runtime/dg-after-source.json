@@ -1,0 +1,12 @@
+{
+  "atUtc": "2026-10-29T17:58:54.758704+00:00",
+  "head": "ea452dc9e379d8d10f61c4a0df7378de5f33b252",
+  "expectedTree": "8f26fcadce62050c5f8f0c764968a4a04457eb13",
+  "actualFullFilesystemTree": "8f26fcadce62050c5f8f0c764968a4a04457eb13",
+  "fileCount": 14577,
+  "allGitBlobModeSizeSha256Match": true,
+  "failures": [],
+  "source": "<SOURCE>",
+  "seconds": 1.0103129870003613,
+  "status": "PASS"
+}

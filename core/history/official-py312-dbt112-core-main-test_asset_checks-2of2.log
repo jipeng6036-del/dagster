@@ -1,0 +1,2736 @@
+py312-dbt112-core-main: uv-sync> /usr/local/bin/uv sync --python-preference system --no-default-groups --group test --group test-dbt112 --frozen -p cpython3.12
+py312-dbt112-core-main: freeze> /usr/local/bin/uv --color never pip freeze
+py312-dbt112-core-main: commands[0]> /bin/bash -c '! uv pip list --exclude-editable | grep -e dagster'
+Using Python 3.12.14 environment at: <RUNTIME>/pr1029-dagster-ci-w3/tox-work/py312-dbt112-core-main
+py312-dbt112-core-main: commands[1]> pytest --ignore=./kitchen-sink --durations 10 -m 'core and not snowflake and not bigquery and not derived_metadata and not fusion' -vv --splits 2 --group 2 --durations-path .test_durations/dbt112-core-main-test_asset_checks dagster_dbt_tests/core/test_asset_checks.py
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- <RUNTIME>/pr1029-dagster-ci-w3/tox-work/py312-dbt112-core-main/bin/python3
+cachedir: <RUNTIME>/pr1029-dagster-ci-w3/tox-work/py312-dbt112-core-main/.pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: xdist-3.6.1, timeout-2.4.0, asyncio-1.3.0, order-1.4.0, cov-5.0.0, rerunfailures-16.1, split-0.11.0, mock-3.14.0, syrupy-5.1.0, anyio-4.14.2
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+collecting ... 
+
+[pytest-split] Splitting tests with algorithm: duration_based_chunks
+[pytest-split] Running group 2/2 (estimated duration: 105.42s)
+
+collected 34 items / 18 deselected / 16 selected
+
+dagster_dbt_tests/core/test_asset_checks.py::test_materialize_checks_no_asset[seed-run-test-dagster_dbt_translator1] PASSED [  6%]
+dagster_dbt_tests/core/test_asset_checks.py::test_extra_checks[build] PASSED [ 12%]
+dagster_dbt_tests/core/test_asset_checks.py::test_extra_checks[seed-run-test] PASSED [ 18%]
+dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_results[build] +++++++++++++++++++++++++++++++++++ Timeout ++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~ Stack of Thread-1 (run_server) (123668459611840) ~~~~~~~~~~~~~~~
+  File "/usr/local/lib/python3.12/threading.py", line 1032, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "<RUNTIME>/pr1029-dagster-ci-w3/tox-work/py312-dbt112-core-main/lib/python3.12/site-packages/pytest_rerunfailures.py", line 466, in run_server
+    conn, _ = self.sock.accept()
+  File "/usr/local/lib/python3.12/socket.py", line 295, in accept
+    fd, addr = self._accept()
++++++++++++++++++++++++++++++++++++ Timeout ++++++++++++++++++++++++++++++++++++
+FAILED                                                                   [ 25%]
+dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_results[seed-run-test] FAILED [ 31%]
+dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_evaluations[build] FAILED [ 37%]
+dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_evaluations[seed-run-test] FAILED [ 43%]
+dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[build-customers] FAILED [ 50%]
+dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[build-tag:customer_info] FAILED [ 56%]
+dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[seed-run-test-customers] FAILED [ 62%]
+dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[seed-run-test-tag:customer_info] FAILED [ 68%]
+dagster_dbt_tests/core/test_asset_checks.py::test_dbt_with_dotted_dependency_names PASSED [ 75%]
+dagster_dbt_tests/core/test_asset_checks.py::test_dbt_source_tests PASSED [ 81%]
+dagster_dbt_tests/core/test_asset_checks.py::test_dbt_source_tests_checks_enabled[select_all] PASSED [ 87%]
+dagster_dbt_tests/core/test_asset_checks.py::test_dbt_source_tests_checks_enabled[select_downstream_of_source] PASSED [ 93%]
+dagster_dbt_tests/core/test_asset_checks.py::test_dbt_source_tests_checks_enabled[select_non_source] PASSED [100%]
+
+=================================== FAILURES ===================================
+_______________________ test_asset_checks_results[build] _______________________
+
+test_asset_checks_manifest = {'metadata': {'dbt_schema_version': 'https://schemas.getdbt.com/dbt/manifest/v12.json', 'dbt_version': '1.12.4', 'gene...n_comment', 'resource_type': 'macro', 'package_name': 'dbt_duckdb', 'path': 'macros/persist_docs.sql', ...}, ...}, ...}
+dbt_commands = [['build']]
+
+    def test_asset_checks_results(
+        test_asset_checks_manifest: dict[str, Any], dbt_commands: list[list[str]]
+    ):
+        @dbt_assets(
+            manifest=test_asset_checks_manifest,
+            dagster_dbt_translator=dagster_dbt_translator_with_checks,
+        )
+        def my_dbt_assets(context: AssetExecutionContext, dbt: DbtCliResource):
+            events = []
+            invocation_id = ""
+            for dbt_command in dbt_commands:
+                dbt_invocation = dbt.cli(dbt_command, context=context, raise_on_error=False)
+                events += list(dbt_invocation.stream())
+                invocation_id = dbt_invocation.get_artifact("run_results.json")["metadata"][
+                    "invocation_id"
+                ]
+    
+            for event in events:
+                if isinstance(event, AssetCheckResult):
+                    assert cast("int", event.metadata["Execution Duration"].value) > 0
+    
+            expected_results = [
+                AssetCheckResult(
+                    passed=True,
+                    asset_key=AssetKey(["customers"]),
+                    check_name="unique_customers_customer_id",
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.unique_customers_customer_id.c5af1ff4b1"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "pass",
+                        "dagster_dbt/failed_row_count": 0,
+                    },
+                ),
+                AssetCheckResult(
+                    passed=True,
+                    asset_key=AssetKey(["customers"]),
+                    check_name="not_null_customers_customer_id",
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.not_null_customers_customer_id.5c9bf9911d"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "pass",
+                        "dagster_dbt/failed_row_count": 0,
+                    },
+                ),
+                AssetCheckResult(
+                    passed=False,
+                    asset_key=AssetKey(["fail_tests_model"]),
+                    check_name="unique_fail_tests_model_id",
+                    severity=AssetCheckSeverity.WARN,
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.unique_fail_tests_model_id.1619308eb1"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "warn",
+                        "dagster_dbt/failed_row_count": 1,
+                    },
+                ),
+                AssetCheckResult(
+                    passed=False,
+                    asset_key=AssetKey(["fail_tests_model"]),
+                    check_name="accepted_values_fail_tests_model_first_name__foo__bar__baz",
+                    severity=AssetCheckSeverity.ERROR,
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.accepted_values_fail_tests_model_first_name__foo__bar__baz.5f958cf018"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "fail",
+                        "dagster_dbt/failed_row_count": 4,
+                    },
+                ),
+            ]
+    
+            # filter these out for comparison
+            non_deterministic_metadata_keys = ["Execution Duration"]
+            check_events_without_non_deterministic_metadata = {}
+            for event in events:
+                if isinstance(event, AssetCheckResult):
+                    check_events_without_non_deterministic_metadata[
+                        event.asset_key, event.check_name
+                    ] = event._replace(
+                        metadata={
+                            k: v
+                            for k, v in event.metadata.items()
+                            if k not in non_deterministic_metadata_keys
+                        }
+                    )
+    
+            for expected_asset_check_result in expected_results:
+                assert (
+                    check_events_without_non_deterministic_metadata[
+                        expected_asset_check_result.asset_key, expected_asset_check_result.check_name
+                    ]
+                    == expected_asset_check_result
+                )
+    
+            yield from events
+    
+        result = materialize(
+            [my_dbt_assets],
+            resources={"dbt": DbtCliResource(project_dir=os.fspath(test_asset_checks_path))},
+            raise_on_error=False,
+        )
+        assert not result.success
+>       assert len(result.get_asset_materialization_events()) == 10
+E       assert 0 == 10
+E        +  where 0 = len([])
+E        +    where [] = get_asset_materialization_events()
+E        +      where get_asset_materialization_events = <dagster._core.execution.execute_in_process_result.ExecuteInProcessResult object at 0x7079cc6162d0>.get_asset_materialization_events
+
+dagster_dbt_tests/core/test_asset_checks.py:652: AssertionError
+----------------------------- Captured stdout call -----------------------------
+Running with dbt=1.12.4
+Registered adapter: duckdb=1.9.0
+Unable to do partial parsing because saved manifest not found. Starting full parse.
+[[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `severity` as a top-level property of `data_tests.unique.severity` in file
+`models/schema.yml`. The `severity` top-level property should be moved into the
+`config` of `data_tests.unique.severity`.
+[[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'orders' in package
+'test_dagster_asset_checks' (models/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+Found 7 models, 29 data tests, 3 seeds, 1 source, 468 macros
+
+Concurrency: 24 threads (target='dev')
+
+1 of 39 START seed file main.raw_fail_tests_model .............................. [RUN]
+2 of 39 START seed file main.raw_orders ........................................ [RUN]
+3 of 39 START seed file main.raw_payments ...................................... [RUN]
+4 of 39 START test source_not_null_jaffle_shop_raw_customers_id ................ [RUN]
+5 of 39 START test source_unique_jaffle_shop_raw_customers_id .................. [RUN]
+4 of 39 PASS source_not_null_jaffle_shop_raw_customers_id ...................... [[32mPASS[0m in 0.11s]
+5 of 39 PASS source_unique_jaffle_shop_raw_customers_id ........................ [[32mPASS[0m in 0.11s]
+6 of 39 START sql view model main.stg_customers ................................ [RUN]
+7 of 39 START sql view model main.stg_customers_again .......................... [RUN]
+3 of 39 OK loaded seed file main.raw_payments .................................. [[32mINSERT 113[0m in 15.63s]
+8 of 39 START sql view model main.stg_payments ................................. [RUN]
+1 of 39 OK loaded seed file main.raw_fail_tests_model .......................... [[32mINSERT 4[0m in 16.23s]
+9 of 39 START sql table model main.fail_tests_model ............................ [RUN]
+2 of 39 OK loaded seed file main.raw_orders .................................... [[32mINSERT 99[0m in 16.94s]
+10 of 39 START sql view model main.stg_orders .................................. [RUN]
+7 of 39 OK created sql view model main.stg_customers_again ..................... [[32mOK[0m in 17.46s]
+6 of 39 OK created sql view model main.stg_customers ........................... [[32mOK[0m in 69.96s]
+11 of 39 START test not_null_stg_customers_customer_id ......................... [RUN]
+12 of 39 START test unique_stg_customers_customer_id ........................... [RUN]
+----------------------------- Captured stderr call -----------------------------
+2026-10-29 15:27:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - 1973 - RUN_START - Started execution of run for "__ephemeral_asset_job__".
+2026-10-29 15:27:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - 1973 - ENGINE_EVENT - Executing steps in process (pid: 1973)
+2026-10-29 15:27:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - 1973 - my_dbt_assets - RESOURCE_INIT_STARTED - Starting initialization of resources [dbt, io_manager].
+2026-10-29 15:27:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - 1973 - my_dbt_assets - RESOURCE_INIT_SUCCESS - Finished initialization of resources [dbt, io_manager].
+2026-10-29 15:27:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - 1973 - LOGS_CAPTURED - Capturing logs for process (pid: 1973).
+2026-10-29 15:27:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - 1973 - my_dbt_assets - STEP_START - Started execution of step "my_dbt_assets".
+2026-10-29 15:27:42 +0000 - dagster - INFO - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'fqn:*']`.
+2026-10-29 15:27:43 +0000 - dagster - INFO - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - my_dbt_assets - Running dbt command: `dbt build --select fqn:*`.
+2026-10-29 15:27:46 +0000 - dagster - WARNING - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - my_dbt_assets - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_jaffle_shop_raw_customers_id`.
+
+This test was not included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-10-29 15:27:46 +0000 - dagster - WARNING - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - my_dbt_assets - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_jaffle_shop_raw_customers_id`.
+
+This test was not included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-10-29 15:31:42 +0000 - dagster - ERROR - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - 1973 - my_dbt_assets - STEP_FAILURE - Execution of step "my_dbt_assets" failed.
+
+Failed: Timeout (>240.0s) from pytest-timeout.
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 555, in my_dbt_assets
+    events += list(dbt_invocation.stream())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_event_iterator.py", line 220, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 291, in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 344, in stream_raw_events
+    for raw_event in self._stdout or self._stream_stdout():
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 432, in _stream_stdout
+    for raw_line in self.process.stdout or []:
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RUNTIME>/pr1029-dagster-ci-w3/tox-work/py312-dbt112-core-main/lib/python3.12/site-packages/pytest_timeout.py", line 317, in handler
+    timeout_sigalrm(item, settings)
+  File "<RUNTIME>/pr1029-dagster-ci-w3/tox-work/py312-dbt112-core-main/lib/python3.12/site-packages/pytest_timeout.py", line 502, in timeout_sigalrm
+    pytest.fail(PYTEST_FAILURE_MESSAGE % settings.timeout)
+  File "<RUNTIME>/pr1029-dagster-ci-w3/tox-work/py312-dbt112-core-main/lib/python3.12/site-packages/_pytest/outcomes.py", line 162, in __call__
+    raise Failed(msg=reason, pytrace=pytrace)
+
+2026-10-29 15:31:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - 1973 - ENGINE_EVENT - Finished steps in process (pid: 1973) in 3m59s
+2026-10-29 15:31:42 +0000 - dagster - ERROR - __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - 1973 - RUN_FAILURE - Execution of run for "__ephemeral_asset_job__" failed. Steps failed: ['my_dbt_assets'].
+
+Failed: Timeout (>240.0s) from pytest-timeout.
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 555, in my_dbt_assets
+    events += list(dbt_invocation.stream())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_event_iterator.py", line 220, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 291, in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 344, in stream_raw_events
+    for raw_event in self._stdout or self._stream_stdout():
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 432, in _stream_stdout
+    for raw_line in self.process.stdout or []:
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<RUNTIME>/pr1029-dagster-ci-w3/tox-work/py312-dbt112-core-main/lib/python3.12/site-packages/pytest_timeout.py", line 317, in handler
+    timeout_sigalrm(item, settings)
+  File "<RUNTIME>/pr1029-dagster-ci-w3/tox-work/py312-dbt112-core-main/lib/python3.12/site-packages/pytest_timeout.py", line 502, in timeout_sigalrm
+    pytest.fail(PYTEST_FAILURE_MESSAGE % settings.timeout)
+  File "<RUNTIME>/pr1029-dagster-ci-w3/tox-work/py312-dbt112-core-main/lib/python3.12/site-packages/_pytest/outcomes.py", line 162, in __call__
+    raise Failed(msg=reason, pytrace=pytrace)
+
+------------------------------ Captured log call -------------------------------
+INFO     dagster.builtin:asset_utils.py:1176 __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'fqn:*']`.
+INFO     dagster.builtin:dbt_cli_invocation.py:201 __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - my_dbt_assets - Running dbt command: `dbt build --select fqn:*`.
+WARNING  dagster.builtin:dbt_cli_event.py:523 __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - my_dbt_assets - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_jaffle_shop_raw_customers_id`.
+
+This test was not included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+WARNING  dagster.builtin:dbt_cli_event.py:523 __ephemeral_asset_job__ - a41847ee-1c9d-4377-ad61-57db1f4bcc28 - my_dbt_assets - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_jaffle_shop_raw_customers_id`.
+
+This test was not included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+___________________ test_asset_checks_results[seed-run-test] ___________________
+
+test_asset_checks_manifest = {'metadata': {'dbt_schema_version': 'https://schemas.getdbt.com/dbt/manifest/v12.json', 'dbt_version': '1.12.4', 'gene...n_comment', 'resource_type': 'macro', 'package_name': 'dbt_duckdb', 'path': 'macros/persist_docs.sql', ...}, ...}, ...}
+dbt_commands = [['seed'], ['run'], ['test']]
+
+    def test_asset_checks_results(
+        test_asset_checks_manifest: dict[str, Any], dbt_commands: list[list[str]]
+    ):
+        @dbt_assets(
+            manifest=test_asset_checks_manifest,
+            dagster_dbt_translator=dagster_dbt_translator_with_checks,
+        )
+        def my_dbt_assets(context: AssetExecutionContext, dbt: DbtCliResource):
+            events = []
+            invocation_id = ""
+            for dbt_command in dbt_commands:
+                dbt_invocation = dbt.cli(dbt_command, context=context, raise_on_error=False)
+                events += list(dbt_invocation.stream())
+                invocation_id = dbt_invocation.get_artifact("run_results.json")["metadata"][
+                    "invocation_id"
+                ]
+    
+            for event in events:
+                if isinstance(event, AssetCheckResult):
+                    assert cast("int", event.metadata["Execution Duration"].value) > 0
+    
+            expected_results = [
+                AssetCheckResult(
+                    passed=True,
+                    asset_key=AssetKey(["customers"]),
+                    check_name="unique_customers_customer_id",
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.unique_customers_customer_id.c5af1ff4b1"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "pass",
+                        "dagster_dbt/failed_row_count": 0,
+                    },
+                ),
+                AssetCheckResult(
+                    passed=True,
+                    asset_key=AssetKey(["customers"]),
+                    check_name="not_null_customers_customer_id",
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.not_null_customers_customer_id.5c9bf9911d"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "pass",
+                        "dagster_dbt/failed_row_count": 0,
+                    },
+                ),
+                AssetCheckResult(
+                    passed=False,
+                    asset_key=AssetKey(["fail_tests_model"]),
+                    check_name="unique_fail_tests_model_id",
+                    severity=AssetCheckSeverity.WARN,
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.unique_fail_tests_model_id.1619308eb1"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "warn",
+                        "dagster_dbt/failed_row_count": 1,
+                    },
+                ),
+                AssetCheckResult(
+                    passed=False,
+                    asset_key=AssetKey(["fail_tests_model"]),
+                    check_name="accepted_values_fail_tests_model_first_name__foo__bar__baz",
+                    severity=AssetCheckSeverity.ERROR,
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.accepted_values_fail_tests_model_first_name__foo__bar__baz.5f958cf018"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "fail",
+                        "dagster_dbt/failed_row_count": 4,
+                    },
+                ),
+            ]
+    
+            # filter these out for comparison
+            non_deterministic_metadata_keys = ["Execution Duration"]
+            check_events_without_non_deterministic_metadata = {}
+            for event in events:
+                if isinstance(event, AssetCheckResult):
+                    check_events_without_non_deterministic_metadata[
+                        event.asset_key, event.check_name
+                    ] = event._replace(
+                        metadata={
+                            k: v
+                            for k, v in event.metadata.items()
+                            if k not in non_deterministic_metadata_keys
+                        }
+                    )
+    
+            for expected_asset_check_result in expected_results:
+                assert (
+                    check_events_without_non_deterministic_metadata[
+                        expected_asset_check_result.asset_key, expected_asset_check_result.check_name
+                    ]
+                    == expected_asset_check_result
+                )
+    
+            yield from events
+    
+        result = materialize(
+            [my_dbt_assets],
+            resources={"dbt": DbtCliResource(project_dir=os.fspath(test_asset_checks_path))},
+            raise_on_error=False,
+        )
+        assert not result.success
+>       assert len(result.get_asset_materialization_events()) == 10
+E       assert 0 == 10
+E        +  where 0 = len([])
+E        +    where [] = get_asset_materialization_events()
+E        +      where get_asset_materialization_events = <dagster._core.execution.execute_in_process_result.ExecuteInProcessResult object at 0x7079cc0af110>.get_asset_materialization_events
+
+dagster_dbt_tests/core/test_asset_checks.py:652: AssertionError
+----------------------------- Captured stdout call -----------------------------
+Running with dbt=1.12.4
+Registered adapter: duckdb=1.9.0
+Unable to do partial parsing because saved manifest not found. Starting full parse.
+[[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `severity` as a top-level property of `data_tests.unique.severity` in file
+`models/schema.yml`. The `severity` top-level property should be moved into the
+`config` of `data_tests.unique.severity`.
+[[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'orders' in package
+'test_dagster_asset_checks' (models/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+Found 7 models, 29 data tests, 3 seeds, 1 source, 468 macros
+
+Concurrency: 24 threads (target='dev')
+
+
+Finished running  in 0 hours 2 minutes and 23.62 seconds (143.62s).
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+[[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 3 occurrences
+- MissingArgumentsPropertyInGenericTestDeprecation: 7 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+----------------------------- Captured stderr call -----------------------------
+2026-10-29 15:31:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - 1973 - RUN_START - Started execution of run for "__ephemeral_asset_job__".
+2026-10-29 15:31:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - 1973 - ENGINE_EVENT - Executing steps in process (pid: 1973)
+2026-10-29 15:31:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - 1973 - my_dbt_assets - RESOURCE_INIT_STARTED - Starting initialization of resources [dbt, io_manager].
+2026-10-29 15:31:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - 1973 - my_dbt_assets - RESOURCE_INIT_SUCCESS - Finished initialization of resources [dbt, io_manager].
+2026-10-29 15:31:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - 1973 - LOGS_CAPTURED - Capturing logs for process (pid: 1973).
+2026-10-29 15:31:42 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - 1973 - my_dbt_assets - STEP_START - Started execution of step "my_dbt_assets".
+2026-10-29 15:31:42 +0000 - dagster - INFO - __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'fqn:*']`.
+2026-10-29 15:31:43 +0000 - dagster - INFO - __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - my_dbt_assets - Running dbt command: `dbt seed --select fqn:*`.
+2026-10-29 15:34:10 +0000 - dagster - INFO - __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - my_dbt_assets - Finished dbt command: `dbt seed --select fqn:*`.
+2026-10-29 15:34:14 +0000 - dagster - ERROR - __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - 1973 - my_dbt_assets - STEP_FAILURE - Execution of step "my_dbt_assets" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "my_dbt_assets"::
+
+FileNotFoundError: [Errno 2] No such file or directory: '<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-1c79d58-9cae232/run_results.json'
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 556, in my_dbt_assets
+    invocation_id = dbt_invocation.get_artifact("run_results.json")["metadata"][
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 418, in get_artifact
+    return orjson.loads(artifact_path.read_bytes())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2026-10-29 15:34:14 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - 1973 - ENGINE_EVENT - Finished steps in process (pid: 1973) in 2m32s
+2026-10-29 15:34:14 +0000 - dagster - ERROR - __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - 1973 - RUN_FAILURE - Execution of run for "__ephemeral_asset_job__" failed. Steps failed: ['my_dbt_assets'].
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "my_dbt_assets":
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 392, in iterate_with_context
+    with context_fn():
+         ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 87, in op_execution_error_boundary
+    raise error_cls(
+
+The above exception was caused by the following exception:
+FileNotFoundError: [Errno 2] No such file or directory: '<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-1c79d58-9cae232/run_results.json'
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 556, in my_dbt_assets
+    invocation_id = dbt_invocation.get_artifact("run_results.json")["metadata"][
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 418, in get_artifact
+    return orjson.loads(artifact_path.read_bytes())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+------------------------------ Captured log call -------------------------------
+INFO     dagster.builtin:asset_utils.py:1176 __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'fqn:*']`.
+INFO     dagster.builtin:dbt_cli_invocation.py:201 __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - my_dbt_assets - Running dbt command: `dbt seed --select fqn:*`.
+INFO     dagster.builtin:dbt_cli_invocation.py:472 __ephemeral_asset_job__ - 1c79d58b-3cea-4459-a085-c9ea8d1ecd20 - my_dbt_assets - Finished dbt command: `dbt seed --select fqn:*`.
+_____________________ test_asset_checks_evaluations[build] _____________________
+
+step_context = <dagster._core.execution.context.system.StepExecutionContext object at 0x7079c4752e10>
+force_local_execution = False
+
+    def dagster_event_sequence_for_step(
+        step_context: StepExecutionContext, force_local_execution: bool = False
+    ) -> Iterator[DagsterEvent]:
+        """Yield a sequence of dagster events for the given step with the step context.
+    
+        This function also processes errors. It handles a few error cases:
+    
+            (1) User code requests to be retried:
+                A RetryRequested has been raised. We will either put the step in to
+                up_for_retry state or a failure state depending on the number of previous attempts
+                and the max_retries on the received RetryRequested.
+    
+            (2) User code fails successfully:
+                The user-space code has raised a Failure which may have
+                explicit metadata attached.
+    
+            (3) User code fails unexpectedly:
+                The user-space code has raised an Exception. It has been
+                wrapped in an exception derived from DagsterUserCodeException. In that
+                case the original user exc_info is stashed on the exception
+                as the original_exc_info property.
+    
+            (4) Execution interrupted:
+                The run was interrupted in the middle of execution (typically by a
+                termination request).
+    
+            (5) Dagster framework error:
+                The framework raised a DagsterError that indicates a usage error
+                or some other error not communicated by a user-thrown exception. For example,
+                if the user yields an object out of a compute function that is not a
+                proper event (not an Output, ExpectationResult, etc).
+    
+            (6) All other errors:
+                An unexpected error occurred. Either there has been an internal error in the framework
+                OR we have forgotten to put a user code error boundary around invoked user-space code.
+    
+    
+        The "raised_dagster_errors" context manager can be used to force these errors to be
+        re-raised and surfaced to the user. This is mostly to get sensible errors in test and
+        ad-hoc contexts, rather than forcing the user to wade through the
+        JobExecutionResult API in order to find the step that failed.
+    
+        For tools, however, this option should be false, and a sensible error message
+        signaled to the user within that tool.
+    
+        When we launch a step that has a step launcher, we use this function on both the host process
+        and the remote process. When we run the step in the remote process, to prevent an infinite loop
+        of launching steps that then launch steps, and so on, the remote process will run this with
+        the force_local_execution argument set to True.
+        """
+        check.inst_param(step_context, "step_context", StepExecutionContext)
+    
+        try:
+            if step_context.step_launcher and not force_local_execution:
+                # info all on step_context - should deprecate second arg
+                step_events = step_context.step_launcher.launch_step(step_context)
+            else:
+                step_events = core_dagster_event_sequence_for_step(step_context)
+    
+>           yield from check.generator(step_events)
+
+../../dagster/dagster/_core/execution/plan/execute_plan.py:243: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../dagster/dagster/_core/execution/plan/execute_step.py:505: in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+../../dagster/dagster/_core/execution/plan/execute_step.py:184: in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/execute_step.py:88: in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/compute.py:188: in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/compute.py:157: in _yield_compute_results
+    for event in iterate_with_context(
+../../dagster/dagster/_utils/__init__.py:392: in iterate_with_context
+    with context_fn():
+         ^^^^^^^^^^^^
+/usr/local/lib/python3.12/contextlib.py:158: in __exit__
+    self.gen.throw(value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+error_cls = <class 'dagster._core.errors.DagsterExecutionStepExecutionError'>
+msg_fn = <function _yield_compute_results.<locals>.<lambda>.<locals>.<lambda> at 0x7079c4725080>
+step_context = <dagster._core.execution.context.system.StepExecutionContext object at 0x7079c4752e10>
+kwargs = {'step_key': 'my_dbt_op', 'op_def_name': 'my_dbt_op', 'op_name': 'my_dbt_op'}
+
+    @contextmanager
+    def op_execution_error_boundary(
+        error_cls: type[DagsterUserCodeExecutionError],
+        msg_fn: Callable[[], str],
+        step_context: "StepExecutionContext",
+        **kwargs: Any,
+    ) -> Iterator[None]:
+        """A specialization of user_code_error_boundary for the steps involved in executing a solid.
+        This variant supports the control flow exceptions RetryRequested and Failure as well
+        as respecting the RetryPolicy if present.
+        """
+        from dagster._core.execution.context.system import StepExecutionContext
+        from dagster._utils.error import redact_user_stacktrace_if_enabled
+    
+        check.callable_param(msg_fn, "msg_fn")
+        check.class_param(error_cls, "error_cls", superclass=DagsterUserCodeExecutionError)
+        check.inst_param(step_context, "step_context", StepExecutionContext)
+    
+        with redact_user_stacktrace_if_enabled(), raise_execution_interrupts():
+            step_context.log.begin_python_log_capture()
+            retry_policy = step_context.op_retry_policy
+    
+            try:
+                yield
+            except DagsterError as de:
+                # The system has thrown an error that is part of the user-framework contract
+                raise de
+    
+            except Exception as e:
+                # An exception has been thrown by user code and computation should cease
+                # with the error reported further up the stack
+    
+                # Directly thrown RetryRequested escalate before evaluating the retry policy.
+                if isinstance(e, RetryRequested):
+                    raise e
+    
+                if retry_policy:
+                    # if Failure with allow_retries set to false, disregard retry policy and raise
+                    if isinstance(e, Failure) and not e.allow_retries:
+                        raise e
+    
+                    raise RetryRequestedFromPolicy(
+                        max_retries=retry_policy.max_retries,
+                        seconds_to_wait=retry_policy.calculate_delay(
+                            step_context.previous_attempt_count + 1
+                        ),
+                    ) from e
+    
+                # Failure exceptions get re-throw without wrapping
+                if isinstance(e, Failure):
+                    raise e
+    
+                # Otherwise wrap the user exception with context
+>               raise error_cls(
+                    msg_fn(),
+                    user_exception=e,
+                    original_exc_info=sys.exc_info(),
+                    **kwargs,
+                ) from e
+E               dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "my_dbt_op":
+
+../../dagster/dagster/_core/execution/plan/utils.py:87: DagsterExecutionStepExecutionError
+
+During handling of the above exception, another exception occurred:
+
+test_asset_checks_manifest = {'metadata': {'dbt_schema_version': 'https://schemas.getdbt.com/dbt/manifest/v12.json', 'dbt_version': '1.12.4', 'gene...n_comment', 'resource_type': 'macro', 'package_name': 'dbt_duckdb', 'path': 'macros/persist_docs.sql', ...}, ...}, ...}
+dbt_commands = [['build']]
+
+    def test_asset_checks_evaluations(
+        test_asset_checks_manifest: dict[str, Any], dbt_commands: list[list[str]]
+    ):
+        @op
+        def my_dbt_op(context: OpExecutionContext, dbt: DbtCliResource):
+            events = []
+            invocation_id = ""
+            for dbt_command in dbt_commands:
+                dbt_invocation = dbt.cli(
+                    dbt_command,
+                    context=context,
+                    raise_on_error=False,
+                    manifest=test_asset_checks_manifest,
+                    dagster_dbt_translator=dagster_dbt_translator_with_checks,
+                )
+                events += list(dbt_invocation.stream())
+                invocation_id = dbt_invocation.get_artifact("run_results.json")["metadata"][
+                    "invocation_id"
+                ]
+    
+            for event in events:
+                if isinstance(event, AssetCheckEvaluation):
+                    assert cast("int", event.metadata["Execution Duration"].value) > 0
+    
+            # Sanity check that we don't have AssetCheckResult events when using an op
+            assert not any([event for event in events if isinstance(event, AssetCheckResult)])
+    
+            expected_results = [
+                AssetCheckEvaluation(
+                    passed=True,
+                    asset_key=AssetKey(["customers"]),
+                    check_name="unique_customers_customer_id",
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.unique_customers_customer_id.c5af1ff4b1"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "pass",
+                        "dagster_dbt/failed_row_count": 0,
+                    },
+                ),
+                AssetCheckEvaluation(
+                    passed=True,
+                    asset_key=AssetKey(["customers"]),
+                    check_name="not_null_customers_customer_id",
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.not_null_customers_customer_id.5c9bf9911d"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "pass",
+                        "dagster_dbt/failed_row_count": 0,
+                    },
+                ),
+                AssetCheckEvaluation(
+                    passed=False,
+                    asset_key=AssetKey(["fail_tests_model"]),
+                    check_name="unique_fail_tests_model_id",
+                    severity=AssetCheckSeverity.WARN,
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.unique_fail_tests_model_id.1619308eb1"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "warn",
+                        "dagster_dbt/failed_row_count": 1,
+                    },
+                ),
+                AssetCheckEvaluation(
+                    passed=False,
+                    asset_key=AssetKey(["fail_tests_model"]),
+                    check_name="accepted_values_fail_tests_model_first_name__foo__bar__baz",
+                    severity=AssetCheckSeverity.ERROR,
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.accepted_values_fail_tests_model_first_name__foo__bar__baz.5f958cf018"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "fail",
+                        "dagster_dbt/failed_row_count": 4,
+                    },
+                ),
+            ]
+    
+            # filter these out for comparison
+            non_deterministic_metadata_keys = ["Execution Duration"]
+            check_events_without_non_deterministic_metadata = {}
+            for event in events:
+                if isinstance(event, AssetCheckEvaluation):
+                    check_events_without_non_deterministic_metadata[
+                        event.asset_key, event.check_name
+                    ] = replace(
+                        event,
+                        metadata={
+                            k: v
+                            for k, v in event.metadata.items()
+                            if k not in non_deterministic_metadata_keys
+                        },
+                    )
+    
+            for expected_asset_check_evaluation in expected_results:
+                assert (
+                    check_events_without_non_deterministic_metadata[
+                        expected_asset_check_evaluation.asset_key,
+                        expected_asset_check_evaluation.check_name,
+                    ]
+                    == expected_asset_check_evaluation
+                )
+    
+            yield from events
+            yield Output(None)
+    
+        @job
+        def my_dbt_job():
+            my_dbt_op()
+    
+>       result = my_dbt_job.execute_in_process(
+            resources={"dbt": DbtCliResource(project_dir=os.fspath(test_asset_checks_path))}
+        )
+
+dagster_dbt_tests/core/test_asset_checks.py:777: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../dagster/dagster/_core/definitions/job_definition.py:822: in execute_in_process
+    return core_execute_in_process(
+../../dagster/dagster/_core/execution/execute_in_process.py:157: in core_execute_in_process
+    event_list = list(execute_run_iterable)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/api.py:873: in __iter__
+    yield from self.iterator(
+../../dagster/dagster/_core/execution/api.py:742: in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/executor/in_process.py:71: in execute
+    yield from iter(
+../../dagster/dagster/_core/execution/api.py:873: in __iter__
+    yield from self.iterator(
+../../dagster/dagster/_core/executor/in_process.py:28: in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+../../dagster/dagster/_core/execution/plan/execute_plan.py:85: in inner_plan_execution_iterator
+    for step_event in check.generator(dagster_event_sequence_for_step(step_context)):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/execute_plan.py:316: in dagster_event_sequence_for_step
+    raise dagster_user_error.user_exception
+../../dagster/dagster/_core/execution/plan/utils.py:57: in op_execution_error_boundary
+    yield
+../../dagster/dagster/_utils/__init__.py:394: in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+dagster_dbt_tests/core/test_asset_checks.py:677: in my_dbt_op
+    invocation_id = dbt_invocation.get_artifact("run_results.json")["metadata"][
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dagster_dbt/core/dbt_cli_invocation.py:418: in get_artifact
+    return orjson.loads(artifact_path.read_bytes())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_op-0691c88-0765cee/run_results.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_op-0691c88-0765cee/run_results.json'
+
+/usr/local/lib/python3.12/pathlib.py:1013: FileNotFoundError
+----------------------------- Captured stdout call -----------------------------
+Running with dbt=1.12.4
+Registered adapter: duckdb=1.9.0
+Unable to do partial parsing because saved manifest not found. Starting full parse.
+[[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `severity` as a top-level property of `data_tests.unique.severity` in file
+`models/schema.yml`. The `severity` top-level property should be moved into the
+`config` of `data_tests.unique.severity`.
+[[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'orders' in package
+'test_dagster_asset_checks' (models/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+Found 7 models, 29 data tests, 3 seeds, 1 source, 468 macros
+
+Concurrency: 24 threads (target='dev')
+
+
+Finished running  in 0 hours 0 minutes and 0.03 seconds (0.03s).
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+[[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 3 occurrences
+- MissingArgumentsPropertyInGenericTestDeprecation: 7 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+----------------------------- Captured stderr call -----------------------------
+2026-10-29 15:34:14 +0000 - dagster - DEBUG - my_dbt_job - 0691c882-60f2-48df-b47a-c17f9d067361 - 1973 - RUN_START - Started execution of run for "my_dbt_job".
+2026-10-29 15:34:14 +0000 - dagster - DEBUG - my_dbt_job - 0691c882-60f2-48df-b47a-c17f9d067361 - 1973 - ENGINE_EVENT - Executing steps in process (pid: 1973)
+2026-10-29 15:34:14 +0000 - dagster - DEBUG - my_dbt_job - 0691c882-60f2-48df-b47a-c17f9d067361 - 1973 - my_dbt_op - RESOURCE_INIT_STARTED - Starting initialization of resources [dbt, io_manager].
+2026-10-29 15:34:14 +0000 - dagster - DEBUG - my_dbt_job - 0691c882-60f2-48df-b47a-c17f9d067361 - 1973 - my_dbt_op - RESOURCE_INIT_SUCCESS - Finished initialization of resources [dbt, io_manager].
+2026-10-29 15:34:14 +0000 - dagster - DEBUG - my_dbt_job - 0691c882-60f2-48df-b47a-c17f9d067361 - 1973 - LOGS_CAPTURED - Capturing logs for process (pid: 1973).
+2026-10-29 15:34:14 +0000 - dagster - DEBUG - my_dbt_job - 0691c882-60f2-48df-b47a-c17f9d067361 - 1973 - my_dbt_op - STEP_START - Started execution of step "my_dbt_op".
+2026-10-29 15:34:15 +0000 - dagster - INFO - my_dbt_job - 0691c882-60f2-48df-b47a-c17f9d067361 - my_dbt_op - Running dbt command: `dbt build`.
+2026-10-29 15:34:19 +0000 - dagster - INFO - my_dbt_job - 0691c882-60f2-48df-b47a-c17f9d067361 - my_dbt_op - Finished dbt command: `dbt build`.
+2026-10-29 15:34:19 +0000 - dagster - ERROR - my_dbt_job - 0691c882-60f2-48df-b47a-c17f9d067361 - 1973 - my_dbt_op - STEP_FAILURE - Execution of step "my_dbt_op" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "my_dbt_op"::
+
+FileNotFoundError: [Errno 2] No such file or directory: '<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_op-0691c88-0765cee/run_results.json'
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 677, in my_dbt_op
+    invocation_id = dbt_invocation.get_artifact("run_results.json")["metadata"][
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 418, in get_artifact
+    return orjson.loads(artifact_path.read_bytes())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2026-10-29 15:34:19 +0000 - dagster - ERROR - my_dbt_job - 0691c882-60f2-48df-b47a-c17f9d067361 - 1973 - RUN_FAILURE - Execution of run for "my_dbt_job" failed. An exception was thrown during execution.
+
+FileNotFoundError: [Errno 2] No such file or directory: '<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_op-0691c88-0765cee/run_results.json'
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/api.py", line 742, in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/executor/in_process.py", line 71, in execute
+    yield from iter(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/api.py", line 873, in __iter__
+    yield from self.iterator(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/executor/in_process.py", line 28, in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 85, in inner_plan_execution_iterator
+    for step_event in check.generator(dagster_event_sequence_for_step(step_context)):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 316, in dagster_event_sequence_for_step
+    raise dagster_user_error.user_exception
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 677, in my_dbt_op
+    invocation_id = dbt_invocation.get_artifact("run_results.json")["metadata"][
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 418, in get_artifact
+    return orjson.loads(artifact_path.read_bytes())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The above exception occurred during handling of the following exception:
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "my_dbt_op":
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 392, in iterate_with_context
+    with context_fn():
+         ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 87, in op_execution_error_boundary
+    raise error_cls(
+
+------------------------------ Captured log call -------------------------------
+INFO     dagster.builtin:dbt_cli_invocation.py:201 my_dbt_job - 0691c882-60f2-48df-b47a-c17f9d067361 - my_dbt_op - Running dbt command: `dbt build`.
+INFO     dagster.builtin:dbt_cli_invocation.py:472 my_dbt_job - 0691c882-60f2-48df-b47a-c17f9d067361 - my_dbt_op - Finished dbt command: `dbt build`.
+_________________ test_asset_checks_evaluations[seed-run-test] _________________
+
+step_context = <dagster._core.execution.context.system.StepExecutionContext object at 0x7079c4832ab0>
+force_local_execution = False
+
+    def dagster_event_sequence_for_step(
+        step_context: StepExecutionContext, force_local_execution: bool = False
+    ) -> Iterator[DagsterEvent]:
+        """Yield a sequence of dagster events for the given step with the step context.
+    
+        This function also processes errors. It handles a few error cases:
+    
+            (1) User code requests to be retried:
+                A RetryRequested has been raised. We will either put the step in to
+                up_for_retry state or a failure state depending on the number of previous attempts
+                and the max_retries on the received RetryRequested.
+    
+            (2) User code fails successfully:
+                The user-space code has raised a Failure which may have
+                explicit metadata attached.
+    
+            (3) User code fails unexpectedly:
+                The user-space code has raised an Exception. It has been
+                wrapped in an exception derived from DagsterUserCodeException. In that
+                case the original user exc_info is stashed on the exception
+                as the original_exc_info property.
+    
+            (4) Execution interrupted:
+                The run was interrupted in the middle of execution (typically by a
+                termination request).
+    
+            (5) Dagster framework error:
+                The framework raised a DagsterError that indicates a usage error
+                or some other error not communicated by a user-thrown exception. For example,
+                if the user yields an object out of a compute function that is not a
+                proper event (not an Output, ExpectationResult, etc).
+    
+            (6) All other errors:
+                An unexpected error occurred. Either there has been an internal error in the framework
+                OR we have forgotten to put a user code error boundary around invoked user-space code.
+    
+    
+        The "raised_dagster_errors" context manager can be used to force these errors to be
+        re-raised and surfaced to the user. This is mostly to get sensible errors in test and
+        ad-hoc contexts, rather than forcing the user to wade through the
+        JobExecutionResult API in order to find the step that failed.
+    
+        For tools, however, this option should be false, and a sensible error message
+        signaled to the user within that tool.
+    
+        When we launch a step that has a step launcher, we use this function on both the host process
+        and the remote process. When we run the step in the remote process, to prevent an infinite loop
+        of launching steps that then launch steps, and so on, the remote process will run this with
+        the force_local_execution argument set to True.
+        """
+        check.inst_param(step_context, "step_context", StepExecutionContext)
+    
+        try:
+            if step_context.step_launcher and not force_local_execution:
+                # info all on step_context - should deprecate second arg
+                step_events = step_context.step_launcher.launch_step(step_context)
+            else:
+                step_events = core_dagster_event_sequence_for_step(step_context)
+    
+>           yield from check.generator(step_events)
+
+../../dagster/dagster/_core/execution/plan/execute_plan.py:243: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../dagster/dagster/_core/execution/plan/execute_step.py:505: in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+../../dagster/dagster/_core/execution/plan/execute_step.py:184: in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/execute_step.py:88: in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/compute.py:188: in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/compute.py:157: in _yield_compute_results
+    for event in iterate_with_context(
+../../dagster/dagster/_utils/__init__.py:392: in iterate_with_context
+    with context_fn():
+         ^^^^^^^^^^^^
+/usr/local/lib/python3.12/contextlib.py:158: in __exit__
+    self.gen.throw(value)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+error_cls = <class 'dagster._core.errors.DagsterExecutionStepExecutionError'>
+msg_fn = <function _yield_compute_results.<locals>.<lambda>.<locals>.<lambda> at 0x7079cc1532e0>
+step_context = <dagster._core.execution.context.system.StepExecutionContext object at 0x7079c4832ab0>
+kwargs = {'step_key': 'my_dbt_op', 'op_def_name': 'my_dbt_op', 'op_name': 'my_dbt_op'}
+
+    @contextmanager
+    def op_execution_error_boundary(
+        error_cls: type[DagsterUserCodeExecutionError],
+        msg_fn: Callable[[], str],
+        step_context: "StepExecutionContext",
+        **kwargs: Any,
+    ) -> Iterator[None]:
+        """A specialization of user_code_error_boundary for the steps involved in executing a solid.
+        This variant supports the control flow exceptions RetryRequested and Failure as well
+        as respecting the RetryPolicy if present.
+        """
+        from dagster._core.execution.context.system import StepExecutionContext
+        from dagster._utils.error import redact_user_stacktrace_if_enabled
+    
+        check.callable_param(msg_fn, "msg_fn")
+        check.class_param(error_cls, "error_cls", superclass=DagsterUserCodeExecutionError)
+        check.inst_param(step_context, "step_context", StepExecutionContext)
+    
+        with redact_user_stacktrace_if_enabled(), raise_execution_interrupts():
+            step_context.log.begin_python_log_capture()
+            retry_policy = step_context.op_retry_policy
+    
+            try:
+                yield
+            except DagsterError as de:
+                # The system has thrown an error that is part of the user-framework contract
+                raise de
+    
+            except Exception as e:
+                # An exception has been thrown by user code and computation should cease
+                # with the error reported further up the stack
+    
+                # Directly thrown RetryRequested escalate before evaluating the retry policy.
+                if isinstance(e, RetryRequested):
+                    raise e
+    
+                if retry_policy:
+                    # if Failure with allow_retries set to false, disregard retry policy and raise
+                    if isinstance(e, Failure) and not e.allow_retries:
+                        raise e
+    
+                    raise RetryRequestedFromPolicy(
+                        max_retries=retry_policy.max_retries,
+                        seconds_to_wait=retry_policy.calculate_delay(
+                            step_context.previous_attempt_count + 1
+                        ),
+                    ) from e
+    
+                # Failure exceptions get re-throw without wrapping
+                if isinstance(e, Failure):
+                    raise e
+    
+                # Otherwise wrap the user exception with context
+>               raise error_cls(
+                    msg_fn(),
+                    user_exception=e,
+                    original_exc_info=sys.exc_info(),
+                    **kwargs,
+                ) from e
+E               dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "my_dbt_op":
+
+../../dagster/dagster/_core/execution/plan/utils.py:87: DagsterExecutionStepExecutionError
+
+During handling of the above exception, another exception occurred:
+
+test_asset_checks_manifest = {'metadata': {'dbt_schema_version': 'https://schemas.getdbt.com/dbt/manifest/v12.json', 'dbt_version': '1.12.4', 'gene...n_comment', 'resource_type': 'macro', 'package_name': 'dbt_duckdb', 'path': 'macros/persist_docs.sql', ...}, ...}, ...}
+dbt_commands = [['seed'], ['run'], ['test']]
+
+    def test_asset_checks_evaluations(
+        test_asset_checks_manifest: dict[str, Any], dbt_commands: list[list[str]]
+    ):
+        @op
+        def my_dbt_op(context: OpExecutionContext, dbt: DbtCliResource):
+            events = []
+            invocation_id = ""
+            for dbt_command in dbt_commands:
+                dbt_invocation = dbt.cli(
+                    dbt_command,
+                    context=context,
+                    raise_on_error=False,
+                    manifest=test_asset_checks_manifest,
+                    dagster_dbt_translator=dagster_dbt_translator_with_checks,
+                )
+                events += list(dbt_invocation.stream())
+                invocation_id = dbt_invocation.get_artifact("run_results.json")["metadata"][
+                    "invocation_id"
+                ]
+    
+            for event in events:
+                if isinstance(event, AssetCheckEvaluation):
+                    assert cast("int", event.metadata["Execution Duration"].value) > 0
+    
+            # Sanity check that we don't have AssetCheckResult events when using an op
+            assert not any([event for event in events if isinstance(event, AssetCheckResult)])
+    
+            expected_results = [
+                AssetCheckEvaluation(
+                    passed=True,
+                    asset_key=AssetKey(["customers"]),
+                    check_name="unique_customers_customer_id",
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.unique_customers_customer_id.c5af1ff4b1"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "pass",
+                        "dagster_dbt/failed_row_count": 0,
+                    },
+                ),
+                AssetCheckEvaluation(
+                    passed=True,
+                    asset_key=AssetKey(["customers"]),
+                    check_name="not_null_customers_customer_id",
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.not_null_customers_customer_id.5c9bf9911d"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "pass",
+                        "dagster_dbt/failed_row_count": 0,
+                    },
+                ),
+                AssetCheckEvaluation(
+                    passed=False,
+                    asset_key=AssetKey(["fail_tests_model"]),
+                    check_name="unique_fail_tests_model_id",
+                    severity=AssetCheckSeverity.WARN,
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.unique_fail_tests_model_id.1619308eb1"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "warn",
+                        "dagster_dbt/failed_row_count": 1,
+                    },
+                ),
+                AssetCheckEvaluation(
+                    passed=False,
+                    asset_key=AssetKey(["fail_tests_model"]),
+                    check_name="accepted_values_fail_tests_model_first_name__foo__bar__baz",
+                    severity=AssetCheckSeverity.ERROR,
+                    metadata={
+                        "unique_id": (
+                            "test.test_dagster_asset_checks.accepted_values_fail_tests_model_first_name__foo__bar__baz.5f958cf018"
+                        ),
+                        "invocation_id": invocation_id,
+                        "status": "fail",
+                        "dagster_dbt/failed_row_count": 4,
+                    },
+                ),
+            ]
+    
+            # filter these out for comparison
+            non_deterministic_metadata_keys = ["Execution Duration"]
+            check_events_without_non_deterministic_metadata = {}
+            for event in events:
+                if isinstance(event, AssetCheckEvaluation):
+                    check_events_without_non_deterministic_metadata[
+                        event.asset_key, event.check_name
+                    ] = replace(
+                        event,
+                        metadata={
+                            k: v
+                            for k, v in event.metadata.items()
+                            if k not in non_deterministic_metadata_keys
+                        },
+                    )
+    
+            for expected_asset_check_evaluation in expected_results:
+                assert (
+                    check_events_without_non_deterministic_metadata[
+                        expected_asset_check_evaluation.asset_key,
+                        expected_asset_check_evaluation.check_name,
+                    ]
+                    == expected_asset_check_evaluation
+                )
+    
+            yield from events
+            yield Output(None)
+    
+        @job
+        def my_dbt_job():
+            my_dbt_op()
+    
+>       result = my_dbt_job.execute_in_process(
+            resources={"dbt": DbtCliResource(project_dir=os.fspath(test_asset_checks_path))}
+        )
+
+dagster_dbt_tests/core/test_asset_checks.py:777: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../dagster/dagster/_core/definitions/job_definition.py:822: in execute_in_process
+    return core_execute_in_process(
+../../dagster/dagster/_core/execution/execute_in_process.py:157: in core_execute_in_process
+    event_list = list(execute_run_iterable)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/api.py:873: in __iter__
+    yield from self.iterator(
+../../dagster/dagster/_core/execution/api.py:742: in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/executor/in_process.py:71: in execute
+    yield from iter(
+../../dagster/dagster/_core/execution/api.py:873: in __iter__
+    yield from self.iterator(
+../../dagster/dagster/_core/executor/in_process.py:28: in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+../../dagster/dagster/_core/execution/plan/execute_plan.py:85: in inner_plan_execution_iterator
+    for step_event in check.generator(dagster_event_sequence_for_step(step_context)):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/execute_plan.py:316: in dagster_event_sequence_for_step
+    raise dagster_user_error.user_exception
+../../dagster/dagster/_core/execution/plan/utils.py:57: in op_execution_error_boundary
+    yield
+../../dagster/dagster/_utils/__init__.py:394: in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+dagster_dbt_tests/core/test_asset_checks.py:677: in my_dbt_op
+    invocation_id = dbt_invocation.get_artifact("run_results.json")["metadata"][
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dagster_dbt/core/dbt_cli_invocation.py:418: in get_artifact
+    return orjson.loads(artifact_path.read_bytes())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/local/lib/python3.12/pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_op-aefd680-4dbc908/run_results.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_op-aefd680-4dbc908/run_results.json'
+
+/usr/local/lib/python3.12/pathlib.py:1013: FileNotFoundError
+----------------------------- Captured stdout call -----------------------------
+Running with dbt=1.12.4
+Registered adapter: duckdb=1.9.0
+Unable to do partial parsing because saved manifest not found. Starting full parse.
+[[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `severity` as a top-level property of `data_tests.unique.severity` in file
+`models/schema.yml`. The `severity` top-level property should be moved into the
+`config` of `data_tests.unique.severity`.
+[[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'orders' in package
+'test_dagster_asset_checks' (models/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+Found 7 models, 29 data tests, 3 seeds, 1 source, 468 macros
+
+Concurrency: 24 threads (target='dev')
+
+
+Finished running  in 0 hours 0 minutes and 0.03 seconds (0.03s).
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+[[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 3 occurrences
+- MissingArgumentsPropertyInGenericTestDeprecation: 7 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+----------------------------- Captured stderr call -----------------------------
+2026-10-29 15:34:19 +0000 - dagster - DEBUG - my_dbt_job - aefd6807-6ab1-42a1-a86c-fae39b002a65 - 1973 - RUN_START - Started execution of run for "my_dbt_job".
+2026-10-29 15:34:19 +0000 - dagster - DEBUG - my_dbt_job - aefd6807-6ab1-42a1-a86c-fae39b002a65 - 1973 - ENGINE_EVENT - Executing steps in process (pid: 1973)
+2026-10-29 15:34:19 +0000 - dagster - DEBUG - my_dbt_job - aefd6807-6ab1-42a1-a86c-fae39b002a65 - 1973 - my_dbt_op - RESOURCE_INIT_STARTED - Starting initialization of resources [dbt, io_manager].
+2026-10-29 15:34:19 +0000 - dagster - DEBUG - my_dbt_job - aefd6807-6ab1-42a1-a86c-fae39b002a65 - 1973 - my_dbt_op - RESOURCE_INIT_SUCCESS - Finished initialization of resources [dbt, io_manager].
+2026-10-29 15:34:19 +0000 - dagster - DEBUG - my_dbt_job - aefd6807-6ab1-42a1-a86c-fae39b002a65 - 1973 - LOGS_CAPTURED - Capturing logs for process (pid: 1973).
+2026-10-29 15:34:19 +0000 - dagster - DEBUG - my_dbt_job - aefd6807-6ab1-42a1-a86c-fae39b002a65 - 1973 - my_dbt_op - STEP_START - Started execution of step "my_dbt_op".
+2026-10-29 15:34:20 +0000 - dagster - INFO - my_dbt_job - aefd6807-6ab1-42a1-a86c-fae39b002a65 - my_dbt_op - Running dbt command: `dbt seed`.
+2026-10-29 15:34:24 +0000 - dagster - INFO - my_dbt_job - aefd6807-6ab1-42a1-a86c-fae39b002a65 - my_dbt_op - Finished dbt command: `dbt seed`.
+2026-10-29 15:34:24 +0000 - dagster - ERROR - my_dbt_job - aefd6807-6ab1-42a1-a86c-fae39b002a65 - 1973 - my_dbt_op - STEP_FAILURE - Execution of step "my_dbt_op" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "my_dbt_op"::
+
+FileNotFoundError: [Errno 2] No such file or directory: '<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_op-aefd680-4dbc908/run_results.json'
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 677, in my_dbt_op
+    invocation_id = dbt_invocation.get_artifact("run_results.json")["metadata"][
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 418, in get_artifact
+    return orjson.loads(artifact_path.read_bytes())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2026-10-29 15:34:24 +0000 - dagster - ERROR - my_dbt_job - aefd6807-6ab1-42a1-a86c-fae39b002a65 - 1973 - RUN_FAILURE - Execution of run for "my_dbt_job" failed. An exception was thrown during execution.
+
+FileNotFoundError: [Errno 2] No such file or directory: '<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_op-aefd680-4dbc908/run_results.json'
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/api.py", line 742, in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/executor/in_process.py", line 71, in execute
+    yield from iter(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/api.py", line 873, in __iter__
+    yield from self.iterator(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/executor/in_process.py", line 28, in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 85, in inner_plan_execution_iterator
+    for step_event in check.generator(dagster_event_sequence_for_step(step_context)):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 316, in dagster_event_sequence_for_step
+    raise dagster_user_error.user_exception
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 57, in op_execution_error_boundary
+    yield
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 677, in my_dbt_op
+    invocation_id = dbt_invocation.get_artifact("run_results.json")["metadata"][
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 418, in get_artifact
+    return orjson.loads(artifact_path.read_bytes())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The above exception occurred during handling of the following exception:
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "my_dbt_op":
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 392, in iterate_with_context
+    with context_fn():
+         ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/utils.py", line 87, in op_execution_error_boundary
+    raise error_cls(
+
+------------------------------ Captured log call -------------------------------
+INFO     dagster.builtin:dbt_cli_invocation.py:201 my_dbt_job - aefd6807-6ab1-42a1-a86c-fae39b002a65 - my_dbt_op - Running dbt command: `dbt seed`.
+INFO     dagster.builtin:dbt_cli_invocation.py:472 my_dbt_job - aefd6807-6ab1-42a1-a86c-fae39b002a65 - my_dbt_op - Finished dbt command: `dbt seed`.
+________________ test_select_model_with_tests[build-customers] _________________
+
+test_asset_checks_manifest = {'metadata': {'dbt_schema_version': 'https://schemas.getdbt.com/dbt/manifest/v12.json', 'dbt_version': '1.12.4', 'gene...n_comment', 'resource_type': 'macro', 'package_name': 'dbt_duckdb', 'path': 'macros/persist_docs.sql', ...}, ...}, ...}
+dbt_commands = [['build']], selection = 'customers'
+
+    @pytest.mark.parametrize(
+        "selection",
+        ["customers", "tag:customer_info"],
+    )
+    def test_select_model_with_tests(
+        test_asset_checks_manifest: dict[str, Any], dbt_commands: list[list[str]], selection: str
+    ):
+        @dbt_assets(
+            manifest=test_asset_checks_manifest,
+            select=selection,
+            dagster_dbt_translator=dagster_dbt_translator_with_checks,
+        )
+        def my_dbt_assets(context: AssetExecutionContext, dbt: DbtCliResource):
+            for dbt_command in dbt_commands:
+                cli_invocation = dbt.cli(dbt_command, context=context)
+                assert _get_select_args(cli_invocation) == {selection}
+                yield from cli_invocation.stream()
+    
+        assert my_dbt_assets.keys == {AssetKey(["customers"])}
+        assert my_dbt_assets.check_keys == {
+            AssetCheckKey(asset_key=AssetKey(["customers"]), name="unique_customers_customer_id"),
+            AssetCheckKey(asset_key=AssetKey(["customers"]), name="not_null_customers_customer_id"),
+            AssetCheckKey(
+                asset_key=AssetKey(["customers"]), name="singular_test_with_single_dependency"
+            ),
+            AssetCheckKey(
+                asset_key=AssetKey(["customers"]),
+                name="singular_test_with_meta_and_multiple_dependencies",
+            ),
+        }
+    
+>       result = materialize(
+            [my_dbt_assets],
+            resources={"dbt": DbtCliResource(project_dir=os.fspath(test_asset_checks_path))},
+        )
+
+dagster_dbt_tests/core/test_asset_checks.py:814: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../dagster/dagster/_core/definitions/materialize.py:109: in materialize
+    ).execute_in_process(
+../../dagster/dagster/_core/definitions/job_definition.py:822: in execute_in_process
+    return core_execute_in_process(
+../../dagster/dagster/_core/execution/execute_in_process.py:157: in core_execute_in_process
+    event_list = list(execute_run_iterable)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/api.py:873: in __iter__
+    yield from self.iterator(
+../../dagster/dagster/_core/execution/api.py:742: in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/executor/in_process.py:71: in execute
+    yield from iter(
+../../dagster/dagster/_core/execution/api.py:873: in __iter__
+    yield from self.iterator(
+../../dagster/dagster/_core/executor/in_process.py:28: in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+../../dagster/dagster/_core/execution/plan/execute_plan.py:85: in inner_plan_execution_iterator
+    for step_event in check.generator(dagster_event_sequence_for_step(step_context)):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/execute_plan.py:303: in dagster_event_sequence_for_step
+    raise failure
+../../dagster/dagster/_core/execution/plan/execute_plan.py:243: in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+../../dagster/dagster/_core/execution/plan/execute_step.py:505: in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+../../dagster/dagster/_core/execution/plan/execute_step.py:184: in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/execute_step.py:88: in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/compute.py:188: in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/compute.py:157: in _yield_compute_results
+    for event in iterate_with_context(
+../../dagster/dagster/_utils/__init__.py:394: in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+dagster_dbt_tests/core/test_asset_checks.py:799: in my_dbt_assets
+    yield from cli_invocation.stream()
+dagster_dbt/core/dbt_event_iterator.py:220: in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+dagster_dbt/core/dbt_cli_invocation.py:291: in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+dagster_dbt/core/dbt_cli_invocation.py:384: in stream_raw_events
+    self._raise_on_error()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = DbtCliInvocation(process=<Popen: returncode: 2 args: ['dbt', 'build', '--select', 'customers']>, manifest={'metadata':...thon3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency'], _relation_column_metadata_cache={})
+
+    def _raise_on_error(self) -> None:
+        """Ensure that the dbt CLI process has completed. If the process has not successfully
+        completed, then optionally raise an error.
+        """
+        logger.info(f"Finished dbt command: `{self.dbt_command}`.")
+        error = self.get_error()
+        if error and self.raise_on_error:
+>           raise error
+E           dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+E           
+E           `dbt build --select customers`
+E           
+E           failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-24b1fff-9ef7ae9/dbt.log.
+E           
+E           Errors parsed from dbt logs:
+E           
+E           [[31mERROR[0m]: Encountered an error:
+E           Runtime Error
+E             IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+
+dagster_dbt/core/dbt_cli_invocation.py:475: DagsterDbtCliRuntimeError
+----------------------------- Captured stdout call -----------------------------
+Running with dbt=1.12.4
+Registered adapter: duckdb=1.9.0
+Unable to do partial parsing because saved manifest not found. Starting full parse.
+[[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `severity` as a top-level property of `data_tests.unique.severity` in file
+`models/schema.yml`. The `severity` top-level property should be moved into the
+`config` of `data_tests.unique.severity`.
+[[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'orders' in package
+'test_dagster_asset_checks' (models/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+Found 7 models, 29 data tests, 3 seeds, 1 source, 468 macros
+
+Concurrency: 24 threads (target='dev')
+
+
+Finished running  in 0 hours 0 minutes and 0.03 seconds (0.03s).
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+[[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 3 occurrences
+- MissingArgumentsPropertyInGenericTestDeprecation: 7 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+----------------------------- Captured stderr call -----------------------------
+2026-10-29 15:34:24 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - 1973 - RUN_START - Started execution of run for "__ephemeral_asset_job__".
+2026-10-29 15:34:24 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - 1973 - ENGINE_EVENT - Executing steps in process (pid: 1973)
+2026-10-29 15:34:24 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - 1973 - my_dbt_assets - RESOURCE_INIT_STARTED - Starting initialization of resources [dbt, io_manager].
+2026-10-29 15:34:24 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - 1973 - my_dbt_assets - RESOURCE_INIT_SUCCESS - Finished initialization of resources [dbt, io_manager].
+2026-10-29 15:34:24 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - 1973 - LOGS_CAPTURED - Capturing logs for process (pid: 1973).
+2026-10-29 15:34:24 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - 1973 - my_dbt_assets - STEP_START - Started execution of step "my_dbt_assets".
+2026-10-29 15:34:24 +0000 - dagster - INFO - __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'customers']`.
+2026-10-29 15:34:25 +0000 - dagster - INFO - __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - my_dbt_assets - Running dbt command: `dbt build --select customers`.
+2026-10-29 15:34:28 +0000 - dagster - INFO - __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - my_dbt_assets - Finished dbt command: `dbt build --select customers`.
+2026-10-29 15:34:28 +0000 - dagster - ERROR - __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - 1973 - my_dbt_assets - STEP_FAILURE - Execution of step "my_dbt_assets" failed.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt build --select customers`
+
+failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-24b1fff-9ef7ae9/dbt.log.
+
+Errors parsed from dbt logs:
+
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 799, in my_dbt_assets
+    yield from cli_invocation.stream()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_event_iterator.py", line 220, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 291, in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 384, in stream_raw_events
+    self._raise_on_error()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 475, in _raise_on_error
+    raise error
+
+2026-10-29 15:34:28 +0000 - dagster - ERROR - __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - 1973 - RUN_FAILURE - Execution of run for "__ephemeral_asset_job__" failed. An exception was thrown during execution.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt build --select customers`
+
+failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-24b1fff-9ef7ae9/dbt.log.
+
+Errors parsed from dbt logs:
+
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/api.py", line 742, in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/executor/in_process.py", line 71, in execute
+    yield from iter(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/api.py", line 873, in __iter__
+    yield from self.iterator(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/executor/in_process.py", line 28, in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 85, in inner_plan_execution_iterator
+    for step_event in check.generator(dagster_event_sequence_for_step(step_context)):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 303, in dagster_event_sequence_for_step
+    raise failure
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 799, in my_dbt_assets
+    yield from cli_invocation.stream()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_event_iterator.py", line 220, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 291, in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 384, in stream_raw_events
+    self._raise_on_error()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 475, in _raise_on_error
+    raise error
+
+------------------------------ Captured log call -------------------------------
+INFO     dagster.builtin:asset_utils.py:1176 __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'customers']`.
+INFO     dagster.builtin:dbt_cli_invocation.py:201 __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - my_dbt_assets - Running dbt command: `dbt build --select customers`.
+INFO     dagster.builtin:dbt_cli_invocation.py:472 __ephemeral_asset_job__ - 24b1fff2-f7e7-4f42-aea3-f2ed3ad0d0e4 - my_dbt_assets - Finished dbt command: `dbt build --select customers`.
+____________ test_select_model_with_tests[build-tag:customer_info] _____________
+
+test_asset_checks_manifest = {'metadata': {'dbt_schema_version': 'https://schemas.getdbt.com/dbt/manifest/v12.json', 'dbt_version': '1.12.4', 'gene...n_comment', 'resource_type': 'macro', 'package_name': 'dbt_duckdb', 'path': 'macros/persist_docs.sql', ...}, ...}, ...}
+dbt_commands = [['build']], selection = 'tag:customer_info'
+
+    @pytest.mark.parametrize(
+        "selection",
+        ["customers", "tag:customer_info"],
+    )
+    def test_select_model_with_tests(
+        test_asset_checks_manifest: dict[str, Any], dbt_commands: list[list[str]], selection: str
+    ):
+        @dbt_assets(
+            manifest=test_asset_checks_manifest,
+            select=selection,
+            dagster_dbt_translator=dagster_dbt_translator_with_checks,
+        )
+        def my_dbt_assets(context: AssetExecutionContext, dbt: DbtCliResource):
+            for dbt_command in dbt_commands:
+                cli_invocation = dbt.cli(dbt_command, context=context)
+                assert _get_select_args(cli_invocation) == {selection}
+                yield from cli_invocation.stream()
+    
+        assert my_dbt_assets.keys == {AssetKey(["customers"])}
+        assert my_dbt_assets.check_keys == {
+            AssetCheckKey(asset_key=AssetKey(["customers"]), name="unique_customers_customer_id"),
+            AssetCheckKey(asset_key=AssetKey(["customers"]), name="not_null_customers_customer_id"),
+            AssetCheckKey(
+                asset_key=AssetKey(["customers"]), name="singular_test_with_single_dependency"
+            ),
+            AssetCheckKey(
+                asset_key=AssetKey(["customers"]),
+                name="singular_test_with_meta_and_multiple_dependencies",
+            ),
+        }
+    
+>       result = materialize(
+            [my_dbt_assets],
+            resources={"dbt": DbtCliResource(project_dir=os.fspath(test_asset_checks_path))},
+        )
+
+dagster_dbt_tests/core/test_asset_checks.py:814: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../dagster/dagster/_core/definitions/materialize.py:109: in materialize
+    ).execute_in_process(
+../../dagster/dagster/_core/definitions/job_definition.py:822: in execute_in_process
+    return core_execute_in_process(
+../../dagster/dagster/_core/execution/execute_in_process.py:157: in core_execute_in_process
+    event_list = list(execute_run_iterable)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/api.py:873: in __iter__
+    yield from self.iterator(
+../../dagster/dagster/_core/execution/api.py:742: in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/executor/in_process.py:71: in execute
+    yield from iter(
+../../dagster/dagster/_core/execution/api.py:873: in __iter__
+    yield from self.iterator(
+../../dagster/dagster/_core/executor/in_process.py:28: in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+../../dagster/dagster/_core/execution/plan/execute_plan.py:85: in inner_plan_execution_iterator
+    for step_event in check.generator(dagster_event_sequence_for_step(step_context)):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/execute_plan.py:303: in dagster_event_sequence_for_step
+    raise failure
+../../dagster/dagster/_core/execution/plan/execute_plan.py:243: in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+../../dagster/dagster/_core/execution/plan/execute_step.py:505: in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+../../dagster/dagster/_core/execution/plan/execute_step.py:184: in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/execute_step.py:88: in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/compute.py:188: in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/compute.py:157: in _yield_compute_results
+    for event in iterate_with_context(
+../../dagster/dagster/_utils/__init__.py:394: in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+dagster_dbt_tests/core/test_asset_checks.py:799: in my_dbt_assets
+    yield from cli_invocation.stream()
+dagster_dbt/core/dbt_event_iterator.py:220: in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+dagster_dbt/core/dbt_cli_invocation.py:291: in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+dagster_dbt/core/dbt_cli_invocation.py:384: in stream_raw_events
+    self._raise_on_error()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = DbtCliInvocation(process=<Popen: returncode: 2 args: ['dbt', 'build', '--select', 'tag:customer_info']>, manifest={'me...thon3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency'], _relation_column_metadata_cache={})
+
+    def _raise_on_error(self) -> None:
+        """Ensure that the dbt CLI process has completed. If the process has not successfully
+        completed, then optionally raise an error.
+        """
+        logger.info(f"Finished dbt command: `{self.dbt_command}`.")
+        error = self.get_error()
+        if error and self.raise_on_error:
+>           raise error
+E           dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+E           
+E           `dbt build --select tag:customer_info`
+E           
+E           failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-6adbc50-b5005e7/dbt.log.
+E           
+E           Errors parsed from dbt logs:
+E           
+E           [[31mERROR[0m]: Encountered an error:
+E           Runtime Error
+E             IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+
+dagster_dbt/core/dbt_cli_invocation.py:475: DagsterDbtCliRuntimeError
+----------------------------- Captured stdout call -----------------------------
+Running with dbt=1.12.4
+Registered adapter: duckdb=1.9.0
+Unable to do partial parsing because saved manifest not found. Starting full parse.
+[[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `severity` as a top-level property of `data_tests.unique.severity` in file
+`models/schema.yml`. The `severity` top-level property should be moved into the
+`config` of `data_tests.unique.severity`.
+[[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'orders' in package
+'test_dagster_asset_checks' (models/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+Found 7 models, 29 data tests, 3 seeds, 1 source, 468 macros
+
+Concurrency: 24 threads (target='dev')
+
+
+Finished running  in 0 hours 0 minutes and 0.02 seconds (0.02s).
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+[[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 3 occurrences
+- MissingArgumentsPropertyInGenericTestDeprecation: 7 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+----------------------------- Captured stderr call -----------------------------
+2026-10-29 15:34:28 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - 1973 - RUN_START - Started execution of run for "__ephemeral_asset_job__".
+2026-10-29 15:34:28 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - 1973 - ENGINE_EVENT - Executing steps in process (pid: 1973)
+2026-10-29 15:34:28 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - 1973 - my_dbt_assets - RESOURCE_INIT_STARTED - Starting initialization of resources [dbt, io_manager].
+2026-10-29 15:34:28 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - 1973 - my_dbt_assets - RESOURCE_INIT_SUCCESS - Finished initialization of resources [dbt, io_manager].
+2026-10-29 15:34:28 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - 1973 - LOGS_CAPTURED - Capturing logs for process (pid: 1973).
+2026-10-29 15:34:28 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - 1973 - my_dbt_assets - STEP_START - Started execution of step "my_dbt_assets".
+2026-10-29 15:34:28 +0000 - dagster - INFO - __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'tag:customer_info']`.
+2026-10-29 15:34:30 +0000 - dagster - INFO - __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - my_dbt_assets - Running dbt command: `dbt build --select tag:customer_info`.
+2026-10-29 15:34:33 +0000 - dagster - INFO - __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - my_dbt_assets - Finished dbt command: `dbt build --select tag:customer_info`.
+2026-10-29 15:34:33 +0000 - dagster - ERROR - __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - 1973 - my_dbt_assets - STEP_FAILURE - Execution of step "my_dbt_assets" failed.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt build --select tag:customer_info`
+
+failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-6adbc50-b5005e7/dbt.log.
+
+Errors parsed from dbt logs:
+
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 799, in my_dbt_assets
+    yield from cli_invocation.stream()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_event_iterator.py", line 220, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 291, in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 384, in stream_raw_events
+    self._raise_on_error()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 475, in _raise_on_error
+    raise error
+
+2026-10-29 15:34:33 +0000 - dagster - ERROR - __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - 1973 - RUN_FAILURE - Execution of run for "__ephemeral_asset_job__" failed. An exception was thrown during execution.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt build --select tag:customer_info`
+
+failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-6adbc50-b5005e7/dbt.log.
+
+Errors parsed from dbt logs:
+
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/api.py", line 742, in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/executor/in_process.py", line 71, in execute
+    yield from iter(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/api.py", line 873, in __iter__
+    yield from self.iterator(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/executor/in_process.py", line 28, in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 85, in inner_plan_execution_iterator
+    for step_event in check.generator(dagster_event_sequence_for_step(step_context)):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 303, in dagster_event_sequence_for_step
+    raise failure
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 799, in my_dbt_assets
+    yield from cli_invocation.stream()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_event_iterator.py", line 220, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 291, in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 384, in stream_raw_events
+    self._raise_on_error()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 475, in _raise_on_error
+    raise error
+
+------------------------------ Captured log call -------------------------------
+INFO     dagster.builtin:asset_utils.py:1176 __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'tag:customer_info']`.
+INFO     dagster.builtin:dbt_cli_invocation.py:201 __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - my_dbt_assets - Running dbt command: `dbt build --select tag:customer_info`.
+INFO     dagster.builtin:dbt_cli_invocation.py:472 __ephemeral_asset_job__ - 6adbc50f-ea41-4c1a-8544-351879588d1c - my_dbt_assets - Finished dbt command: `dbt build --select tag:customer_info`.
+____________ test_select_model_with_tests[seed-run-test-customers] _____________
+
+test_asset_checks_manifest = {'metadata': {'dbt_schema_version': 'https://schemas.getdbt.com/dbt/manifest/v12.json', 'dbt_version': '1.12.4', 'gene...n_comment', 'resource_type': 'macro', 'package_name': 'dbt_duckdb', 'path': 'macros/persist_docs.sql', ...}, ...}, ...}
+dbt_commands = [['seed'], ['run'], ['test']], selection = 'customers'
+
+    @pytest.mark.parametrize(
+        "selection",
+        ["customers", "tag:customer_info"],
+    )
+    def test_select_model_with_tests(
+        test_asset_checks_manifest: dict[str, Any], dbt_commands: list[list[str]], selection: str
+    ):
+        @dbt_assets(
+            manifest=test_asset_checks_manifest,
+            select=selection,
+            dagster_dbt_translator=dagster_dbt_translator_with_checks,
+        )
+        def my_dbt_assets(context: AssetExecutionContext, dbt: DbtCliResource):
+            for dbt_command in dbt_commands:
+                cli_invocation = dbt.cli(dbt_command, context=context)
+                assert _get_select_args(cli_invocation) == {selection}
+                yield from cli_invocation.stream()
+    
+        assert my_dbt_assets.keys == {AssetKey(["customers"])}
+        assert my_dbt_assets.check_keys == {
+            AssetCheckKey(asset_key=AssetKey(["customers"]), name="unique_customers_customer_id"),
+            AssetCheckKey(asset_key=AssetKey(["customers"]), name="not_null_customers_customer_id"),
+            AssetCheckKey(
+                asset_key=AssetKey(["customers"]), name="singular_test_with_single_dependency"
+            ),
+            AssetCheckKey(
+                asset_key=AssetKey(["customers"]),
+                name="singular_test_with_meta_and_multiple_dependencies",
+            ),
+        }
+    
+>       result = materialize(
+            [my_dbt_assets],
+            resources={"dbt": DbtCliResource(project_dir=os.fspath(test_asset_checks_path))},
+        )
+
+dagster_dbt_tests/core/test_asset_checks.py:814: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../dagster/dagster/_core/definitions/materialize.py:109: in materialize
+    ).execute_in_process(
+../../dagster/dagster/_core/definitions/job_definition.py:822: in execute_in_process
+    return core_execute_in_process(
+../../dagster/dagster/_core/execution/execute_in_process.py:157: in core_execute_in_process
+    event_list = list(execute_run_iterable)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/api.py:873: in __iter__
+    yield from self.iterator(
+../../dagster/dagster/_core/execution/api.py:742: in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/executor/in_process.py:71: in execute
+    yield from iter(
+../../dagster/dagster/_core/execution/api.py:873: in __iter__
+    yield from self.iterator(
+../../dagster/dagster/_core/executor/in_process.py:28: in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+../../dagster/dagster/_core/execution/plan/execute_plan.py:85: in inner_plan_execution_iterator
+    for step_event in check.generator(dagster_event_sequence_for_step(step_context)):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/execute_plan.py:303: in dagster_event_sequence_for_step
+    raise failure
+../../dagster/dagster/_core/execution/plan/execute_plan.py:243: in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+../../dagster/dagster/_core/execution/plan/execute_step.py:505: in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+../../dagster/dagster/_core/execution/plan/execute_step.py:184: in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/execute_step.py:88: in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/compute.py:188: in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/compute.py:157: in _yield_compute_results
+    for event in iterate_with_context(
+../../dagster/dagster/_utils/__init__.py:394: in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+dagster_dbt_tests/core/test_asset_checks.py:799: in my_dbt_assets
+    yield from cli_invocation.stream()
+dagster_dbt/core/dbt_event_iterator.py:220: in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+dagster_dbt/core/dbt_cli_invocation.py:291: in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+dagster_dbt/core/dbt_cli_invocation.py:384: in stream_raw_events
+    self._raise_on_error()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = DbtCliInvocation(process=<Popen: returncode: 2 args: ['dbt', 'run', '--select', 'customers']>, manifest={'metadata': {...thon3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency'], _relation_column_metadata_cache={})
+
+    def _raise_on_error(self) -> None:
+        """Ensure that the dbt CLI process has completed. If the process has not successfully
+        completed, then optionally raise an error.
+        """
+        logger.info(f"Finished dbt command: `{self.dbt_command}`.")
+        error = self.get_error()
+        if error and self.raise_on_error:
+>           raise error
+E           dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+E           
+E           `dbt run --select customers`
+E           
+E           failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-d41cb36-b964b41/dbt.log.
+E           
+E           Errors parsed from dbt logs:
+E           
+E           [[31mERROR[0m]: Encountered an error:
+E           Runtime Error
+E             IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+
+dagster_dbt/core/dbt_cli_invocation.py:475: DagsterDbtCliRuntimeError
+----------------------------- Captured stdout call -----------------------------
+Running with dbt=1.12.4
+Registered adapter: duckdb=1.9.0
+Unable to do partial parsing because saved manifest not found. Starting full parse.
+[[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `severity` as a top-level property of `data_tests.unique.severity` in file
+`models/schema.yml`. The `severity` top-level property should be moved into the
+`config` of `data_tests.unique.severity`.
+[[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'orders' in package
+'test_dagster_asset_checks' (models/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+Found 7 models, 29 data tests, 3 seeds, 1 source, 468 macros
+[[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+
+[32mCompleted successfully[0m
+
+Done. PASS=0 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=0
+[[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 3 occurrences
+- MissingArgumentsPropertyInGenericTestDeprecation: 7 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+Running with dbt=1.12.4
+Registered adapter: duckdb=1.9.0
+Unable to do partial parsing because saved manifest not found. Starting full parse.
+[[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `severity` as a top-level property of `data_tests.unique.severity` in file
+`models/schema.yml`. The `severity` top-level property should be moved into the
+`config` of `data_tests.unique.severity`.
+[[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'orders' in package
+'test_dagster_asset_checks' (models/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+Found 7 models, 29 data tests, 3 seeds, 1 source, 468 macros
+
+Concurrency: 24 threads (target='dev')
+
+
+Finished running  in 0 hours 0 minutes and 0.03 seconds (0.03s).
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+[[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 3 occurrences
+- MissingArgumentsPropertyInGenericTestDeprecation: 7 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+----------------------------- Captured stderr call -----------------------------
+2026-10-29 15:34:33 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - 1973 - RUN_START - Started execution of run for "__ephemeral_asset_job__".
+2026-10-29 15:34:33 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - 1973 - ENGINE_EVENT - Executing steps in process (pid: 1973)
+2026-10-29 15:34:33 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - 1973 - my_dbt_assets - RESOURCE_INIT_STARTED - Starting initialization of resources [dbt, io_manager].
+2026-10-29 15:34:33 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - 1973 - my_dbt_assets - RESOURCE_INIT_SUCCESS - Finished initialization of resources [dbt, io_manager].
+2026-10-29 15:34:33 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - 1973 - LOGS_CAPTURED - Capturing logs for process (pid: 1973).
+2026-10-29 15:34:33 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - 1973 - my_dbt_assets - STEP_START - Started execution of step "my_dbt_assets".
+2026-10-29 15:34:33 +0000 - dagster - INFO - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'customers']`.
+2026-10-29 15:34:35 +0000 - dagster - INFO - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - my_dbt_assets - Running dbt command: `dbt seed --select customers`.
+2026-10-29 15:34:40 +0000 - dagster - INFO - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - my_dbt_assets - Finished dbt command: `dbt seed --select customers`.
+2026-10-29 15:34:40 +0000 - dagster - INFO - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'customers']`.
+2026-10-29 15:34:40 +0000 - dagster - INFO - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - my_dbt_assets - Running dbt command: `dbt run --select customers`.
+2026-10-29 15:34:43 +0000 - dagster - INFO - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - my_dbt_assets - Finished dbt command: `dbt run --select customers`.
+2026-10-29 15:34:43 +0000 - dagster - ERROR - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - 1973 - my_dbt_assets - STEP_FAILURE - Execution of step "my_dbt_assets" failed.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt run --select customers`
+
+failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-d41cb36-b964b41/dbt.log.
+
+Errors parsed from dbt logs:
+
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 799, in my_dbt_assets
+    yield from cli_invocation.stream()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_event_iterator.py", line 220, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 291, in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 384, in stream_raw_events
+    self._raise_on_error()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 475, in _raise_on_error
+    raise error
+
+2026-10-29 15:34:43 +0000 - dagster - ERROR - __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - 1973 - RUN_FAILURE - Execution of run for "__ephemeral_asset_job__" failed. An exception was thrown during execution.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt run --select customers`
+
+failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-d41cb36-b964b41/dbt.log.
+
+Errors parsed from dbt logs:
+
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/api.py", line 742, in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/executor/in_process.py", line 71, in execute
+    yield from iter(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/api.py", line 873, in __iter__
+    yield from self.iterator(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/executor/in_process.py", line 28, in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 85, in inner_plan_execution_iterator
+    for step_event in check.generator(dagster_event_sequence_for_step(step_context)):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 303, in dagster_event_sequence_for_step
+    raise failure
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 799, in my_dbt_assets
+    yield from cli_invocation.stream()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_event_iterator.py", line 220, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 291, in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 384, in stream_raw_events
+    self._raise_on_error()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 475, in _raise_on_error
+    raise error
+
+------------------------------ Captured log call -------------------------------
+INFO     dagster.builtin:asset_utils.py:1176 __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'customers']`.
+INFO     dagster.builtin:dbt_cli_invocation.py:201 __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - my_dbt_assets - Running dbt command: `dbt seed --select customers`.
+INFO     dagster.builtin:dbt_cli_invocation.py:472 __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - my_dbt_assets - Finished dbt command: `dbt seed --select customers`.
+INFO     dagster.builtin:asset_utils.py:1176 __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'customers']`.
+INFO     dagster.builtin:dbt_cli_invocation.py:201 __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - my_dbt_assets - Running dbt command: `dbt run --select customers`.
+INFO     dagster.builtin:dbt_cli_invocation.py:472 __ephemeral_asset_job__ - d41cb36c-2350-4da0-a14d-a5d9a2a3dfe5 - my_dbt_assets - Finished dbt command: `dbt run --select customers`.
+________ test_select_model_with_tests[seed-run-test-tag:customer_info] _________
+
+test_asset_checks_manifest = {'metadata': {'dbt_schema_version': 'https://schemas.getdbt.com/dbt/manifest/v12.json', 'dbt_version': '1.12.4', 'gene...n_comment', 'resource_type': 'macro', 'package_name': 'dbt_duckdb', 'path': 'macros/persist_docs.sql', ...}, ...}, ...}
+dbt_commands = [['seed'], ['run'], ['test']], selection = 'tag:customer_info'
+
+    @pytest.mark.parametrize(
+        "selection",
+        ["customers", "tag:customer_info"],
+    )
+    def test_select_model_with_tests(
+        test_asset_checks_manifest: dict[str, Any], dbt_commands: list[list[str]], selection: str
+    ):
+        @dbt_assets(
+            manifest=test_asset_checks_manifest,
+            select=selection,
+            dagster_dbt_translator=dagster_dbt_translator_with_checks,
+        )
+        def my_dbt_assets(context: AssetExecutionContext, dbt: DbtCliResource):
+            for dbt_command in dbt_commands:
+                cli_invocation = dbt.cli(dbt_command, context=context)
+                assert _get_select_args(cli_invocation) == {selection}
+                yield from cli_invocation.stream()
+    
+        assert my_dbt_assets.keys == {AssetKey(["customers"])}
+        assert my_dbt_assets.check_keys == {
+            AssetCheckKey(asset_key=AssetKey(["customers"]), name="unique_customers_customer_id"),
+            AssetCheckKey(asset_key=AssetKey(["customers"]), name="not_null_customers_customer_id"),
+            AssetCheckKey(
+                asset_key=AssetKey(["customers"]), name="singular_test_with_single_dependency"
+            ),
+            AssetCheckKey(
+                asset_key=AssetKey(["customers"]),
+                name="singular_test_with_meta_and_multiple_dependencies",
+            ),
+        }
+    
+>       result = materialize(
+            [my_dbt_assets],
+            resources={"dbt": DbtCliResource(project_dir=os.fspath(test_asset_checks_path))},
+        )
+
+dagster_dbt_tests/core/test_asset_checks.py:814: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../dagster/dagster/_core/definitions/materialize.py:109: in materialize
+    ).execute_in_process(
+../../dagster/dagster/_core/definitions/job_definition.py:822: in execute_in_process
+    return core_execute_in_process(
+../../dagster/dagster/_core/execution/execute_in_process.py:157: in core_execute_in_process
+    event_list = list(execute_run_iterable)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/api.py:873: in __iter__
+    yield from self.iterator(
+../../dagster/dagster/_core/execution/api.py:742: in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/executor/in_process.py:71: in execute
+    yield from iter(
+../../dagster/dagster/_core/execution/api.py:873: in __iter__
+    yield from self.iterator(
+../../dagster/dagster/_core/executor/in_process.py:28: in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+../../dagster/dagster/_core/execution/plan/execute_plan.py:85: in inner_plan_execution_iterator
+    for step_event in check.generator(dagster_event_sequence_for_step(step_context)):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/execute_plan.py:303: in dagster_event_sequence_for_step
+    raise failure
+../../dagster/dagster/_core/execution/plan/execute_plan.py:243: in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+../../dagster/dagster/_core/execution/plan/execute_step.py:505: in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+../../dagster/dagster/_core/execution/plan/execute_step.py:184: in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/execute_step.py:88: in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/compute.py:188: in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../dagster/dagster/_core/execution/plan/compute.py:157: in _yield_compute_results
+    for event in iterate_with_context(
+../../dagster/dagster/_utils/__init__.py:394: in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+dagster_dbt_tests/core/test_asset_checks.py:799: in my_dbt_assets
+    yield from cli_invocation.stream()
+dagster_dbt/core/dbt_event_iterator.py:220: in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+dagster_dbt/core/dbt_cli_invocation.py:291: in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+dagster_dbt/core/dbt_cli_invocation.py:384: in stream_raw_events
+    self._raise_on_error()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = DbtCliInvocation(process=<Popen: returncode: 2 args: ['dbt', 'run', '--select', 'tag:customer_info']>, manifest={'meta...thon3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency'], _relation_column_metadata_cache={})
+
+    def _raise_on_error(self) -> None:
+        """Ensure that the dbt CLI process has completed. If the process has not successfully
+        completed, then optionally raise an error.
+        """
+        logger.info(f"Finished dbt command: `{self.dbt_command}`.")
+        error = self.get_error()
+        if error and self.raise_on_error:
+>           raise error
+E           dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+E           
+E           `dbt run --select tag:customer_info`
+E           
+E           failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-cc9f31e-822c62d/dbt.log.
+E           
+E           Errors parsed from dbt logs:
+E           
+E           [[31mERROR[0m]: Encountered an error:
+E           Runtime Error
+E             IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+
+dagster_dbt/core/dbt_cli_invocation.py:475: DagsterDbtCliRuntimeError
+----------------------------- Captured stdout call -----------------------------
+Running with dbt=1.12.4
+Registered adapter: duckdb=1.9.0
+Unable to do partial parsing because saved manifest not found. Starting full parse.
+[[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `severity` as a top-level property of `data_tests.unique.severity` in file
+`models/schema.yml`. The `severity` top-level property should be moved into the
+`config` of `data_tests.unique.severity`.
+[[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'orders' in package
+'test_dagster_asset_checks' (models/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+Found 7 models, 29 data tests, 3 seeds, 1 source, 468 macros
+[[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+
+[32mCompleted successfully[0m
+
+Done. PASS=0 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=0
+[[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 3 occurrences
+- MissingArgumentsPropertyInGenericTestDeprecation: 7 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+Running with dbt=1.12.4
+Registered adapter: duckdb=1.9.0
+Unable to do partial parsing because saved manifest not found. Starting full parse.
+[[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `severity` as a top-level property of `data_tests.unique.severity` in file
+`models/schema.yml`. The `severity` top-level property should be moved into the
+`config` of `data_tests.unique.severity`.
+[[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'orders' in package
+'test_dagster_asset_checks' (models/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+Found 7 models, 29 data tests, 3 seeds, 1 source, 468 macros
+
+Concurrency: 24 threads (target='dev')
+
+
+Finished running  in 0 hours 0 minutes and 0.03 seconds (0.03s).
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+[[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 3 occurrences
+- MissingArgumentsPropertyInGenericTestDeprecation: 7 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+----------------------------- Captured stderr call -----------------------------
+2026-10-29 15:34:43 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - 1973 - RUN_START - Started execution of run for "__ephemeral_asset_job__".
+2026-10-29 15:34:43 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - 1973 - ENGINE_EVENT - Executing steps in process (pid: 1973)
+2026-10-29 15:34:43 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - 1973 - my_dbt_assets - RESOURCE_INIT_STARTED - Starting initialization of resources [dbt, io_manager].
+2026-10-29 15:34:43 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - 1973 - my_dbt_assets - RESOURCE_INIT_SUCCESS - Finished initialization of resources [dbt, io_manager].
+2026-10-29 15:34:43 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - 1973 - LOGS_CAPTURED - Capturing logs for process (pid: 1973).
+2026-10-29 15:34:43 +0000 - dagster - DEBUG - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - 1973 - my_dbt_assets - STEP_START - Started execution of step "my_dbt_assets".
+2026-10-29 15:34:43 +0000 - dagster - INFO - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'tag:customer_info']`.
+2026-10-29 15:34:44 +0000 - dagster - INFO - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - my_dbt_assets - Running dbt command: `dbt seed --select tag:customer_info`.
+2026-10-29 15:34:48 +0000 - dagster - INFO - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - my_dbt_assets - Finished dbt command: `dbt seed --select tag:customer_info`.
+2026-10-29 15:34:48 +0000 - dagster - INFO - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'tag:customer_info']`.
+2026-10-29 15:34:48 +0000 - dagster - INFO - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - my_dbt_assets - Running dbt command: `dbt run --select tag:customer_info`.
+2026-10-29 15:34:55 +0000 - dagster - INFO - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - my_dbt_assets - Finished dbt command: `dbt run --select tag:customer_info`.
+2026-10-29 15:34:55 +0000 - dagster - ERROR - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - 1973 - my_dbt_assets - STEP_FAILURE - Execution of step "my_dbt_assets" failed.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt run --select tag:customer_info`
+
+failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-cc9f31e-822c62d/dbt.log.
+
+Errors parsed from dbt logs:
+
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 799, in my_dbt_assets
+    yield from cli_invocation.stream()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_event_iterator.py", line 220, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 291, in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 384, in stream_raw_events
+    self._raise_on_error()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 475, in _raise_on_error
+    raise error
+
+2026-10-29 15:34:55 +0000 - dagster - ERROR - __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - 1973 - RUN_FAILURE - Execution of run for "__ephemeral_asset_job__" failed. An exception was thrown during execution.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt run --select tag:customer_info`
+
+failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-cc9f31e-822c62d/dbt.log.
+
+Errors parsed from dbt logs:
+
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+
+Stack Trace:
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/api.py", line 742, in job_execution_iterator
+    for event in job_context.executor.execute(job_context, execution_plan):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/executor/in_process.py", line 71, in execute
+    yield from iter(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/api.py", line 873, in __iter__
+    yield from self.iterator(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/executor/in_process.py", line 28, in inprocess_execution_iterator
+    yield from inner_plan_execution_iterator(
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 85, in inner_plan_execution_iterator
+    for step_event in check.generator(dagster_event_sequence_for_step(step_context)):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 303, in dagster_event_sequence_for_step
+    raise failure
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_plan.py", line 243, in dagster_event_sequence_for_step
+    yield from check.generator(step_events)
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 505, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 184, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+                      ^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 188, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_core/execution/plan/compute.py", line 157, in _yield_compute_results
+    for event in iterate_with_context(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/dagster/dagster/_utils/__init__.py", line 394, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py", line 799, in my_dbt_assets
+    yield from cli_invocation.stream()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_event_iterator.py", line 220, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 291, in _stream_asset_events
+    for event in self.stream_raw_events():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 384, in stream_raw_events
+    self._raise_on_error()
+  File "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/core/dbt_cli_invocation.py", line 475, in _raise_on_error
+    raise error
+
+------------------------------ Captured log call -------------------------------
+INFO     dagster.builtin:asset_utils.py:1176 __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'tag:customer_info']`.
+INFO     dagster.builtin:dbt_cli_invocation.py:201 __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - my_dbt_assets - Running dbt command: `dbt seed --select tag:customer_info`.
+INFO     dagster.builtin:dbt_cli_invocation.py:472 __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - my_dbt_assets - Finished dbt command: `dbt seed --select tag:customer_info`.
+INFO     dagster.builtin:asset_utils.py:1176 __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - my_dbt_assets - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'tag:customer_info']`.
+INFO     dagster.builtin:dbt_cli_invocation.py:201 __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - my_dbt_assets - Running dbt command: `dbt run --select tag:customer_info`.
+INFO     dagster.builtin:dbt_cli_invocation.py:472 __ephemeral_asset_job__ - cc9f31ec-bd3f-40e8-b44d-630a6c36baf7 - my_dbt_assets - Finished dbt command: `dbt run --select tag:customer_info`.
+============================= slowest 10 durations =============================
+240.01s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_results[build]
+154.54s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_dbt_with_dotted_dependency_names
+152.34s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_results[seed-run-test]
+12.66s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_materialize_checks_no_asset[seed-run-test-dagster_dbt_translator1]
+12.61s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_materialize_checks_no_asset[seed-run-test-dagster_dbt_translator1]
+12.42s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_extra_checks[seed-run-test]
+11.78s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[seed-run-test-tag:customer_info]
+9.59s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[seed-run-test-customers]
+7.08s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_dbt_source_tests_checks_enabled[select_non_source]
+6.65s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_checks.py::test_dbt_source_tests_checks_enabled[select_downstream_of_source]
+=========================== short test summary info ============================
+FAILED dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_results[build] - assert 0 == 10
+ +  where 0 = len([])
+ +    where [] = get_asset_materialization_events()
+ +      where get_asset_materialization_events = <dagster._core.execution.execute_in_process_result.ExecuteInProcessResult object at 0x7079cc6162d0>.get_asset_materialization_events
+FAILED dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_results[seed-run-test] - assert 0 == 10
+ +  where 0 = len([])
+ +    where [] = get_asset_materialization_events()
+ +      where get_asset_materialization_events = <dagster._core.execution.execute_in_process_result.ExecuteInProcessResult object at 0x7079cc0af110>.get_asset_materialization_events
+FAILED dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_evaluations[build] - FileNotFoundError: [Errno 2] No such file or directory: '<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_op-0691c88-0765cee/run_results.json'
+FAILED dagster_dbt_tests/core/test_asset_checks.py::test_asset_checks_evaluations[seed-run-test] - FileNotFoundError: [Errno 2] No such file or directory: '<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_op-aefd680-4dbc908/run_results.json'
+FAILED dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[build-customers] - dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt build --select customers`
+
+failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-24b1fff-9ef7ae9/dbt.log.
+
+Errors parsed from dbt logs:
+
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+FAILED dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[build-tag:customer_info] - dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt build --select tag:customer_info`
+
+failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-6adbc50-b5005e7/dbt.log.
+
+Errors parsed from dbt logs:
+
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+FAILED dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[seed-run-test-customers] - dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt run --select customers`
+
+failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-d41cb36-b964b41/dbt.log.
+
+Errors parsed from dbt logs:
+
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+FAILED dagster_dbt_tests/core/test_asset_checks.py::test_select_model_with_tests[seed-run-test-tag:customer_info] - dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt run --select tag:customer_info`
+
+failed with exit code `2`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/my_dbt_assets-cc9f31e-822c62d/dbt.log.
+
+Errors parsed from dbt logs:
+
+[[31mERROR[0m]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "<SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/dbt_projects/test_dagster_asset_checks/target/master_jaffle_shop.duckdb": Conflicting lock is held in /usr/local/bin/python3.12 (PID 2236). See also https://duckdb.org/docs/stable/connect/concurrency
+============ 8 failed, 8 passed, 18 deselected in 664.29s (0:11:04) ============
+py312-dbt112-core-main: exit 1 (667.86 seconds) <SOURCE>/python_modules/libraries/dagster-dbt> pytest --ignore=./kitchen-sink --durations 10 -m 'core and not snowflake and not bigquery and not derived_metadata and not fusion' -vv --splits 2 --group 2 --durations-path .test_durations/dbt112-core-main-test_asset_checks dagster_dbt_tests/core/test_asset_checks.py pid=1973
+  py312-dbt112-core-main: FAIL code 1 (667.90=setup[0.03]+cmd[0.01,667.86] seconds)
+  evaluation failed :( (667.93 seconds)

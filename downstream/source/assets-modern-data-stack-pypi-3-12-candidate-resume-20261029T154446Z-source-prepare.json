@@ -1,0 +1,13 @@
+{
+  "atUtc": "2026-10-29T15:44:54.392317+00:00",
+  "phase": "prepare",
+  "label": "assets-modern-data-stack-pypi-3-12-candidate-resume-20261029T154446Z",
+  "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+  "expectedTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "actualTrackedFilesystemTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "trackedFileCount": 14576,
+  "mismatches": [],
+  "allTrackedGitBlobModeSizeSha256Match": true,
+  "source": "Linux native owned named volume <SOURCE>",
+  "ignoredUntrackedGeneratedArtifacts": false
+}

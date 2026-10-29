@@ -1,0 +1,111 @@
+From 1987eae078a6be9d3fe87122f55f4ab7d8dc21cd Mon Sep 17 00:00:00 2001
+From: bunnysayzz <stfuazzo@gmail.com>
+Date: Fri, 16 Oct 2026 22:55:38 +0530
+Subject: [PATCH 1/2] fix(dagster-dbt): guard against null job in dbt Cloud run
+ details
+
+---
+ .../libraries/dagster-dbt/dagster_dbt/cloud/asset_defs.py       | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/python_modules/libraries/dagster-dbt/dagster_dbt/cloud/asset_defs.py b/python_modules/libraries/dagster-dbt/dagster_dbt/cloud/asset_defs.py
+index 6b8b2654..b380225c 100644
+--- a/python_modules/libraries/dagster-dbt/dagster_dbt/cloud/asset_defs.py
++++ b/python_modules/libraries/dagster-dbt/dagster_dbt/cloud/asset_defs.py
+@@ -515,7 +515,7 @@ def _assets(context: AssetExecutionContext):
+             # the `dbt docs generate` step.
+             materialization_command_step = len(dbt_cloud_output.run_details.get("run_steps", []))
+             materialization_command_step -= len(job_commands) - job_materialization_command_step - 1
+-            if dbt_cloud_output.run_details.get("job", {}).get("generate_docs"):
++            if (dbt_cloud_output.run_details.get("job") or {}).get("generate_docs"):
+                 materialization_command_step -= 1
+ 
+             # TODO: Assume the run completely fails or completely succeeds.
+-- 
+2.53.0.windows.2
+
+
+From adb43a35d08b3cbd447aeab89b6dce9ea95f8896 Mon Sep 17 00:00:00 2001
+From: bunnysayzz <bunnysayzz@users.noreply.github.com>
+Date: Sat, 17 Oct 2026 11:19:33 +0530
+Subject: [PATCH 2/2] test: add regression test for null job in dbt Cloud run
+ details (#34317)
+
+---
+ .../cloud/test_asset_defs.py                  | 46 ++++++++++++++++++-
+ 1 file changed, 45 insertions(+), 1 deletion(-)
+
+diff --git a/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py b/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py
+index efe10110..7265d8b2 100644
+--- a/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py
++++ b/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py
+@@ -47,6 +47,7 @@ def _add_dbt_cloud_job_responses(
+     dbt_cloud_service: DbtCloudClient,
+     dbt_commands: list[str],
+     run_results_json: dict | None = None,
++    job: dict | None = {},
+ ):
+     run_results_json = run_results_json or RUN_RESULTS_JSON
+ 
+@@ -102,7 +103,7 @@ def _add_dbt_cloud_job_responses(
+     responses.add(
+         method=responses.GET,
+         url=f"{dbt_cloud_service.api_v2_base_url}{DBT_CLOUD_ACCOUNT_ID}/runs/{DBT_CLOUD_RUN_ID}/",
+-        json={"data": {"status_humanized": "Success", "job": {}, "id": DBT_CLOUD_RUN_ID}},
++        json={"data": {"status_humanized": "Success", "job": job, "id": DBT_CLOUD_RUN_ID}},
+         status=200,
+     )
+ 
+@@ -211,6 +212,49 @@ def test_load_assets_from_dbt_cloud_job(
+     )
+ 
+ 
++@responses.activate
++def test_load_assets_from_dbt_cloud_job_null_job(
++    mocker,
++    dbt_cloud,
++    dbt_cloud_service,
++):
++    """Regression test for https://github.com/dagster-io/dagster/issues/34317.
++
++    dbt Cloud can return `"job": null` (not `{}`) in the run details payload.
++    Materializing assets from such a run must not raise AttributeError.
++    """
++    dbt_commands = ["dbt run"]
++    _add_dbt_cloud_job_responses(
++        dbt_cloud_service=dbt_cloud_service,
++        dbt_commands=dbt_commands,
++        job=None,
++    )
++
++    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
++        dbt_cloud=dbt_cloud, job_id=DBT_CLOUD_JOB_ID
++    )
++
++    mocker.patch(
++        "dagster_dbt.cloud.resources.DbtCloudClient.run_job_and_poll",
++        wraps=dbt_cloud_cacheable_assets._dbt_cloud.run_job_and_poll,  # noqa: SLF001
++    )
++
++    dbt_assets_definition_cacheable_data = dbt_cloud_cacheable_assets.compute_cacheable_data()
++    dbt_cloud_assets = dbt_cloud_cacheable_assets.build_definitions(
++        dbt_assets_definition_cacheable_data
++    )
++
++    materialize_assets_job = define_asset_job(
++        name="materialize_assets_null_job",
++        selection=AssetSelection.assets(*dbt_cloud_assets),
++    ).resolve(asset_graph=AssetGraph.from_assets(dbt_cloud_assets))
++
++    with instance_for_test() as instance:
++        result = materialize_assets_job.execute_in_process(instance=instance)
++
++    assert result.success
++
++
+ @responses.activate
+ @pytest.mark.parametrize("before_dbt_materialization_command", [[], ["dbt test"]])
+ @pytest.mark.parametrize("dbt_materialization_command", ["dbt run", "dbt build"])
+-- 
+2.53.0.windows.2
+

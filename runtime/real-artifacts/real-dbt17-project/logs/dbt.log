@@ -1,0 +1,254 @@
+
+
+============================== 09:01:54.251191 | 017c76aa-991c-4d02-9899-6119fa35f01b ==============================
+[0m09:01:54.251191 [info ] [MainThread]: Running with dbt=1.7.19
+[0m09:01:54.282480 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '<PORTABLE_RUN>\\artifacts\\real-dbt17-project', 'log_path': '<PORTABLE_RUN>\\artifacts\\real-dbt17-project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'False', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt build --project-dir <PORTABLE_RUN>\\artifacts\\real-dbt17-project --profiles-dir <PORTABLE_RUN>\\artifacts\\real-dbt17-project --no-use-colors', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m09:01:54.883667 [info ] [MainThread]: Registered adapter: duckdb=1.7.5
+[0m09:01:54.890508 [debug] [MainThread]: checksum: a8d43cdff37d0f32d7fbe4c5c25bea4bb6c86e162f8ce8fdb1a38cdcf7495431, vars: {}, profile: , target: , version: 1.7.19
+[0m09:01:54.891545 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:01:55.746135 [info ] [MainThread]: Found 1 model, 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m09:01:55.747177 [info ] [MainThread]: 
+[0m09:01:55.747695 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m09:01:55.748735 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_proof'
+[0m09:01:55.754934 [debug] [ThreadPool]: Using duckdb connection "list_proof"
+[0m09:01:55.754934 [debug] [ThreadPool]: On list_proof: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "artifact_step_proof", "target_name": "dev", "connection_name": "list_proof"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"proof"'
+    
+  
+  
+[0m09:01:55.755803 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:01:56.259136 [debug] [ThreadPool]: SQL status: OK in 1.0 seconds
+[0m09:01:56.263768 [debug] [ThreadPool]: On list_proof: Close
+[0m09:01:56.270010 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_proof, now create_proof_main)
+[0m09:01:56.271011 [debug] [ThreadPool]: Creating schema "database: "proof"
+schema: "main"
+"
+[0m09:01:56.275541 [debug] [ThreadPool]: Using duckdb connection "create_proof_main"
+[0m09:01:56.275938 [debug] [ThreadPool]: On create_proof_main: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "artifact_step_proof", "target_name": "dev", "connection_name": "create_proof_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='proof'
+        and type='sqlite'
+    
+  
+[0m09:01:56.275938 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:01:56.319086 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m09:01:56.319591 [debug] [ThreadPool]: Using duckdb connection "create_proof_main"
+[0m09:01:56.319591 [debug] [ThreadPool]: On create_proof_main: BEGIN
+[0m09:01:56.320593 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m09:01:56.320593 [debug] [ThreadPool]: Using duckdb connection "create_proof_main"
+[0m09:01:56.320593 [debug] [ThreadPool]: On create_proof_main: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "artifact_step_proof", "target_name": "dev", "connection_name": "create_proof_main"} */
+
+    
+    
+        create schema if not exists "proof"."main"
+    
+[0m09:01:56.322096 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m09:01:56.322851 [debug] [ThreadPool]: On create_proof_main: COMMIT
+[0m09:01:56.322851 [debug] [ThreadPool]: Using duckdb connection "create_proof_main"
+[0m09:01:56.322851 [debug] [ThreadPool]: On create_proof_main: COMMIT
+[0m09:01:56.323857 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m09:01:56.324249 [debug] [ThreadPool]: On create_proof_main: Close
+[0m09:01:56.326391 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_proof_main'
+[0m09:01:56.330396 [debug] [ThreadPool]: Using duckdb connection "list_proof_main"
+[0m09:01:56.330396 [debug] [ThreadPool]: On list_proof_main: BEGIN
+[0m09:01:56.330396 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:01:56.338405 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m09:01:56.339410 [debug] [ThreadPool]: Using duckdb connection "list_proof_main"
+[0m09:01:56.339410 [debug] [ThreadPool]: On list_proof_main: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "artifact_step_proof", "target_name": "dev", "connection_name": "list_proof_main"} */
+select
+      'proof' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'proof'
+  
+[0m09:01:56.361444 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m09:01:56.362445 [debug] [ThreadPool]: On list_proof_main: ROLLBACK
+[0m09:01:56.372952 [debug] [ThreadPool]: Failed to rollback 'list_proof_main'
+[0m09:01:56.372952 [debug] [ThreadPool]: On list_proof_main: Close
+[0m09:01:56.375903 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:01:56.375903 [debug] [MainThread]: On master: BEGIN
+[0m09:01:56.376461 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:01:56.383461 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m09:01:56.384461 [debug] [MainThread]: On master: COMMIT
+[0m09:01:56.384461 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:01:56.384461 [debug] [MainThread]: On master: COMMIT
+[0m09:01:56.384461 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m09:01:56.384461 [debug] [MainThread]: On master: Close
+[0m09:01:56.387474 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:01:56.388122 [info ] [MainThread]: 
+[0m09:01:56.395080 [debug] [Thread-1 (]: Began running node model.artifact_step_proof.proof
+[0m09:01:56.395598 [info ] [Thread-1 (]: 1 of 1 START sql view model main.proof ......................................... [RUN]
+[0m09:01:56.396115 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.artifact_step_proof.proof'
+[0m09:01:56.396624 [debug] [Thread-1 (]: Began compiling node model.artifact_step_proof.proof
+[0m09:01:56.399704 [debug] [Thread-1 (]: Writing injected SQL for node "model.artifact_step_proof.proof"
+[0m09:01:56.401703 [debug] [Thread-1 (]: Timing info for model.artifact_step_proof.proof (compile): 09:01:56.396624 => 09:01:56.400704
+[0m09:01:56.401703 [debug] [Thread-1 (]: Began executing node model.artifact_step_proof.proof
+[0m09:01:56.419782 [debug] [Thread-1 (]: Writing runtime sql for node "model.artifact_step_proof.proof"
+[0m09:01:56.421865 [debug] [Thread-1 (]: Using duckdb connection "model.artifact_step_proof.proof"
+[0m09:01:56.421865 [debug] [Thread-1 (]: On model.artifact_step_proof.proof: BEGIN
+[0m09:01:56.422384 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m09:01:56.430492 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m09:01:56.430492 [debug] [Thread-1 (]: Using duckdb connection "model.artifact_step_proof.proof"
+[0m09:01:56.431492 [debug] [Thread-1 (]: On model.artifact_step_proof.proof: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "artifact_step_proof", "target_name": "dev", "node_id": "model.artifact_step_proof.proof"} */
+
+  
+  create view "proof"."main"."proof__dbt_tmp" as (
+    select 1 as proof
+  );
+
+[0m09:01:56.431492 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m09:01:56.435819 [debug] [Thread-1 (]: Using duckdb connection "model.artifact_step_proof.proof"
+[0m09:01:56.436342 [debug] [Thread-1 (]: On model.artifact_step_proof.proof: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "artifact_step_proof", "target_name": "dev", "node_id": "model.artifact_step_proof.proof"} */
+alter view "proof"."main"."proof__dbt_tmp" rename to "proof"
+[0m09:01:56.443763 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m09:01:56.452140 [debug] [Thread-1 (]: On model.artifact_step_proof.proof: COMMIT
+[0m09:01:56.452665 [debug] [Thread-1 (]: Using duckdb connection "model.artifact_step_proof.proof"
+[0m09:01:56.452665 [debug] [Thread-1 (]: On model.artifact_step_proof.proof: COMMIT
+[0m09:01:56.501430 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m09:01:56.504430 [debug] [Thread-1 (]: Using duckdb connection "model.artifact_step_proof.proof"
+[0m09:01:56.504430 [debug] [Thread-1 (]: On model.artifact_step_proof.proof: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "artifact_step_proof", "target_name": "dev", "node_id": "model.artifact_step_proof.proof"} */
+drop view if exists "proof"."main"."proof__dbt_backup" cascade
+[0m09:01:56.505430 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m09:01:56.507044 [debug] [Thread-1 (]: Timing info for model.artifact_step_proof.proof (execute): 09:01:56.401703 => 09:01:56.507044
+[0m09:01:56.507044 [debug] [Thread-1 (]: On model.artifact_step_proof.proof: Close
+[0m09:01:56.561240 [info ] [Thread-1 (]: 1 of 1 OK created sql view model main.proof .................................... [OK in 0.17s]
+[0m09:01:56.562239 [debug] [Thread-1 (]: Finished running node model.artifact_step_proof.proof
+[0m09:01:56.563238 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:01:56.563238 [debug] [MainThread]: On master: BEGIN
+[0m09:01:56.563238 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:01:56.595431 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m09:01:56.596432 [debug] [MainThread]: On master: COMMIT
+[0m09:01:56.596432 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:01:56.596432 [debug] [MainThread]: On master: COMMIT
+[0m09:01:56.596432 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m09:01:56.597432 [debug] [MainThread]: On master: Close
+[0m09:01:56.598432 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:01:56.599432 [debug] [MainThread]: Connection 'create_proof_main' was properly closed.
+[0m09:01:56.599432 [debug] [MainThread]: Connection 'list_proof_main' was properly closed.
+[0m09:01:56.599432 [debug] [MainThread]: Connection 'model.artifact_step_proof.proof' was properly closed.
+[0m09:01:56.599968 [info ] [MainThread]: 
+[0m09:01:56.600487 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.85 seconds (0.85s).
+[0m09:01:56.600997 [debug] [MainThread]: Command end result
+[0m09:01:56.607388 [info ] [MainThread]: 
+[0m09:01:56.607907 [info ] [MainThread]: Completed successfully
+[0m09:01:56.607907 [info ] [MainThread]: 
+[0m09:01:56.608959 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m09:01:56.611025 [debug] [MainThread]: Command `dbt build` succeeded at 09:01:56.611025 after 2.55 seconds
+[0m09:01:56.611542 [debug] [MainThread]: Flushing usage events
+
+
+============================== 09:02:13.497382 | 3ac51d3f-9fd0-415b-886a-fbbf3b5d828e ==============================
+[0m09:02:13.497382 [info ] [MainThread]: Running with dbt=1.7.19
+[0m09:02:13.503252 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '<PORTABLE_RUN>\\artifacts\\real-dbt17-project', 'debug': 'False', 'version_check': 'True', 'log_path': '<PORTABLE_RUN>\\artifacts\\real-dbt17-project\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'False', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs generate --project-dir <PORTABLE_RUN>\\artifacts\\real-dbt17-project --profiles-dir <PORTABLE_RUN>\\artifacts\\real-dbt17-project --no-use-colors', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m09:02:13.774261 [info ] [MainThread]: Registered adapter: duckdb=1.7.5
+[0m09:02:13.779946 [debug] [MainThread]: checksum: a8d43cdff37d0f32d7fbe4c5c25bea4bb6c86e162f8ce8fdb1a38cdcf7495431, vars: {}, profile: , target: , version: 1.7.19
+[0m09:02:13.836038 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:02:13.836038 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:02:13.842026 [info ] [MainThread]: Found 1 model, 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+[0m09:02:13.843026 [info ] [MainThread]: 
+[0m09:02:13.843026 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m09:02:13.844026 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_proof_main'
+[0m09:02:13.848990 [debug] [ThreadPool]: Using duckdb connection "list_proof_main"
+[0m09:02:13.848990 [debug] [ThreadPool]: On list_proof_main: BEGIN
+[0m09:02:13.848990 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:02:13.862629 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m09:02:13.862629 [debug] [ThreadPool]: Using duckdb connection "list_proof_main"
+[0m09:02:13.862629 [debug] [ThreadPool]: On list_proof_main: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "artifact_step_proof", "target_name": "dev", "connection_name": "list_proof_main"} */
+select
+      'proof' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'proof'
+  
+[0m09:02:13.870360 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m09:02:13.870941 [debug] [ThreadPool]: On list_proof_main: ROLLBACK
+[0m09:02:13.871981 [debug] [ThreadPool]: Failed to rollback 'list_proof_main'
+[0m09:02:13.872504 [debug] [ThreadPool]: On list_proof_main: Close
+[0m09:02:13.875162 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:02:13.875162 [info ] [MainThread]: 
+[0m09:02:13.881952 [debug] [Thread-1 (]: Began running node model.artifact_step_proof.proof
+[0m09:02:13.881952 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.artifact_step_proof.proof'
+[0m09:02:13.881952 [debug] [Thread-1 (]: Began compiling node model.artifact_step_proof.proof
+[0m09:02:13.885465 [debug] [Thread-1 (]: Writing injected SQL for node "model.artifact_step_proof.proof"
+[0m09:02:13.886464 [debug] [Thread-1 (]: Timing info for model.artifact_step_proof.proof (compile): 09:02:13.881952 => 09:02:13.886464
+[0m09:02:13.886464 [debug] [Thread-1 (]: Began executing node model.artifact_step_proof.proof
+[0m09:02:13.886464 [debug] [Thread-1 (]: Timing info for model.artifact_step_proof.proof (execute): 09:02:13.886464 => 09:02:13.886464
+[0m09:02:13.887466 [debug] [Thread-1 (]: Finished running node model.artifact_step_proof.proof
+[0m09:02:13.887466 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:02:13.888464 [debug] [MainThread]: Connection 'list_proof_main' was properly closed.
+[0m09:02:13.888464 [debug] [MainThread]: Connection 'model.artifact_step_proof.proof' was properly closed.
+[0m09:02:13.888464 [debug] [MainThread]: Command end result
+[0m09:02:19.372497 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m09:02:19.372497 [info ] [MainThread]: Building catalog
+[0m09:02:19.372497 [debug] [ThreadPool]: Acquiring new duckdb connection 'proof.information_schema'
+[0m09:02:19.372497 [debug] [ThreadPool]: Using duckdb connection "proof.information_schema"
+[0m09:02:19.372497 [debug] [ThreadPool]: On proof.information_schema: BEGIN
+[0m09:02:19.372497 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:02:19.383170 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m09:02:19.383170 [debug] [ThreadPool]: Using duckdb connection "proof.information_schema"
+[0m09:02:19.383170 [debug] [ThreadPool]: On proof.information_schema: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "artifact_step_proof", "target_name": "dev", "connection_name": "proof.information_schema"} */
+with relations AS (
+      select
+        t.table_name
+        , t.database_name
+        , t.schema_name
+        , 'BASE TABLE' as table_type
+        , t.comment as table_comment
+      from duckdb_tables() t
+      WHERE t.database_name = 'proof'
+      UNION ALL
+      SELECT v.view_name as table_name
+      , v.database_name
+      , v.schema_name
+      , 'VIEW' as table_type
+      , v.comment as table_comment
+      from duckdb_views() v
+      WHERE v.database_name = 'proof'
+    )
+    select
+        'proof' as table_database,
+        r.schema_name as table_schema,
+        r.table_name,
+        r.table_type,
+        r.table_comment,
+        c.column_name,
+        c.column_index as column_index,
+        c.data_type as column_type,
+        c.comment as column_comment,
+        '' as table_owner
+    FROM relations r JOIN duckdb_columns() c ON r.schema_name = c.schema_name AND r.table_name = c.table_name
+    WHERE (upper(r.schema_name) = upper('main'))
+    ORDER BY
+        r.schema_name,
+        r.table_name,
+        c.column_index
+[0m09:02:19.482391 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m09:02:19.484537 [debug] [ThreadPool]: On proof.information_schema: ROLLBACK
+[0m09:02:19.485568 [debug] [ThreadPool]: Failed to rollback 'proof.information_schema'
+[0m09:02:19.485568 [debug] [ThreadPool]: On proof.information_schema: Close
+[0m09:02:19.493854 [info ] [MainThread]: Catalog written to <PORTABLE_RUN>\artifacts\real-dbt17-project\target\catalog.json
+[0m09:02:19.495854 [debug] [MainThread]: Command `dbt docs generate` succeeded at 09:02:19.495854 after 20.41 seconds
+[0m09:02:19.495854 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m09:02:19.495854 [debug] [MainThread]: Connection 'proof.information_schema' was properly closed.
+[0m09:02:19.496854 [debug] [MainThread]: Flushing usage events

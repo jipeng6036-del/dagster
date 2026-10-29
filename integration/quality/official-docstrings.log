@@ -1,0 +1,46 @@
+<frozen runpy>:128: RuntimeWarning: 'automation.dagster_docs.main' found in sys.modules after import of package 'automation.dagster_docs', but prior to execution of 'automation.dagster_docs.main'; this may result in unpredictable behaviour
+Validating docstrings across 71 public Dagster packages
+
+=== dagster ===
+--- dagster.ComponentLoadContext.component_path ---
+  WARNING: No docstring found
+
+Package dagster: 0 errors, 1 warnings
+  (52 symbols excluded)
+
+Warning: Could not import package 'dagster_airflow': No module named 'dagster_airflow'
+
+Warning: Could not import package 'dagster_airlift': No module named 'dagster_airlift'
+
+=== dagster_azure ===
+--- dagster_azure.ADLS2ResourceComponent ---
+  ERROR: Invalid section header: 'Example usage in YAML:'. Did you mean 'Example usage:'? (line 5)
+
+--- dagster_azure.AzureBlobStorageResourceComponent ---
+  ERROR: Invalid section header: 'Example usage in YAML:'. Did you mean 'Example usage:'? (line 5)
+
+Package dagster_azure: 2 errors, 0 warnings
+
+Warning: Could not import package 'dagster_hightouch': No module named 'dagster_hightouch'
+
+Warning: Could not import package 'dagster_omni': No module named 'dagster_omni'
+
+=== dagster_pandera ===
+--- dagster_pandera.PANDERA_FAILURE_CASES_SCHEMA ---
+  WARNING: No docstring found
+
+Package dagster_pandera: 0 errors, 1 warnings
+
+17:58:31.653 | WARNING | py.warnings - <SOURCE>/python_modules/libraries/dagster-snowflake/dagster_snowflake/resources.py:241: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'is_required'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+  connector: str | None = Field(
+
+=== dagster_snowflake_pyspark ===
+--- dagster_snowflake_pyspark.snowflake_pyspark_io_manager ---
+  ERROR: Python code block syntax error: Syntax error at line 19, column 15: ':' expected after dictionary key (line 12)
+  ERROR: Python code block syntax error: Syntax error at line 2, column 12: invalid syntax. Perhaps you forgot a comma? (line 42)
+
+Package dagster_snowflake_pyspark: 2 errors, 0 warnings
+
+Overall Summary: 1286 symbols processed across 71 packages
+  77 symbols excluded from validation
+Total: 4 errors, 2 warnings

@@ -1,0 +1,363 @@
+{
+  "atUtc": "2026-10-29T17:52:34.781025+00:00",
+  "oldHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+  "oldTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "integrationHead": "ea452dc9e379d8d10f61c4a0df7378de5f33b252",
+  "integrationTree": "8f26fcadce62050c5f8f0c764968a4a04457eb13",
+  "archive": "<VALIDATION_ROOT>\\integration-ab2572\\core-compat\\canonical-git.tar",
+  "archiveSha256": "3213df07a0a628eb682c73b596b214c8eb3165dca8812a9023d9c4dec5892e3d",
+  "changed": [
+    {
+      "path": ".buildkite/dagster-buildkite/dagster_buildkite/steps/packages.py",
+      "old": {
+        "path": ".buildkite/dagster-buildkite/dagster_buildkite/steps/packages.py",
+        "mode": "100644",
+        "blob": "c9550c7043f92ab759d164b2ce59a45c4b4c42e5",
+        "size": 47375,
+        "sha256": "1f91b422a8f5a6715c2eed8e2c7985ff9929d0e499e2f962f912a21e9f729fa6"
+      },
+      "integration": {
+        "path": ".buildkite/dagster-buildkite/dagster_buildkite/steps/packages.py",
+        "mode": "100644",
+        "blob": "0973c9e997179be338fc23af68e097ee4ce767b7",
+        "size": 47544,
+        "sha256": "f9ef8664135282a6c0a3838d6090856644d09a60e210123c128320704a8d49b9"
+      }
+    },
+    {
+      "path": "docs/docs/integrations/libraries/dbt/index.md",
+      "old": {
+        "path": "docs/docs/integrations/libraries/dbt/index.md",
+        "mode": "100644",
+        "blob": "32599f716babd7f02c81a517c53a035f0c2d299c",
+        "size": 23574,
+        "sha256": "ce214f940337bebe403f7bfdfa839e0bb03cf996eaea60217f346fbf7453eef0"
+      },
+      "integration": {
+        "path": "docs/docs/integrations/libraries/dbt/index.md",
+        "mode": "100644",
+        "blob": "800d1f6d4438ab6dec73289b1f380bb79779bada",
+        "size": 24185,
+        "sha256": "e17be039589432091c4b01fff35ac8eb89795c0e88fbce13df1ee469d1327559"
+      }
+    },
+    {
+      "path": "docs/docs/integrations/libraries/dbt/reference.md",
+      "old": {
+        "path": "docs/docs/integrations/libraries/dbt/reference.md",
+        "mode": "100644",
+        "blob": "7e329ffee3f2a7b2978ad6ae3c4b763c39a2b03e",
+        "size": 47291,
+        "sha256": "f91b7b495690004c5a611e5a2afca4d31709ff380eae2eb5a92c893a77f21811"
+      },
+      "integration": {
+        "path": "docs/docs/integrations/libraries/dbt/reference.md",
+        "mode": "100644",
+        "blob": "4e0e265094c68275fef6fd42a8d97064c69ba188",
+        "size": 48032,
+        "sha256": "66392ac5352de583e5abab5029fb4205cccbcd5b3a1f1bf898be7dcb96fe5eb2"
+      }
+    },
+    {
+      "path": "js_modules/ui-core/src/app/__tests__/Route.test.tsx",
+      "old": {
+        "path": "js_modules/ui-core/src/app/__tests__/Route.test.tsx",
+        "mode": "100644",
+        "blob": "94d2d7f878ab94fd24d4f7a49afcffa0b6542baf",
+        "size": 13779,
+        "sha256": "f7ba98a6ec7113c23a0ebef27bac9a09dd89a2a506663906e77dedc92b5f29a2"
+      },
+      "integration": {
+        "path": "js_modules/ui-core/src/app/__tests__/Route.test.tsx",
+        "mode": "100644",
+        "blob": "710d1ef8e4689e9da8ee16f8a6822567190c0911",
+        "size": 14283,
+        "sha256": "5276f6589952347cad34566ff75703c94a4f4be471aec1d0722fdf26e9b61415"
+      }
+    },
+    {
+      "path": "js_modules/ui-core/src/app/layout/mobileRouteStatus.tsx",
+      "old": {
+        "path": "js_modules/ui-core/src/app/layout/mobileRouteStatus.tsx",
+        "mode": "100644",
+        "blob": "2f97e097596b1db72ea0f162be8b161a38add668",
+        "size": 4068,
+        "sha256": "c913f446a7197971993c73d4d9f9b8c918b3830cb03e7858a9f843516c09824c"
+      },
+      "integration": {
+        "path": "js_modules/ui-core/src/app/layout/mobileRouteStatus.tsx",
+        "mode": "100644",
+        "blob": "2dcfde4c9fc0ceeff72b38cc29a01a319fc686f8",
+        "size": 4288,
+        "sha256": "38d27f801366bd1d57d5df31b2e9fc301cda3fc70b7a9ffe73fc3f132d28265f"
+      }
+    },
+    {
+      "path": "js_modules/ui-core/src/runs/Run.tsx",
+      "old": {
+        "path": "js_modules/ui-core/src/runs/Run.tsx",
+        "mode": "100644",
+        "blob": "d46c5f933d70cdcbe7eb464c2d3019bef79f5561",
+        "size": 10028,
+        "sha256": "00630d3c6853c5c104ef62aebfaa8b4f06502c717401eea400f7b95d18dca3dc"
+      },
+      "integration": {
+        "path": "js_modules/ui-core/src/runs/Run.tsx",
+        "mode": "100644",
+        "blob": "ece321df5415f384c4789613e886f74fc41a00a2",
+        "size": 9822,
+        "sha256": "75508f678e108b62062e07a75f5cad12310d38e28b45d71afbbde8f6e4c0258a"
+      }
+    },
+    {
+      "path": "js_modules/ui-core/src/runs/RunRoot.tsx",
+      "old": {
+        "path": "js_modules/ui-core/src/runs/RunRoot.tsx",
+        "mode": "100644",
+        "blob": "a23fdbeadeca657308fe563967421fa728211627",
+        "size": 5164,
+        "sha256": "c0cba3fd34df0d603084a4c2aa0128f0ad09528dc58c4c56a1d2cfec635b6b01"
+      },
+      "integration": {
+        "path": "js_modules/ui-core/src/runs/RunRoot.tsx",
+        "mode": "100644",
+        "blob": "ab7ebd2a67b763fecab1d9abe8f4df1c1da9f183",
+        "size": 5510,
+        "sha256": "ae652b7fcc82f7691c9dff3a69f5d5de7a328774db835e59d1807cbf39adebf3"
+      }
+    },
+    {
+      "path": "js_modules/ui-core/src/runs/__tests__/RunRoot.test.tsx",
+      "old": null,
+      "integration": {
+        "path": "js_modules/ui-core/src/runs/__tests__/RunRoot.test.tsx",
+        "mode": "100644",
+        "blob": "e27a4295920489c80b35e1d5e0c14673ba2b6757",
+        "size": 2610,
+        "sha256": "0660fb206b169782cac108fdf6ed5d6b9bdbf8849c3613d219568ea8fb13f10c"
+      }
+    },
+    {
+      "path": "python_modules/dagster-cloud/uv.lock",
+      "old": {
+        "path": "python_modules/dagster-cloud/uv.lock",
+        "mode": "100644",
+        "blob": "b72ed3b340f05bf7679f40a86af87c22f7e2b9fa",
+        "size": 1171319,
+        "sha256": "8dd2bd0f3f6465d47b5cbc4d068787367b8f6e8a6091a3b10e53715d06d6cbf5"
+      },
+      "integration": {
+        "path": "python_modules/dagster-cloud/uv.lock",
+        "mode": "100644",
+        "blob": "8c064354f405e68c69d28e831d57b24bff6a6db5",
+        "size": 1171554,
+        "sha256": "e3130e113ccdf6c6f13c2b903aeab0505c775f4516802fc48f4bac5bbcbe57cb"
+      }
+    },
+    {
+      "path": "python_modules/dagster/pyproject.toml",
+      "old": {
+        "path": "python_modules/dagster/pyproject.toml",
+        "mode": "100644",
+        "blob": "7838c30c24c214d037d04cf365c50b6d8db1381c",
+        "size": 7377,
+        "sha256": "83db57b0cb0d928aa8044d282027ffaed88df80f8a8418f65d940a01b57875e4"
+      },
+      "integration": {
+        "path": "python_modules/dagster/pyproject.toml",
+        "mode": "100644",
+        "blob": "7786ec7d7c9d0a5b700ca03e92d604bdc7a7a1fb",
+        "size": 7559,
+        "sha256": "e90b7ec372ffe7d9e1ec7485e70e74edb4082eb9363c202fd4cc65f529db8ea6"
+      }
+    },
+    {
+      "path": "python_modules/dagster/tox.ini",
+      "old": {
+        "path": "python_modules/dagster/tox.ini",
+        "mode": "100644",
+        "blob": "51fbc757696a1482bb42b66ffd253603ec5aa065",
+        "size": 4052,
+        "sha256": "2cfd50e1169962fbfefe32f9d844b7659a56dab4bf4f373fa5ab2c6581bbe778"
+      },
+      "integration": {
+        "path": "python_modules/dagster/tox.ini",
+        "mode": "100644",
+        "blob": "d9b3351bf71f7f2ea89b0554f82be70e7fd4fa2d",
+        "size": 4193,
+        "sha256": "de606c48bab079856ccead4741ab74363115e2b4ebce046a569ee02b4e77f7b5"
+      }
+    },
+    {
+      "path": "python_modules/dagster/uv.lock",
+      "old": {
+        "path": "python_modules/dagster/uv.lock",
+        "mode": "100644",
+        "blob": "7a77c10a6beb432918e2170869fc84b1f7300e0b",
+        "size": 795643,
+        "sha256": "b1d50b689f85034da71abd56370ae44fcdfbf88555d0bea3d702f2a8448f7b81"
+      },
+      "integration": {
+        "path": "python_modules/dagster/uv.lock",
+        "mode": "100644",
+        "blob": "e25c11c1a6f39df835f00281f2ab60bd6677252d",
+        "size": 845653,
+        "sha256": "d07d7e0ab0d6b40cf85dc29bceeedd5b2c1b18b8d8ecfe21abceeb51c51c554d"
+      }
+    },
+    {
+      "path": "python_modules/libraries/dagster-cloud-cli/dagster_cloud_cli/core/pex_builder/deps.py",
+      "old": {
+        "path": "python_modules/libraries/dagster-cloud-cli/dagster_cloud_cli/core/pex_builder/deps.py",
+        "mode": "100644",
+        "blob": "17fb8ce42b1515f422538fc4b103f0ded204244f",
+        "size": 20436,
+        "sha256": "ebdcddd00471f532e7c5f4e4a65d3e0ef9c2a474f455967b96aac075129a9059"
+      },
+      "integration": {
+        "path": "python_modules/libraries/dagster-cloud-cli/dagster_cloud_cli/core/pex_builder/deps.py",
+        "mode": "100644",
+        "blob": "30067b74aae04d9db60ebec34b447e79546f8878",
+        "size": 20212,
+        "sha256": "795d00b4befc247e8ace8329b4e6050c5eb855f6b0018aac23cd77a6c29bb1ae"
+      }
+    },
+    {
+      "path": "python_modules/libraries/dagster-cloud-cli/dagster_cloud_cli_tests/test_pyproject_toml_support.py",
+      "old": {
+        "path": "python_modules/libraries/dagster-cloud-cli/dagster_cloud_cli_tests/test_pyproject_toml_support.py",
+        "mode": "100644",
+        "blob": "aa803dde143de5accb2c2650653c70fd017d690b",
+        "size": 28467,
+        "sha256": "fb7931fa89075a21e9e68712d573fdb8e98f630b2090457904ce2b3e580ac703"
+      },
+      "integration": {
+        "path": "python_modules/libraries/dagster-cloud-cli/dagster_cloud_cli_tests/test_pyproject_toml_support.py",
+        "mode": "100644",
+        "blob": "048038c727b7e8985d4a795631f41bad58950bf8",
+        "size": 28470,
+        "sha256": "db783fe69daf75023c4d03b5a6a336fab813a053e3cf573073b9fadbd9343108"
+      }
+    },
+    {
+      "path": "python_modules/libraries/dagster-dbt/dagster_dbt/components/dbt_project/component.py",
+      "old": {
+        "path": "python_modules/libraries/dagster-dbt/dagster_dbt/components/dbt_project/component.py",
+        "mode": "100644",
+        "blob": "4c898fe26b3208ccbaad0e975bdb04b3da4b0e8f",
+        "size": 18638,
+        "sha256": "9a256375921e125eef94101b8497177f9fc42d4cafe60bb0c675b12aab5a1d08"
+      },
+      "integration": {
+        "path": "python_modules/libraries/dagster-dbt/dagster_dbt/components/dbt_project/component.py",
+        "mode": "100644",
+        "blob": "aa90e5445c9514784c0de3ac106687a27bcd5a3a",
+        "size": 18813,
+        "sha256": "e6ac0249695464cb813235f37a557dc22f1aa94c371b0139392e4e0f5df5397a"
+      }
+    },
+    {
+      "path": "python_modules/libraries/dagster-dbt/dagster_dbt/dbt_project.py",
+      "old": {
+        "path": "python_modules/libraries/dagster-dbt/dagster_dbt/dbt_project.py",
+        "mode": "100644",
+        "blob": "17ba826d861c6646cc87667d5c56dbf60db079b5",
+        "size": 15100,
+        "sha256": "5304772453e81fd91763f53d865f5396af1208b3929ea61549a1962aba90d77c"
+      },
+      "integration": {
+        "path": "python_modules/libraries/dagster-dbt/dagster_dbt/dbt_project.py",
+        "mode": "100644",
+        "blob": "445747729d7b9e2f4f9b5d2c8a0bc2ed3ac19ea9",
+        "size": 16163,
+        "sha256": "78385d4797d582386fef0c4d2ac0f3cb3d8ce2a6407d00bba312f541ccf1efcf"
+      }
+    },
+    {
+      "path": "python_modules/libraries/dagster-dbt/dagster_dbt_tests/cli/test_prepare_and_package.py",
+      "old": {
+        "path": "python_modules/libraries/dagster-dbt/dagster_dbt_tests/cli/test_prepare_and_package.py",
+        "mode": "100644",
+        "blob": "2e8b141d1f34be00f728912378b2e4636fef0f66",
+        "size": 10981,
+        "sha256": "fb18287dbc4a08f1371434a4caae8f3a64d885ffaca0fff9b1a47ae246b4996a"
+      },
+      "integration": {
+        "path": "python_modules/libraries/dagster-dbt/dagster_dbt_tests/cli/test_prepare_and_package.py",
+        "mode": "100644",
+        "blob": "6c9db4d27d3fd17caca6fb42e741ce858f20ff7f",
+        "size": 12608,
+        "sha256": "064ce4c8b95406e1d344bf4359b8779aaab4e3a5af7a50676291bdefad09d1e0"
+      }
+    },
+    {
+      "path": "python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py",
+      "old": {
+        "path": "python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py",
+        "mode": "100644",
+        "blob": "91d7e7fcf0b5bfec725282768193dcd2ed5b6b52",
+        "size": 40600,
+        "sha256": "1d2b14a906facbd813bb1d26383e48b3c9f03cb2677e21bef2cbc82a85f937d9"
+      },
+      "integration": {
+        "path": "python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py",
+        "mode": "100644",
+        "blob": "7cba1a6d3a437d993afd2fe31bc581ebd2c4e8dc",
+        "size": 41461,
+        "sha256": "5cdb5c7a3b2589e366c7087c87088df518b15719b4d758492ef3bb99a5c7b235"
+      }
+    },
+    {
+      "path": "python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_project.py",
+      "old": {
+        "path": "python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_project.py",
+        "mode": "100644",
+        "blob": "9b6aeb9b75a264cbdecf1bf215c7239bb523a65c",
+        "size": 10155,
+        "sha256": "052f960a1d62334cb99e76b0bb43ede4552cf45e8122b3f3997a204ca7bd9ba2"
+      },
+      "integration": {
+        "path": "python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_project.py",
+        "mode": "100644",
+        "blob": "9c184047cc0d0ee519ab12ad95fc89652247bdfd",
+        "size": 11446,
+        "sha256": "2e2bf082537bab601813b2a18415101e3070ff94e0692a6c9b9d6b6c0e56682c"
+      }
+    },
+    {
+      "path": "python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/yaml_template/test_data/dbt_project/expected_example",
+      "old": {
+        "path": "python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/yaml_template/test_data/dbt_project/expected_example",
+        "mode": "100644",
+        "blob": "418f4ced3094fa021b06041a9198e74f262fab7d",
+        "size": 1633,
+        "sha256": "ec699e093fda2b51ddf5202cc787e90f70e8db6ed2e214bdb3fbb2eecbe91455"
+      },
+      "integration": {
+        "path": "python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/yaml_template/test_data/dbt_project/expected_example",
+        "mode": "100644",
+        "blob": "1695d60392e48ffb4fe6ed790f9388742fc5ae20",
+        "size": 1656,
+        "sha256": "d4115be5baae8be4e3b72ff4ec5b7b659452ee5280bacdb65cb70bf539bc84e4"
+      }
+    },
+    {
+      "path": "python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/yaml_template/test_data/dbt_project/expected_schema",
+      "old": {
+        "path": "python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/yaml_template/test_data/dbt_project/expected_schema",
+        "mode": "100644",
+        "blob": "690708d8aca8f2f6e520783ccfdafd91b10b43a9",
+        "size": 6105,
+        "sha256": "16b98c2c6dbb7ea93a0289487b97cd072092823a87eedee845841e0e017c7a6f"
+      },
+      "integration": {
+        "path": "python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/yaml_template/test_data/dbt_project/expected_schema",
+        "mode": "100644",
+        "blob": "f3552621c57925297e3bbaf098c2dccf972a9c0e",
+        "size": 6165,
+        "sha256": "b64b9048785452df12c1a4baa94dbc1cfaa507c3faa763de4dc9d71f91ac2cf5"
+      }
+    }
+  ],
+  "count": 21
+}

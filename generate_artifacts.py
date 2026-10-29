@@ -1,0 +1,7 @@
+import argparse, json, os, shutil, subprocess
+from pathlib import Path
+p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);a=p.parse_args();out=a.output.resolve();out.mkdir(parents=True,exist_ok=True);project=out/'real-dbt17-project';(project/'models').mkdir(parents=True,exist_ok=True);(project/'dbt_project.yml').write_text('name: artifact_step_proof\nversion: "1.0"\nconfig-version: 2\nprofile: artifact_step_proof\nmodel-paths: [models]\n');(project/'profiles.yml').write_text('artifact_step_proof:\n  target: dev\n  outputs:\n    dev:\n      type: duckdb\n      path: proof.duckdb\n      threads: 1\n');(project/'models/proof.sql').write_text('select 1 as proof\n');env=dict(os.environ,DBT_SEND_ANONYMOUS_USAGE_STATS='false')
+for label,args in [('build',['build']),('docs-default',['docs','generate'])]:
+ subprocess.run(['dbt',*args,'--project-dir',str(project),'--profiles-dir',str(project),'--no-use-colors'],cwd=project,env=env,check=True);dest=out/('real-dbt17-'+label+'-artifacts');dest.mkdir(exist_ok=True)
+ for name in ['manifest.json','run_results.json'] :shutil.copyfile(project/'target'/name,dest/name)
+fixture=out/'real-artifact-fixture';fixture.mkdir(exist_ok=True);shutil.copyfile(out/'real-dbt17-build-artifacts/manifest.json',fixture/'sample_manifest.json');shutil.copyfile(out/'real-dbt17-build-artifacts/run_results.json',fixture/'sample_run_results.json')

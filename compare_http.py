@@ -1,0 +1,7 @@
+import argparse, json, os, shutil, subprocess, sys
+from pathlib import Path
+p=argparse.ArgumentParser();p.add_argument('--repo',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args();repo=a.repo.resolve();out=a.output.resolve();out.mkdir(parents=True,exist_ok=True);proof=Path(__file__).resolve().parent
+relative='python_modules/libraries/dagster-dbt/dagster_dbt/cloud/asset_defs.py';package=repo/'python_modules/libraries/dagster-dbt';base=subprocess.check_output(['git','show','9f23277a83945062eec5f7d9c3b052bc91b5c7c6:'+relative],cwd=repo);original=base.replace(b'if dbt_cloud_output.run_details.get("job", {}).get("generate_docs"):',b'if (dbt_cloud_output.run_details.get("job") or {}).get("generate_docs"):');assert original!=base
+for label,source in {'baseline':base,'source34318':original,'candidate':(repo/relative).read_bytes()}.items():
+ variant=out/'variants'/label;shutil.copytree(package/'dagster_dbt',variant/'dagster_dbt',ignore=shutil.ignore_patterns('__pycache__'));(variant/'dagster_dbt/cloud/asset_defs.py').write_bytes(source);env=os.environ.copy();env.update(PYTHONPATH=str(variant),PYTHONDONTWRITEBYTECODE='1',DAGSTER_DBT_FIXTURE_DIR=str(proof));r=subprocess.run([sys.executable,str(proof/'reproduce_http.py'),'--label',label,'--output',str(out)],cwd=repo,env=env);assert r.returncode==0
+ x=json.loads((out/(label+'-http.json')).read_text());expected=0 if label=='baseline' else 4 if label=='source34318' else 8;assert sum(c['success'] for c in x['cases'])==expected

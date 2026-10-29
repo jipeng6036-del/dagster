@@ -1,0 +1,25 @@
+{
+  "submittedHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+  "submittedTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "upstreamHead": "ab2572e65545f9f29b1af3556f41a1101f328012",
+  "upstreamTree": "9d36b54573bb7c1a45bbd2958d6a99ae71344150",
+  "prospectiveIntegrationCommit": "ea452dc9e379d8d10f61c4a0df7378de5f33b252",
+  "prospectiveIntegrationTree": "8f26fcadce62050c5f8f0c764968a4a04457eb13",
+  "mergeConflictFree": true,
+  "submittedBranchUnmodified": true,
+  "applicableScope": {
+    "all": 121,
+    "local": 120,
+    "hostedPrivate": 1
+  },
+  "newCoreProtobuf6JobTriggered": false,
+  "mandatoryContinuousRebaseFound": false,
+  "mandatoryAll120RepeatFound": false,
+  "scopeBoundary": "Complete120 qualification belongs to submitted c824. Prospective merge checks are the separately described four core file scopes, official quality and relatedDG14; never label as all120 executed again on ea452.",
+  "integrationCanonicalTrackedFiles": 14577,
+  "rawCanonicalArchiveSha256": "3213df07a0a628eb682c73b596b214c8eb3165dca8812a9023d9c4dec5892e3d",
+  "originalWindowsConvertedArchiveUsed": false,
+  "qualityRequiredPassed": true,
+  "additionalMasterEnvironmentDocErrorsPreserved": 4,
+  "rootPublicAuthorization": "Separate; local proof assembly does not release global publication hold."
+}

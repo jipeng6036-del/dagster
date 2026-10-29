@@ -1,0 +1,19 @@
+{
+  "sourceToxJsonSha256": "92c03f526852ba443ce6b5a2c2f23e33ac7d17a31c13319fb6724b65c5787b5b",
+  "originalPytestExit": 1,
+  "command": [
+    "<ENV_ROOT>/.tox/py312-dbt112-core-main/bin/pytest",
+    "--ignore=./kitchen-sink",
+    "--durations",
+    "10",
+    "-m",
+    "core and not snowflake and not bigquery and not derived_metadata and not fusion",
+    "-vv",
+    "dagster_dbt_tests/core/test_project.py",
+    "dagster_dbt_tests/components/test_dbt_project_component.py",
+    "dagster_dbt_tests/cli/test_prepare_and_package.py"
+  ],
+  "stdout": "",
+  "stderr": "",
+  "boundary": "Full native stdout/stderr fields retained without filtering; this is an explicit field projection, not a reconstructed original Tox JSON."
+}

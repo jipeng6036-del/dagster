@@ -1,0 +1,1113 @@
+{
+  "label": "baseline",
+  "python": "3.12.13 (main, Mar 10 2026, 18:15:39) [MSC v.1944 64 bit (AMD64)]",
+  "source": "<PORTABLE_RUN>\\http\\variants\\baseline\\dagster_dbt\\cloud\\asset_defs.py",
+  "sourceSha256": "43edf937645b03753ccd13302f68ffd34a9733d4808c1ae9e8f90886dc1d2961",
+  "boundary": "Real SDK requests over TCP loopback and Dagster execute_in_process; dbt Cloud service is a local fixture, no cloud account, no paid calls.",
+  "cases": [
+    {
+      "generate_docs": true,
+      "rebuild_from_cache": true,
+      "resource": "legacy",
+      "loopback_port": 6024,
+      "success": false,
+      "error": "AttributeError(\"'NoneType' object has no attribute 'get'\")",
+      "http_calls": [
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/jobs/123/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/accounts/30000/projects/12/environment-variables/job",
+          "query": {
+            "job_definition_id": [
+              "123"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Generating software-defined assets for Dagster.",
+            "steps_override": [
+              "dbt compile "
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/manifest.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Materializing software-defined assets in Dagster run 9e339a81",
+            "steps_override": [
+              "dbt test",
+              "dbt run",
+              "dbt run-operation upload_artifacts"
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        }
+      ],
+      "runs": {
+        "1000": {
+          "commands": [
+            "dbt compile "
+          ],
+          "step": 2
+        },
+        "1001": {
+          "commands": [
+            "dbt test",
+            "dbt run",
+            "dbt run-operation upload_artifacts"
+          ],
+          "step": 3
+        }
+      }
+    },
+    {
+      "generate_docs": true,
+      "rebuild_from_cache": true,
+      "resource": "modern",
+      "loopback_port": 13882,
+      "success": false,
+      "error": "AttributeError(\"'NoneType' object has no attribute 'get'\")",
+      "http_calls": [
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/jobs/123/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/accounts/30000/projects/12/environment-variables/job",
+          "query": {
+            "job_definition_id": [
+              "123"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Generating software-defined assets for Dagster.",
+            "steps_override": [
+              "dbt compile "
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/manifest.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Materializing software-defined assets in Dagster run ffbe0a70",
+            "steps_override": [
+              "dbt test",
+              "dbt run",
+              "dbt run-operation upload_artifacts"
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        }
+      ],
+      "runs": {
+        "1000": {
+          "commands": [
+            "dbt compile "
+          ],
+          "step": 2
+        },
+        "1001": {
+          "commands": [
+            "dbt test",
+            "dbt run",
+            "dbt run-operation upload_artifacts"
+          ],
+          "step": 3
+        }
+      }
+    },
+    {
+      "generate_docs": true,
+      "rebuild_from_cache": false,
+      "resource": "legacy",
+      "loopback_port": 14049,
+      "success": false,
+      "error": "AttributeError(\"'NoneType' object has no attribute 'get'\")",
+      "http_calls": [
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/jobs/123/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/accounts/30000/projects/12/environment-variables/job",
+          "query": {
+            "job_definition_id": [
+              "123"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Generating software-defined assets for Dagster.",
+            "steps_override": [
+              "dbt compile "
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/manifest.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Materializing software-defined assets in Dagster run 15269925",
+            "steps_override": [
+              "dbt test",
+              "dbt run",
+              "dbt run-operation upload_artifacts"
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        }
+      ],
+      "runs": {
+        "1000": {
+          "commands": [
+            "dbt compile "
+          ],
+          "step": 2
+        },
+        "1001": {
+          "commands": [
+            "dbt test",
+            "dbt run",
+            "dbt run-operation upload_artifacts"
+          ],
+          "step": 3
+        }
+      }
+    },
+    {
+      "generate_docs": true,
+      "rebuild_from_cache": false,
+      "resource": "modern",
+      "loopback_port": 8039,
+      "success": false,
+      "error": "AttributeError(\"'NoneType' object has no attribute 'get'\")",
+      "http_calls": [
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/jobs/123/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/accounts/30000/projects/12/environment-variables/job",
+          "query": {
+            "job_definition_id": [
+              "123"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Generating software-defined assets for Dagster.",
+            "steps_override": [
+              "dbt compile "
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/manifest.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Materializing software-defined assets in Dagster run 709ed726",
+            "steps_override": [
+              "dbt test",
+              "dbt run",
+              "dbt run-operation upload_artifacts"
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        }
+      ],
+      "runs": {
+        "1000": {
+          "commands": [
+            "dbt compile "
+          ],
+          "step": 2
+        },
+        "1001": {
+          "commands": [
+            "dbt test",
+            "dbt run",
+            "dbt run-operation upload_artifacts"
+          ],
+          "step": 3
+        }
+      }
+    },
+    {
+      "generate_docs": false,
+      "rebuild_from_cache": true,
+      "resource": "legacy",
+      "loopback_port": 3287,
+      "success": false,
+      "error": "AttributeError(\"'NoneType' object has no attribute 'get'\")",
+      "http_calls": [
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/jobs/123/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/accounts/30000/projects/12/environment-variables/job",
+          "query": {
+            "job_definition_id": [
+              "123"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Generating software-defined assets for Dagster.",
+            "steps_override": [
+              "dbt compile "
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/manifest.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Materializing software-defined assets in Dagster run 4aae7122",
+            "steps_override": [
+              "dbt test",
+              "dbt run",
+              "dbt run-operation upload_artifacts"
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        }
+      ],
+      "runs": {
+        "1000": {
+          "commands": [
+            "dbt compile "
+          ],
+          "step": 2
+        },
+        "1001": {
+          "commands": [
+            "dbt test",
+            "dbt run",
+            "dbt run-operation upload_artifacts"
+          ],
+          "step": 3
+        }
+      }
+    },
+    {
+      "generate_docs": false,
+      "rebuild_from_cache": true,
+      "resource": "modern",
+      "loopback_port": 3489,
+      "success": false,
+      "error": "AttributeError(\"'NoneType' object has no attribute 'get'\")",
+      "http_calls": [
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/jobs/123/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/accounts/30000/projects/12/environment-variables/job",
+          "query": {
+            "job_definition_id": [
+              "123"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Generating software-defined assets for Dagster.",
+            "steps_override": [
+              "dbt compile "
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/manifest.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Materializing software-defined assets in Dagster run db39cb90",
+            "steps_override": [
+              "dbt test",
+              "dbt run",
+              "dbt run-operation upload_artifacts"
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        }
+      ],
+      "runs": {
+        "1000": {
+          "commands": [
+            "dbt compile "
+          ],
+          "step": 2
+        },
+        "1001": {
+          "commands": [
+            "dbt test",
+            "dbt run",
+            "dbt run-operation upload_artifacts"
+          ],
+          "step": 3
+        }
+      }
+    },
+    {
+      "generate_docs": false,
+      "rebuild_from_cache": false,
+      "resource": "legacy",
+      "loopback_port": 3615,
+      "success": false,
+      "error": "AttributeError(\"'NoneType' object has no attribute 'get'\")",
+      "http_calls": [
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/jobs/123/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/accounts/30000/projects/12/environment-variables/job",
+          "query": {
+            "job_definition_id": [
+              "123"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Generating software-defined assets for Dagster.",
+            "steps_override": [
+              "dbt compile "
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/manifest.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Materializing software-defined assets in Dagster run 4680c44a",
+            "steps_override": [
+              "dbt test",
+              "dbt run",
+              "dbt run-operation upload_artifacts"
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        }
+      ],
+      "runs": {
+        "1000": {
+          "commands": [
+            "dbt compile "
+          ],
+          "step": 2
+        },
+        "1001": {
+          "commands": [
+            "dbt test",
+            "dbt run",
+            "dbt run-operation upload_artifacts"
+          ],
+          "step": 3
+        }
+      }
+    },
+    {
+      "generate_docs": false,
+      "rebuild_from_cache": false,
+      "resource": "modern",
+      "loopback_port": 3683,
+      "success": false,
+      "error": "AttributeError(\"'NoneType' object has no attribute 'get'\")",
+      "http_calls": [
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/jobs/123/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/accounts/30000/projects/12/environment-variables/job",
+          "query": {
+            "job_definition_id": [
+              "123"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Generating software-defined assets for Dagster.",
+            "steps_override": [
+              "dbt compile "
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/manifest.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Materializing software-defined assets in Dagster run 39b45f18",
+            "steps_override": [
+              "dbt test",
+              "dbt run",
+              "dbt run-operation upload_artifacts"
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        }
+      ],
+      "runs": {
+        "1000": {
+          "commands": [
+            "dbt compile "
+          ],
+          "step": 2
+        },
+        "1001": {
+          "commands": [
+            "dbt test",
+            "dbt run",
+            "dbt run-operation upload_artifacts"
+          ],
+          "step": 3
+        }
+      }
+    }
+  ]
+}

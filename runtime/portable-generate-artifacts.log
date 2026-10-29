@@ -1,0 +1,23 @@
+16:01:54  Running with dbt=1.7.19
+16:01:54  Registered adapter: duckdb=1.7.5
+16:01:54  Unable to do partial parsing because saved manifest not found. Starting full parse.
+16:01:55  Found 1 model, 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+16:01:55  
+16:01:56  Concurrency: 1 threads (target='dev')
+16:01:56  
+16:01:56  1 of 1 START sql view model main.proof ......................................... [RUN]
+16:01:56  1 of 1 OK created sql view model main.proof .................................... [OK in 0.17s]
+16:01:56  
+16:01:56  Finished running 1 view model in 0 hours 0 minutes and 0.85 seconds (0.85s).
+16:01:56  
+16:01:56  Completed successfully
+16:01:56  
+16:01:56  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+16:02:13  Running with dbt=1.7.19
+16:02:13  Registered adapter: duckdb=1.7.5
+16:02:13  Found 1 model, 0 sources, 0 exposures, 0 metrics, 394 macros, 0 groups, 0 semantic models
+16:02:13  
+16:02:13  Concurrency: 1 threads (target='dev')
+16:02:13  
+16:02:19  Building catalog
+16:02:19  Catalog written to <PORTABLE_RUN>\artifacts\real-dbt17-project\target\catalog.json

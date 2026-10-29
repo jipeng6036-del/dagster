@@ -1,0 +1,15 @@
+{
+  "atUtc": "2026-10-29T18:16:31.288892+00:00",
+  "phase": "before",
+  "label": "baseline70",
+  "head": "ab2572e65545f9f29b1af3556f41a1101f328012",
+  "expectedTree": "9d36b54573bb7c1a45bbd2958d6a99ae71344150",
+  "actualFullTree": "9d36b54573bb7c1a45bbd2958d6a99ae71344150",
+  "trackedBlobModeSha256Checks": 14577,
+  "allCanonical": true,
+  "sourceFilesystem": "tmpfs",
+  "overlay": [],
+  "generatedOnlyDeleted": [],
+  "knownExactRecoveries": [],
+  "sourceGitWorktreeUntouched": true
+}

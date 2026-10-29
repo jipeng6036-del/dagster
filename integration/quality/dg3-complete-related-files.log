@@ -1,0 +1,57 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- <DG_RUNTIME>/.tox/py312-general/bin/python3
+cachedir: .pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: timeout-2.4.0, split-0.11.0, rerunfailures-16.1, mock-3.14.0, cov-5.0.0, asyncio-1.3.0, syrupy-5.1.0, xdist-3.6.1, anyio-4.14.2
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+created: 4/4 workers
+4 workers [14 items]
+
+scheduling tests via WorkStealingScheduling
+
+dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_simple_pipes_script_component_template 
+dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_all_metadata_success 
+dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_python_script_component_template 
+dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_defs_yaml_example_values_full_output 
+[gw0] [  7%] PASSED dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_simple_pipes_script_component_template 
+dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_defs_folder_component_template 
+[gw0] [ 14%] PASSED dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_defs_folder_component_template 
+dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_fivetran_account_component_template 
+[gw1] [ 21%] PASSED dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_python_script_component_template 
+dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_sling_replication_collection_component_template 
+[gw0] [ 28%] PASSED dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_fivetran_account_component_template 
+dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_flag_fields_success 
+[gw1] [ 35%] PASSED dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_sling_replication_collection_component_template 
+dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_dbt_project_component_template 
+[gw1] [ 42%] PASSED dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_dbt_project_component_template 
+dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_defs_yaml_flags_with_other_flags_fails 
+[gw2] [ 50%] PASSED dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_all_metadata_success 
+[gw3] [ 57%] PASSED dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_defs_yaml_example_values_full_output 
+dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_all_metadata_empty_success 
+dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_multiple_flags_fails 
+[gw3] [ 64%] PASSED dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_multiple_flags_fails 
+[gw2] [ 71%] PASSED dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_all_metadata_empty_success 
+[gw1] [ 78%] PASSED dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_defs_yaml_flags_with_other_flags_fails 
+dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_undefined_component_type_fails 
+[gw1] [ 85%] PASSED dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_undefined_component_type_fails 
+[gw0] [ 92%] PASSED dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_flag_fields_success 
+dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_defs_yaml_schema_full_output 
+[gw0] [100%] PASSED dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_defs_yaml_schema_full_output 
+
+----- generated xml file: <DG_COMPAT_RUNTIME>/dg-related-files.xml -----
+============================= slowest 10 durations =============================
+4.44s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_flag_fields_success
+4.22s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_defs_yaml_example_values_full_output
+4.21s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_all_metadata_success
+3.23s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_defs_yaml_flags_with_other_flags_fails
+1.30s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/yaml_template/test_yaml_template_generator.py::TestYamlTemplateGenerator::test_dbt_project_component_template
+0.36s setup    python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_all_metadata_success
+0.36s setup    python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_defs_yaml_example_values_full_output
+0.30s setup    python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_flag_fields_success
+0.09s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_defs_yaml_schema_full_output
+0.08s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_utils_inspect_command.py::test_utils_inspect_component_type_undefined_component_type_fails
+============================== 14 passed in 8.75s ==============================

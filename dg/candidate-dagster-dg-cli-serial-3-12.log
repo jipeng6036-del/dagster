@@ -1,0 +1,460 @@
+EXECUTION {"atUtc": "2026-10-29T15:53:17.348093+00:00", "jobId": "dagster-dg-cli-serial-3-12", "label": "candidate", "officialCommand": "tox -vv -e py312-serial", "executedArgv": ["tox", "--workdir", "<DG_RUNTIME>/.tox", "-vv", "-e", "py312-serial"], "cwd": "<SOURCE>/python_modules/libraries/dagster-dg-cli", "expandedOfficialPytest": "pytest ./dagster_dg_cli_tests -vv --durations 10 -m \"serial\" --ignore=./dagster_dg_cli_tests/cli_tests/plus_tests", "reportOnlyAddopts": "--junitxml=<DG_RUNTIME>/results/candidate-dagster-dg-cli-serial-3-12.xml", "runtimeWorkdirOnlyAdjustment": true, "sharedGithubGateHeldByHost": true}
+ROOT: 121 D setup logging to DEBUG on pid 6383 [tox/report.py:229]
+py312-serial: 134 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+plus: 135 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+windows: 135 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+general: 136 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+slow: 136 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+serial: 137 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+py312-serial: 140 W venv> /usr/local/bin/uv venv -p cpython3.12 --allow-existing '--prompt=dagster-dg-cli[py312-serial]' -v --python-preference system <DG_RUNTIME>/.tox/py312-serial [tox/tox_env/api.py:485]
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG Found workspace root: `<SOURCE>/python_modules/libraries/dagster-dg-cli`
+DEBUG Adding root workspace member: `<SOURCE>/python_modules/libraries/dagster-dg-cli`
+DEBUG Found workspace configuration at `<SOURCE>/python_modules/libraries/dagster-dg-cli/pyproject.toml`
+DEBUG Searching for user configuration in: `<HOME>/.config/uv/uv.toml`
+DEBUG uv 0.12.7 (x86_64-unknown-linux-gnu)
+DEBUG Found project root: `<SOURCE>/python_modules/libraries/dagster-dg-cli`
+DEBUG Using Python request `cpython@3.12` from explicit request
+DEBUG Searching for CPython 3.12 in search path or managed installations
+DEBUG Found `cpython-3.12.14-linux-x86_64-gnu` at `/usr/local/bin/python3.12` (first executable in the search path)
+Using CPython 3.12.14 interpreter at: /usr/local/bin/python3.12
+Creating virtual environment at: <DG_RUNTIME>/.tox/py312-serial
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Allowing existing directory due to `--allow-existing`
+DEBUG Detected parent process ID: 6383
+DEBUG Parent process executable: /usr/local/bin/python3.12
+DEBUG Parent process comm: tox
+DEBUG Could not determine shell from parent process
+py312-serial: 150 I exit 0 (0.01 seconds) <SOURCE>/python_modules/libraries/dagster-dg-cli> /usr/local/bin/uv venv -p cpython3.12 --allow-existing '--prompt=dagster-dg-cli[py312-serial]' -v --python-preference system <DG_RUNTIME>/.tox/py312-serial pid=6389 [tox/execute/api.py:311]
+py312-serial: 151 W uv-sync> /usr/local/bin/uv sync --python-preference system --extra ai --no-default-groups -v --group test --frozen -p cpython3.12 [tox/tox_env/api.py:485]
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG Found workspace root: `<SOURCE>/python_modules/libraries/dagster-dg-cli`
+DEBUG Adding root workspace member: `<SOURCE>/python_modules/libraries/dagster-dg-cli`
+DEBUG Found workspace configuration at `<SOURCE>/python_modules/libraries/dagster-dg-cli/pyproject.toml`
+DEBUG Searching for user configuration in: `<HOME>/.config/uv/uv.toml`
+DEBUG uv 0.12.7 (x86_64-unknown-linux-gnu)
+DEBUG Found project root: `<SOURCE>/python_modules/libraries/dagster-dg-cli`
+DEBUG Using Python request `cpython@3.12` from explicit request
+DEBUG Checking for Python environment at: `<DG_RUNTIME>/.tox/py312-serial`
+DEBUG The project environment's Python version satisfies the request: `CPython 3.12`
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 357282914 }), None, None, {}, {"src": None}. Most recently modified: pyproject.toml
+DEBUG Directory source requirement already cached: dagster-dg-cli==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dg-cli)
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 85271682 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/create-dagster/pyproject.toml
+DEBUG Directory source requirement already cached: create-dagster==1!0+dev (from file://<SOURCE>/python_modules/libraries/create-dagster)
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 81271517 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/dagster/pyproject.toml
+DEBUG Directory source requirement already cached: dagster==1!0+dev (from file://<SOURCE>/python_modules/dagster)
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 209276802 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-cloud-cli/pyproject.toml
+DEBUG Directory source requirement already cached: dagster-cloud-cli==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-cloud-cli)
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 297280436 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-dbt/pyproject.toml
+DEBUG Directory source requirement already cached: dagster-dbt==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dbt)
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 361283078 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-dg-core/pyproject.toml
+DEBUG Directory source requirement already cached: dagster-dg-core==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dg-core)
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 397284565 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-fivetran/pyproject.toml
+DEBUG Directory source requirement already cached: dagster-fivetran==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-fivetran)
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288299, tv_nsec: 785259294 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/dagster-graphql/pyproject.toml
+DEBUG Directory source requirement already cached: dagster-graphql==1!0+dev (from file://<SOURCE>/python_modules/dagster-graphql)
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288299, tv_nsec: 789259459 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/dagster-pipes/pyproject.toml
+DEBUG Directory source requirement already cached: dagster-pipes==1!0+dev (from file://<SOURCE>/python_modules/dagster-pipes)
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 541290511 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-rest-resources/pyproject.toml
+DEBUG Directory source requirement already cached: dagster-rest-resources==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-rest-resources)
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 549290841 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-shared/pyproject.toml
+DEBUG Directory source requirement already cached: dagster-shared==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-shared)
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 565291503 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-sling/pyproject.toml
+DEBUG Directory source requirement already cached: dagster-sling==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-sling)
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288299, tv_nsec: 801259955 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/dagster-test/pyproject.toml
+DEBUG Directory source requirement already cached: dagster-test==1!0+dev (from file://<SOURCE>/python_modules/dagster-test)
+DEBUG Registry requirement already cached: pytest==9.1.1
+DEBUG Registry requirement already cached: pytest-xdist==3.6.1
+DEBUG Registry requirement already cached: syrupy==5.1.0
+DEBUG Registry requirement already cached: typer==0.25.1
+DEBUG Registry requirement already cached: requests==2.34.2
+DEBUG Registry requirement already cached: anthropic==0.101.0
+DEBUG Registry requirement already cached: claude-code-sdk==0.0.25
+DEBUG Registry requirement already cached: alembic==1.18.4
+DEBUG Registry requirement already cached: antlr4-python3-runtime==4.13.2
+DEBUG Registry requirement already cached: click==8.3.3
+DEBUG Registry requirement already cached: coloredlogs==14.0
+DEBUG Registry requirement already cached: docstring-parser==0.18.0
+DEBUG Registry requirement already cached: filelock==3.32.4
+DEBUG Registry requirement already cached: grpcio==1.80.0
+DEBUG Registry requirement already cached: grpcio-health-checking==1.80.0
+DEBUG Registry requirement already cached: jinja2==3.1.6
+DEBUG Registry requirement already cached: protobuf==6.33.6
+DEBUG Registry requirement already cached: python-dotenv==1.2.3
+DEBUG Registry requirement already cached: pytz==2026.2
+DEBUG Registry requirement already cached: rich==14.3.4
+DEBUG Registry requirement already cached: six==1.17.0
+DEBUG Registry requirement already cached: sqlalchemy==2.0.49
+DEBUG Registry requirement already cached: structlog==25.5.0
+DEBUG Registry requirement already cached: tabulate==0.9.0
+DEBUG Registry requirement already cached: tomli==2.4.1
+DEBUG Registry requirement already cached: toposort==1.10
+DEBUG Registry requirement already cached: tqdm==4.67.3
+DEBUG Registry requirement already cached: tzdata==2026.2
+DEBUG Registry requirement already cached: universal-pathlib==0.2.6
+DEBUG Registry requirement already cached: watchdog==6.0.0
+DEBUG Registry requirement already cached: docker==7.1.0
+DEBUG Registry requirement already cached: grpcio-tools==1.80.0
+DEBUG Registry requirement already cached: morefs==0.2.2
+DEBUG Registry requirement already cached: mypy-protobuf==5.1.0
+DEBUG Registry requirement already cached: objgraph==3.6.2
+DEBUG Registry requirement already cached: psutil==7.2.2
+DEBUG Registry requirement already cached: pytest-asyncio==1.3.0
+DEBUG Registry requirement already cached: pytest-cov==5.0.0
+DEBUG Registry requirement already cached: pytest-mock==3.14.0
+DEBUG Registry requirement already cached: pytest-rerunfailures==16.1
+DEBUG Registry requirement already cached: pytest-split==0.11.0
+DEBUG Registry requirement already cached: pytest-timeout==2.4.0
+DEBUG Registry requirement already cached: rapidfuzz==3.14.5
+DEBUG Registry requirement already cached: responses==0.23.1
+DEBUG Registry requirement already cached: ruff==0.17.2
+DEBUG Registry requirement already cached: tox==4.53.1
+DEBUG Registry requirement already cached: tox-uv==1.35.2
+DEBUG Registry requirement already cached: github3-py==4.0.1
+DEBUG Registry requirement already cached: gitpython==3.1.62
+DEBUG Registry requirement already cached: packaging==26.2
+DEBUG Registry requirement already cached: pyyaml==6.0.3
+DEBUG Registry requirement already cached: questionary==2.1.1
+DEBUG Registry requirement already cached: setuptools==84.0.0
+DEBUG Registry requirement already cached: validators==0.35.0
+DEBUG Registry requirement already cached: networkx==3.6.1
+DEBUG Registry requirement already cached: orjson==3.12.0
+DEBUG Registry requirement already cached: sqlglot==28.0.0
+DEBUG Registry requirement already cached: dbt-core==1.12.6
+DEBUG Registry requirement already cached: click-aliases==1.0.5
+DEBUG Registry requirement already cached: gql==4.0.0
+DEBUG Registry requirement already cached: jsonschema==4.26.0
+DEBUG Registry requirement already cached: markdown==3.10.3
+DEBUG Registry requirement already cached: tomlkit==0.13.2
+DEBUG Registry requirement already cached: typing-extensions==4.15.0
+DEBUG Registry requirement already cached: yaspin==3.4.0
+DEBUG Registry requirement already cached: freezegun==1.5.5
+DEBUG Registry requirement already cached: pydantic==2.13.4
+DEBUG Registry requirement already cached: graphene==3.4.3
+DEBUG Registry requirement already cached: starlette==1.6.0
+DEBUG Registry requirement already cached: httpx==0.28.1
+DEBUG Registry requirement already cached: platformdirs==4.9.6
+DEBUG Registry requirement already cached: sling==1.5.17
+DEBUG Registry requirement already cached: iniconfig==2.3.0
+DEBUG Registry requirement already cached: pluggy==1.6.0
+DEBUG Registry requirement already cached: pygments==2.21.0
+DEBUG Registry requirement already cached: execnet==2.1.2
+DEBUG Registry requirement already cached: annotated-doc==0.0.4
+DEBUG Registry requirement already cached: shellingham==1.5.4
+DEBUG Registry requirement already cached: certifi==2026.4.22
+DEBUG Registry requirement already cached: charset-normalizer==3.4.7
+DEBUG Registry requirement already cached: idna==3.19
+DEBUG Registry requirement already cached: urllib3==2.8.0
+DEBUG Registry requirement already cached: anyio==4.14.2
+DEBUG Registry requirement already cached: distro==1.9.0
+DEBUG Registry requirement already cached: jiter==0.14.0
+DEBUG Registry requirement already cached: sniffio==1.3.1
+DEBUG Registry requirement already cached: mcp==2.1.1
+DEBUG Registry requirement already cached: mako==1.4.1
+DEBUG Registry requirement already cached: humanfriendly==10.0
+DEBUG Registry requirement already cached: markupsafe==3.0.3
+DEBUG Registry requirement already cached: markdown-it-py==4.2.0
+DEBUG Registry requirement already cached: greenlet==3.5.0
+DEBUG Registry requirement already cached: fsspec==2024.3.0
+DEBUG Registry requirement already cached: aiofile==3.9.0
+DEBUG Registry requirement already cached: types-protobuf==7.34.1.20260508
+DEBUG Registry requirement already cached: coverage==7.14.0
+DEBUG Registry requirement already cached: types-pyyaml==6.0.12.20260510
+DEBUG Registry requirement already cached: cachetools==7.1.1
+DEBUG Registry requirement already cached: colorama==0.4.6
+DEBUG Registry requirement already cached: pyproject-api==1.10.0
+DEBUG Registry requirement already cached: python-discovery==1.6.0
+DEBUG Registry requirement already cached: tomli-w==1.2.0
+DEBUG Registry requirement already cached: virtualenv==21.14.0
+DEBUG Registry requirement already cached: tox-uv-bare==1.35.2
+DEBUG Registry requirement already cached: uv==0.12.7
+DEBUG Registry requirement already cached: pyjwt==2.15.1
+DEBUG Registry requirement already cached: python-dateutil==2.9.0.post0
+DEBUG Registry requirement already cached: uritemplate==4.2.0
+DEBUG Registry requirement already cached: gitdb==4.0.12
+DEBUG Registry requirement already cached: prompt-toolkit==3.0.52
+DEBUG Registry requirement already cached: sqlglotrs==0.7.3
+DEBUG Registry requirement already cached: agate==1.9.1
+DEBUG Registry requirement already cached: daff==1.4.2
+DEBUG Registry requirement already cached: dbt-adapters==1.24.5
+DEBUG Registry requirement already cached: dbt-common==1.39.0
+DEBUG Registry requirement already cached: dbt-core-experimental-parser==2.0.8
+DEBUG Registry requirement already cached: dbt-extractor==0.6.0
+DEBUG Registry requirement already cached: dbt-protos==1.0.615
+DEBUG Registry requirement already cached: mashumaro==3.17
+DEBUG Registry requirement already cached: metricflow==0.213.0
+DEBUG Registry requirement already cached: opentelemetry-api==1.44.0
+DEBUG Registry requirement already cached: pathspec==1.0.4
+DEBUG Registry requirement already cached: snowplow-tracker==1.1.0
+DEBUG Registry requirement already cached: sqlparse==0.6.0
+DEBUG Registry requirement already cached: backoff==2.2.1
+DEBUG Registry requirement already cached: graphql-core==3.2.8
+DEBUG Registry requirement already cached: yarl==1.23.0
+DEBUG Registry requirement already cached: requests-toolbelt==1.0.0
+DEBUG Registry requirement already cached: attrs==26.1.0
+DEBUG Registry requirement already cached: jsonschema-specifications==2025.9.1
+DEBUG Registry requirement already cached: referencing==0.37.0
+DEBUG Registry requirement already cached: rpds-py==0.30.0
+DEBUG Registry requirement already cached: termcolor==3.3.0
+DEBUG Registry requirement already cached: annotated-types==0.7.0
+DEBUG Registry requirement already cached: pydantic-core==2.46.4
+DEBUG Registry requirement already cached: typing-inspection==0.4.2
+DEBUG Registry requirement already cached: graphql-relay==3.2.0
+DEBUG Registry requirement already cached: httpcore==1.0.9
+DEBUG Registry requirement already cached: httpx2==2.12.0
+DEBUG Registry requirement already cached: mcp-types==2.1.1
+DEBUG Registry requirement already cached: python-multipart==0.0.32
+DEBUG Registry requirement already cached: sse-starlette==3.4.2
+DEBUG Registry requirement already cached: uvicorn==0.46.0
+DEBUG Registry requirement already cached: mdurl==0.1.2
+DEBUG Registry requirement already cached: caio==0.9.25
+DEBUG Registry requirement already cached: distlib==0.4.0
+DEBUG Registry requirement already cached: cryptography==50.0.1
+DEBUG Registry requirement already cached: smmap==5.0.3
+DEBUG Registry requirement already cached: wcwidth==0.7.0
+DEBUG Registry requirement already cached: babel==2.18.0
+DEBUG Registry requirement already cached: isodate==0.7.2
+DEBUG Registry requirement already cached: leather==0.4.1
+DEBUG Registry requirement already cached: parsedatetime==2.6
+DEBUG Registry requirement already cached: python-slugify==9.1.3
+DEBUG Registry requirement already cached: pytimeparse==1.1.10
+DEBUG Registry requirement already cached: deepdiff==8.6.2
+DEBUG Registry requirement already cached: msgpack==1.2.3
+DEBUG Registry requirement already cached: importlib-metadata==10.1.0
+DEBUG Registry requirement already cached: more-itertools==10.8.0
+DEBUG Registry requirement already cached: multidict==6.7.1
+DEBUG Registry requirement already cached: propcache==0.5.2
+DEBUG Registry requirement already cached: h11==0.16.0
+DEBUG Registry requirement already cached: httpcore2==2.12.0
+DEBUG Registry requirement already cached: truststore==0.10.4
+DEBUG Registry requirement already cached: cffi==2.0.0
+DEBUG Registry requirement already cached: text-unidecode==1.3
+DEBUG Registry requirement already cached: orderly-set==5.5.0
+DEBUG Registry requirement already cached: zipp==4.1.2
+DEBUG Registry requirement already cached: pycparser==3.0
+DEBUG Using request connect timeout of 10s and read timeout of 30s
+Installed 182 packages in 34ms
+ + agate==1.9.1
+ + aiofile==3.9.0
+ + alembic==1.18.4
+ + annotated-doc==0.0.4
+ + annotated-types==0.7.0
+ + anthropic==0.101.0
+ + antlr4-python3-runtime==4.13.2
+ + anyio==4.14.2
+ + attrs==26.1.0
+ + babel==2.18.0
+ + backoff==2.2.1
+ + cachetools==7.1.1
+ + caio==0.9.25
+ + certifi==2026.4.22
+ + cffi==2.0.0
+ + charset-normalizer==3.4.7
+ + claude-code-sdk==0.0.25
+ + click==8.3.3
+ + click-aliases==1.0.5
+ + colorama==0.4.6
+ + coloredlogs==14.0
+ + coverage==7.14.0
+ + create-dagster==1!0+dev (from file://<SOURCE>/python_modules/libraries/create-dagster)
+ + cryptography==50.0.1
+ + daff==1.4.2
+ + dagster==1!0+dev (from file://<SOURCE>/python_modules/dagster)
+ + dagster-cloud-cli==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-cloud-cli)
+ + dagster-dbt==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dbt)
+ + dagster-dg-cli==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dg-cli)
+ + dagster-dg-core==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dg-core)
+ + dagster-fivetran==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-fivetran)
+ + dagster-graphql==1!0+dev (from file://<SOURCE>/python_modules/dagster-graphql)
+ + dagster-pipes==1!0+dev (from file://<SOURCE>/python_modules/dagster-pipes)
+ + dagster-rest-resources==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-rest-resources)
+ + dagster-shared==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-shared)
+ + dagster-sling==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-sling)
+ + dagster-test==1!0+dev (from file://<SOURCE>/python_modules/dagster-test)
+ + dbt-adapters==1.24.5
+ + dbt-common==1.39.0
+ + dbt-core==1.12.6
+ + dbt-core-experimental-parser==2.0.8
+ + dbt-extractor==0.6.0
+ + dbt-protos==1.0.615
+ + deepdiff==8.6.2
+ + distlib==0.4.0
+ + distro==1.9.0
+ + docker==7.1.0
+ + docstring-parser==0.18.0
+ + execnet==2.1.2
+ + filelock==3.32.4
+ + freezegun==1.5.5
+ + fsspec==2024.3.0
+ + gitdb==4.0.12
+ + github3-py==4.0.1
+ + gitpython==3.1.62
+ + gql==4.0.0
+ + graphene==3.4.3
+ + graphql-core==3.2.8
+ + graphql-relay==3.2.0
+ + greenlet==3.5.0
+ + grpcio==1.80.0
+ + grpcio-health-checking==1.80.0
+ + grpcio-tools==1.80.0
+ + h11==0.16.0
+ + httpcore==1.0.9
+ + httpcore2==2.12.0
+ + httpx==0.28.1
+ + httpx2==2.12.0
+ + humanfriendly==10.0
+ + idna==3.19
+ + importlib-metadata==10.1.0
+ + iniconfig==2.3.0
+ + isodate==0.7.2
+ + jinja2==3.1.6
+ + jiter==0.14.0
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + leather==0.4.1
+ + mako==1.4.1
+ + markdown==3.10.3
+ + markdown-it-py==4.2.0
+ + markupsafe==3.0.3
+ + mashumaro==3.17
+ + mcp==2.1.1
+ + mcp-types==2.1.1
+ + mdurl==0.1.2
+ + metricflow==0.213.0
+ + more-itertools==10.8.0
+ + morefs==0.2.2
+ + msgpack==1.2.3
+ + multidict==6.7.1
+ + mypy-protobuf==5.1.0
+ + networkx==3.6.1
+ + objgraph==3.6.2
+ + opentelemetry-api==1.44.0
+ + orderly-set==5.5.0
+ + orjson==3.12.0
+ + packaging==26.2
+ + parsedatetime==2.6
+ + pathspec==1.0.4
+ + platformdirs==4.9.6
+ + pluggy==1.6.0
+ + prompt-toolkit==3.0.52
+ + propcache==0.5.2
+ + protobuf==6.33.6
+ + psutil==7.2.2
+ + pycparser==3.0
+ + pydantic==2.13.4
+ + pydantic-core==2.46.4
+ + pygments==2.21.0
+ + pyjwt==2.15.1
+ + pyproject-api==1.10.0
+ + pytest==9.1.1
+ + pytest-asyncio==1.3.0
+ + pytest-cov==5.0.0
+ + pytest-mock==3.14.0
+ + pytest-rerunfailures==16.1
+ + pytest-split==0.11.0
+ + pytest-timeout==2.4.0
+ + pytest-xdist==3.6.1
+ + python-dateutil==2.9.0.post0
+ + python-discovery==1.6.0
+ + python-dotenv==1.2.3
+ + python-multipart==0.0.32
+ + python-slugify==9.1.3
+ + pytimeparse==1.1.10
+ + pytz==2026.2
+ + pyyaml==6.0.3
+ + questionary==2.1.1
+ + rapidfuzz==3.14.5
+ + referencing==0.37.0
+ + requests==2.34.2
+ + requests-toolbelt==1.0.0
+ + responses==0.23.1
+ + rich==14.3.4
+ + rpds-py==0.30.0
+ + ruff==0.17.2
+ + setuptools==84.0.0
+ + shellingham==1.5.4
+ + six==1.17.0
+ + sling==1.5.17
+ + smmap==5.0.3
+ + sniffio==1.3.1
+ + snowplow-tracker==1.1.0
+ + sqlalchemy==2.0.49
+ + sqlglot==28.0.0
+ + sqlglotrs==0.7.3
+ + sqlparse==0.6.0
+ + sse-starlette==3.4.2
+ + starlette==1.6.0
+ + structlog==25.5.0
+ + syrupy==5.1.0
+ + tabulate==0.9.0
+ + termcolor==3.3.0
+ + text-unidecode==1.3
+ + tomli==2.4.1
+ + tomli-w==1.2.0
+ + tomlkit==0.13.2
+ + toposort==1.10
+ + tox==4.53.1
+ + tox-uv==1.35.2
+ + tox-uv-bare==1.35.2
+ + tqdm==4.67.3
+ + truststore==0.10.4
+ + typer==0.25.1
+ + types-protobuf==7.34.1.20260508
+ + types-pyyaml==6.0.12.20260510
+ + typing-extensions==4.15.0
+ + typing-inspection==0.4.2
+ + tzdata==2026.2
+ + universal-pathlib==0.2.6
+ + uritemplate==4.2.0
+ + urllib3==2.8.0
+ + uv==0.12.7
+ + uvicorn==0.46.0
+ + validators==0.35.0
+ + virtualenv==21.14.0
+ + watchdog==6.0.0
+ + wcwidth==0.7.0
+ + yarl==1.23.0
+ + yaspin==3.4.0
+ + zipp==4.1.2
+py312-serial: 238 I exit 0 (0.09 seconds) <SOURCE>/python_modules/libraries/dagster-dg-cli> /usr/local/bin/uv sync --python-preference system --extra ai --no-default-groups -v --group test --frozen -p cpython3.12 pid=6400 [tox/execute/api.py:311]
+py312-serial: 238 W commands[0]> /bin/bash -c '! uv pip list --exclude-editable | grep -e dagster -e dagit' [tox/tox_env/api.py:485]
+Using Python 3.12.14 environment at: <DG_RUNTIME>/.tox/py312-serial
+py312-serial: 249 I exit 0 (0.01 seconds) <SOURCE>/python_modules/libraries/dagster-dg-cli> /bin/bash -c '! uv pip list --exclude-editable | grep -e dagster -e dagit' pid=6437 [tox/execute/api.py:311]
+py312-serial: 249 W commands[1]> pytest ./dagster_dg_cli_tests -vv --durations 10 -m serial --ignore=./dagster_dg_cli_tests/cli_tests/plus_tests [tox/tox_env/api.py:485]
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- <DG_RUNTIME>/.tox/py312-serial/bin/python3
+cachedir: <DG_RUNTIME>/.tox/py312-serial/.pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: timeout-2.4.0, split-0.11.0, rerunfailures-16.1, mock-3.14.0, cov-5.0.0, asyncio-1.3.0, syrupy-5.1.0, xdist-3.6.1, anyio-4.14.2
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+collecting ... collected 681 items / 675 deselected / 6 selected
+
+dagster_dg_cli_tests/cli_tests/test_check_yaml_command.py::test_check_yaml_with_watch PASSED [ 16%]
+dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_workspace_context_success PASSED [ 33%]
+dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_workspace_context_set_python_executable_from_env_file PASSED [ 50%]
+dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_workspace_load_env_files PASSED [ 66%]
+dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_project_context_success PASSED [ 83%]
+dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_uses_active_venv_when_flag_set PASSED [100%]
+
+- generated xml file: <DG_RUNTIME>/results/candidate-dagster-dg-cli-serial-3-12.xml -
+============================= slowest 10 durations =============================
+135.22s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_workspace_context_success
+77.21s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_check_yaml_command.py::test_check_yaml_with_watch
+22.46s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_workspace_load_env_files
+19.85s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_workspace_context_set_python_executable_from_env_file
+14.88s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_project_context_success
+14.54s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_uses_active_venv_when_flag_set
+0.00s setup    python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_check_yaml_command.py::test_check_yaml_with_watch
+0.00s setup    python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_project_context_success
+0.00s setup    python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_workspace_context_success
+0.00s setup    python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/test_dev_command.py::test_dev_uses_active_venv_when_flag_set
+================ 6 passed, 675 deselected in 284.92s (0:04:44) =================
+py312-serial: 289825 I exit 0 (289.58 seconds) <SOURCE>/python_modules/libraries/dagster-dg-cli> pytest ./dagster_dg_cli_tests -vv --durations 10 -m serial --ignore=./dagster_dg_cli_tests/cli_tests/plus_tests pid=6447 [tox/execute/api.py:311]
+  [testenv:py312-serial] unused config key(s): download
+  [tox] unused config key(s): skipsdist
+  py312-serial: OK (289.70=setup[0.10]+cmd[0.01,289.58] seconds)
+  congratulations :) (289.72 seconds)

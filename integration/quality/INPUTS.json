@@ -1,0 +1,64 @@
+{
+  "atUtc": "2026-10-29T17:54:20.507165+00:00",
+  "head": "ea452dc9e379d8d10f61c4a0df7378de5f33b252",
+  "tree": "8f26fcadce62050c5f8f0c764968a4a04457eb13",
+  "trackedFiles": 14577,
+  "canonicalArchiveSha256": "3213df07a0a628eb682c73b596b214c8eb3165dca8812a9023d9c4dec5892e3d",
+  "deltaFiles": 21,
+  "newTrackedFiles": 1,
+  "deltaTarSha256": "240f0d1a94819b8045967452cd0f6b094320b87e67d0609c7e2cb520b71ffdcd",
+  "inputs": {
+    "scripts/run-ty.py": {
+      "oldSha256": "4f3746e54311ca77ac375cca6187e4958c915e6be1fbd196c343f9d486acba7f",
+      "integrationSha256": "4f3746e54311ca77ac375cca6187e4958c915e6be1fbd196c343f9d486acba7f",
+      "unchanged": true
+    },
+    "justfile": {
+      "oldSha256": "584d87fc9dc0e8fea780343f0c6421f7adfbdbb74a321a251df385fdaec3bdae",
+      "integrationSha256": "584d87fc9dc0e8fea780343f0c6421f7adfbdbb74a321a251df385fdaec3bdae",
+      "unchanged": true
+    },
+    "ty/airflow/pyproject.toml": {
+      "oldSha256": "6cccd291a1db8514d2d31152d97af9e3297d419bd49df275f260786d613e9bb7",
+      "integrationSha256": "6cccd291a1db8514d2d31152d97af9e3297d419bd49df275f260786d613e9bb7",
+      "unchanged": true
+    },
+    "ty/airflow/uv.lock": {
+      "oldSha256": "00a1f4809703f6dd2229af31ec6628a405e1a33853d46e7d0800ae4cb23dd7f3",
+      "integrationSha256": "00a1f4809703f6dd2229af31ec6628a405e1a33853d46e7d0800ae4cb23dd7f3",
+      "unchanged": true
+    },
+    "ty/master/pyproject.toml": {
+      "oldSha256": "16e08c6cb667c73eefe59d4fa1b8006d7a25ab299c75fe9e306eef979f46e03a",
+      "integrationSha256": "16e08c6cb667c73eefe59d4fa1b8006d7a25ab299c75fe9e306eef979f46e03a",
+      "unchanged": true
+    },
+    "ty/master/uv.lock": {
+      "oldSha256": "56442f6435210cf79bdf2d806e012a55e2a2e61eb69435b49599f0be739312ca",
+      "integrationSha256": "56442f6435210cf79bdf2d806e012a55e2a2e61eb69435b49599f0be739312ca",
+      "unchanged": true
+    },
+    "python_modules/libraries/dagster-dg-cli/uv.lock": {
+      "oldSha256": "2fd17ef23f51fddc63f47dc9e6346c69383d3f564c35766e659da8fc3c5403c6",
+      "integrationSha256": "2fd17ef23f51fddc63f47dc9e6346c69383d3f564c35766e659da8fc3c5403c6",
+      "unchanged": true
+    },
+    "python_modules/libraries/dagster-dg-cli/tox.ini": {
+      "oldSha256": "e38d1ef90ce634fef01dea8d6263b398bcacd62fc7da7e58f7bc434fdea3fc36",
+      "integrationSha256": "e38d1ef90ce634fef01dea8d6263b398bcacd62fc7da7e58f7bc434fdea3fc36",
+      "unchanged": true
+    },
+    "python_modules/automation/pyproject.toml": {
+      "oldSha256": "299d566bca659eed7b83e2586b3d700b4e15e14fd1bf6307ff2681eec39c944f",
+      "integrationSha256": "299d566bca659eed7b83e2586b3d700b4e15e14fd1bf6307ff2681eec39c944f",
+      "unchanged": true
+    },
+    "python_modules/automation/uv.lock": {
+      "oldSha256": "6e30f378b45b85ded1986509568ec5a98abc0ddc932ff122dc7ac86332285fdf",
+      "integrationSha256": "6e30f378b45b85ded1986509568ec5a98abc0ddc932ff122dc7ac86332285fdf",
+      "unchanged": true
+    }
+  },
+  "originalWindowsArchiveUsed": false,
+  "sourceOrDependencyOrCheckerEdits": false
+}

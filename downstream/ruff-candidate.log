@@ -1,0 +1,4 @@
+ruff check .
+All checks passed!
+ruff format --check .
+7187 files already formatted

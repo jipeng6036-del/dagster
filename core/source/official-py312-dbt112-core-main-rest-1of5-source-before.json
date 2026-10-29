@@ -1,0 +1,18 @@
+{
+  "atUtc": "2026-10-29T14:34:34.112347+00:00",
+  "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+  "expectedTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "actualFullFilesystemTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "fileCount": 14576,
+  "allGitBlobModeSizeSha256Match": true,
+  "sourceFilesystem": "container writable Linux ext4",
+  "source": "<SOURCE>",
+  "tarDataFilterSymlinkTextRepairs": [
+    {
+      "path": ".github/styles",
+      "filteredTarget": "docs/vale/styles",
+      "gitTarget": "docs/vale/styles/"
+    }
+  ],
+  "status": "PASS_CANONICAL_SOURCE_ONLY_NO_TESTS_RUN"
+}

@@ -1,0 +1,149 @@
+<frozen runpy>:128: RuntimeWarning: 'automation.dagster_docs.main' found in sys.modules after import of package 'automation.dagster_docs', but prior to execution of 'automation.dagster_docs.main'; this may result in unpredictable behaviour
+Validating docstrings across 71 public Dagster packages
+
+=== dagster ===
+--- dagster.ComponentLoadContext.component_path ---
+  WARNING: No docstring found
+
+Package dagster: 0 errors, 1 warnings
+  (52 symbols excluded)
+
+Warning: Could not import package 'dagster_airbyte': No module named 'dagster_airbyte'
+
+Warning: Could not import package 'dagster_airflow': No module named 'dagster_airflow'
+
+Warning: Could not import package 'dagster_airlift': No module named 'dagster_airlift'
+
+Warning: Could not import package 'dagster_aws': No module named 'dagster_aws'
+
+Warning: Could not import package 'dagster_azure': No module named 'dagster_azure'
+
+Warning: Could not import package 'dagster_celery': No module named 'dagster_celery'
+
+Warning: Could not import package 'dagster_celery_docker': No module named 'dagster_celery_docker'
+
+Warning: Could not import package 'dagster_celery_k8s': No module named 'dagster_celery_k8s'
+
+Warning: Could not import package 'dagster_census': No module named 'dagster_census'
+
+Warning: Could not import package 'dagster_clickhouse': No module named 'dagster_clickhouse'
+
+Warning: Could not import package 'dagster_clickhouse_pandas': No module named 'dagster_clickhouse_pandas'
+
+Warning: Could not import package 'dagster_clickhouse_polars': No module named 'dagster_clickhouse_polars'
+
+Warning: Could not import package 'dagster_cloud_cli': No module named 'dagster_cloud_cli'
+
+Warning: Could not import package 'dagster_dask': No module named 'dagster_dask'
+
+Warning: Could not import package 'dagster_databricks': No module named 'dagster_databricks'
+
+Warning: Could not import package 'dagster_datadog': No module named 'dagster_datadog'
+
+Warning: Could not import package 'dagster_datahub': No module named 'dagster_datahub'
+
+Warning: Could not import package 'dagster_dbt': No module named 'dagster_dbt'
+
+Warning: Could not import package 'dagster_deltalake': No module named 'dagster_deltalake'
+
+Warning: Could not import package 'dagster_deltalake_pandas': No module named 'dagster_deltalake_pandas'
+
+Warning: Could not import package 'dagster_deltalake_polars': No module named 'dagster_deltalake_polars'
+
+Warning: Could not import package 'dagster_dg_cli': No module named 'dagster_dg_cli'
+
+Warning: Could not import package 'dagster_dg_core': No module named 'dagster_dg_core'
+
+Warning: Could not import package 'dagster_dlt': No module named 'dagster_dlt'
+
+Warning: Could not import package 'dagster_docker': No module named 'dagster_docker'
+
+Warning: Could not import package 'dagster_duckdb': No module named 'dagster_duckdb'
+
+Warning: Could not import package 'dagster_duckdb_pandas': No module named 'dagster_duckdb_pandas'
+
+Warning: Could not import package 'dagster_duckdb_polars': No module named 'dagster_duckdb_polars'
+
+Warning: Could not import package 'dagster_duckdb_pyspark': No module named 'dagster_duckdb_pyspark'
+
+Warning: Could not import package 'dagster_fivetran': No module named 'dagster_fivetran'
+
+Warning: Could not import package 'dagster_gcp': No module named 'dagster_gcp'
+
+Warning: Could not import package 'dagster_gcp_pandas': No module named 'dagster_gcp_pandas'
+
+Warning: Could not import package 'dagster_gcp_pyspark': No module named 'dagster_gcp_pyspark'
+
+Warning: Could not import package 'dagster_ge': No module named 'dagster_ge'
+
+Warning: Could not import package 'dagster_github': No module named 'dagster_github'
+
+Warning: Could not import package 'dagster_hightouch': No module named 'dagster_hightouch'
+
+Warning: Could not import package 'dagster_k8s': No module named 'dagster_k8s'
+
+Warning: Could not import package 'dagster_looker': No module named 'dagster_looker'
+
+Warning: Could not import package 'dagster_managed_elements': No module named 'dagster_managed_elements'
+
+Warning: Could not import package 'dagster_mlflow': No module named 'dagster_mlflow'
+
+Warning: Could not import package 'dagster_msteams': No module named 'dagster_msteams'
+
+Warning: Could not import package 'dagster_mysql': No module named 'dagster_mysql'
+
+Warning: Could not import package 'dagster_omni': No module named 'dagster_omni'
+
+Warning: Could not import package 'dagster_openai': No module named 'dagster_openai'
+
+Warning: Could not import package 'dagster_pagerduty': No module named 'dagster_pagerduty'
+
+Warning: Could not import package 'dagster_pandas': No module named 'dagster_pandas'
+
+Warning: Could not import package 'dagster_pandera': No module named 'dagster_pandera'
+
+Warning: Could not import package 'dagster_papertrail': No module named 'dagster_papertrail'
+
+Warning: Could not import package 'dagster_polytomic': No module named 'dagster_polytomic'
+
+Warning: Could not import package 'dagster_postgres': No module named 'dagster_postgres'
+
+Warning: Could not import package 'dagster_powerbi': No module named 'dagster_powerbi'
+
+Warning: Could not import package 'dagster_prefect': No module named 'dagster_prefect'
+
+Warning: Could not import package 'dagster_prometheus': No module named 'dagster_prometheus'
+
+Warning: Could not import package 'dagster_pyspark': No module named 'dagster_pyspark'
+
+Warning: Could not import package 'dagster_rest_resources': No module named 'dagster_rest_resources'
+
+Warning: Could not import package 'dagster_sigma': No module named 'dagster_sigma'
+
+Warning: Could not import package 'dagster_slack': No module named 'dagster_slack'
+
+Warning: Could not import package 'dagster_sling': No module named 'dagster_sling'
+
+Warning: Could not import package 'dagster_snowflake': No module named 'dagster_snowflake'
+
+Warning: Could not import package 'dagster_snowflake_pandas': No module named 'dagster_snowflake_pandas'
+
+Warning: Could not import package 'dagster_snowflake_polars': No module named 'dagster_snowflake_polars'
+
+Warning: Could not import package 'dagster_snowflake_pyspark': No module named 'dagster_snowflake_pyspark'
+
+Warning: Could not import package 'dagster_soda': No module named 'dagster_soda'
+
+Warning: Could not import package 'dagster_spark': No module named 'dagster_spark'
+
+Warning: Could not import package 'dagster_ssh': No module named 'dagster_ssh'
+
+Warning: Could not import package 'dagster_tableau': No module named 'dagster_tableau'
+
+Warning: Could not import package 'dagster_twilio': No module named 'dagster_twilio'
+
+Warning: Could not import package 'dagster_wandb': No module named 'dagster_wandb'
+
+Overall Summary: 1115 symbols processed across 71 packages
+  52 symbols excluded from validation
+Total: 0 errors, 1 warnings

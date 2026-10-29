@@ -1,0 +1,15 @@
+{
+  "status": "PASS_EXECUTED_LOOPBACK_AND_LOCAL_DBT",
+  "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+  "sourceVariantSuccessCounts": {
+    "baseline": 0,
+    "original34318": 4,
+    "candidate": 8
+  },
+  "installedWheelCases": 8,
+  "dbtCore": "1.7.19",
+  "duckdbAdapter": "1.7.5",
+  "generatedModel": "model.artifact_step_proof.proof",
+  "networkBoundary": "HTTP endpoints were local loopback fixtures; build/docs used local DuckDB, not a cloud account.",
+  "entryExecution": "Existing environment Python executed the recorded four scripts (one through compare_http). No fresh uv sync was executed for this portable entry validation."
+}

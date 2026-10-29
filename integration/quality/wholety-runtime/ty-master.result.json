@@ -1,0 +1,11 @@
+{
+  "atUtc": "2026-10-29T17:57:09.125450+00:00",
+  "command": "uv tool run --from ty==0.0.91 ty check --config-file=<SOURCE>/.ty-master.toml --python=<SOURCE>/ty/master/.venv/bin/python --force-exclude --output-format=gitlab --error-on-warning -v",
+  "cwd": "<SOURCE>",
+  "returncode": 0,
+  "filesAnalyzed": 4625,
+  "errorCount": 0,
+  "warningCount": 0,
+  "diagnosticCount": 0,
+  "observation": "Original subprocess.run called once with unchanged positional and keyword arguments; original result returned unchanged."
+}

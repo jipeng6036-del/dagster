@@ -1,0 +1,784 @@
+ROOT: 122 D setup logging to DEBUG on pid 6984 [tox/report.py:229]
+py310-pypi: 141 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+source: 142 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+pypi: 142 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+py310-pypi: 146 W venv> /usr/local/bin/uv venv -p cpython3.10 --allow-existing '--prompt=assets_dbt_python[py310-pypi]' -v --python-preference system <RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi [tox/tox_env/api.py:485]
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/examples/pyproject.toml`
+DEBUG Found workspace root: `<SOURCE>/examples/assets_dbt_python`
+DEBUG Adding root workspace member: `<SOURCE>/examples/assets_dbt_python`
+DEBUG Found workspace configuration at `<SOURCE>/examples/assets_dbt_python/pyproject.toml`
+DEBUG Searching for user configuration in: `<HOME>/.config/uv/uv.toml`
+DEBUG uv 0.12.7 (x86_64-unknown-linux-gnu)
+DEBUG Found project root: `<SOURCE>/examples/assets_dbt_python`
+DEBUG Using Python request `cpython@3.10` from explicit request
+DEBUG Searching for CPython 3.10 in search path or managed installations
+DEBUG Found `cpython-3.10.21-linux-x86_64-gnu` at `<TOOLS>/bin/python3.10` (first executable in the search path)
+DEBUG Skipping managed installation cpython-3.10.21-linux-x86_64-gnu: system installation preferred
+DEBUG Found `cpython-3.12.14-linux-x86_64-gnu` at `/usr/local/bin/python3` (search path)
+DEBUG Skipping interpreter at `/usr/local/bin/python3` from search path: does not satisfy request `3.10`
+DEBUG Found `cpython-3.12.14-linux-x86_64-gnu` at `/usr/local/bin/python` (search path)
+DEBUG Skipping interpreter at `/usr/local/bin/python` from search path: does not satisfy request `3.10`
+DEBUG Searching for managed installations at `<RUNTIME>/downstream-1407/python`
+DEBUG Found managed installation `cpython-3.10.21-linux-x86_64-gnu`
+DEBUG Found `cpython-3.10.21-linux-x86_64-gnu` at `<RUNTIME>/downstream-1407/python/cpython-3.10-linux-x86_64-gnu/bin/python3.10` (managed installations)
+DEBUG Skipping managed installation cpython-3.10.21-linux-x86_64-gnu: system installation preferred
+DEBUG Allowing managed installation cpython-3.10.21-linux-x86_64-gnu: no system installations
+Using CPython 3.10.21 interpreter at: <TOOLS>/bin/python3.10
+Creating virtual environment at: <RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi
+DEBUG Assessing Python executable as base candidate: <TOOLS>/bin/python3.10
+DEBUG Assessing Python executable as base candidate: <RUNTIME>/downstream-1407/python/cpython-3.10-linux-x86_64-gnu/bin/python3.10
+DEBUG Using base executable for virtual environment: <RUNTIME>/downstream-1407/python/cpython-3.10-linux-x86_64-gnu/bin/python3.10
+DEBUG Allowing existing directory due to `--allow-existing`
+DEBUG Using symlink directory <RUNTIME>/downstream-1407/python/cpython-3.10-linux-x86_64-gnu instead of base Python path: <RUNTIME>/downstream-1407/python/cpython-3.10-linux-x86_64-gnu/bin/python3.10
+DEBUG Detected parent process ID: 6984
+DEBUG Parent process executable: /usr/local/bin/python3.12
+DEBUG Parent process comm: tox
+DEBUG Could not determine shell from parent process
+py310-pypi: 155 I exit 0 (0.01 seconds) <SOURCE>/examples/assets_dbt_python> /usr/local/bin/uv venv -p cpython3.10 --allow-existing '--prompt=assets_dbt_python[py310-pypi]' -v --python-preference system <RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi pid=6995 [tox/execute/api.py:311]
+py310-pypi: 156 W uv-sync> /usr/local/bin/uv sync --python-preference system --no-default-groups -v --group dev --frozen -p cpython3.10 [tox/tox_env/api.py:485]
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/examples/pyproject.toml`
+DEBUG Found workspace root: `<SOURCE>/examples/assets_dbt_python`
+DEBUG Adding root workspace member: `<SOURCE>/examples/assets_dbt_python`
+DEBUG Found workspace configuration at `<SOURCE>/examples/assets_dbt_python/pyproject.toml`
+DEBUG Searching for user configuration in: `<HOME>/.config/uv/uv.toml`
+DEBUG uv 0.12.7 (x86_64-unknown-linux-gnu)
+DEBUG Found project root: `<SOURCE>/examples/assets_dbt_python`
+DEBUG Using Python request `cpython@3.10` from explicit request
+DEBUG Checking for Python environment at: `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi`
+DEBUG The project environment's Python version satisfies the request: `CPython 3.10`
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288918, tv_nsec: 285343499 }), None, None, {}, {"src": None}. Most recently modified: pyproject.toml
+DEBUG Identified uncached distribution: assets-dbt-python @ file://<SOURCE>/examples/assets_dbt_python
+DEBUG Registry requirement already cached: dagster==1.13.20
+DEBUG Registry requirement already cached: dagster-cloud==1.13.20
+DEBUG Registry requirement already cached: dagster-dbt==0.29.20
+DEBUG Registry requirement already cached: dagster-dg-cli==1.13.20
+DEBUG Registry requirement already cached: dagster-duckdb==0.29.20
+DEBUG Registry requirement already cached: dagster-duckdb-pandas==0.29.20
+DEBUG Registry requirement already cached: dagster-pandas==0.29.20
+DEBUG Registry requirement already cached: dagster-pipes==1.13.20
+DEBUG Registry requirement already cached: dagster-shared==1.13.20
+DEBUG Registry requirement already cached: dagster-webserver==1.13.20
+DEBUG Registry requirement already cached: pytest==9.1.1
+DEBUG Registry requirement already cached: boto3==1.43.6
+DEBUG Registry requirement already cached: dbt-core==1.11.14
+DEBUG Registry requirement already cached: dbt-duckdb==1.10.1
+DEBUG Registry requirement already cached: numpy==2.2.6
+DEBUG Registry requirement already cached: pandas==2.3.3
+DEBUG Registry requirement already cached: scipy==1.15.3
+DEBUG Registry requirement already cached: alembic==1.18.4
+DEBUG Registry requirement already cached: antlr4-python3-runtime==4.13.2
+DEBUG Registry requirement already cached: click==8.3.3
+DEBUG Registry requirement already cached: coloredlogs==14.0
+DEBUG Registry requirement already cached: docstring-parser==0.18.0
+DEBUG Registry requirement already cached: filelock==3.32.4
+DEBUG Registry requirement already cached: grpcio==1.80.0
+DEBUG Registry requirement already cached: grpcio-health-checking==1.80.0
+DEBUG Registry requirement already cached: jinja2==3.1.6
+DEBUG Registry requirement already cached: protobuf==6.33.6
+DEBUG Registry requirement already cached: python-dotenv==1.2.3
+DEBUG Registry requirement already cached: pytz==2026.2
+DEBUG Registry requirement already cached: requests==2.34.2
+DEBUG Registry requirement already cached: rich==15.0.0
+DEBUG Registry requirement already cached: six==1.17.0
+DEBUG Registry requirement already cached: sqlalchemy==2.0.49
+DEBUG Registry requirement already cached: structlog==25.5.0
+DEBUG Registry requirement already cached: tabulate==0.10.0
+DEBUG Registry requirement already cached: tomli==2.4.1
+DEBUG Registry requirement already cached: toposort==1.10
+DEBUG Registry requirement already cached: tqdm==4.67.3
+DEBUG Registry requirement already cached: tzdata==2026.2
+DEBUG Registry requirement already cached: universal-pathlib==0.3.10
+DEBUG Registry requirement already cached: watchdog==6.0.0
+DEBUG Registry requirement already cached: docker==7.1.0
+DEBUG Registry requirement already cached: grpcio-tools==1.80.0
+DEBUG Registry requirement already cached: morefs==0.2.2
+DEBUG Registry requirement already cached: mypy-protobuf==5.1.0
+DEBUG Registry requirement already cached: objgraph==3.6.2
+DEBUG Registry requirement already cached: psutil==7.2.2
+DEBUG Registry requirement already cached: pytest-asyncio==1.3.0
+DEBUG Registry requirement already cached: pytest-cov==5.0.0
+DEBUG Registry requirement already cached: pytest-mock==3.14.0
+DEBUG Registry requirement already cached: pytest-rerunfailures==16.1
+DEBUG Registry requirement already cached: pytest-split==0.11.0
+DEBUG Registry requirement already cached: pytest-timeout==2.4.0
+DEBUG Registry requirement already cached: pytest-xdist==3.6.1
+DEBUG Registry requirement already cached: rapidfuzz==3.14.5
+DEBUG Registry requirement already cached: responses==0.23.1
+DEBUG Registry requirement already cached: ruff==0.16.2
+DEBUG Registry requirement already cached: syrupy==5.1.0
+DEBUG Registry requirement already cached: tox==4.53.1
+DEBUG Registry requirement already cached: tox-uv==1.35.2
+DEBUG Registry requirement already cached: dagster-cloud-cli==1.13.20
+DEBUG Registry requirement already cached: pex==2.59.5
+DEBUG Registry requirement already cached: questionary==2.1.1
+DEBUG Registry requirement already cached: typer==0.25.1
+DEBUG Registry requirement already cached: gitpython==3.1.62
+DEBUG Registry requirement already cached: networkx==3.4.2
+DEBUG Registry requirement already cached: orjson==3.12.0
+DEBUG Registry requirement already cached: packaging==26.2
+DEBUG Registry requirement already cached: sqlglot==28.0.0
+DEBUG Registry requirement already cached: dagster-dg-core==1.13.20
+DEBUG Registry requirement already cached: dagster-rest-resources==0.29.20
+DEBUG Registry requirement already cached: duckdb==1.5.2
+DEBUG Registry requirement already cached: platformdirs==4.9.6
+DEBUG Registry requirement already cached: pydantic==2.13.4
+DEBUG Registry requirement already cached: pyyaml==6.0.3
+DEBUG Registry requirement already cached: tomlkit==0.15.0
+DEBUG Registry requirement already cached: typing-extensions==4.15.0
+DEBUG Registry requirement already cached: dagster-graphql==1.13.20
+DEBUG Registry requirement already cached: starlette==1.6.0
+DEBUG Registry requirement already cached: uvicorn==0.46.0
+DEBUG Registry requirement already cached: exceptiongroup==1.3.1
+DEBUG Registry requirement already cached: iniconfig==2.3.0
+DEBUG Registry requirement already cached: pluggy==1.6.0
+DEBUG Registry requirement already cached: pygments==2.21.0
+DEBUG Registry requirement already cached: botocore==1.43.6
+DEBUG Registry requirement already cached: jmespath==1.1.0
+DEBUG Registry requirement already cached: s3transfer==0.17.0
+DEBUG Registry requirement already cached: agate==1.9.1
+DEBUG Registry requirement already cached: daff==1.4.2
+DEBUG Registry requirement already cached: dbt-adapters==1.23.0
+DEBUG Registry requirement already cached: dbt-common==1.39.0
+DEBUG Registry requirement already cached: dbt-extractor==0.6.0
+DEBUG Registry requirement already cached: dbt-protos==1.0.491
+DEBUG Registry requirement already cached: dbt-semantic-interfaces==0.9.0
+DEBUG Registry requirement already cached: jsonschema==4.26.0
+DEBUG Registry requirement already cached: mashumaro==3.14
+DEBUG Registry requirement already cached: pathspec==0.12.1
+DEBUG Registry requirement already cached: snowplow-tracker==1.1.0
+DEBUG Registry requirement already cached: sqlparse==0.6.0
+DEBUG Registry requirement already cached: python-dateutil==2.9.0.post0
+DEBUG Registry requirement already cached: mako==1.4.1
+DEBUG Registry requirement already cached: humanfriendly==10.0
+DEBUG Registry requirement already cached: markupsafe==3.0.3
+DEBUG Registry requirement already cached: certifi==2026.4.22
+DEBUG Registry requirement already cached: charset-normalizer==3.4.7
+DEBUG Registry requirement already cached: idna==3.19
+DEBUG Registry requirement already cached: urllib3==2.8.0
+DEBUG Registry requirement already cached: markdown-it-py==4.2.0
+DEBUG Registry requirement already cached: greenlet==3.5.0
+DEBUG Registry requirement already cached: fsspec==2026.4.0
+DEBUG Registry requirement already cached: pathlib-abc==0.5.2
+DEBUG Registry requirement already cached: setuptools==84.0.0
+DEBUG Registry requirement already cached: aiofile==3.9.0
+DEBUG Registry requirement already cached: types-protobuf==7.34.1.20260508
+DEBUG Registry requirement already cached: backports-asyncio-runner==1.2.0
+DEBUG Registry requirement already cached: coverage==7.14.0
+DEBUG Registry requirement already cached: execnet==2.1.2
+DEBUG Registry requirement already cached: types-pyyaml==6.0.12.20260510
+DEBUG Registry requirement already cached: cachetools==7.1.1
+DEBUG Registry requirement already cached: colorama==0.4.6
+DEBUG Registry requirement already cached: pyproject-api==1.10.0
+DEBUG Registry requirement already cached: python-discovery==1.6.0
+DEBUG Registry requirement already cached: tomli-w==1.2.0
+DEBUG Registry requirement already cached: virtualenv==21.14.0
+DEBUG Registry requirement already cached: tox-uv-bare==1.35.2
+DEBUG Registry requirement already cached: uv==0.12.7
+DEBUG Registry requirement already cached: github3-py==4.0.1
+DEBUG Registry requirement already cached: validators==0.35.0
+DEBUG Registry requirement already cached: prompt-toolkit==3.0.52
+DEBUG Registry requirement already cached: annotated-doc==0.0.4
+DEBUG Registry requirement already cached: shellingham==1.5.4
+DEBUG Registry requirement already cached: gitdb==4.0.12
+DEBUG Registry requirement already cached: sqlglotrs==0.7.3
+DEBUG Registry requirement already cached: click-aliases==1.0.7
+DEBUG Registry requirement already cached: gql==4.0.0
+DEBUG Registry requirement already cached: markdown==3.10.3
+DEBUG Registry requirement already cached: yaspin==3.4.0
+DEBUG Registry requirement already cached: httpx==0.28.1
+DEBUG Registry requirement already cached: annotated-types==0.7.0
+DEBUG Registry requirement already cached: pydantic-core==2.46.4
+DEBUG Registry requirement already cached: typing-inspection==0.4.2
+DEBUG Registry requirement already cached: graphene==3.4.3
+DEBUG Registry requirement already cached: anyio==4.14.2
+DEBUG Registry requirement already cached: h11==0.16.0
+DEBUG Registry requirement already cached: httptools==0.7.1
+DEBUG Registry requirement already cached: uvloop==0.22.1
+DEBUG Registry requirement already cached: watchfiles==1.1.1
+DEBUG Registry requirement already cached: websockets==16.0
+DEBUG Registry requirement already cached: babel==2.18.0
+DEBUG Registry requirement already cached: isodate==0.7.2
+DEBUG Registry requirement already cached: leather==0.4.1
+DEBUG Registry requirement already cached: parsedatetime==2.6
+DEBUG Registry requirement already cached: python-slugify==8.0.4
+DEBUG Registry requirement already cached: pytimeparse==1.1.8
+DEBUG Registry requirement already cached: deepdiff==8.6.2
+DEBUG Registry requirement already cached: opentelemetry-api==1.44.0
+DEBUG Registry requirement already cached: importlib-metadata==8.7.1
+DEBUG Registry requirement already cached: more-itertools==10.8.0
+DEBUG Registry requirement already cached: attrs==26.1.0
+DEBUG Registry requirement already cached: jsonschema-specifications==2025.9.1
+DEBUG Registry requirement already cached: referencing==0.37.0
+DEBUG Registry requirement already cached: rpds-py==0.30.0
+DEBUG Registry requirement already cached: msgpack==1.2.2
+DEBUG Registry requirement already cached: mdurl==0.1.2
+DEBUG Registry requirement already cached: caio==0.9.25
+DEBUG Registry requirement already cached: distlib==0.4.0
+DEBUG Registry requirement already cached: pyjwt==2.15.1
+DEBUG Registry requirement already cached: uritemplate==4.2.0
+DEBUG Registry requirement already cached: wcwidth==0.7.0
+DEBUG Registry requirement already cached: smmap==5.0.3
+DEBUG Registry requirement already cached: backoff==2.2.1
+DEBUG Registry requirement already cached: graphql-core==3.2.8
+DEBUG Registry requirement already cached: yarl==1.23.0
+DEBUG Registry requirement already cached: requests-toolbelt==1.0.0
+DEBUG Registry requirement already cached: termcolor==3.3.0
+DEBUG Registry requirement already cached: httpcore==1.0.9
+DEBUG Registry requirement already cached: graphql-relay==3.2.0
+DEBUG Registry requirement already cached: text-unidecode==1.3
+DEBUG Registry requirement already cached: orderly-set==5.5.0
+DEBUG Registry requirement already cached: zipp==3.23.1
+DEBUG Registry requirement already cached: cryptography==50.0.1
+DEBUG Registry requirement already cached: multidict==6.7.1
+DEBUG Registry requirement already cached: propcache==0.5.2
+DEBUG Registry requirement already cached: cffi==2.0.0
+DEBUG Registry requirement already cached: pycparser==3.0
+DEBUG Using request connect timeout of 10s and read timeout of 30s
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288918, tv_nsec: 285343499 }), None, None, {}, {"src": None}. Most recently modified: pyproject.toml
+DEBUG Cached revision does not match expected cache info for: assets-dbt-python @ file://<SOURCE>/examples/assets_dbt_python
+   Building assets-dbt-python @ file://<SOURCE>/examples/assets_dbt_python
+DEBUG Building: assets-dbt-python @ file://<SOURCE>/examples/assets_dbt_python
+DEBUG Assessing Python executable as base candidate: <RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/bin/python3
+DEBUG Assessing Python executable as base candidate: <RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/bin/python
+DEBUG Assessing Python executable as base candidate: <RUNTIME>/downstream-1407/python/cpython-3.10-linux-x86_64-gnu/bin/python3.10
+DEBUG Creating build environment for: assets-dbt-python @ file://<SOURCE>/examples/assets_dbt_python
+DEBUG Assessing Python executable as base candidate: <RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/bin/python3
+DEBUG Assessing Python executable as base candidate: <RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/bin/python
+DEBUG Assessing Python executable as base candidate: <RUNTIME>/downstream-1407/python/cpython-3.10-linux-x86_64-gnu/bin/python3.10
+DEBUG Using base executable for virtual environment: <RUNTIME>/downstream-1407/python/cpython-3.10-linux-x86_64-gnu/bin/python3.10
+DEBUG Resolving build requirements
+DEBUG Solving with installed Python version: 3.10.21
+DEBUG Solving with target Python version: >=3.10.21
+DEBUG Solving with exclude-newer: global: 2026-10-27T15:52:47.187399132Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Found fresh response for: https://pypi.org/simple/hatchling/
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/5f/80/91f51f439c05d4ec4623c22928ce16a938d6d793bf709477830823497859/hatchling-1.32.4-py3-none-any.whl.metadata
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomli{python_full_version < '3.11'}>=1.2.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Found fresh response for: https://pypi.org/simple/packaging/
+DEBUG Found fresh response for: https://pypi.org/simple/pathspec/
+DEBUG Found fresh response for: https://pypi.org/simple/pluggy/
+DEBUG Found fresh response for: https://pypi.org/simple/tomli/
+DEBUG Found fresh response for: https://pypi.org/simple/tomlkit/
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Found fresh response for: https://pypi.org/simple/trove-classifiers/
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl.metadata
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl.metadata
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/40/9e/2b38731e0fc536806f16490e1a12d7f0dc2a1235aa8cc07bcc75416a7daa/pluggy-1.7.0-py3-none-any.whl.metadata
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/60/3f/3e3f8fd0919249b0200c80fbc4f9a1e70be19f9883da71dfb7f8b9ab8aca/tomli-2.5.0-py3-none-any.whl.metadata
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/da/46/7d84138a60a8bd796825b2d38ebe92d0d16501ca57d501b7c5d677401bbc/tomlkit-0.15.2-py3-none-any.whl.metadata
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomli{python_full_version < '3.11'} (>=1.2.2)
+DEBUG Selecting: tomli==2.5.0 [compatible] (tomli-2.5.0-py3-none-any.whl)
+DEBUG Adding transitive dependency for tomli==2.5.0: tomli==2.5.0
+DEBUG Adding transitive dependency for tomli==2.5.0: tomli{python_full_version < '3.11'}==2.5.0
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/30/81/0da8afb52a71d0a4f2bd3152357b1a441e393b286374802b9d3addab4ab5/trove_classifiers-2026.9.21.13-py3-none-any.whl.metadata
+DEBUG Searching for a compatible version of tomli (==2.5.0)
+DEBUG Selecting: tomli==2.5.0 [compatible] (tomli-2.5.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomli{python_full_version < '3.11'} (==2.5.0)
+DEBUG Selecting: tomli==2.5.0 [compatible] (tomli-2.5.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 7 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomli 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.002s
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1, tomli==2.5.0 in <RUNTIME>/uv-cache/builds-v0/.tmpASxHRP
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Registry requirement already cached: tomli==2.5.0
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1, tomli==2.5.0
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/NvaWgOJsHc-GYrS5/pluggy-1.7.0.dist-info/WHEEL` to `<RUNTIME>/uv-cache/builds-v0/.tmpASxHRP/lib/python3.10/site-packages/pluggy-1.7.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/eynG4_VlRHHmMY5z/trove_classifiers-2026.9.21.13.dist-info/WHEEL` to `<RUNTIME>/uv-cache/builds-v0/.tmpASxHRP/lib/python3.10/site-packages/trove_classifiers-2026.9.21.13.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/pea7YGBr-9ItMYYw/hatchling-1.32.4.dist-info/WHEEL` to `<RUNTIME>/uv-cache/builds-v0/.tmpASxHRP/lib/python3.10/site-packages/hatchling-1.32.4.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/I2Y045vRP47F4nTJ/packaging-26.3.dist-info/WHEEL` to `<RUNTIME>/uv-cache/builds-v0/.tmpASxHRP/lib/python3.10/site-packages/packaging-26.3.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/__fKv1oQI7f4Zivp/pathspec-1.1.1.dist-info/WHEEL` to `<RUNTIME>/uv-cache/builds-v0/.tmpASxHRP/lib/python3.10/site-packages/pathspec-1.1.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/AM2F_Hy1gXXKoRJr/tomlkit-0.15.2.dist-info/WHEEL` to `<RUNTIME>/uv-cache/builds-v0/.tmpASxHRP/lib/python3.10/site-packages/tomlkit-0.15.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/bVfz_9RIX2ezjyK7/tomli/_re.py` to `<RUNTIME>/uv-cache/builds-v0/.tmpASxHRP/lib/python3.10/site-packages/tomli/_re.py`: Operation not supported (os error 95), falling back
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.10.21
+DEBUG Solving with target Python version: >=3.10.21
+DEBUG Solving with exclude-newer: global: 2026-10-27T15:52:47.271147728Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomli{python_full_version < '3.11'}>=1.2.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Found fresh response for: https://pypi.org/simple/editables/
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/cc/0e/d095533037fc9468f947b19f2da53f869804632b508808de41e86e801797/editables-0.6-py3-none-any.whl.metadata
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomli{python_full_version < '3.11'} (>=1.2.2)
+DEBUG Selecting: tomli==2.5.0 [compatible] (tomli-2.5.0-py3-none-any.whl)
+DEBUG Adding transitive dependency for tomli==2.5.0: tomli==2.5.0
+DEBUG Adding transitive dependency for tomli==2.5.0: tomli{python_full_version < '3.11'}==2.5.0
+DEBUG Searching for a compatible version of tomli (==2.5.0)
+DEBUG Selecting: tomli==2.5.0 [compatible] (tomli-2.5.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomli{python_full_version < '3.11'} (==2.5.0)
+DEBUG Selecting: tomli==2.5.0 [compatible] (tomli-2.5.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 8 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomli 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.001s
+DEBUG Installing in editables==0.6, hatchling==1.32.4, pluggy==1.7.0, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1, tomli==2.5.0 in <RUNTIME>/uv-cache/builds-v0/.tmpASxHRP
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Requirement already installed: tomli==2.5.0
+DEBUG Installing build requirement: editables==0.6
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/UL5CzwjWrqWeIxag/editables-0.6.dist-info/WHEEL` to `<RUNTIME>/uv-cache/builds-v0/.tmpASxHRP/lib/python3.10/site-packages/editables-0.6.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmpkRWEGU"), {}, None)`
+DEBUG Built `assets-dbt-python @ file://<SOURCE>/examples/assets_dbt_python` into `assets_dbt_python-1!0+dev-py3-none-any.whl`
+      Built assets-dbt-python @ file://<SOURCE>/examples/assets_dbt_python
+Prepared 1 package in 178ms
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/YaxdL3La8Jf8uOSs/_editable_impl_assets_dbt_python.pth` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/_editable_impl_assets_dbt_python.pth`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/U6CVFttBNJi-wEwu/dbt_protos-1.0.491.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dbt_protos-1.0.491.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/-yVdYtUqdpAZBvwd/dagster-1.13.20.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster-1.13.20.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/Mid3jHiwtPjHIFSn/dsi_pydantic_shim.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dsi_pydantic_shim.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/dQVqWXj0OsZOmEkY/jsonschema/_types.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/jsonschema/_types.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/0KKapE2D5Y9q0_XM/mashumaro-3.14.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/mashumaro-3.14.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/KXf-VLRHcOhzcBaL/pathspec-0.12.1.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pathspec-0.12.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/bpYLVhu0V0AlwLWf/snowplow_tracker-1.1.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/snowplow_tracker-1.1.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/cL57Gwr5koH04-tu/sqlparse-0.6.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/sqlparse-0.6.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/BhIwRIHRdk21qe65/dateutil/tzwin.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dateutil/tzwin.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/UzNFyqv2UzCC1NnN/mako/ast.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/mako/ast.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/dDNIV7bDnBBZcLHw/humanfriendly-10.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/humanfriendly-10.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/oBfZvAZf6T6THter/markupsafe-3.0.3.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/markupsafe-3.0.3.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/jd-QFbneXnRkqqmQ/certifi/py.typed` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/certifi/py.typed`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/m6uo7hLEPytg8tmG/charset_normalizer/cd.cpython-310-x86_64-linux-gnu.so` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/charset_normalizer/cd.cpython-310-x86_64-linux-gnu.so`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/l2H816Z-LeNFuer3/idna/uts46data.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/idna/uts46data.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/LdCpvGJRIiT3g4ob/urllib3/http2/connection.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/urllib3/http2/connection.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/z0lHlIAMkZjBK3IQ/markdown_it/rules_inline/text.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/markdown_it/rules_inline/text.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/Z5XPBOty8cZ_KtjM/dagster_cloud-1.13.20.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_cloud-1.13.20.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/xPGLWowYrK7Wju78/greenlet-3.5.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/greenlet-3.5.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/5pxWV-834FDP1345/fsspec-2026.4.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/fsspec-2026.4.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/3fRPlwga1HMLknl2/pathlib_abc/_glob.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pathlib_abc/_glob.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/s9QN8wtGKqarLP80/setuptools-84.0.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/setuptools-84.0.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/Ak_qyvpun0CNrx8R/dagster_dbt-0.29.20.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_dbt-0.29.20.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/scReF98WXBzu_goa/dagster_dg_cli-1.13.20.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_dg_cli-1.13.20.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/oWK4N2HrdpwWtjgF/dagster_duckdb/version.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_duckdb/version.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/5AwMY0SYmE43K_he/dagster_duckdb_pandas/version.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_duckdb_pandas/version.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/xwDiZBoNDqwrHBL0/dagster_pandas-0.29.20.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_pandas-0.29.20.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/JxGTZy2eroSg3StO/aiofile/version.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/aiofile/version.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/92oo3sqrHYHR4IUB/google-stubs/protobuf/proto_text.pyi` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/google-stubs/protobuf/proto_text.pyi`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/wJvg5i2Muw3AenaD/dagster_pipes/version.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_pipes/version.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/MMMC_Xc8MeNjqrUe/dagster_shared/serdes/serdes.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_shared/serdes/serdes.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/4H70pvypzIn__bLK/backports/asyncio/runner/_patch.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/backports/asyncio/runner/_patch.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/8xOmC2kGzPNH-1YP/coverage-7.14.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/coverage-7.14.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/JNMIBq_1SyRqab-p/execnet-2.1.2.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/execnet-2.1.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/M7Gj3pLfWVFS4FoZ/dagster_webserver/external_assets.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_webserver/external_assets.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/1fuHfTybpcSuunPy/types_pyyaml-6.0.12.20260510.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/types_pyyaml-6.0.12.20260510.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/woyqo50eF7XT_b73/cachetools-7.1.1.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/cachetools-7.1.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/h9m68aSmoXkDeZq0/colorama-0.4.6.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/colorama-0.4.6.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/xngKEUBySu_W75NR/pyproject_api-1.10.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pyproject_api-1.10.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/nefAEz6HjXEtG-dF/python_discovery-1.6.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/python_discovery-1.6.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/K8UH40HVSuP1RRd2/tomli_w-1.2.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/tomli_w-1.2.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/cHtTVdKotOKmmz-Z/virtualenv-21.14.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/virtualenv-21.14.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/d73K_aGW-VSNZwSh/tox_uv/version.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/tox_uv/version.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/JAMbwZB1JLBoNAUW/uv-0.12.7.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/uv-0.12.7.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/94YZyZGGwGlSiRFK/pytest-9.1.1.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pytest-9.1.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/J2fHN_UYHq7PAIGh/github3.py-4.0.1.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/github3.py-4.0.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/dYuyxRlhCdosXee7/validators-0.35.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/validators-0.35.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/m0GMenozbD4XJFGu/boto3/dynamodb/transform.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/boto3/dynamodb/transform.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/FOxBDxE0a7YHsbEB/prompt_toolkit/buffer.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/prompt_toolkit/buffer.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/9xAzy_Bvb55Occ1l/dbt_core-1.11.14.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dbt_core-1.11.14.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/zVhP30an-SS7KjGr/annotated_doc/py.typed` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/annotated_doc/py.typed`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/FqtSkNrKCZxSgtkc/shellingham-1.5.4.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/shellingham-1.5.4.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/Cn8kTI3WODxWJ2sT/gitdb/utils/encoding.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/gitdb/utils/encoding.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/N1SBmvJs5GWNVwHg/sqlglotrs/__init__.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/sqlglotrs/__init__.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/l6I8iEgcmmbyd32Z/click_aliases/py.typed` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/click_aliases/py.typed`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/n_a-CWzXCyi_uZmM/gql-4.0.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/gql-4.0.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/WLxGwFrmYqDX4SST/markdown/blockprocessors.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/markdown/blockprocessors.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/s99L54DcKxkCn-kw/yaspin-3.4.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/yaspin-3.4.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/J_X8zavdhlQ49j2n/httpx-0.28.1.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/httpx-0.28.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/3XdM6GkMKG8uEnd8/dbt/adapters/__init__.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dbt/adapters/__init__.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/oJ_xWOIXKNVOudhO/annotated_types-0.7.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/annotated_types-0.7.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/djhby4EnGksBQ2AM/pydantic_core-2.46.4.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pydantic_core-2.46.4.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/p5_yKYFwrO7PBUyh/typing_inspection-0.4.2.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/typing_inspection-0.4.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/GTY9njWUebafjZqL/graphene/types/structures.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/graphene/types/structures.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/3QagUlrEkxz0sNFX/numpy.libs/libgfortran-040039e1-0352e75f.so.5.0.0` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/numpy.libs/libgfortran-040039e1-0352e75f.so.5.0.0`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/U-tSweTkmp-A7jET/anyio/from_thread.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/anyio/from_thread.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/mBBjbS5JBme38mmu/h11-0.16.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/h11-0.16.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/RrXs5ona72haKUqL/httptools/_version.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/httptools/_version.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/d7RnFyJ7VCzGkRSI/uvloop-0.22.1.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/uvloop-0.22.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/7OuzRWDleKfndMOj/watchfiles/version.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/watchfiles/version.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/s-xWUxqGYTycCrRw/websockets/client.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/websockets/client.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/0K6FXGl-utUkjYj6/babel-2.18.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/babel-2.18.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/vr75BzxJZSdSSedX/pandas-2.3.3.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pandas-2.3.3.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/N20NwvU2ayoVWzYP/isodate-0.7.2.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/isodate-0.7.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/J_Kxtmp2k3fz7zMp/leather/data_types.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/leather/data_types.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/9TUN3ewkVXpvVVzx/parsedatetime/context.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/parsedatetime/context.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/YezG1a96TxouwL1T/python_slugify-8.0.4.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/python_slugify-8.0.4.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/jvOjhY9hhpNy8SEv/pytimeparse-1.1.8.dist-info/DESCRIPTION.rst` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pytimeparse-1.1.8.dist-info/DESCRIPTION.rst`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/mJeaaCaGVRSYgncF/deepdiff-8.6.2.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/deepdiff-8.6.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/qeq9uIyBY0ln5ibn/opentelemetry_api-1.44.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/opentelemetry_api-1.44.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/HYfoDf31_i-sdcgt/importlib_metadata-8.7.1.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/importlib_metadata-8.7.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/Nm9SbW00w2svZNRW/more_itertools/recipes.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/more_itertools/recipes.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/hnMSuQ6lYrzZle4U/attrs/setters.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/attrs/setters.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/ve13sjFMJrr34wg2/jsonschema_specifications/__init__.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/jsonschema_specifications/__init__.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/solSmRRsvUY5IFOu/referencing/retrieval.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/referencing/retrieval.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/FfnPcCqRuKNa3VbI/rpds/py.typed` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/rpds/py.typed`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/40qiv6Zxn3Yd713o/msgpack/ext.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/msgpack/ext.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/gz3y7P1j0cm_6SjM/mdurl/py.typed` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/mdurl/py.typed`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/ehs_TD2eQc160nbd/caio-0.9.25.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/caio-0.9.25.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/3xXLe-kPhBbccYWt/distlib/index.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/distlib/index.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/yaBCapIEIoG2XKjo/pyjwt-2.15.1.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pyjwt-2.15.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/CKyl3BsEeHXszr-h/uritemplate/template.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/uritemplate/template.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/RadWEPpLMZbaDmv-/wcwidth-0.7.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/wcwidth-0.7.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/mBcif6hTniimqKvT/smmap-5.0.3.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/smmap-5.0.3.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/7m0jNMsyR9G_i7Km/backoff/_decorator.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/backoff/_decorator.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/JmT6Wm3TLRA32zSp/graphql_core-3.2.8.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/graphql_core-3.2.8.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/NlA05mlBSlmc5hCn/yarl/_quoters.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/yarl/_quoters.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/OqKzyc0cyNsZIn0A/requests_toolbelt-1.0.0.dist-info/AUTHORS.rst` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/requests_toolbelt-1.0.0.dist-info/AUTHORS.rst`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/hnxWp_JIsTyaHjvp/termcolor-3.3.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/termcolor-3.3.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/3c-L1iwzlPKax6-Q/httpcore/_trace.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/httpcore/_trace.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/4nCn1ORHcVcil1h4/graphql_relay/version.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/graphql_relay/version.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/oGmOlz5j3BbbdwwJ/text_unidecode/data.bin` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/text_unidecode/data.bin`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/3GMguPxVlW-avP_g/orderly_set-5.5.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/orderly_set-5.5.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/FTYtXK8hCA-YvySA/zipp-3.23.1.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/zipp-3.23.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/GGER0KWOcNJuN_3D/cryptography/py.typed` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/cryptography/py.typed`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/77buRMtDdVCU2qWB/scipy-1.15.3.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/scipy-1.15.3.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/31FYi4eRqZcmMJ6z/multidict/_abc.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/multidict/_abc.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/PuxB3ILEhZ4NQV4U/propcache/py.typed` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/propcache/py.typed`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/5pTXPi5BOt5M_rei/_cffi_backend.cpython-310-x86_64-linux-gnu.so` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/_cffi_backend.cpython-310-x86_64-linux-gnu.so`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/uDAPVx3xAgIFK9L5/pycparser/c_lexer.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pycparser/c_lexer.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/k5eGn6XvqJR1sjg5/objgraph.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/objgraph.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/Y7_gdyyWB886pMpf/psutil-7.2.2.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/psutil-7.2.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/vA2-eW1nXo6raJ2_/pytest_asyncio-1.3.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pytest_asyncio-1.3.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/3MxiJiJb3H-ow9E3/pytest_cov/engine.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pytest_cov/engine.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/_ifXv4DpzK98Q3n1/pytest_mock/py.typed` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pytest_mock/py.typed`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/TFyJ6UK5WSue-L7e/pytest_rerunfailures-16.1.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pytest_rerunfailures-16.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/mS1IfaUZdUzrmrvi/pytest_split-0.11.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pytest_split-0.11.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/1MhONQ3QVz0F-8Yq/pytest_timeout-2.4.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pytest_timeout-2.4.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/PembdELE-UxEmtoX/pytest_xdist-3.6.1.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pytest_xdist-3.6.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/mVFloangllEGv-I2/rapidfuzz/fuzz_py.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/rapidfuzz/fuzz_py.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/VNQ9oBD8fNEzd90_/responses/matchers.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/responses/matchers.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/j68fiMQreQgzINzD/ruff-0.16.2.data/scripts/ruff` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/ruff-0.16.2.data/scripts/ruff`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/rT29YuQmi1t_lhHb/syrupy/patches/__init__.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/syrupy/patches/__init__.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/WwcAGw9KsCPai2xr/tox/version.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/tox/version.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/T0lsbIyqooRyApNn/tox_uv-1.35.2.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/tox_uv-1.35.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/eaVy7LrHOEJKDTXW/dagster_cloud_cli-1.13.20.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_cloud_cli-1.13.20.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/UpPKnC18J7Ja4edK/pex-2.59.5.dist-info/pylock/pylock.toml` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pex-2.59.5.dist-info/pylock/pylock.toml`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/ASI6I-diDWLL0rTo/alembic/config.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/alembic/config.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/0Mh9a8FJcOCfJ8rb/antlr4_python3_runtime-4.13.2.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/antlr4_python3_runtime-4.13.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/DAL_9qKVUqVLWwuM/click/_textwrap.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/click/_textwrap.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/4l7wP7KGqvV2l7w3/coloredlogs/demo.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/coloredlogs/demo.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/ROQpM9hfJgRPjQfK/docstring_parser/google.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/docstring_parser/google.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/RJGn8EjWOoLhppbe/filelock/_windows.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/filelock/_windows.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/X8MkcicBkaT50kZt/grpc/_interceptor.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/grpc/_interceptor.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/_pryzx6lOivfN1Dj/grpcio_health_checking-1.80.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/grpcio_health_checking-1.80.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/0h_92CVzhTUs17bm/jinja2/loaders.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/jinja2/loaders.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/TFCUuNZvD3F01lXF/protobuf-6.33.6.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/protobuf-6.33.6.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/-cD0FmMWx3PFy5cE/python_dotenv-1.2.3.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/python_dotenv-1.2.3.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/Zeke9PO41_tIATnv/pytz/reference.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pytz/reference.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/oi95eC9_bk3MrJpn/requests-2.34.2.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/requests-2.34.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/GFpmI8mv50ftLaPu/rich/_ratio.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/rich/_ratio.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/D97g5Q6DOnBfsS8K/questionary/version.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/questionary/version.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/ocKYwo9CN58F4GfO/six-1.17.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/six-1.17.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/aVorGXycMIYRQiE-/sqlalchemy/event/registry.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/sqlalchemy/event/registry.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/8HvSpqs5YTWDQILa/typer/_types.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/typer/_types.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/vgwTV4gzUdyvddss/git/config.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/git/config.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/WpHuKQoTEi8Ltm5O/networkx/utils/configs.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/networkx/utils/configs.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/EUSv-D7EuPUiQrWK/structlog/_greenlets.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/structlog/_greenlets.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/zAA47HJk_mSkNDP8/tabulate-0.10.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/tabulate-0.10.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/uDpZwmgGKI24BitD/tomli-2.4.1.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/tomli-2.4.1.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/PPSjWIPyvifK02_o/toposort-1.10.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/toposort-1.10.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/GmMIvCmNnbc3_Xdz/tqdm-4.67.3.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/tqdm-4.67.3.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/PkysRmbVMffePoe_/tzdata/__init__.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/tzdata/__init__.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/J7ZQagxlWjFQPbHB/orjson-3.12.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/orjson-3.12.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/2KLY77wV_ySUm_RW/packaging-26.2.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/packaging-26.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/jHBNrfzkLrP2lweH/sqlglot/planner.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/sqlglot/planner.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/y_Bvxf_c0EaGgVTj/dagster_dg_core-1.13.20.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_dg_core-1.13.20.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/XITTjFlUgG0mLsfF/universal_pathlib-0.3.10.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/universal_pathlib-0.3.10.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/xGTTEInFSu27tGn8/dagster_rest_resources-0.29.20.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_rest_resources-0.29.20.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/JBOrXI26oGXIe0iU/watchdog/version.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/watchdog/version.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/PBRz3eI8BiYv2pEN/docker/types/containers.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/docker/types/containers.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/_m9fbHd6_HVf7Mfk/duckdb-1.5.2.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/duckdb-1.5.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/NwQyO3Fdi-gmjN2d/grpcio_tools-1.80.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/grpcio_tools-1.80.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/sQ6dXvG_7bRZjsxY/morefs-0.2.2.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/morefs-0.2.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/voMKUg7mazs95rej/platformdirs/version.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/platformdirs/version.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/HUyXEXyyEFniPxeE/mypy_protobuf/main.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/mypy_protobuf/main.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/XAzce0Mz9ysEs9gr/pydantic/config.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pydantic/config.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/BBF12FwBEFa1dTfO/exceptiongroup/_suppress.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/exceptiongroup/_suppress.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/FHjhrmRawZKweFAm/iniconfig-2.3.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/iniconfig-2.3.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/6RmqltBdGkGP3tEH/pyyaml-6.0.3.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pyyaml-6.0.3.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/I9eb798fCoIwrB8a/pluggy-1.6.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pluggy-1.6.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/tILcxnSIzogRyVCa/pygments/formatters/pangomarkup.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/pygments/formatters/pangomarkup.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/64dzIUMnoxJnJlM8/tomlkit-0.15.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/tomlkit-0.15.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/WJ0xYy3fdic6hDJD/typing_extensions-4.15.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/typing_extensions-4.15.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/W-hHj35bt1bonVSq/dagster_graphql-1.13.20.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster_graphql-1.13.20.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/rJW1Zrl131PA7de8/starlette/config.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/starlette/config.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/675F33Kv1JTmTlXK/botocore-1.43.6.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/botocore-1.43.6.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/xCcHptpn3cPbDAbj/uvicorn/config.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/uvicorn/config.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/b7mlVXESYGlRtxLI/s3transfer-0.17.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/s3transfer-0.17.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/MC3K-xUdeov8fDL9/agate/tableset/from_csv.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/agate/tableset/from_csv.py`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/TgK5uyY_Dr-g6OLq/daff-1.4.2.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/daff-1.4.2.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/ihjbzCPdtCOv1iml/dbt_adapters-1.23.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dbt_adapters-1.23.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/7DRt7BtZN7MIiyYZ/dbt_common-1.39.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dbt_common-1.39.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/WFcSfV3fw0xBXMVK/dbt_extractor-0.6.0.dist-info/WHEEL` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dbt_extractor-0.6.0.dist-info/WHEEL`: Operation not supported (os error 95), falling back
+DEBUG Failed to reflink `<RUNTIME>/uv-cache/archive-v0/svurzbKFwv-KHMfV/jmespath/ast.py` to `<RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/jmespath/ast.py`: Operation not supported (os error 95), falling back
+Installed 186 packages in 259ms
+ + agate==1.9.1
+ + aiofile==3.9.0
+ + alembic==1.18.4
+ + annotated-doc==0.0.4
+ + annotated-types==0.7.0
+ + antlr4-python3-runtime==4.13.2
+ + anyio==4.14.2
+ + assets-dbt-python==1!0+dev (from file://<SOURCE>/examples/assets_dbt_python)
+ + attrs==26.1.0
+ + babel==2.18.0
+ + backoff==2.2.1
+ + backports-asyncio-runner==1.2.0
+ + boto3==1.43.6
+ + botocore==1.43.6
+ + cachetools==7.1.1
+ + caio==0.9.25
+ + certifi==2026.4.22
+ + cffi==2.0.0
+ + charset-normalizer==3.4.7
+ + click==8.3.3
+ + click-aliases==1.0.7
+ + colorama==0.4.6
+ + coloredlogs==14.0
+ + coverage==7.14.0
+ + cryptography==50.0.1
+ + daff==1.4.2
+ + dagster==1.13.20
+ + dagster-cloud==1.13.20
+ + dagster-cloud-cli==1.13.20
+ + dagster-dbt==0.29.20
+ + dagster-dg-cli==1.13.20
+ + dagster-dg-core==1.13.20
+ + dagster-duckdb==0.29.20
+ + dagster-duckdb-pandas==0.29.20
+ + dagster-graphql==1.13.20
+ + dagster-pandas==0.29.20
+ + dagster-pipes==1.13.20
+ + dagster-rest-resources==0.29.20
+ + dagster-shared==1.13.20
+ + dagster-webserver==1.13.20
+ + dbt-adapters==1.23.0
+ + dbt-common==1.39.0
+ + dbt-core==1.11.14
+ + dbt-duckdb==1.10.1
+ + dbt-extractor==0.6.0
+ + dbt-protos==1.0.491
+ + dbt-semantic-interfaces==0.9.0
+ + deepdiff==8.6.2
+ + distlib==0.4.0
+ + docker==7.1.0
+ + docstring-parser==0.18.0
+ + duckdb==1.5.2
+ + exceptiongroup==1.3.1
+ + execnet==2.1.2
+ + filelock==3.32.4
+ + fsspec==2026.4.0
+ + gitdb==4.0.12
+ + github3-py==4.0.1
+ + gitpython==3.1.62
+ + gql==4.0.0
+ + graphene==3.4.3
+ + graphql-core==3.2.8
+ + graphql-relay==3.2.0
+ + greenlet==3.5.0
+ + grpcio==1.80.0
+ + grpcio-health-checking==1.80.0
+ + grpcio-tools==1.80.0
+ + h11==0.16.0
+ + httpcore==1.0.9
+ + httptools==0.7.1
+ + httpx==0.28.1
+ + humanfriendly==10.0
+ + idna==3.19
+ + importlib-metadata==8.7.1
+ + iniconfig==2.3.0
+ + isodate==0.7.2
+ + jinja2==3.1.6
+ + jmespath==1.1.0
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + leather==0.4.1
+ + mako==1.4.1
+ + markdown==3.10.3
+ + markdown-it-py==4.2.0
+ + markupsafe==3.0.3
+ + mashumaro==3.14
+ + mdurl==0.1.2
+ + more-itertools==10.8.0
+ + morefs==0.2.2
+ + msgpack==1.2.2
+ + multidict==6.7.1
+ + mypy-protobuf==5.1.0
+ + networkx==3.4.2
+ + numpy==2.2.6
+ + objgraph==3.6.2
+ + opentelemetry-api==1.44.0
+ + orderly-set==5.5.0
+ + orjson==3.12.0
+ + packaging==26.2
+ + pandas==2.3.3
+ + parsedatetime==2.6
+ + pathlib-abc==0.5.2
+ + pathspec==0.12.1
+ + pex==2.59.5
+ + platformdirs==4.9.6
+ + pluggy==1.6.0
+ + prompt-toolkit==3.0.52
+ + propcache==0.5.2
+ + protobuf==6.33.6
+ + psutil==7.2.2
+ + pycparser==3.0
+ + pydantic==2.13.4
+ + pydantic-core==2.46.4
+ + pygments==2.21.0
+ + pyjwt==2.15.1
+ + pyproject-api==1.10.0
+ + pytest==9.1.1
+ + pytest-asyncio==1.3.0
+ + pytest-cov==5.0.0
+ + pytest-mock==3.14.0
+ + pytest-rerunfailures==16.1
+ + pytest-split==0.11.0
+ + pytest-timeout==2.4.0
+ + pytest-xdist==3.6.1
+ + python-dateutil==2.9.0.post0
+ + python-discovery==1.6.0
+ + python-dotenv==1.2.3
+ + python-slugify==8.0.4
+ + pytimeparse==1.1.8
+ + pytz==2026.2
+ + pyyaml==6.0.3
+ + questionary==2.1.1
+ + rapidfuzz==3.14.5
+ + referencing==0.37.0
+ + requests==2.34.2
+ + requests-toolbelt==1.0.0
+ + responses==0.23.1
+ + rich==15.0.0
+ + rpds-py==0.30.0
+ + ruff==0.16.2
+ + s3transfer==0.17.0
+ + scipy==1.15.3
+ + setuptools==84.0.0
+ + shellingham==1.5.4
+ + six==1.17.0
+ + smmap==5.0.3
+ + snowplow-tracker==1.1.0
+ + sqlalchemy==2.0.49
+ + sqlglot==28.0.0
+ + sqlglotrs==0.7.3
+ + sqlparse==0.6.0
+ + starlette==1.6.0
+ + structlog==25.5.0
+ + syrupy==5.1.0
+ + tabulate==0.10.0
+ + termcolor==3.3.0
+ + text-unidecode==1.3
+ + tomli==2.4.1
+ + tomli-w==1.2.0
+ + tomlkit==0.15.0
+ + toposort==1.10
+ + tox==4.53.1
+ + tox-uv==1.35.2
+ + tox-uv-bare==1.35.2
+ + tqdm==4.67.3
+ + typer==0.25.1
+ + types-protobuf==7.34.1.20260508
+ + types-pyyaml==6.0.12.20260510
+ + typing-extensions==4.15.0
+ + typing-inspection==0.4.2
+ + tzdata==2026.2
+ + universal-pathlib==0.3.10
+ + uritemplate==4.2.0
+ + urllib3==2.8.0
+ + uv==0.12.7
+ + uvicorn==0.46.0
+ + uvloop==0.22.1
+ + validators==0.35.0
+ + virtualenv==21.14.0
+ + watchdog==6.0.0
+ + watchfiles==1.1.1
+ + wcwidth==0.7.0
+ + websockets==16.0
+ + yarl==1.23.0
+ + yaspin==3.4.0
+ + zipp==3.23.1
+py310-pypi: 660 I exit 0 (0.50 seconds) <SOURCE>/examples/assets_dbt_python> /usr/local/bin/uv sync --python-preference system --no-default-groups -v --group dev --frozen -p cpython3.10 pid=7011 [tox/execute/api.py:311]
+py310-pypi: 660 W freeze> /usr/local/bin/uv --color never pip freeze [tox/tox_env/api.py:485]
+py310-pypi: 668 I exit 0 (0.01 seconds) <SOURCE>/examples/assets_dbt_python> /usr/local/bin/uv --color never pip freeze pid=7279 [tox/execute/api.py:311]
+py310-pypi: 669 W commands_pre[0]> e ../../python_modules/libraries/dagster-dg-cli -e ../../python_modules/dagster -e ../../python_modules/dagster-pipes -e ../../python_modules/libraries/dagster-shared -e ../../python_modules/dagster-webserver -e ../../python_modules/libraries/dagster-pandas -e ../../python_modules/libraries/dagster-dbt -e ../../python_modules/libraries/dagster-duckdb -e ../../python_modules/libraries/dagster-duckdb-pandas -e ../../python_modules/dagster-cloud -e ../../python_modules/libraries/dagster-cloud-cli [tox/tox_env/api.py:485]
+py310-pypi: 670 E Exception running subprocess [Errno 2] No such file or directory: 'e' [tox/execute/local_sub_process/__init__.py:224]
+py310-pypi: 671 C exit 2 (0.00 seconds) <SOURCE>/examples/assets_dbt_python> e ../../python_modules/libraries/dagster-dg-cli -e ../../python_modules/dagster -e ../../python_modules/dagster-pipes -e ../../python_modules/libraries/dagster-shared -e ../../python_modules/dagster-webserver -e ../../python_modules/libraries/dagster-pandas -e ../../python_modules/libraries/dagster-dbt -e ../../python_modules/libraries/dagster-duckdb -e ../../python_modules/libraries/dagster-duckdb-pandas -e ../../python_modules/dagster-cloud -e ../../python_modules/libraries/dagster-cloud-cli [tox/execute/api.py:311]
+py310-pypi: 671 W command failed but is marked ignore outcome so handling it as success [tox/session/cmd/run/single.py:135]
+py310-pypi: 672 W commands[0]> /bin/bash -c 'uv pip list --exclude-editable | grep -q "^dagster "' [tox/tox_env/api.py:485]
+Using Python 3.10.21 environment at: <RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi
+py310-pypi: 681 I exit 0 (0.01 seconds) <SOURCE>/examples/assets_dbt_python> /bin/bash -c 'uv pip list --exclude-editable | grep -q "^dagster "' pid=7289 [tox/execute/api.py:311]
+py310-pypi: 681 W commands[1]> pytest -vv [tox/tox_env/api.py:485]
+============================= test session starts ==============================
+platform linux -- Python 3.10.21, pytest-9.1.1, pluggy-1.6.0 -- <RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/bin/python3
+cachedir: <RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/.pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: xdist-3.6.1, timeout-2.4.0, asyncio-1.3.0, cov-5.0.0, rerunfailures-16.1, split-0.11.0, mock-3.14.0, syrupy-5.1.0, anyio-4.14.2
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=auto, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+collecting ... collected 1 item
+
+assets_dbt_python_tests/test_defs.py::test_def_can_load PASSED           [100%]
+
+=============================== warnings summary ===============================
+examples/assets_dbt_python/assets_dbt_python_tests/test_defs.py::test_def_can_load
+  <SOURCE>/examples/assets_dbt_python/assets_dbt_python/assets/forecasting.py:57: SupersessionWarning: Function `build_last_update_freshness_checks` is superseded and its usage is discouraged. Attach `FreshnessPolicy` objects to your assets instead.
+    forecasting_freshness_checks = build_last_update_freshness_checks(
+
+examples/assets_dbt_python/assets_dbt_python_tests/test_defs.py::test_def_can_load
+  <SOURCE>/examples/assets_dbt_python/assets_dbt_python/definitions.py:32: SupersessionWarning: Function `build_sensor_for_freshness_checks` is superseded and its usage is discouraged. Use `FreshnessPolicy` objects, which do not require a sensor, instead.
+    freshness_check_sensor = build_sensor_for_freshness_checks(freshness_checks=all_assets_checks)
+
+examples/assets_dbt_python/assets_dbt_python_tests/test_defs.py::test_def_can_load
+  <RUNTIME>/downstream-1407/assets_dbt_python/.tox/py310-pypi/lib/python3.10/site-packages/dagster/_core/definitions/antlr_asset_selection/antlr_asset_selection.py:100: BetaWarning: Parameter `include_sources` of function `AssetSelection.all` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    return AssetSelection.all(include_sources=self.include_sources)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 1 passed, 3 warnings in 23.58s ========================
+py310-pypi: 27363 I exit 0 (26.68 seconds) <SOURCE>/examples/assets_dbt_python> pytest -vv pid=7299 [tox/execute/api.py:311]
+  [testenv:py310-pypi] unused config key(s): download
+  [tox] unused config key(s): skipsdist
+  py310-pypi: OK (27.22=setup[0.53]+cmd[0.00,0.01,26.68] seconds)
+  congratulations :) (27.25 seconds)

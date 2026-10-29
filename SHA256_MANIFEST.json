@@ -1,0 +1,3098 @@
+{
+  "atUtc": "2026-10-29T18:53:36.853932+00:00",
+  "READY": true,
+  "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+  "sourceTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "files": [
+    {
+      "path": "CI_SCOPE.json",
+      "sha256": "5ad9d6d78e3941c99f5dba045c33338e570e6209cf8d1a8bcfb41d6739f4d413",
+      "bytes": 100113,
+      "mode": "100644"
+    },
+    {
+      "path": "compare_http.py",
+      "sha256": "59f62c58318ba83b4795137cc35014a963c15c461ac6a34c5e13cde256f36350",
+      "bytes": 1534,
+      "mode": "100644"
+    },
+    {
+      "path": "core/DELIVERY.json",
+      "sha256": "46f41ce0ef277d4a79b20db6302c2a330a79ee3f122f8c84d9c6a412b92f02c7",
+      "bytes": 219496,
+      "mode": "100644"
+    },
+    {
+      "path": "core/FINAL_NODE_COVERAGE_AUDIT_V2.json",
+      "sha256": "f5723fa09bd1e61d60e24e03a7ad301019c8201571f9a683f27aa28464d76102",
+      "bytes": 927900,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/actual-tox-exec-environment-route.log",
+      "sha256": "ea564c656777a72f89facd8600cfb7554ba35aa030bf64d0394b980f00a8c06d",
+      "bytes": 4145,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/linux-py312-dbt112-core-main.log",
+      "sha256": "73af244a61a31199b1256112a106ffc920ec6cfe0b547d12f60d56123fd53349",
+      "bytes": 390359,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/linux-tmpfs-baseline-prelude.log",
+      "sha256": "bb61ea9ac6429deaf01f885655e888476a584b2bb9d112ef0220f546c91cb061",
+      "bytes": 19977,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/linux-tmpfs-candidate-prelude.log",
+      "sha256": "944144d0a926b93226ec88e5850637ed7831a7c73fe8cfb744ff4c591d41ac3c",
+      "bytes": 19982,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/official-py312-dbt112-core-main-cli-1of2-source-before-command.log",
+      "sha256": "118c4ecb3605c1c964a161a59ba42b72c0c92e641fd8609c6215a344e501745e",
+      "bytes": 358,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/official-py312-dbt112-core-main-test_asset_checks-1of2-ram-attempt2.log",
+      "sha256": "2466806cd9196b2beacd1526166b3c9eb758ad5f9154836fc6ff116eee67d86d",
+      "bytes": 5234,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/official-py312-dbt112-core-main-test_asset_checks-1of2.log",
+      "sha256": "bd2a05c637d36129c78ec1c97fee4d7ef46db0b1f92c6fd071d3addff8340c49",
+      "bytes": 43124,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/official-py312-dbt112-core-main-test_asset_checks-2of2-ram-attempt2.log",
+      "sha256": "401c1eefd91a0be022ce9214c16632520c7d9ef1ea2c1574bdc06043b929e0b1",
+      "bytes": 4977,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/official-py312-dbt112-core-main-test_asset_checks-2of2.log",
+      "sha256": "414913c32cd0d76ec14aaea17c361838156307eb93429dd42a06f130baef1899",
+      "bytes": 182316,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/official-py312-dbt17-core-main-rest-4of5-ram-attempt2.log",
+      "sha256": "596f35e45b3da134ffc15521ecf57b809d08751273d9c58d89173a412be2661c",
+      "bytes": 7525,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/official-py312-dbt17-core-main-rest-4of5.log",
+      "sha256": "9a76029b072da7c4487ece19fd79ad1428353874d85e817cf8ae2e1d180bb0a9",
+      "bytes": 12911,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/official-py312-dbt17-core-main-test_asset_checks-1of2-source-before-command.log",
+      "sha256": "af4c20abc10b8b78b56c6352bb775d99d0c348500ca07600650ea770a1deedd2",
+      "bytes": 362,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/py312-dbt112-core-main-windows.log",
+      "sha256": "b8d497396e98788a45c44a7741faad12b12dbdfd1989077215a3ef21d551685f",
+      "bytes": 355946,
+      "mode": "100644"
+    },
+    {
+      "path": "core/history/windows-dbt112-core-main-tox.log",
+      "sha256": "a869ec2731c142329a142e52d25e8316ab6e67a60739e13c1e8c2628d7f31307",
+      "bytes": 1031,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-cloud-1of3.log",
+      "sha256": "7df38371e1816749ecf684e55334dbee178fbe8439b4e0fdeaa43a90ae4f1009",
+      "bytes": 29277,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-cloud-2of3.log",
+      "sha256": "83f2050f2892ba86909e4f7c11dd3c6fa471fab97c182c57cb6eac4abc13f8f2",
+      "bytes": 32350,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-cloud-3of3.log",
+      "sha256": "8b8e02ac8417b0d7e7df9523288c99db4b6117b91764e22e84b6c35019d7c314",
+      "bytes": 47771,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-derived-metadata-1of3.log",
+      "sha256": "6cc60d98631af8248f725e0775078f8797e197ccbfc98a0424aa30347e09ef1f",
+      "bytes": 7013,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-derived-metadata-2of3.log",
+      "sha256": "471ce8cac6d796a68a94157be55aa29c1605ddfda8a96b617f18b2fe82e0231a",
+      "bytes": 10345,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-derived-metadata-3of3.log",
+      "sha256": "b63901c070235393f558e206f12278174ba5740c03b31d8675c838d0dc765bfe",
+      "bytes": 5157,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-main-cli-1of2.log",
+      "sha256": "a2b08e0732795d315d44e526d0da967e2b575c46254085aa30432bdd78f11af8",
+      "bytes": 4033,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-main-cli-2of2.log",
+      "sha256": "4030cbd79dd0f694397aae19f9aa5c241672e1103d6ca49775c63ceda99bab04",
+      "bytes": 4150,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-main-rest-1of5.log",
+      "sha256": "dc81c6955f7fd3413a1d3b1511fab29915923308d241ba9603752a1ae28009ad",
+      "bytes": 15278,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-main-rest-2of5.log",
+      "sha256": "0eceb99138dfb846ef7e75e152f44457e4ef9a2fdb54ad582998d5c5b96cafc7",
+      "bytes": 13533,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-main-rest-3of5.log",
+      "sha256": "7c3ee12a4f32066f01d56759f48ec3ab28cd56154e8bd76ec669a073f5b912be",
+      "bytes": 20415,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-main-rest-4of5.log",
+      "sha256": "74f882a0dae37138ed74fe2d22149b7782ff75e2b5c1a295a1493cabf8198226",
+      "bytes": 10316,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-main-rest-5of5.log",
+      "sha256": "91a7e35bdb47d6a91f51cd7e73500388a0f77bac719df116bb551aba94aaca4b",
+      "bytes": 5650,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-main-test_asset_checks-1of2.log",
+      "sha256": "eb3fb60af61a4a6ab10b5406d21b224a40c65b1c6ed0b87f6bdb64f5a86453ee",
+      "bytes": 5390,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-main-test_asset_checks-2of2.log",
+      "sha256": "a6ebf992a23d6d850bbfa53039d00f31d0d9ef7e7f705159c53e71e2e7574fe4",
+      "bytes": 4760,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-main-test_resource-1of2.log",
+      "sha256": "13e08c25ecf3e96402dedb8926526f931df29fd741d2b8fafa2bc725c9efe8b3",
+      "bytes": 4774,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt110-core-main-test_resource-2of2.log",
+      "sha256": "9b8945e8a3688c99e352ff3f3d15b1d4a3a7623f7c3b501e939f7d62692751c1",
+      "bytes": 4618,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-cloud-1of3.log",
+      "sha256": "3c99432414977c8048b7c8b79413498db93052094131699580274d4147803821",
+      "bytes": 28850,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-cloud-2of3.log",
+      "sha256": "8a542e47ace44fc9e56ff94f54f2e3775b7e83697114ca343df00512c197a2a4",
+      "bytes": 32131,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-cloud-3of3.log",
+      "sha256": "c8f6d493001cec0fec52279df21b627154ad8d8b913f0b5f6cc1ff58cf538148",
+      "bytes": 48070,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-derived-metadata-1of3.log",
+      "sha256": "0f6f6ca470cdb7d35c2b413f1e3d968cc9051b6a91fc939f21c701a6b2196a7c",
+      "bytes": 7013,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-derived-metadata-2of3.log",
+      "sha256": "56853365b810fcbff1007023a42093d052b8493ce2c1949bf8787105eade39ba",
+      "bytes": 10345,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-derived-metadata-3of3.log",
+      "sha256": "39c5b5d8bf0a1be00f57aee00543c8278044665e29a63e1d75f02b76101caa49",
+      "bytes": 5161,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-main-cli-1of2.log",
+      "sha256": "04d0a8e36356f3ae15d497c9f53a02ab6cd52f0e3fdc5b252e093f9ed167c090",
+      "bytes": 4039,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-main-cli-2of2.log",
+      "sha256": "14e98cf665fb9f106b7e9e874f7224604109a2102d0506a5f438ef85d3d423e7",
+      "bytes": 4155,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-main-rest-1of5.log",
+      "sha256": "4b92fa6afc99489bd32e807ef7184e371166b8693cda0a526cfbd6c00ccee9e7",
+      "bytes": 14471,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-main-rest-2of5.log",
+      "sha256": "ccffa164b322081d8f312c946d79498f8d9551ccf373f5c7bfdd8007f47e2fa6",
+      "bytes": 13154,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-main-rest-3of5.log",
+      "sha256": "91f6ab910b37ba95ca552e647afa4a3cdb9e1574e7b58108a5295dd38b3db1a8",
+      "bytes": 15827,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-main-rest-4of5.log",
+      "sha256": "ef31f6d0969460a7e2cb3d8eeaaa1d5c1e5122287b2cd7bafa8207b6e5ee15b7",
+      "bytes": 12537,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-main-rest-5of5.log",
+      "sha256": "6c799330f07ecd563e933549485e5236c940df3d61e1a5252ba910d843414164",
+      "bytes": 7110,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-main-test_asset_checks-1of2.log",
+      "sha256": "64a4d13b86c635ac519dd67dfe10c632463d516fc1dea062cb9518bcee8454f5",
+      "bytes": 5213,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-main-test_asset_checks-2of2.log",
+      "sha256": "1446322350df5cf47f681114506b2febb2d7a1077f8c9961acea3cc72268bb8f",
+      "bytes": 4977,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-main-test_resource-1of2.log",
+      "sha256": "e4c973121e214d8cf610326f5fb3bfbba505bb012df59636ab6058b0ba481f5f",
+      "bytes": 4774,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt111-core-main-test_resource-2of2.log",
+      "sha256": "0021899af04aaeed8b14589801bb653b2c522723f973c453943591d13f9c22d8",
+      "bytes": 4618,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-cloud-1of3.log",
+      "sha256": "07ea6f32a25238d48e34fa0860f28811a1eb2578c692605f57d2c693e859d9f1",
+      "bytes": 29176,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-cloud-2of3.log",
+      "sha256": "440ae6e205721fd0a33f657ecc5cc9e5b780b15e541b25469586a4c55ee8ce33",
+      "bytes": 32173,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-cloud-3of3.log",
+      "sha256": "261ecb86527d171544f8efd5aefe6fde13b102dfc49c933dd13c29068f2bf81d",
+      "bytes": 48106,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-derived-metadata-1of3.log",
+      "sha256": "ea3554b807bed542b200f8cf9807544f4b2379e934c98b3699dd05cb7af07ef3",
+      "bytes": 6952,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-derived-metadata-2of3.log",
+      "sha256": "581f603b34d92c7a5f561332b33620e53d6d39b6ee3eaf64de183beb1e481f8b",
+      "bytes": 10345,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-derived-metadata-3of3.log",
+      "sha256": "b0740d549ed084ae0e0586723d547dcb57694ca9b7cf3d896b45905667511a00",
+      "bytes": 4942,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-main-cli-1of2-ram-attempt2.log",
+      "sha256": "fecf9179fa4e0e6d5d49cd022d7d81ae6431c0e442a5441fa3142d23fb8ee137",
+      "bytes": 4037,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-main-cli-2of2.log",
+      "sha256": "b67ec1083eb67182e1c5f849b159fc5512d21a8754872334dd637ca66163957b",
+      "bytes": 4150,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-main-rest-1of5.log",
+      "sha256": "2618facf796539e0ea3eeabbecaf05dc5d5b35d79cfc3532047852d8f4875de4",
+      "bytes": 17249,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-main-rest-2of5.log",
+      "sha256": "6ff79276abcbc42e480c5e9430a854bd1e20e5c3c0a643cd692ac9d49dea2ab1",
+      "bytes": 13233,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-main-rest-3of5.log",
+      "sha256": "e53ea44d62ead28822657315bd5715779e252dde78674b638079c1e596c6c1bc",
+      "bytes": 15884,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-main-rest-4of5.log",
+      "sha256": "b23579f6a03915311744b50982e72e9d8ae8e484d1fa4c490886abd63a18f69f",
+      "bytes": 12609,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-main-rest-5of5-ram-attempt2.log",
+      "sha256": "a42a5e0b9ffb07b5edd1edec6d64937fd0b0fdb51c71dfc3c2df3dced16078cc",
+      "bytes": 7114,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-main-test_asset_checks-1of2-ram-attempt2.log",
+      "sha256": "2466806cd9196b2beacd1526166b3c9eb758ad5f9154836fc6ff116eee67d86d",
+      "bytes": 5234,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-main-test_asset_checks-2of2-ram-attempt2.log",
+      "sha256": "401c1eefd91a0be022ce9214c16632520c7d9ef1ea2c1574bdc06043b929e0b1",
+      "bytes": 4977,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-main-test_resource-1of2.log",
+      "sha256": "71dd2fc448cf6ded45d58d21e79c9291891c9eed125592783f11611bcd81bd67",
+      "bytes": 4847,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt112-core-main-test_resource-2of2.log",
+      "sha256": "4658b549814f073c45249aaeb5b00d68298f7820c0bcca57c49034572f6a876d",
+      "bytes": 4704,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-cloud-1of3.log",
+      "sha256": "9900b0a97656c592cc2e7b1c99768945eb90fd35c17e77670bb51d7d5b39681a",
+      "bytes": 28492,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-cloud-2of3.log",
+      "sha256": "0175189d7959bb0e0e045ffd06d0048ed9427f65d9ac672b47f80bd4f84c857e",
+      "bytes": 32818,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-cloud-3of3.log",
+      "sha256": "eaf54188ef5e213f3dcab4d94443fdbb1dd4498aaecec8932e337671b041c905",
+      "bytes": 47238,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-derived-metadata-1of3.log",
+      "sha256": "7384124ff3345dfaa88e1c5a9e40ae6fbef45473ab8afafe1ab3863da9737f31",
+      "bytes": 6517,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-derived-metadata-2of3.log",
+      "sha256": "806b9f2c2060fa07d5d8478a615fa987da03a243d38ad5f0289e23cf5ff04b6e",
+      "bytes": 9840,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-derived-metadata-3of3.log",
+      "sha256": "7fc9a2124a09724041d4b5a690606b99df2c102536000740ee7e60be9b0a2bb6",
+      "bytes": 4656,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-main-cli-1of2.log",
+      "sha256": "74d3ebb85c5a88e3253ce660bcfb4b020ba930ea30da5d9ffd36b00278339412",
+      "bytes": 4053,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-main-cli-2of2-ram-attempt2.log",
+      "sha256": "f11f2a7b59f8c0e683695eb5ade03c669ad3bacfa47cbb47b1621936037ca353",
+      "bytes": 4145,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-main-rest-1of5.log",
+      "sha256": "33250d1e01f1b4c48b275c15ee912c6042c0907e15633924279528eae306b800",
+      "bytes": 16524,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-main-rest-2of5.log",
+      "sha256": "22b94c4b156d2dc23d9483e400dabed0647ee755942e77b9d3afc7b3cd54b46c",
+      "bytes": 12808,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-main-rest-3of5.log",
+      "sha256": "e6b5a651e0f900e9bbd40aed09a38dc399531977bf9aba1019beb2d900473892",
+      "bytes": 22193,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-main-rest-4of5-ram-attempt2.log",
+      "sha256": "596f35e45b3da134ffc15521ecf57b809d08751273d9c58d89173a412be2661c",
+      "bytes": 7525,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-main-rest-5of5.log",
+      "sha256": "7fe33e3d79d4cf206240a1c3c2cc23cc62e763608d1a74517c376ad8a3119675",
+      "bytes": 5014,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-main-test_asset_checks-1of2-ram-attempt2.log",
+      "sha256": "837d843bf99f91f40f505f5fbe0d79cc88c76e35e52090fc778d52ecdd54d9f9",
+      "bytes": 5381,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-main-test_asset_checks-2of2.log",
+      "sha256": "67fd7ce6adab5abf8585575fd3acf8711813c5bca5b6c3f3759ef0adcdd0f69d",
+      "bytes": 4737,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-main-test_resource-1of2.log",
+      "sha256": "2e3569848fe2157bc38b1f8d55027ec996ffd799489b94a1f9b5297273288b4c",
+      "bytes": 4701,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt17-core-main-test_resource-2of2.log",
+      "sha256": "50e901b513f9ca1bde881b68487986f3a59bef994e46414f63b8fc423de010bb",
+      "bytes": 4942,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-cloud-1of3.log",
+      "sha256": "37a71785d5628a391f162143ec625952ff6cc7bf97fa654a5eaf15ab307c30be",
+      "bytes": 28846,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-cloud-2of3.log",
+      "sha256": "6b8a04c7631646f08edd45ef19e0d75103a18764b8b9b4652d9238355729a7ed",
+      "bytes": 32091,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-cloud-3of3.log",
+      "sha256": "b63afcf9418f5f5409fe10194d5c2d17b56e17d2d0a3023783ab8a0646530581",
+      "bytes": 48001,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-derived-metadata-1of3.log",
+      "sha256": "caa8ee6b75149d192df44c5e93cc85725b80c4ea5ca315d940df73d1364bb5ef",
+      "bytes": 6940,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-derived-metadata-2of3.log",
+      "sha256": "2f084452b03093663cf420fb35e21f3a27ee8be11e4ab91b7ab0a7f59dd6b9d4",
+      "bytes": 10249,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-derived-metadata-3of3.log",
+      "sha256": "bc80a13980aadbef5e1c68a0c00327531f44716dca023bf266b817bf73783e13",
+      "bytes": 5317,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-main-cli-1of2.log",
+      "sha256": "a5494fb039770a3a47af2ab270fb5fde2bb817d7c7029d976abe0fda13cf4e76",
+      "bytes": 4053,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-main-cli-2of2.log",
+      "sha256": "a5a39e6d3941189ba57ef8c0cdd1517c6abe019029fa82051492d9bceaca3035",
+      "bytes": 4140,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-main-rest-1of5.log",
+      "sha256": "92c824b39b43a68392b83fa50c7cc1637cb4ff9f48ec3b70af489a8c1b1df25f",
+      "bytes": 14895,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-main-rest-2of5.log",
+      "sha256": "420a3f6a41ed6b3c6afe198c612309620dc48f8004efd37e0d2427ba6f27b232",
+      "bytes": 12154,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-main-rest-3of5.log",
+      "sha256": "5da7f9ea0ee829a7749fe7fd923dcafc09dbda51edafa0a54b23f2f168f8f6b2",
+      "bytes": 20415,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-main-rest-4of5.log",
+      "sha256": "e04cd2391d2395872f931be7a27205068b438483c097a4b669f221cf8c7b6e5d",
+      "bytes": 9315,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-main-rest-5of5.log",
+      "sha256": "3f2f14066b7e41e48601bed719493d2158960e65a0d84e30e09adbfe42760a62",
+      "bytes": 5796,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-main-test_asset_checks-1of2.log",
+      "sha256": "8dabac4055cd5060c0255d364f5c3b065808a62548959b07306d0aff4af67ffe",
+      "bytes": 5397,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-main-test_asset_checks-2of2.log",
+      "sha256": "868438d990dd9f80d2f7275c1198098a0e7f966a825b62cb07e4ac86bf63f45d",
+      "bytes": 4738,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-main-test_resource-1of2.log",
+      "sha256": "fc5ed53f5f23f41899e75bcee52b230ea708340b712080671319d934e6fae348",
+      "bytes": 4780,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt18-core-main-test_resource-2of2.log",
+      "sha256": "e51630efd02486b0a8eaa36e31022d91911b544a76471e510fa2e0d9e29f7f1c",
+      "bytes": 4585,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-cloud-1of3.log",
+      "sha256": "1ca07b3a4b9c974370a80553dd8e83d11357711661663eed59a169813c554e9e",
+      "bytes": 30123,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-cloud-2of3.log",
+      "sha256": "cddc44aabda5e0ff2d5b7bf08c807129894132d48a694eb33a83c69ffec17d5c",
+      "bytes": 29442,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-cloud-3of3.log",
+      "sha256": "5c5cdd6844011c4267b38c1ae1e72e0c131f9fdff75f54eff9a5cbbeb0cdec80",
+      "bytes": 48913,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-derived-metadata-1of3.log",
+      "sha256": "fc394195cc8d51ba6076bba8a55bf8bcc1cc9757a5164662228f311a980fd02b",
+      "bytes": 7017,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-derived-metadata-2of3.log",
+      "sha256": "aba26dc684f1b6a6439e6bf9523ccaf5290442a67793edfade7f3d35aaabaf17",
+      "bytes": 10250,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-derived-metadata-3of3.log",
+      "sha256": "e5ca005c589e4e50fba8e9de2047d57e4bc137d62ec29267bed00ec72693d18a",
+      "bytes": 5299,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-main-cli-1of2.log",
+      "sha256": "88140d4ad5bf98b6f246c54cfa9df464eb736b1729deee8cf4154a21eb6556fd",
+      "bytes": 3840,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-main-cli-2of2.log",
+      "sha256": "c7b7a59a35a9ef3c68e9d53a3378e0ddb3537c7485da756458c74f8197f84683",
+      "bytes": 4323,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-main-rest-1of5.log",
+      "sha256": "6042e6ef8c0571b48625fff26980fe621c8c6c7c7c3f0af5209345aa797bf3c3",
+      "bytes": 16139,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-main-rest-2of5.log",
+      "sha256": "b1e077ff4c36dddacfa7c0f88c4dccc41220000fc663959964fa14678d88c231",
+      "bytes": 12707,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-main-rest-3of5.log",
+      "sha256": "a679bc7abfb0a392403f3f42eea0e49ab1f1e7c1956cba7dc7f216a8ff4434ee",
+      "bytes": 20422,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-main-rest-4of5.log",
+      "sha256": "62ec1bf6f19d5aec3f687a775f7de50a2b5992160fa17f6764c67cbdf9c53daa",
+      "bytes": 10268,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-main-rest-5of5.log",
+      "sha256": "7ed6404108a9096b729befd7493b78ae93aced8a5b0340bd3d8761be4dad821c",
+      "bytes": 5648,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-main-test_asset_checks-1of2.log",
+      "sha256": "ee21b61d67e213d467c32876eac7765b9007b2f62ca59ee60899373c47f9bfb7",
+      "bytes": 5363,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-main-test_asset_checks-2of2.log",
+      "sha256": "5cbabab14a0fa843361d655ff9aceadf47b25387eee8e4a6a0f7812f6a0ce506",
+      "bytes": 4812,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-main-test_resource-1of2.log",
+      "sha256": "33efa843c7337d1f01995eb9dd4d2cf0a41bb040ceed4034e4175fb5023d47c6",
+      "bytes": 4714,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt19-core-main-test_resource-2of2.log",
+      "sha256": "018bb2b91110781c1ab63710c985307811db0c8752eb5c39557e63fd098b64c8",
+      "bytes": 4629,
+      "mode": "100644"
+    },
+    {
+      "path": "core/logs/official-py312-dbt2-duckdb.log",
+      "sha256": "63b26227113de346f57fb1dc6350c4c070d83bde7d1adce3e799e8e2dff454f8",
+      "bytes": 3689,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt110-cloud.log",
+      "sha256": "2c209fd62a2c7cde7439877b84f30456372b2be4dab98e6471bbc9d9cd28a79a",
+      "bytes": 75181,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt110-core-derived-metadata.log",
+      "sha256": "bec03f37601f36d9704f2d31fbc8e8b9f519de7abe4c2ea0c838526ac6d7f370",
+      "bytes": 12273,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt110-core-main.log",
+      "sha256": "73dc8661f186d0ebfd9ee546c7c5e5eaecd9e2da930401b326b536d6f4143fe2",
+      "bytes": 43158,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt111-cloud.log",
+      "sha256": "47d775890fe4ab719748ff1a82cb3c681ea86425c35d9b63ed9e75e474c6c581",
+      "bytes": 75181,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt111-core-derived-metadata.log",
+      "sha256": "7f46a099d39bd0d6e457e52a3b51958face330f8045990bbdf688f85c5acfe19",
+      "bytes": 12273,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt111-core-main.log",
+      "sha256": "9fc566e8963b2f90e6980539e77cdc1f00eb98f1322603e4fc82ae9d6a5501e3",
+      "bytes": 43158,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt112-cloud.log",
+      "sha256": "367daed4f7a43943f3a640ac0f47c4d0e6edce9e80cc2b3dd2a82b57046c20d3",
+      "bytes": 75182,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt112-core-derived-metadata.log",
+      "sha256": "a76d01fb3fda13d8f38b40017f24df1bebfea487c5748b1215fbab131b578dd8",
+      "bytes": 12273,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt112-core-main.log",
+      "sha256": "f908e6963d7fbd0fd73a8422a09a1535b62af6b201bb2bf7c40d116703e16a85",
+      "bytes": 43159,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt17-cloud.log",
+      "sha256": "4fd60af8b0261e6354e4be2dba0ce73d27b6071ec76ece1dbc2c4a5f01af8341",
+      "bytes": 74686,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt17-core-derived-metadata.log",
+      "sha256": "56af19359d2ed7fb22b18e70207b034d2e590d333596ef7d02c0364f94dc5809",
+      "bytes": 11778,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt17-core-main.log",
+      "sha256": "193f70698365baf8a6c8fd2c38c3ea23ee605fff2c9cbe3d54f392189628d29c",
+      "bytes": 42663,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt18-cloud.log",
+      "sha256": "03bb768033a64fc621f1423eb01ab9425a739d2d7d94d94f99228e6817d2e4b4",
+      "bytes": 75181,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt18-core-derived-metadata.log",
+      "sha256": "a43ca8641e7a34e16539962970c24414dd561bbbbeb847f90f83ba8cbefc3396",
+      "bytes": 12273,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt18-core-main.log",
+      "sha256": "c27aca4a2a7da1f61ff99211bff1973f7a7c2a53d08088509090b813f0188b3f",
+      "bytes": 43158,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt19-cloud.log",
+      "sha256": "a12454bfcbb921092210a6fbee1779450a3b6344b2a6644564909fe802103c2e",
+      "bytes": 75181,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt19-core-derived-metadata.log",
+      "sha256": "48f36c1a82e59b02d19b0483b8ccca15e47ab4281487459134aa298d855bb897",
+      "bytes": 12273,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt19-core-main.log",
+      "sha256": "810bc1ca9f3f3ad7038e84bf2985472d4bb812114ff1fcb2e6537361d0c362ec",
+      "bytes": 43158,
+      "mode": "100644"
+    },
+    {
+      "path": "core/reference/reference-py312-dbt2-duckdb.log",
+      "sha256": "5fb57829cc439ad1e2e4232c2ba9d3ac369863c7f31224a964c1faa99f641a98",
+      "bytes": 1210,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-cloud-1of3-source-before.json",
+      "sha256": "568852b93d77e7a6b84462c83fed371c1d42ad706a8f3254c47b21731eac68b7",
+      "bytes": 10425,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-cloud-1of3-source-binding.json",
+      "sha256": "374c81cee090c63717799fb323b1460407b392a0d1620206061a31ecd3412b9c",
+      "bytes": 391,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-cloud-2of3-source-before.json",
+      "sha256": "3cae0b50197c37b5894417b222c992e45be81dec0d83f65d9661ef9c6b61216b",
+      "bytes": 12012,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-cloud-2of3-source-binding.json",
+      "sha256": "9461485c46a713fb7bceab11297e0d674e5e419e3ec7de4207202605d909a80b",
+      "bytes": 391,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-cloud-3of3-source-before.json",
+      "sha256": "7b754b479ce6d8ed19f507bb96715ac07a35678b23dd7d880858b611bc5ba4bf",
+      "bytes": 12258,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-cloud-3of3-source-binding.json",
+      "sha256": "1343135362730d5b9335e05f4f3cecf3afa363b7e5411c2d5e8ae4fbfb552744",
+      "bytes": 391,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-derived-metadata-1of3-source-before.json",
+      "sha256": "f623cb47997dd22292d0cd8caf24c8f4ebfe5daab503b49b1ee51b771ae393dc",
+      "bytes": 10624,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-derived-metadata-1of3-source-binding.json",
+      "sha256": "12c6b232b143f67f42828da6d75b8b04077029216b7291fb979419bd8bc5b42e",
+      "bytes": 407,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-derived-metadata-2of3-source-before.json",
+      "sha256": "5dff7527d85ae4dfec2ea1d0cf4b0977daae12126759dc82ceaba18a08c0536b",
+      "bytes": 9719,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-derived-metadata-2of3-source-binding.json",
+      "sha256": "20ec8268fec92217be71d7676ba7149b55b1294b708b95e56850ce2f1a797f40",
+      "bytes": 407,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-derived-metadata-3of3-source-before.json",
+      "sha256": "e285e12a3eecdf6c0c91f69920f8353be786ca4d1087ff5367eed5bdea6490ee",
+      "bytes": 10015,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-derived-metadata-3of3-source-binding.json",
+      "sha256": "b912e445f849ec95f2d398f89e2b88dacb9afca5cd081d50cf7dd27e7beda79e",
+      "bytes": 407,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-cli-1of2-source-before.json",
+      "sha256": "b0006372e6f327f4c77c562d6b315e371fe7bab1f3871f77d036ba08db7bb0b9",
+      "bytes": 12131,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-cli-1of2-source-binding.json",
+      "sha256": "124dd50cd35d3b240dcba35cfa7e56a25d052e9467084d015c9c9a1e656bf997",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-cli-2of2-source-before.json",
+      "sha256": "3d65236c3408018848a5bfc7b0501f543e4d9be3ee6882f1065d0b845390c316",
+      "bytes": 10478,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-cli-2of2-source-binding.json",
+      "sha256": "d325eb32c10594eda06202d7a39f1b5490a9a7dfcd8a10cbb93cbef5660f610e",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-rest-1of5-route-on-pr1029-dagster-ci-ram3-source-before.json",
+      "sha256": "e1d92994be34f3b7404d7c6e0a97f2255161f59fdaa6624c9ac32518153022b6",
+      "bytes": 11487,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-rest-1of5-source-binding.json",
+      "sha256": "3b9dc4ad94f9da5ba152292c4670b6e0d34920defe2d885011e63522e5367dc7",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-rest-2of5-source-before.json",
+      "sha256": "947403d15e20f4305a71abb13e75236c1eee44edf456df3d5d82af4bc950c255",
+      "bytes": 10478,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-rest-2of5-source-binding.json",
+      "sha256": "821232346b3b257b6a5aec701734f83e0d8cadba7b9b0bfbf1b792f8b5f65ed8",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-rest-3of5-source-before.json",
+      "sha256": "0174991ee5f8f00bc3fb58a147c8550d15cf15d24dcc703318f96d525ad5f449",
+      "bytes": 13113,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-rest-3of5-source-binding.json",
+      "sha256": "8d0afbf6b2575d01fcdd92ce48bf8069acee240a1ad1fc186c433fa128b095cd",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-rest-4of5-source-before.json",
+      "sha256": "5152815ccdc67a286e06ba55275dd3ed566ea96d0a9627a84fd9699d33a5c424",
+      "bytes": 13907,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-rest-4of5-source-binding.json",
+      "sha256": "f49ca826e5073fe7404ab51bbd8ef6322b513856a95a6b5de6d81d4b3ccc6bdb",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-rest-5of5-route-on-pr1029-dagster-ci-ram4-source-before.json",
+      "sha256": "183c56bd9e9925f5b6f6bf5fab3b1c8acc5cd57324c11b32e6d7fe70a5bda7c5",
+      "bytes": 11679,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-rest-5of5-source-binding.json",
+      "sha256": "7bfa6576fe2feae11e35f68ccd1d0f0222dbf8e3c1e56574137904f898a9362d",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-test_asset_checks-1of2-source-before.json",
+      "sha256": "159636512b93a6515c996a00c5517e7e313d7a107bc25afc6434494a033d4f31",
+      "bytes": 14790,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-test_asset_checks-1of2-source-binding.json",
+      "sha256": "a53bc56dc50b88ffa231659871a5dc2db786474ff1c84c3dcbd468168bda6938",
+      "bytes": 413,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-test_asset_checks-2of2-source-before.json",
+      "sha256": "79e8825b1f08d4609943ea932e80e75b7cc4b2ef621281a9dda775d30b28bfb8",
+      "bytes": 11407,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-test_asset_checks-2of2-source-binding.json",
+      "sha256": "e246f0b203dd372bb4bd5cc55db04c317dfc16c10f524a04bd05064587a4a3b1",
+      "bytes": 413,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-test_resource-1of2-source-before.json",
+      "sha256": "221f2737205a472641185f873537c37185bdd5276cf5cbbfa5021d8fd0bae734",
+      "bytes": 11107,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-test_resource-1of2-source-binding.json",
+      "sha256": "7c7189a18e48c5a097f3047e366420a95d234892603db7c0c60005f5e5b648f6",
+      "bytes": 409,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-test_resource-2of2-source-before.json",
+      "sha256": "f8271f2fbb2feeccc14b0c9013d084f911e0e44cefdcec0a5f54036a032770a0",
+      "bytes": 11678,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt110-core-main-test_resource-2of2-source-binding.json",
+      "sha256": "031a222926de97ee263d87f19b3c2952f88493fd417ec0178aa52da0a7f5c46b",
+      "bytes": 409,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-cloud-1of3-source-before.json",
+      "sha256": "1440df00338a554264a18b2c58fa5787916843ebd0c5ccb4ec75e05df65cf286",
+      "bytes": 10425,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-cloud-1of3-source-binding.json",
+      "sha256": "e8502c86be7bbdb9f89d439091591268119c5c690d8a7263447adb65eeee5564",
+      "bytes": 391,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-cloud-2of3-source-before.json",
+      "sha256": "cbdca4a443e650e67538f117b99644b875661d7ef443f924ed04b964103c8f15",
+      "bytes": 12013,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-cloud-2of3-source-binding.json",
+      "sha256": "e5a09ac1ebad98761e6e00bbde378694b8de0ded963367ff1e0d9ed9ca6d0811",
+      "bytes": 391,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-cloud-3of3-source-before.json",
+      "sha256": "5be8036086b84aaa3e6b35a14c13e03e6957bcab2183f29e73be4cc21afb679f",
+      "bytes": 12259,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-cloud-3of3-source-binding.json",
+      "sha256": "113a75fa4567da6ddf896bfc19443360d0c61be623145349c54cdbcd8bd4ab7c",
+      "bytes": 391,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-derived-metadata-1of3-source-before.json",
+      "sha256": "a781cd3a8fbdba91a706733d2e212ff2544f91434b52d98684c54b179ac587a7",
+      "bytes": 9719,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-derived-metadata-1of3-source-binding.json",
+      "sha256": "6566bdad76e50d367b4960f8ebda1fab2e146e460214e13087547ad6c2570847",
+      "bytes": 407,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-derived-metadata-2of3-source-before.json",
+      "sha256": "ca6e0d0f7f96abba009cccc76fd46a76e2b9b08d69bdb9fc331810bf570612b5",
+      "bytes": 10625,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-derived-metadata-2of3-source-binding.json",
+      "sha256": "82add0c29fe59f6120d48071d1e5d8d26147b1cdd557a6add53c5c2861771ce2",
+      "bytes": 407,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-derived-metadata-3of3-source-before.json",
+      "sha256": "1070e465751ffa867b82fac69f54ad19c6cdd286051f1267b8be60b096c99ecb",
+      "bytes": 10015,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-derived-metadata-3of3-source-binding.json",
+      "sha256": "142e6e0726fe988a6f81e3119ccd73463f87f4021274f694aa61826786a0272b",
+      "bytes": 407,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-cli-1of2-source-before.json",
+      "sha256": "7f90d661604effcf547b01f1d8343bcde15563dc30a0a6cecf6efd5a0b8b640a",
+      "bytes": 13127,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-cli-1of2-source-binding.json",
+      "sha256": "82da544f150d27e4e5c5fa847d0d74210b6bbf987f3fe60a85762ae42edf2eb3",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-cli-2of2-source-before.json",
+      "sha256": "587e7452164e88d97828ff9ba2ce9eb29c1cf4d90537263be9bdd0d61f49b37e",
+      "bytes": 10478,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-cli-2of2-source-binding.json",
+      "sha256": "65cd80c520b2a36206c77a63794212ace6c30c675c22bb131e7725e3888f59cc",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-rest-1of5-route-on-pr1029-dagster-ci-ram3-source-before.json",
+      "sha256": "01516d1833faf392171b7762042a6f7b09c5d8ac9c1b3323c7f2ffbb53b469bd",
+      "bytes": 11901,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-rest-1of5-source-binding.json",
+      "sha256": "a8496f5f6a412fed3ce726181a5352bb493338282d02b015c7b5c82757dbe581",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-rest-2of5-source-before.json",
+      "sha256": "0b45cfaf5f42b919fe2052a34d96ee22c1348387f33cf1f93173cb0a8fbadf77",
+      "bytes": 10285,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-rest-2of5-source-binding.json",
+      "sha256": "ad9d8127dee85bfdcba736ff7abc2b00f2a820ea965c6c6cc45c70cde84a3a71",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-rest-3of5-source-before.json",
+      "sha256": "8d45be95bca347e53a17ee0ac6cb8ca47edcf563d943b59a810825eccdc8ba2b",
+      "bytes": 13113,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-rest-3of5-source-binding.json",
+      "sha256": "3c8ba727be9919654f199b69ad325c181638b2984e26355c91b8c2180054cc14",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-rest-4of5-source-before.json",
+      "sha256": "5d85bb9d6c2d58e3493c582af5d2adc37cb8abf95f4da3bbb796a537b6730674",
+      "bytes": 13359,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-rest-4of5-source-binding.json",
+      "sha256": "1809fd2927ce0fe4962780b8c2c3d5fbbc590e9884614f57ee541ec0f676663b",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-rest-5of5-route-on-pr1029-dagster-ci-ram5-source-before.json",
+      "sha256": "f50cf82cf79441803bc8a2431a6a5c794ce8cbc6b781444dd5fca0351b00a986",
+      "bytes": 11679,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-rest-5of5-source-binding.json",
+      "sha256": "87c559f7b1c423113d8ad8ec663f8417d25fc1ad1fd758386bf29b6c2274ba14",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-test_asset_checks-1of2-source-before.json",
+      "sha256": "739b348350aff9af273724fe5e71764bfdd5453e23b5e9037e406e17c3d54d9f",
+      "bytes": 14790,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-test_asset_checks-1of2-source-binding.json",
+      "sha256": "c3079036a66822febabc0de38b6d5dd28d0e8600cc29bafd5e3da8ce0071ac9a",
+      "bytes": 413,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-test_asset_checks-2of2-source-before.json",
+      "sha256": "14a3b0f37b8dff2111c4a2e825a44f5cfb416d6754b3829ad9332c1c6f860fb4",
+      "bytes": 11408,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-test_asset_checks-2of2-source-binding.json",
+      "sha256": "6fa0d9711fd8ae28ca0cb3454c7a34c6a2617f7d07b2675d5b06b50d4ead2904",
+      "bytes": 413,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-test_resource-1of2-source-before.json",
+      "sha256": "9b868b03f3dcb383fef15c3cc4922927c0872ca0e047a6994d4ebc80c2828813",
+      "bytes": 11106,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-test_resource-1of2-source-binding.json",
+      "sha256": "0e008003c63fcc37bf8d26ff496f8f4794f0196041ecce705f885c7a5e7cb1f5",
+      "bytes": 409,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-test_resource-2of2-source-before.json",
+      "sha256": "eaa7e80d15ebf2e85dc5bd8df431b68ca342d631e430de83477c6f9e907c5f3e",
+      "bytes": 11678,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt111-core-main-test_resource-2of2-source-binding.json",
+      "sha256": "459a5ae38a082984aa5a29ae77d66c4de5caa45c2b1f5bff4ecd6af71cfa8648",
+      "bytes": 409,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-cloud-1of3-source-before.json",
+      "sha256": "6947144cb3b76ed86cad502d6dfe5fa7ee9013c63b5e502747f8a71c99ab252d",
+      "bytes": 607,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-cloud-1of3-source-binding.json",
+      "sha256": "bf023b8210bd66a44dc9a2ed3dbc4cbd73b34e4c48f4554c009bcdcd8e2bc3d3",
+      "bytes": 391,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-cloud-2of3-source-before.json",
+      "sha256": "5d47987d2369f7c538d770d92f9592f7b6f97c8bf26802e96d0be8792a64ae8f",
+      "bytes": 607,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-cloud-2of3-source-binding.json",
+      "sha256": "c6a0df7c4195b4dc54e9dc72539452599a0323abfc5fff6553bfb8ff4801f21f",
+      "bytes": 391,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-cloud-3of3-source-before.json",
+      "sha256": "28f4cc39f39cf16a07faf280ecd21ca4e70abbed988a6e744de57cf0cfa22409",
+      "bytes": 607,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-cloud-3of3-source-binding.json",
+      "sha256": "5790c32134fdf15637350e60798d873e1362e8bd6857881b28d8d6fc855a0e7e",
+      "bytes": 391,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-derived-metadata-1of3-source-before.json",
+      "sha256": "975d307d3be0244de58c595083fd8801bab683d6cf28d993c30dd4aaafa35088",
+      "bytes": 947,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-derived-metadata-1of3-source-binding.json",
+      "sha256": "ff264dad94f254b3dcea47368571704ad34d14064c6c45836872cd24bf98c16d",
+      "bytes": 407,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-derived-metadata-2of3-source-before.json",
+      "sha256": "aee1eb337648e1839c1135765d605a12799041a8ad31464e35e93e7f698c0791",
+      "bytes": 947,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-derived-metadata-2of3-source-binding.json",
+      "sha256": "ec4e4548340c64e0919a1d4b6b3f9f7667757f46aa8178c7b169f6d0e2bcda63",
+      "bytes": 407,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-derived-metadata-3of3-source-before.json",
+      "sha256": "32113cf006700c3175db748bb8639e3c09d05ec047bd4feb5d532fe0a52469d9",
+      "bytes": 12013,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-derived-metadata-3of3-source-binding.json",
+      "sha256": "624b23eca98f3aae7575f8643870ce3d817165924001f55c192ddf519d32f757",
+      "bytes": 407,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-cli-1of2-ram-attempt2-source-before.json",
+      "sha256": "7b4874702cbe9d11dea5e9cdc1266b7ce2d2b372f1bbfe5a5a20360b022f65ef",
+      "bytes": 11408,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-cli-1of2-ram-attempt2-source-binding.json",
+      "sha256": "3b21ea0a2134c02a84470d30e45757977aca219c9b19347f6713d7b122c419ce",
+      "bytes": 412,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-cli-2of2-source-before.json",
+      "sha256": "2d4e170e256f0eae9e2200bdfda65b44ceb9f2168e2ec5ddd6c63d9c3588ca0e",
+      "bytes": 10478,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-cli-2of2-source-binding.json",
+      "sha256": "63533e3573c22f62fec91d2af49c260c8f31ed459ea75755e89313654ec7b93a",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-rest-1of5-source-before.json",
+      "sha256": "8a9724bb08a9ed9ea5754ad913a74b6081fa79d301b2510b2f1e8d2b4fc224c6",
+      "bytes": 607,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-rest-1of5-source-binding.json",
+      "sha256": "efcb967ae5d3928b2d52f349cbb70d27adac047fb7f6eb252df8fc548d7b111e",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-rest-2of5-source-before.json",
+      "sha256": "a48e135b76ed2decfd6d85f1df8339c2f04fcfc7e7d23401080d6a1aec90c995",
+      "bytes": 14504,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-rest-2of5-source-binding.json",
+      "sha256": "0b235f19e374cf637c4ca01822cd71c07289411bd0d1132ae5f89ec498517369",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-rest-3of5-source-before.json",
+      "sha256": "d4cd99b6a76fc3e4fb47830f628fa7b4333d2131abf3aa35ce9b5fe34c0431a4",
+      "bytes": 13180,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-rest-3of5-source-binding.json",
+      "sha256": "82bd90cc3032fcd91eea360d3ea8e2321e6846b106213a1eeb65ce3638016eef",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-rest-4of5-source-before.json",
+      "sha256": "4afdfb8ee597dc55a6bd975260e5a52bb31d514bbf4630553d3a8c21feac5a17",
+      "bytes": 13427,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-rest-4of5-source-binding.json",
+      "sha256": "48a62237e438735024f760bf3c53bcd4ca7009a5ec4269359825140485b15c93",
+      "bytes": 400,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-rest-5of5-ram-attempt2-source-before.json",
+      "sha256": "b7315b75cfe9aadcc82d3835f8a1878c65b2266d6590492981c08386a4cca686",
+      "bytes": 877,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-rest-5of5-ram-attempt2-source-binding.json",
+      "sha256": "1af8edb532c06170c5b4c5b621171bab767d6e33d73f8189af7f4305a5d42b88",
+      "bytes": 413,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-test_asset_checks-1of2-ram-attempt2-source-before.json",
+      "sha256": "8cd4b6925018da5235d1dfa569d7ebd9947da17bc32bc413fdc59fbdb9a10216",
+      "bytes": 947,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-test_asset_checks-1of2-ram-attempt2-source-binding.json",
+      "sha256": "890cb2ef34560dbd3cdfe1ce07b8fce17f4cb0c52651bd224787d3be1125e005",
+      "bytes": 426,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-test_asset_checks-2of2-ram-attempt2-source-before.json",
+      "sha256": "b5ef01dbb133103ce5dfd1d264f407ac97e1717cefd78d73a6226197dc9b9529",
+      "bytes": 10084,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-test_asset_checks-2of2-ram-attempt2-source-binding.json",
+      "sha256": "280ba728f9609ca61cde42bc755f93134759766c7eede9a37699c245c8baddd5",
+      "bytes": 426,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-test_resource-1of2-source-before.json",
+      "sha256": "2bfe3b58f2317377a75acdf9d2bf5dac50c9384cc379727ea29fee0be1aaaceb",
+      "bytes": 11393,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-test_resource-1of2-source-binding.json",
+      "sha256": "2a8484eb414df09ec5bbf4a62c9c0f33afe25b3d3e99bea4724521c9d8518672",
+      "bytes": 409,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-test_resource-2of2-source-before.json",
+      "sha256": "73a6484a22fbda3f71a49eb7ac7df927d3bc7679883f9692fa6090bddc6221bd",
+      "bytes": 11393,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt112-core-main-test_resource-2of2-source-binding.json",
+      "sha256": "f5626399921217c72c014560dc7ad397b1400a0eeb4a4066c9f3494cf64413c6",
+      "bytes": 409,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-cloud-1of3-source-before.json",
+      "sha256": "aaf5fdd0110774b9ffe8b9112dad3e0fb8847f39940d6cbc86597b75b9b5eae0",
+      "bytes": 12259,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-cloud-1of3-source-binding.json",
+      "sha256": "0fcdad260a11c47d8cd03fb2d0f805b2042be01cf1d493f2fd7d6f7b6196dbc3",
+      "bytes": 390,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-cloud-2of3-source-before.json",
+      "sha256": "ae6cc2b6d16cc759607eb8f09015241e1e9f41791f4ec4b2c44ee2bcb04d2972",
+      "bytes": 12125,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-cloud-2of3-source-binding.json",
+      "sha256": "9acfa96b018d2ce13ea411396efa720cfa17bcfec3d07f6f36cfd4a717a840bf",
+      "bytes": 390,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-cloud-3of3-source-before.json",
+      "sha256": "4b52aaedc7f7a54e2892197de09a0bc5320c30fec514e9666a7a87ee98c225c3",
+      "bytes": 11487,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-cloud-3of3-source-binding.json",
+      "sha256": "f399599f05262c149c7546615d8bc7dcc276b0f030f3cbff9828c3a1bc33a46e",
+      "bytes": 390,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-derived-metadata-1of3-source-before.json",
+      "sha256": "007d6625ee306b7e1a1dfca1a3a7e3c869ac5830bb841f1e989ce460fdb0de3f",
+      "bytes": 10424,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-derived-metadata-1of3-source-binding.json",
+      "sha256": "fdf1944be764559f8dffc19190e103b4858206964c4140ca365e1617946f359c",
+      "bytes": 406,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-derived-metadata-2of3-source-before.json",
+      "sha256": "ae7d7d4ba72b35f563305e07c08f02565ed228cb369ba046543c8c157328f380",
+      "bytes": 10014,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-derived-metadata-2of3-source-binding.json",
+      "sha256": "9b6ee1f89cb08c9c4203172f558f066b14ffc0dc60df25c6afb0a66e8d583c20",
+      "bytes": 406,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-derived-metadata-3of3-source-before.json",
+      "sha256": "6752b7dac4213614b774d04139b66dd96fb1d82ccc44d7793f3ee628404c497e",
+      "bytes": 12013,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-derived-metadata-3of3-source-binding.json",
+      "sha256": "1800a8f12fa27bae7915189caba3d195d4bbaf7a458074afee2c70345bf30281",
+      "bytes": 406,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-cli-1of2-source-before.json",
+      "sha256": "79939b0286f3eb81e3316252a3b9d4a77b6e474f621dc7779514cd255863796b",
+      "bytes": 10286,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-cli-1of2-source-binding.json",
+      "sha256": "507efc8c6faf0f50571bead554c0e98935c5c54426e6fa5df62f9beea868a82c",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-cli-2of2-ram-attempt2-source-before.json",
+      "sha256": "c1b784b326abc4b9e44c5a52ae9b923650107f1d3ecdc823dcee9535f5ca46e6",
+      "bytes": 878,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-cli-2of2-ram-attempt2-source-binding.json",
+      "sha256": "c4eb975afa6b2b874d5eae9a8536a233cbd15969505d51213a783da36c30d651",
+      "bytes": 411,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-rest-1of5-source-before.json",
+      "sha256": "9ef260ec85aa992b5f8c4effbe56b4aa4fac643311431923d5d3c609ec19afc2",
+      "bytes": 11679,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-rest-1of5-source-binding.json",
+      "sha256": "090018b1f50ead14611a466009b05244c339cdec5d5eef8cb9988af12ab737ab",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-rest-2of5-source-before.json",
+      "sha256": "81dc9fb5fcdf8c3191f9ffec083033fac1ebcd3b8426609fe6d3b7ca1d34120e",
+      "bytes": 11678,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-rest-2of5-source-binding.json",
+      "sha256": "5d204eb03c88a1333a4c365d48aa70a8ec9a9c29c797e7538e7508be629a2d95",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-rest-3of5-source-before.json",
+      "sha256": "6c1ceb0b587187e81f896b6ab99d72d50efd757cfb67004085ef2600f39bc1f3",
+      "bytes": 14711,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-rest-3of5-source-binding.json",
+      "sha256": "3bbef41000623998f3683a29b37f2dbeff37f6e34c986067f6cf3de0f9fc412c",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-rest-4of5-ram-attempt2-source-before.json",
+      "sha256": "c7e7c017661d19d75baa23e41bc5d90ca3a718573493c47f8607db3e6f18c30f",
+      "bytes": 10285,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-rest-4of5-ram-attempt2-source-binding.json",
+      "sha256": "817433fb92f4c163248a052602738743b5df4b6d084aa2c5cd75ab4c71076f5c",
+      "bytes": 412,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-rest-5of5-route-on-pr1029-dagster-ci-ram3-source-before.json",
+      "sha256": "05efd4d19e9d7e23730b93bb0ff79fa8d57de780f34fd51d8e779979d8f2e1e5",
+      "bytes": 13191,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-rest-5of5-source-binding.json",
+      "sha256": "a5c74bdcc653b684e11fa59c4ee55c4b6085eff8fe8b79c09ad7455d16c8e2bb",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-test_asset_checks-1of2-ram-attempt2-source-before.json",
+      "sha256": "e03e40f13396dbeb2bc5841ab4bf7680aeae1c4ead272e08ec397ca4c3aa7c84",
+      "bytes": 10745,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-test_asset_checks-1of2-ram-attempt2-source-binding.json",
+      "sha256": "0e62905b9882c27271dbdd23792ab01f210afc7371df57467786f93cba2a3065",
+      "bytes": 425,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-test_asset_checks-2of2-source-before.json",
+      "sha256": "a8d0b93df0dfb8237d56dc47f91e068ffff6e97322edb8afceb5e643a893f3d0",
+      "bytes": 11107,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-test_asset_checks-2of2-source-binding.json",
+      "sha256": "1642b43a93296eda3f8f0737b277a020136c6dc790cd3d224bbfcedb5cdbe147",
+      "bytes": 412,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-test_resource-1of2-source-before.json",
+      "sha256": "41e51c4d0f8e77357a9861a4040eb03b9d864bcf5c3e92b580de70d129e6e949",
+      "bytes": 11408,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-test_resource-1of2-source-binding.json",
+      "sha256": "834f2764a51165e485b77fc28c0f7d8995574319490430f2f10ace442bdcada6",
+      "bytes": 408,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-test_resource-2of2-source-before.json",
+      "sha256": "4660700b2b96067e73a1c0aab7f4597d6226074f558e04fa62a1fae8b62a2076",
+      "bytes": 9933,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt17-core-main-test_resource-2of2-source-binding.json",
+      "sha256": "3b497fbcc9d9fc98107446790b28927352286fe56046fb362298c86012a8edfe",
+      "bytes": 408,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-cloud-1of3-source-before.json",
+      "sha256": "47ba304ef4ec235b49222914d079363c56c5029c55f6fcf800aa9c230330101e",
+      "bytes": 12259,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-cloud-1of3-source-binding.json",
+      "sha256": "039cb8e28bc76a10ab244e2005c964ba97826078b97c02f7ffe64cf238f928a5",
+      "bytes": 390,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-cloud-2of3-source-before.json",
+      "sha256": "eaac4a83bed818cb251ac481f73da0c4e01391b4213e3210979a6d9bf5871d3c",
+      "bytes": 11899,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-cloud-2of3-source-binding.json",
+      "sha256": "97ff9998d89121d1509ea320f097d5c27f4bf2901f4e65e37fe710f78652bb3e",
+      "bytes": 390,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-cloud-3of3-source-before.json",
+      "sha256": "a561750c57b6e8a1abcfb96928766988b6162abfda7483053c2dbe8480b0fa79",
+      "bytes": 11487,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-cloud-3of3-source-binding.json",
+      "sha256": "445bee1d3719f85f7af4f48029e347e5afe8bbf66d0160b7c187a561e51d596f",
+      "bytes": 390,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-derived-metadata-1of3-source-before.json",
+      "sha256": "fc2eaaf9eef30480749a4d38232f1d89cc46b3059b321ba2f3d2ad6a1ceebb82",
+      "bytes": 877,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-derived-metadata-1of3-source-binding.json",
+      "sha256": "41662bef92c64835d8b9d00e2aaff8a98f2b001474699e9d73035fc0450eb043",
+      "bytes": 406,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-derived-metadata-2of3-source-before.json",
+      "sha256": "512a2aa2dd83cecf06bbf1432e594e65a329868411e30724e83357437d7b82fa",
+      "bytes": 878,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-derived-metadata-2of3-source-binding.json",
+      "sha256": "6347cf2ce54fe5eae2f31712477443daf1aad86386c0e3b390f45442af9bf741",
+      "bytes": 406,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-derived-metadata-3of3-source-before.json",
+      "sha256": "cdc66e4521beefe48f9540ebd85707b8ff905a73516884a69bb0c4395969cac2",
+      "bytes": 11107,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-derived-metadata-3of3-source-binding.json",
+      "sha256": "e7bfbac00ff26a1c137e1d86a707106c640d53b3573ff62d5ab5386e0e605465",
+      "bytes": 406,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-cli-1of2-source-before.json",
+      "sha256": "aaafd6523d73cb2290ddc7c9402cee5f6dbb4d9eba160bb5c5382b2b767d2232",
+      "bytes": 13113,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-cli-1of2-source-binding.json",
+      "sha256": "4c65c9ca411b26884b6947b88c87fa1ff50b14d74c989b875bf54a33a0b9327d",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-cli-2of2-source-before.json",
+      "sha256": "523e1324a1382b94c0594d5df9ae6fdcc0c11e6e0162c4435c200a87c48ba8fd",
+      "bytes": 12131,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-cli-2of2-source-binding.json",
+      "sha256": "834f1b0b2be7aa807166e36c640f7bac77f2df34c23ca74c35ef1c0cdfbf6ffa",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-rest-1of5-route-on-pr1029-dagster-ci-ram2-source-before.json",
+      "sha256": "8efb8a765bd30fe8f4d71cd2bab22469aadf02d09aa9f03621a5a67ae571c7fc",
+      "bytes": 11678,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-rest-1of5-source-binding.json",
+      "sha256": "d157b7c8261a8c08687d1df9b322ca620232ee3eeacac19f3de3ff885569b648",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-rest-2of5-source-before.json",
+      "sha256": "7734cf340cd21542a300e621591ef65da4138fb96efba39b1f63a0d38a004cab",
+      "bytes": 11604,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-rest-2of5-source-binding.json",
+      "sha256": "72a9fa50c5fc711e564201249a29867fb2579d5129b05a7ee2b3a95e4a848ca0",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-rest-3of5-source-before.json",
+      "sha256": "b7a5c3e988e2a5d2d9d56e37fba4ea264d0d0aa0e2b9dfeff3aca2b397327768",
+      "bytes": 10478,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-rest-3of5-source-binding.json",
+      "sha256": "855d003199d7a85209eb349eeb08189c7c5d67060bf209c0918a91bc0b1b18dc",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-rest-4of5-source-before.json",
+      "sha256": "048ed529bd7e321705da7662008d0cb073d50cf8f7111083f8dfbecc0e4612a4",
+      "bytes": 13906,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-rest-4of5-source-binding.json",
+      "sha256": "7a5f878f126789b3d982832e71f43baca4a2a870665adad989abb56012edddeb",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-rest-5of5-route-on-pr1029-dagster-ci-ram3-source-before.json",
+      "sha256": "bb2eb916259c3480de68f0610602199c90a6a6a3eef7806145dee060756f2d51",
+      "bytes": 11107,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-rest-5of5-source-binding.json",
+      "sha256": "398a054e661be88c0660f83b20d3458554d8f3bf5ecd03977595f6670d5276d6",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-test_asset_checks-1of2-source-before.json",
+      "sha256": "abf33d9a9e7779bf53ff2c7bfa8b81f3cd87bb5709cec541027ead4f6a67d1a2",
+      "bytes": 9718,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-test_asset_checks-1of2-source-binding.json",
+      "sha256": "0d6f46e6a1e0b1bf438267498cecc44668e1ca8c8ed3e6a54e65022ba63c4e5d",
+      "bytes": 412,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-test_asset_checks-2of2-source-before.json",
+      "sha256": "ee2f5468964f6e957e5574557915a761d970c7e02e2a6ee4a9d371cade614142",
+      "bytes": 10626,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-test_asset_checks-2of2-source-binding.json",
+      "sha256": "fe69a9005b83965223137a205e8a7fd6b6b7f158eceb1b2f57bac65cccc36708",
+      "bytes": 412,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-test_resource-1of2-source-before.json",
+      "sha256": "725598438a4b806fe8cf19cd36d3c5ac46f1fbbcf01ae47b5cabba878358643c",
+      "bytes": 14788,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-test_resource-1of2-source-binding.json",
+      "sha256": "ef90025271a5db521dbc474d6a5da5241a6b24cb818ac62aa69e2b6a2a536f56",
+      "bytes": 408,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-test_resource-2of2-source-before.json",
+      "sha256": "ecef04b9ce7e73a76e07a1ec9bc9d30ebc30c4f0a35b8ed7e0240e9ebfc2c6bf",
+      "bytes": 11408,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt18-core-main-test_resource-2of2-source-binding.json",
+      "sha256": "bc92bfc13508b8e73ca6e26af3c46e040a0f155f7288818c4b1b7c7619685f58",
+      "bytes": 408,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-cloud-1of3-source-before.json",
+      "sha256": "250e670c0122c5e8dfb3beaa3173c5baa57a4d75a199493d964b5ab15e4f2f61",
+      "bytes": 11106,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-cloud-1of3-source-binding.json",
+      "sha256": "c487c4776091aa9c97c18cf7021d26b0a3737aebbe3a13e3999f45586641fef8",
+      "bytes": 390,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-cloud-2of3-source-before.json",
+      "sha256": "867e9f019e08952eb88edc9761ea8d71474f00f997d89e7b34946c5945e0757f",
+      "bytes": 12013,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-cloud-2of3-source-binding.json",
+      "sha256": "0fa463cafc44ff7c9367c041638edfbdc7960aa1c64f5506a2bad37f87f0df97",
+      "bytes": 390,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-cloud-3of3-source-before.json",
+      "sha256": "2442aeba3356d2f838097c31626b4a9121bed6fdc402d486739ebf898b98a686",
+      "bytes": 12259,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-cloud-3of3-source-binding.json",
+      "sha256": "b268e6afd3e8a5e7f470bc81d542ec00809c0d3b6fc9208ff84f48caacd26765",
+      "bytes": 390,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-derived-metadata-1of3-source-before.json",
+      "sha256": "2cddb79d88871550338714c737bbe9e13c3d6e0f4668fc0bf329d3c6b4fde23a",
+      "bytes": 9719,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-derived-metadata-1of3-source-binding.json",
+      "sha256": "3e36d822dd672b1092b8ec34ebc72ba816a0966c0b03a47ad3a71e467b25c596",
+      "bytes": 406,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-derived-metadata-2of3-source-before.json",
+      "sha256": "9005595709f32d8430c2ae3f3b0d4e445f40fd522ba0520de00b14832ac94505",
+      "bytes": 10625,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-derived-metadata-2of3-source-binding.json",
+      "sha256": "96d83de17cb44788fd6ab791ea3e43f04b81996586be1cfef8a283f0f8257ebb",
+      "bytes": 406,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-derived-metadata-3of3-source-before.json",
+      "sha256": "3452e8684f707a42d56a5bc63702c3125ccc6aacbcbe0eb698d02087e700972f",
+      "bytes": 10014,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-derived-metadata-3of3-source-binding.json",
+      "sha256": "7f0b15c9f8670fc632fa62518f7639b2a9328325518badeb28c7fda0429c142a",
+      "bytes": 406,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-cli-1of2-source-before.json",
+      "sha256": "1e92574a005ce245d9e9c63f77f985e50b4deb62805ee5ffd9e17415b9125f4b",
+      "bytes": 12132,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-cli-1of2-source-binding.json",
+      "sha256": "3d9ad2a2369df4553dbfbe51a0f0e44a886475566e80a99c2b5543de0081c705",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-cli-2of2-source-before.json",
+      "sha256": "1ba94b47c73aec9407c6902ac4a81383ece3f94f57c6e91ec0278c1348b44415",
+      "bytes": 9983,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-cli-2of2-source-binding.json",
+      "sha256": "2242858a5f7b280a940bee568ca7b24c63cdcde69862edf174b574d5a59e03bd",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-rest-1of5-route-on-pr1029-dagster-ci-ram2-source-before.json",
+      "sha256": "561aecea3ce66c0b7333373efaac390f4713aa9d2bc12c566cbb0436b35cea0a",
+      "bytes": 12132,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-rest-1of5-source-binding.json",
+      "sha256": "59b128b72ccb5871bbf843139838781ef675181c260f72a835b442a281c4b62b",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-rest-2of5-source-before.json",
+      "sha256": "a29f4534fbe55ef7e37452fa1ae3118d50e8af3564d24731e63752f4764e6a24",
+      "bytes": 10285,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-rest-2of5-source-binding.json",
+      "sha256": "ff4df6cd66624be49c3d99bd7a8fc74992c7f0a0e98530845e9c6b94f81bf6d5",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-rest-3of5-source-before.json",
+      "sha256": "b4760ab87d77b595b04793b202b17504e15ba24922b9d1eb78ced669d6cc6349",
+      "bytes": 13113,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-rest-3of5-source-binding.json",
+      "sha256": "5620a5432525fcbcfd224726b2d5877a8f14279ad7b07ae9a3bf8aed18982b2f",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-rest-4of5-source-before.json",
+      "sha256": "e709512cbd3fb914d9315bacbc01dc80e8eb1b803a4493d6604299e7759da57a",
+      "bytes": 13907,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-rest-4of5-source-binding.json",
+      "sha256": "d73106a3d3b54eb8ddb6bca5cf8813ab58ee8f04e9e501c10ec0c86a9050119b",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-rest-5of5-route-on-pr1029-dagster-ci-ram3-source-before.json",
+      "sha256": "05341a875942df1cbcefb0fa553fefafb5355266bd428d3e1a821a53a6ee4e39",
+      "bytes": 11106,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-rest-5of5-source-binding.json",
+      "sha256": "d5215458f32737ca30fe09539466e6754a3eba184427c7ab1a30fa6ca1d7660f",
+      "bytes": 399,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-test_asset_checks-1of2-source-before.json",
+      "sha256": "858e2d06e28b4a7f0eb8b8b353c3d8e77ae5f5db8d44bd555aaa7647ca012f66",
+      "bytes": 14790,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-test_asset_checks-1of2-source-binding.json",
+      "sha256": "efc10ed7e5e77c10b9c21c9bb8126b871f53ac8a856b1da41731bd9abe0b044b",
+      "bytes": 412,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-test_asset_checks-2of2-source-before.json",
+      "sha256": "dafe4dcf438a2e11488115218c14c71889380adfc3b34b1f7f50191e04229c7e",
+      "bytes": 11405,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-test_asset_checks-2of2-source-binding.json",
+      "sha256": "15847b71343c9094b59214f1f7d08755338da79e7b5381f6d23de82b634ec337",
+      "bytes": 412,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-test_resource-1of2-source-before.json",
+      "sha256": "b88a4520f2a54bd9078e1698dd838a7e01c3b994e64fc606129107727aae936e",
+      "bytes": 11106,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-test_resource-1of2-source-binding.json",
+      "sha256": "b7e981e641228342f626b0ab5d46308ea0307be3a21a4025ca51cc473e621c0e",
+      "bytes": 408,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-test_resource-2of2-source-before.json",
+      "sha256": "0c18b1ae7da3982cbc7a80a484bd722be2fa5a230a31fbd9b5082955558542f7",
+      "bytes": 11679,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt19-core-main-test_resource-2of2-source-binding.json",
+      "sha256": "d85e84a1c8d522ce9a0956f291363e84eb327d1e59b672c74811bccfa3c25a7b",
+      "bytes": 408,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt2-duckdb-source-before.json",
+      "sha256": "6c34b4d391bfdaeb2ce3738a10ae0d63574b2b07dec6140dc1bc1ee890dbc895",
+      "bytes": 10284,
+      "mode": "100644"
+    },
+    {
+      "path": "core/source/official-py312-dbt2-duckdb-source-binding.json",
+      "sha256": "7cf535036742665c9598e2d4586196da653756d800a19e5bcde4096fd2def045",
+      "bytes": 385,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/baseline-slow1.log",
+      "sha256": "918ab06b774cae4ec2c7cd3b9f358090f80a0bbc7386657cf9dff39bd3e9016f",
+      "bytes": 20759,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/candidate-dagster-dg-cli-1-4-slow-3-12.log",
+      "sha256": "3ed1544eb4fb76c67f1bc923003f343c9d53b84172f2b523f5c5ccc7559c88c3",
+      "bytes": 49631,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/candidate-dagster-dg-cli-2-4-slow-3-12.log",
+      "sha256": "06368e4ef02c07fec32aad9aafba5b4850b8634dfe3373c058b77fb169631946",
+      "bytes": 25653,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/candidate-dagster-dg-cli-3-4-slow-3-12.log",
+      "sha256": "f9b9262eec777f682d74a476defaa34acf7ea8ea60caca7f159ce8459d2be86b",
+      "bytes": 30703,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/candidate-dagster-dg-cli-4-4-slow-3-12.log",
+      "sha256": "17f77509563c4667807c33842a7a85ba5a285afb84185a30db64e3320c5c19ee",
+      "bytes": 26177,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/candidate-dagster-dg-cli-general-3-12.log",
+      "sha256": "37d5fc4a45df9936f1431c44cd95aa8f8168ff068d4a7e8455c51cc8fe996060",
+      "bytes": 297829,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/candidate-dagster-dg-cli-plus-3-12.log",
+      "sha256": "5df0435e177454eb11747912ece10d558e606ea23c5090fc451841466bc5a4d3",
+      "bytes": 143164,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/candidate-dagster-dg-cli-serial-3-12.log",
+      "sha256": "09d4d9044b9a788f757a53da91af9adc431eb1cb6cc1d1d4ed7577cea7e9dbc7",
+      "bytes": 27621,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/capture-watch.py",
+      "sha256": "819347210f78da2a4b6da5c07c23db00dfabb41aab9adc0cb5521e68067ef932",
+      "bytes": 5813,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/control-with-observer.log",
+      "sha256": "9e5cd3a2b6afed5a1ad27730a55fbf8c72854b5c7007c7aabcf7a5d680847d39",
+      "bytes": 20819,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/control-without-observer.log",
+      "sha256": "027dec7280d461d0fa8e69951adf9b528e0e1c54a110b9e2a17be12179c71f35",
+      "bytes": 20811,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/DIAGNOSTIC_FINDINGS.md",
+      "sha256": "05af99c8e85e07eeac118f48e0d041fe691142403c491bb9a557ac973d30d74c",
+      "bytes": 2887,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/EXECUTIONS.json",
+      "sha256": "a7241254378fc9bb9b8a911ccc72b92587ce2c6372d4af5aa598638c8027dfd6",
+      "bytes": 13410,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/QUALIFICATION.json",
+      "sha256": "b1a25e2564e60803e2f0cf18742c9b553f47530a641a5f10c7ea95265e957ada",
+      "bytes": 1273,
+      "mode": "100644"
+    },
+    {
+      "path": "dg/startup-observer.py",
+      "sha256": "13e93c617acd68b7652e4f365428450457cab3d2fa5c778c987b63c72fbb483b",
+      "bytes": 3124,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/assets-dbt-python-pypi-3-10-candidate-resume-20261029T154446Z.log",
+      "sha256": "e96b482f4598eb9a62f2924f92b2a768c832ca2932ebf785f3d77c5004837595",
+      "bytes": 89438,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/assets-dbt-python-source-3-10-candidate-resume-20261029T154446Z.log",
+      "sha256": "57c431d71487103222809dcfbd536c8e5c20ec700c22b01255e5c5c28fd599b7",
+      "bytes": 94209,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/assets-modern-data-stack-pypi-3-12-candidate-resume-20261029T154446Z.log",
+      "sha256": "2b28481866bcd026add0cd17d9cda93deb3cc1bce9c38d276888af30f527d322",
+      "bytes": 86681,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/assets-modern-data-stack-source-3-12-candidate.log",
+      "sha256": "f9d97558a37217609fdc1201834ddcbbed832c0094598a2218e84c3be490688c",
+      "bytes": 98339,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/assets-smoke-test-3-12-candidate.log",
+      "sha256": "3b53a71a655527c704172f2bd34f911470cf6614fda15d4d993316836bd165e2",
+      "bytes": 165084,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/automation-3-12-candidate-resume-20261029T154446Z.log",
+      "sha256": "200a306e4401169ad81d8c43da19c4ad68603d4f8aa9991667e9245c35304333",
+      "bytes": 1160025,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/docstring-validation-3-12-candidate-resume-20261029T154446Z.log",
+      "sha256": "ecc413458c80269c0fafea6a637589fc8287c538d8c070a123625fbec380fde8",
+      "bytes": 6728,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/project-fully-featured-3-10-candidate.log",
+      "sha256": "e3f49bd4c356759cb1fa2306eb2ab1a5524c62a0e743d69c97b99f3c40195738",
+      "bytes": 517667,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/RESULTS.json",
+      "sha256": "3d333c50fa0487834b3905e5d2d9fcff9a014c5d0fd607c2a4c619c9d026e568",
+      "bytes": 17109,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/ruff-candidate.log",
+      "sha256": "3509b00439208a033454381570d06a1e3e243ce0056d088c3a923a9dbc629973",
+      "bytes": 83,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/assets-dbt-python-pypi-3-10-candidate-resume-20261029T154446Z-source-prepare.json",
+      "sha256": "f9d35dec76b2fb6e6fd360a9f0527b17e301d9d058bad672c312a2554daec901",
+      "bytes": 540,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/assets-dbt-python-pypi-3-10-candidate-resume-20261029T154446Z-source-verify.json",
+      "sha256": "55f2f5af705eb30adbc3aaf76867f1cc3ca73bfc2f2866bcdebfc6505aa49045",
+      "bytes": 538,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/assets-dbt-python-source-3-10-candidate-resume-20261029T154446Z-source-prepare.json",
+      "sha256": "83b72045f504fc769388d761a406edd3d6e20950f81cf8668477cf22ed7290ad",
+      "bytes": 542,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/assets-dbt-python-source-3-10-candidate-resume-20261029T154446Z-source-verify.json",
+      "sha256": "b3774d4165c8dc134c0350707b724f1b4643f183f2acb401ccc41cda98d4fe98",
+      "bytes": 540,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/assets-modern-data-stack-pypi-3-12-candidate-resume-20261029T154446Z-source-prepare.json",
+      "sha256": "ef54a00263931cc8e78b98345bb8661aae74610f8b68150aacc29b2199b12604",
+      "bytes": 547,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/assets-modern-data-stack-pypi-3-12-candidate-resume-20261029T154446Z-source-verify.json",
+      "sha256": "36f16b52b6a8258e3e5265fa1a16f85fcb5f54fd6ad7cadf569c607d7fcc00b8",
+      "bytes": 545,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/assets-modern-data-stack-source-3-12-candidate-source-prepare.json",
+      "sha256": "f50f491a0c19b65d6ffa80f2936ac569061be40dbe658b4afd2e9c242a567ae5",
+      "bytes": 525,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/assets-modern-data-stack-source-3-12-candidate-source-verify.json",
+      "sha256": "853aa75ec30406685f44ba2da6ef073e0429d58ee2ca9817eeb9535f0f305861",
+      "bytes": 523,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/assets-smoke-test-3-12-candidate-source-prepare.json",
+      "sha256": "7bd21e51b0ba1a55532f7eba1de23599c5ef13d6bec490aa3d8aff11a27e34a9",
+      "bytes": 511,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/assets-smoke-test-3-12-candidate-source-verify.json",
+      "sha256": "1dc371611d430a437364628b0c59be54a48f5ac70eb2fc424b62c0d5cb54bb0c",
+      "bytes": 509,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/automation-3-12-candidate-resume-20261029T154446Z-source-prepare.json",
+      "sha256": "754c7b5dffbbecba7ebb3e90cc6364f61cee156910051d431384318a7cc65cc1",
+      "bytes": 528,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/automation-3-12-candidate-resume-20261029T154446Z-source-verify.json",
+      "sha256": "d6f5d20a08454d8e68c18412ff3d82a588d9621101bf7e6644f668324cd13233",
+      "bytes": 526,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/docstring-validation-3-12-candidate-resume-20261029T154446Z-source-prepare.json",
+      "sha256": "cf5c8094495af5148399eba6798ad1022d23ba8aa8d7bd0f95e707221cb9a8fc",
+      "bytes": 538,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/docstring-validation-3-12-candidate-resume-20261029T154446Z-source-verify.json",
+      "sha256": "7c89951d5ba1dbfe0242588ab73c1fb65966d7477b60f2bcbd7648fa437de791",
+      "bytes": 536,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/project-fully-featured-3-10-candidate-source-prepare.json",
+      "sha256": "c48666adf64ce357b0c7f1b22cea8f039bcd710d64fbd2a098158a139b4d4786",
+      "bytes": 516,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/project-fully-featured-3-10-candidate-source-verify.json",
+      "sha256": "27a83ddfa2b78e20e732607de7b86276d6ff9da4eb89bc8ea3e15dc2910cd5b5",
+      "bytes": 514,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/ruff-candidate-source-prepare.json",
+      "sha256": "f6a079376f98126993b9488dcb722abf18e5eae8c549af25e67212bb137dfd2c",
+      "bytes": 493,
+      "mode": "100644"
+    },
+    {
+      "path": "downstream/source/ruff-candidate-source-verify.json",
+      "sha256": "25f38d5035e7af749cd7cdeda35b49fc74035efd73375df4a52df226c9ffe16f",
+      "bytes": 491,
+      "mode": "100644"
+    },
+    {
+      "path": "generate_artifacts.py",
+      "sha256": "492287144a927d62c0b8b245c20fb3895a5d691c6847bba9b70073fd3c72477c",
+      "bytes": 1413,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/baseline70.log",
+      "sha256": "6cb217db240e8ba76d4f6c544f022e9f704614fe6541e9e2713f6ba9c6b3b387",
+      "bytes": 19343,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt112-cli-isolated-collect.log",
+      "sha256": "ef5c3634078bc88902b346369f6a37b6a0eb8793e763659427a9bfb847c14037",
+      "bytes": 1441,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt112-cli-isolated-scope-derived.json",
+      "sha256": "fb44363e05e796266bbbc05bf2c9b1aac3e69f46ec70ca8b623293b7acf0ac74",
+      "bytes": 2206,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt112-cli-isolated.log",
+      "sha256": "b6592ca22cb0a3918da5a17538075391461d99a5f7a879965ca206b5efc43e22",
+      "bytes": 3989,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt112-cloud-collect.log",
+      "sha256": "6b564b41ff87a3a0351fc8c23fd99dcfaf75fe5ff7ec15759b7cab2175ffd4e0",
+      "bytes": 51668,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt112-cloud-native-exact.log",
+      "sha256": "9c79d0bb99af99e13c3c91d5150d8f9973e1ae5adaf12632f5c7ff1eab80468a",
+      "bytes": 916,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt112-cloud.log",
+      "sha256": "61f94d9c232e61195bccc98b59483da632b699a81ef5ff8fe24f18a70c3f22c6",
+      "bytes": 64915,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt112-core.log",
+      "sha256": "02331a645c447f5dc99e0f8cfcaef0adb998fd411ebfe7a6f112c8d9582c1bde",
+      "bytes": 20655,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt112-rest-isolated-collect.log",
+      "sha256": "6eb60b0eab55f180f0a8737133cbed6525c71bae584e9ead26c5fd395b8f88fb",
+      "bytes": 8750,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt112-rest-isolated-scope-derived.json",
+      "sha256": "473b3ee9e81e05491d72800a7434c529d030f7a92afc80afafa0470b96cb7b9a",
+      "bytes": 8558,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt112-rest-isolated.log",
+      "sha256": "0e5337632a2bfea1f0ff290bfa4a62f1c9fb3d61f5a42e2bcb190c26f9bdf8af",
+      "bytes": 12378,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt17-cloud-collect.log",
+      "sha256": "6714ac410f6f09b38c2ee6660270569f205f4dd9b26579b2a183b49c46489efb",
+      "bytes": 51666,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt17-cloud-native-exact.log",
+      "sha256": "69ff1bb33e84e2692cf9ac8ee80e8c6f9e1bf40d2efac6d7135e69116db72297",
+      "bytes": 910,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt17-cloud.log",
+      "sha256": "cbc170abd3e10ae3c12b6730dc0dcbc307b99734a9cbfc64e330804b96c21ad7",
+      "bytes": 64917,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt17-core-collect.log",
+      "sha256": "47b3ff6f8e034fb9596a7532404844e2a9f80f2499cd8d29a6bc6596ddc8c103",
+      "bytes": 9881,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt17-core.log",
+      "sha256": "ce0d2b0fd9d4744b873ff8fe30d6271777ae95dfdf56b5fa4f0ed3fda64695a3",
+      "bytes": 15764,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/dbt17-RESULT.json",
+      "sha256": "b2859df02391af40f42ef4baabab5c229f80098e325c45e6744d62126135a97f",
+      "bytes": 56848,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/native/dbt112-extra-aggregate-pytest-fields.json",
+      "sha256": "1382bc5b691c849b2ac07d8bf2fec0afc810296299dd8cdf984ac2b971ec3a85",
+      "bytes": 723,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/native/dbt112-extra-aggregate.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/native/dbt112-extra-aggregate.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/native/dbt17-core-pytest-fields.json",
+      "sha256": "5fa52672ba6d321bfb96e95eb2a0b81a55e5ae71c01704e5662d494b8f47fcd7",
+      "bytes": 3186,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/native/dbt17-core.stderr.log",
+      "sha256": "7814fe0f94d88343ca4c1f79b81556db4204a00f10f13a1c50e14aafccc56b22",
+      "bytes": 2404,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/native/dbt17-core.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/native/upstream-extra-baseline70-pytest-fields.json",
+      "sha256": "485c3cc487b665413d9f81619fff6046be45c933a28272c7494d595c2b476a60",
+      "bytes": 723,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/native/upstream-extra-baseline70.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/native/upstream-extra-baseline70.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/baseline70-source-after.json",
+      "sha256": "7348adcc7730e3fde4a7cf8bb64d8bebafe04141f9a2b8562e574005fd2c7e2c",
+      "bytes": 484,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/baseline70-source-before.json",
+      "sha256": "8cce430ad03ffdd99875038fb2f282505e93c15130786d757c7c5ddee724353e",
+      "bytes": 485,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/dbt112-cli-isolated-source-after.json",
+      "sha256": "29da0e37b54485cc2a147934ff2353585c475859bbec3d0b91f2e669adf4e0e7",
+      "bytes": 493,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/dbt112-cli-isolated-source-before.json",
+      "sha256": "0cde1fbd5fea7078dd8c52ff3ba6e5306265a73cc07e2f9949fce11c3e43a932",
+      "bytes": 13744,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/dbt112-cloud-source-after.json",
+      "sha256": "4995feea94d2a09a026d20c901bca24315c87ed86fabf1358014a52f44a4f219",
+      "bytes": 486,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/dbt112-cloud-source-before.json",
+      "sha256": "f11265098c2426d446de92c2cdee6b5a28d76d4b90b385ffa3cb86737f4d3faa",
+      "bytes": 9960,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/dbt112-core-source-after.json",
+      "sha256": "7840b41eca4ccb3975125811f21e341d4984eaf719b1eedca2d4b6ad9ddd7174",
+      "bytes": 485,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/dbt112-core-source-before.json",
+      "sha256": "52c4dbf971f601cf97c301e30c6a6d244656a8848398d554767b4fca403be015",
+      "bytes": 9472,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/dbt112-rest-isolated-source-after.json",
+      "sha256": "c239d860cab5dad2a7bffc50b6be832725cec3a4dd96103c4fdec693be414f9f",
+      "bytes": 494,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/dbt112-rest-isolated-source-before.json",
+      "sha256": "5da39896692ee10243c6bfc43dd796538d3fbe0e6e0c6d2b76ecfd8bbfb46855",
+      "bytes": 495,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/dbt17-cloud-source-after.json",
+      "sha256": "8997f9de14e5b0daf3997e26250eb728b4877dc965ab29a4fa96bb99e4737261",
+      "bytes": 485,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/dbt17-cloud-source-before.json",
+      "sha256": "00171082c79aabcdb5b5a17fff4cfbffbfba9e320ef497e9dcb9835e10a9b040",
+      "bytes": 14004,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/dbt17-core-source-after.json",
+      "sha256": "91848d685c1d760e91dbc311d145577ae93ec199dfd58b975fb1feee4d61d961",
+      "bytes": 484,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/core/source/dbt17-core-source-before.json",
+      "sha256": "02da9edb592e095c907783ef88556220494bde82b4813434cb0455cd8e9832e0",
+      "bytes": 485,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/CORE_DELIVERY.json",
+      "sha256": "fcb3e45f887b138db5397c9f5d61e3714c99d58d13bd80e4dc63add0ebbcc5a8",
+      "bytes": 243311,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/CANONICAL_DELTA.json",
+      "sha256": "9b03433bcc520d46b5aa3eb433c2c12e1375f828d24ecf9eef8077d678690931",
+      "bytes": 15380,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/DELIVERY.json",
+      "sha256": "c706c551fe0db98ef6a5d3127265906ce247fe9ce0204ffe4e3e54d93991f1c4",
+      "bytes": 23626,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/dg-source-overlay.log",
+      "sha256": "8a369db6629f6e5945a0614496c5d86090dfab85ee970b8a59f6344cb33f5858",
+      "bytes": 123,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/dg2-copy-CANONICAL_INTEGRATION-json.log",
+      "sha256": "b4945b7a521489ae13f9847949da934b3e216e55eeae770c275084cc9c8ad43b",
+      "bytes": 304,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/dg3-complete-related-files.log",
+      "sha256": "7f24f6898f2d7508c3c6db9267cb7f799e2c28ec5a60a281a5a254d6e444378f",
+      "bytes": 6636,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/dg3-runtime/runtime/dg-after-source.json",
+      "sha256": "f5af696fe79d13ac99059043b3cf94de9d834a329d691fa0dadfd117728cc2cd",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/dg3-runtime/runtime/dg-old-before-integration-source.json",
+      "sha256": "01e48ee9d1bc669b2bd43cc56df04415c3b6485adf3a59a7e77498117dbded12",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/dg3-runtime/runtime/dg-old-before-source.json",
+      "sha256": "2f7bc0d5e96b42c797e6f95fdaddd02ba094886cff2a49b29895febf0ce7f839",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/dg3-runtime/runtime/dg-related-files.xml",
+      "sha256": "886f6a97b39e87c77d67e57f3c41b28ad3a677dfbb25d5bba6b877bf3afea721",
+      "bytes": 3174,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/dg3-runtime/runtime/runtime-observer-integration-related-files.json",
+      "sha256": "3d7f11bfaf716312504b5d07795e3d50516305ec0d4c60729bc7d44058e681bd",
+      "bytes": 110993,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/dg3-source-version-and-fixtures.log",
+      "sha256": "d398a485f58caa8c5c80138294df528be0bca7d2d9860c1500e70c23703b7788",
+      "bytes": 526,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/dg3_observer.py",
+      "sha256": "e646597294c75232195c4528794a76830debf29b3ebb2d05bc1437f8676cca10",
+      "bytes": 3183,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/docs-ci-environment-after.log",
+      "sha256": "5fa5349f27f2b1ebbb21f3468b3e477df582d41559d12a10b3929dba432f0890",
+      "bytes": 10579,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/docs-ci-environment-before.log",
+      "sha256": "5fa5349f27f2b1ebbb21f3468b3e477df582d41559d12a10b3929dba432f0890",
+      "bytes": 10579,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/docs-ci-original-official-checker.log",
+      "sha256": "ecc413458c80269c0fafea6a637589fc8287c538d8c070a123625fbec380fde8",
+      "bytes": 6728,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/docs-ci-original-official-setup.log",
+      "sha256": "339374a32b52c00061006702f62b17a38b2dfc52c57be1f821eec0fa0722cb4b",
+      "bytes": 1371,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/docs-ci-runtime/runtime/docs-ci-after-source.json",
+      "sha256": "70f5e17b709fe437fed58cdbca311673f37c3979c3a6abe4c772a5d927109e0d",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/docs-ci-runtime/runtime/docs-ci-old-before-integration-source.json",
+      "sha256": "91671d47ac81d15b41f2389bd3c14ff4ab31203183eb8b6dd2fb70e2342517c6",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/docs-ci-runtime/runtime/docs-ci-old-before-source.json",
+      "sha256": "85511ac16164ae94a517653b5b7ffe172d0a824c54cd3b7aa2e663d330926e1f",
+      "bytes": 397,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/ENVIRONMENT_DIFF.json",
+      "sha256": "f0af51805eebf6248a5174ad452f5948c6ad568da052d04c0095145cc6687d9f",
+      "bytes": 3808,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/EXTRA_MASTER_DOCS_FAILURE.json",
+      "sha256": "90e04883e60ae14fe16970e41ca76ed15055739b345a196a54d05dfa999c3e6d",
+      "bytes": 2033,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/INPUTS.json",
+      "sha256": "cdc847f1c651ea43258fc11e1f3587871ecd980a2232f90fe9e79b68a1962f84",
+      "bytes": 3083,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/official-docstrings.log",
+      "sha256": "0ea085c17cbf8457bf3cefe19547bed2a2a408601aae06626ebb83dadeea6def",
+      "bytes": 2319,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/ty_observer.py",
+      "sha256": "a43dfff083f68fb70c77d57908103f184048c833b6bcc5ed3244650f5d9dc605",
+      "bytes": 2085,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/docs-after-source.json",
+      "sha256": "914cc65d70d5285c48b258ab9d587c82beee0519bb46f3ce8c820797a431c85f",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/ruff-after-source.json",
+      "sha256": "c6fcd322a300230efda5e923f6d3a2705877943b5f99fe447b5c0d28f551e864",
+      "bytes": 397,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/ruff.log",
+      "sha256": "3509b00439208a033454381570d06a1e3e243ce0056d088c3a923a9dbc629973",
+      "bytes": 83,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/ty-after-source.json",
+      "sha256": "1ad0a43cf36c5e14fd2b280960f310ecedac867293b9ae7b8b619683312a8201",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/ty-airflow.result.json",
+      "sha256": "adeea949598f833b71301f5402aca1e764edbfb58d287b30f7409872981e3bd3",
+      "bytes": 521,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/ty-airflow.stderr.log",
+      "sha256": "97cb24c32f49322e835f90a05a2f39f5cda204eafdd2d072df4d3e87e97f859d",
+      "bytes": 10205,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/ty-airflow.stdout.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/ty-master.result.json",
+      "sha256": "39d50e3e0dbe0761c9e985f1d9e5a91ee517ec565e5cf1eebbda495fff6ec22a",
+      "bytes": 520,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/ty-master.stderr.log",
+      "sha256": "83665119db5edaa4d619ad75bc8627e6bfc9453abbfc15bc61618886c9554c33",
+      "bytes": 45295,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/ty-master.stdout.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/ty-old-before-integration-source.json",
+      "sha256": "1ab08a7eddaa6302d3b46b61bdcb71329a4eab8dd250e570b5029b91d1e1d510",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/ty-old-before-source.json",
+      "sha256": "f96f5caf29c22eb58ae69ba43bd5a66aa7bcf890a7c5f9142b113bc9d40725c0",
+      "bytes": 398,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/whole-ty.exitcode",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/quality/wholety-runtime/whole-ty.log",
+      "sha256": "1804b5647aa0f7c8fe8cbbacee1ac293dadfd9b12b0d64c9dad4309e613a8f41",
+      "bytes": 941,
+      "mode": "100644"
+    },
+    {
+      "path": "integration/SOURCE_AND_SCOPE.json",
+      "sha256": "3d94468367ba0aecdd8daa62363e8909b82a35da81205248a9bbda4a64abec30",
+      "bytes": 1298,
+      "mode": "100644"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "e25b0c5be442bdf543e3f179ef0ae6a5edef5f5c70524fce00a2a657f5d3ed9d",
+      "bytes": 11348,
+      "mode": "100644"
+    },
+    {
+      "path": "original-source-commits.patch",
+      "sha256": "2b49f823568f1d4893892fe55644ebec3570e03c19dbaa47fd395adb83bf9a24",
+      "bytes": 4521,
+      "mode": "100644"
+    },
+    {
+      "path": "packages/dagster_dbt-1!0+dev.tar.gz",
+      "sha256": "8257516f61cda51bff3fe2e57b402cda594ad01d92e0e6a9ea6296396be4fa7b",
+      "bytes": 955251,
+      "mode": "100644"
+    },
+    {
+      "path": "packages/FINAL_SDIST_BINDING.json",
+      "sha256": "b3a6c8102730ee039cf34f213a398880876e8824bc5bcc90653fc29bc3b880b7",
+      "bytes": 379319,
+      "mode": "100644"
+    },
+    {
+      "path": "packages/WHEEL_BINDING.json",
+      "sha256": "ca380addac6b43e82a39e2bd9d47f08da8e3ae2b6aa1180e5b10074a6431657d",
+      "bytes": 14767,
+      "mode": "100644"
+    },
+    {
+      "path": "PROVENANCE.json",
+      "sha256": "35dda9689a50fa6c761c079d1bb69d4ff8f29008101812e97f38c55521ab0963",
+      "bytes": 343514,
+      "mode": "100644"
+    },
+    {
+      "path": "quality/official-ty-all.exitcode",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "mode": "100644"
+    },
+    {
+      "path": "quality/official-ty-all.log",
+      "sha256": "3a4a68ffa7b057adb29090c381ff06580ced4cddc81f34e70d0276356584f15a",
+      "bytes": 60055,
+      "mode": "100644"
+    },
+    {
+      "path": "quality/ty-airflow.stderr.log",
+      "sha256": "c4da2afe0badd9f57b7ee2e007f3206428a173d592c0596e182da7367ab98b24",
+      "bytes": 10805,
+      "mode": "100644"
+    },
+    {
+      "path": "quality/ty-airflow.stdout.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "mode": "100644"
+    },
+    {
+      "path": "quality/ty-master.stderr.log",
+      "sha256": "1dc4396308c30722087ac81f2cbc7a6ce602322847876a0122f25af66e1baf1e",
+      "bytes": 51518,
+      "mode": "100644"
+    },
+    {
+      "path": "quality/ty-master.stdout.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2,
+      "mode": "100644"
+    },
+    {
+      "path": "quality/ty-observer.py",
+      "sha256": "4442e02d094101b61637e7746418dfac9a90910433434fb880ba7109d6132a8a",
+      "bytes": 2038,
+      "mode": "100644"
+    },
+    {
+      "path": "quality/WHOLE_TY.json",
+      "sha256": "a808ebba396c062e0dac3903ee28cca376cab1f1bbd8a1cbd70b4d6bbde6870c",
+      "bytes": 4546,
+      "mode": "100644"
+    },
+    {
+      "path": "READINESS.json",
+      "sha256": "48162c1944a87eb31e155483011b2f0c1abac1d567ad8a08b1662f7c65c0a79c",
+      "bytes": 1190,
+      "mode": "100644"
+    },
+    {
+      "path": "README.md",
+      "sha256": "950bb977a260bcf7ed58ebda45f9dc5d3ebe4beae64951bf73394328a05c1d35",
+      "bytes": 8015,
+      "mode": "100644"
+    },
+    {
+      "path": "reproduce_http.py",
+      "sha256": "e8e8ff4bb6366ff78189c5b6dbdc1b8462550ea799d0fa12bb35fe0028624de6",
+      "bytes": 5924,
+      "mode": "100644"
+    },
+    {
+      "path": "reproduce_real_artifacts.py",
+      "sha256": "c938053534175da277ffebbe53a6486a4e06851cdd3ad6dd75ec5e1ec6dff24e",
+      "bytes": 6512,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/BOUNDARY.json",
+      "sha256": "fb3eb92f85b5f940ebe2e63f05c98b7d76613bed95e93cf28499ec359e3bf2a3",
+      "bytes": 650,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/installed-wheel-http.json",
+      "sha256": "ac2cc1bbd938104d113e418c1eb6152ca604c587282af9746dcb6dc3cabddca3",
+      "bytes": 35178,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/portable-compare-http.log",
+      "sha256": "2718c53ee520b1b402050d89be436b8a15548d1561305b9192b81e4df1c9b41e",
+      "bytes": 263606,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/portable-environment.log",
+      "sha256": "4fd76787ae4afae2280adc377d456ead49c0106fc5509426fd7a3119ff31ba55",
+      "bytes": 307,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/portable-generate-artifacts.log",
+      "sha256": "c2ccede0746ed5487e796897c10e63118c705b22beeaa1bdf8c386b402126cef",
+      "bytes": 1139,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/portable-real-artifacts-http.log",
+      "sha256": "8c3391ed36eb7a350ff265230c9e6566abf76a68d83d70f58d3fccd052d6a644",
+      "bytes": 3403,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/portable-RUNS.json",
+      "sha256": "1c44c45e5048af5b802236b0bb659314817f7391b7b3bf00577315c05eb7189e",
+      "bytes": 1899,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/real-artifacts/candidate-http.json",
+      "sha256": "c2bcc787777f140d375505f4570e6fe2321f1e23e8cdea524e589f69690f00aa",
+      "bytes": 4880,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/real-artifacts/real-dbt17-build-artifacts/manifest.json",
+      "sha256": "20e668aa5495c7b5e7e4dcd482d933f04970da2f1b62eba3788427b78756d7ef",
+      "bytes": 379586,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/real-artifacts/real-dbt17-build-artifacts/run_results.json",
+      "sha256": "45c775c20c288eb0da01d0e1b21483ecd263bc3a6f12c1468510897e940dd38a",
+      "bytes": 2115,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/real-artifacts/real-dbt17-docs-default-artifacts/manifest.json",
+      "sha256": "a5f9ed1fb30c70fdd6630d8be54316834040fdec8391e34f4ae316014a717401",
+      "bytes": 379537,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/real-artifacts/real-dbt17-docs-default-artifacts/run_results.json",
+      "sha256": "8ea68ed8580d113b91b2355d01a12f8b6c624cf171ed90773d2c322d73079663",
+      "bytes": 2104,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/real-artifacts/real-dbt17-project/dbt_project.yml",
+      "sha256": "52fae240b6745525c69b61fdfebc98f620ae6ebc818da3c444c086fc849409a8",
+      "bytes": 115,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/real-artifacts/real-dbt17-project/logs/dbt.log",
+      "sha256": "5af7a39485c80e8d309154201d914a228f76186fcec1fa92dc6feabb00afed11",
+      "bytes": 18964,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/real-artifacts/real-dbt17-project/models/proof.sql",
+      "sha256": "1d1ca2e53d60e2309ce0738d4d92307ec91a6506339c0fea5dd3ef5ce3a3853d",
+      "bytes": 19,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/real-artifacts/real-dbt17-project/profiles.yml",
+      "sha256": "f21c46dde0fd5b61281814a371cc7e756e66132b7e4c7e8bd71e959b5324bb95",
+      "bytes": 123,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/real-artifacts/real-dbt17-project/target/catalog.json",
+      "sha256": "6971e88cea2398163738c01a83a15d59ed6a9b6e890b082576b7c76030957e7c",
+      "bytes": 734,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/sample_manifest.json",
+      "sha256": "6e0dfc32b512a19560901c13a5e5f807686e65b5b500b805a2770a43491d6c6a",
+      "bytes": 361571,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/sample_run_results.json",
+      "sha256": "b976d1edc6723bad8104f929649f3776d85b9e437019e4f3ccbd6924b2c48b24",
+      "bytes": 3046,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/source-baseline-http.json",
+      "sha256": "109d301cc4eaab36b2bedf5ccd5d9d222c9ed4d5920b78c4632f3fb4f3012d16",
+      "bytes": 29338,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/source-candidate-http.json",
+      "sha256": "4570a4400db308dfef560d102924442607fb055e8b8622e76f2f2c4bf4bfc3de",
+      "bytes": 35122,
+      "mode": "100644"
+    },
+    {
+      "path": "runtime/source-source34318-http.json",
+      "sha256": "1ed0b4f03d162d7276dfd5a24ebeebcbc54f1ae19792ccff5a83844980c2b64f",
+      "bytes": 33132,
+      "mode": "100644"
+    },
+    {
+      "path": "sample_manifest.json",
+      "sha256": "6e0dfc32b512a19560901c13a5e5f807686e65b5b500b805a2770a43491d6c6a",
+      "bytes": 361571,
+      "mode": "100644"
+    },
+    {
+      "path": "sample_run_results.json",
+      "sha256": "b976d1edc6723bad8104f929649f3776d85b9e437019e4f3ccbd6924b2c48b24",
+      "bytes": 3046,
+      "mode": "100644"
+    },
+    {
+      "path": "SOURCE_BINDING.json",
+      "sha256": "78f104d12a956e6358ac15f3d956ccb67fee06f539c075658462ad45a909469e",
+      "bytes": 3017,
+      "mode": "100644"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "sha256": "19cbe70ddb1ea5f37f8f8ae7d7ca8e189018ba41b21c3c417af94394252ec15a",
+      "bytes": 2283,
+      "mode": "100644"
+    }
+  ],
+  "scan": {
+    "findings": [],
+    "literalPrivatePrefixesNormalized": true,
+    "archivePayloadsScanned": true,
+    "manualContentReviewStillRequiredByRoot": true
+  }
+}

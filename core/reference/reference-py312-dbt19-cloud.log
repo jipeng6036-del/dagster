@@ -1,0 +1,404 @@
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_null_job[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_null_job[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_cached_compile_run[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_cached_compile_run[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[dbt_cloud_resource-empty commands]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[dbt_cloud_resource-no run/build step]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[dbt_cloud_resource-multiple commands, no run/build step]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[dbt_cloud_resource-has static variables]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[DbtCloudClientResource-empty commands]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[DbtCloudClientResource-no run/build step]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[DbtCloudClientResource-multiple commands, no run/build step]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[DbtCloudClientResource-has static variables]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_empty_assets_dbt_cloud_job[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_empty_assets_dbt_cloud_job[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_custom_groups[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_custom_groups[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_node_info_to_asset_key[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_node_info_to_asset_key[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_custom_auto_materialize_policy[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_custom_auto_materialize_policy[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_partitions[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_partitions[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*--without non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*--without non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*--without non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*--with non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*--with non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*--with non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-sort_by_calories+--without non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-sort_by_calories+--without non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-sort_by_calories+--without non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-sort_by_calories+--with non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-sort_by_calories+--with non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-sort_by_calories+--with non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*--without non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*--without non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*--without non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*--with non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*--with non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*--with non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-sort_by_calories+--without non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-sort_by_calories+--without non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-sort_by_calories+--without non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-sort_by_calories+--with non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-sort_by_calories+--with non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-sort_by_calories+--with non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-no selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with selector]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with --select args]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_from_dbt_cloud_with_env_var[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_from_dbt_cloud_with_env_var[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_dbt_cloud_metadata_ids[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_dbt_cloud_metadata_ids[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-null-True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-null-False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-present-True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-present-False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-empty-True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-empty-False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-False-null-True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-False-null-False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-False-present-True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-False-present-False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-False-empty-True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-False-empty-False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-True-null-True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-True-null-False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-True-present-True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-True-present-False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-True-empty-True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-True-empty-False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-False-null-True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-False-null-False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-False-present-True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-False-present-False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-False-empty-True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-False-empty-False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_cli.py::test_cache_compile_references[https://cloud.getdbt.com/-https://cloud.getdbt.com/api/v2/accounts/30000-https://cloud.getdbt.com/api/v3/accounts/30000]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_cli.py::test_cache_compile_references[https://emea.dbt.com/-https://emea.dbt.com/api/v2/accounts/30000-https://emea.dbt.com/api/v3/accounts/30000]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_cli.py::test_skip_cache_compile_references
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_ops.py::test_run_materializations[dbt_cloud_resource-statuses0-0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_ops.py::test_run_materializations[dbt_cloud_resource-statuses1-1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_ops.py::test_run_materializations[dbt_cloud_resource-statuses2-1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_ops.py::test_run_materializations[dbt_cloud_resource-statuses3-2]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_ops.py::test_run_materializations[dbt_cloud_resource-statuses4-3]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_ops.py::test_run_materializations[DbtCloudClientResource-statuses0-0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_ops.py::test_run_materializations[DbtCloudClientResource-statuses1-1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_ops.py::test_run_materializations[DbtCloudClientResource-statuses2-1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_ops.py::test_run_materializations[DbtCloudClientResource-statuses3-2]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_ops.py::test_run_materializations[DbtCloudClientResource-statuses4-3]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_list_jobs[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_list_jobs[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_job[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_job[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_runs[dbt_cloud_resource-345-include_related0-?include_related=%5B%27environment%27%5D&order_by=-id&offset=0&limit=100&job_definition_id=345]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_runs[dbt_cloud_resource-None-include_related1-?include_related=%5B%27environment%27%2C+%27repository%27%5D&order_by=-id&offset=0&limit=100]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_runs[dbt_cloud_resource-None-None-?include_related=%5B%5D&order_by=-id&offset=0&limit=100]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_runs[DbtCloudClientResource-345-include_related0-?include_related=%5B%27environment%27%5D&order_by=-id&offset=0&limit=100&job_definition_id=345]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_runs[DbtCloudClientResource-None-include_related1-?include_related=%5B%27environment%27%2C+%27repository%27%5D&order_by=-id&offset=0&limit=100]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_runs[DbtCloudClientResource-None-None-?include_related=%5B%5D&order_by=-id&offset=0&limit=100]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_run[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_run[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_list_run_artifacts[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_list_run_artifacts[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_run_results[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_run_results[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_request_flake[dbt_cloud_resource-0-0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_request_flake[dbt_cloud_resource-1-2]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_request_flake[dbt_cloud_resource-5-7]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_request_flake[dbt_cloud_resource-7-5]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_request_flake[dbt_cloud_resource-4-4]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_request_flake[DbtCloudClientResource-0-0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_request_flake[DbtCloudClientResource-1-2]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_request_flake[DbtCloudClientResource-5-7]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_request_flake[DbtCloudClientResource-7-5]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_request_flake[DbtCloudClientResource-4-4]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_no_disable_schedule[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_no_disable_schedule[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_run_job_and_poll[dbt_cloud_resource-Success-0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_run_job_and_poll[dbt_cloud_resource-Error-1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_run_job_and_poll[dbt_cloud_resource-Cancelled-1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_run_job_and_poll[dbt_cloud_resource-Running-2]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_run_job_and_poll[dbt_cloud_resource-FooBarBaz-3]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_run_job_and_poll[DbtCloudClientResource-Success-0]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_run_job_and_poll[DbtCloudClientResource-Error-1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_run_job_and_poll[DbtCloudClientResource-Cancelled-1]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_run_job_and_poll[DbtCloudClientResource-Running-2]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_run_job_and_poll[DbtCloudClientResource-FooBarBaz-3]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_no_run_results_job[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_no_run_results_job[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_environment_variables[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_get_environment_variables[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_set_environment_variable[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_resources.py::test_set_environment_variable[DbtCloudClientResource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_types.py::test_timestamps
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_types.py::test_included_related
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_utils.py::test_non_error_statuses_materialize[success]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_utils.py::test_non_error_statuses_materialize[no-op]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_utils.py::test_non_error_statuses_materialize[reused]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_utils.py::test_non_error_statuses_materialize[warn]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_utils.py::test_error_statuses_do_not_materialize[error]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_utils.py::test_error_statuses_do_not_materialize[fail]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_utils.py::test_error_statuses_do_not_materialize[skipped]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_utils.py::test_error_statuses_do_not_materialize[runtime error]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_utils.py::test_error_statuses_do_not_materialize[partial success]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_asset_defs
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_asset_defs_with_custom_metadata
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_translator_invariant_group_name_with_asset_decorator
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--select fqn:*-dbt_cloud_cli_selection_with_op_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--select fqn:*-dbt_cloud_cli_selection_with_asset_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--select raw_customers stg_customers-dbt_cloud_cli_selection_with_op_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--select raw_customers stg_customers-dbt_cloud_cli_selection_with_asset_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--select raw_customers+-dbt_cloud_cli_selection_with_op_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--select raw_customers+-dbt_cloud_cli_selection_with_asset_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--select resource_type:model-dbt_cloud_cli_selection_with_op_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--select resource_type:model-dbt_cloud_cli_selection_with_asset_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--select raw_customers+,resource_type:model-dbt_cloud_cli_selection_with_op_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--select raw_customers+,resource_type:model-dbt_cloud_cli_selection_with_asset_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--exclude orders-dbt_cloud_cli_selection_with_op_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--exclude orders-dbt_cloud_cli_selection_with_asset_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--exclude raw_customers+-dbt_cloud_cli_selection_with_op_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--exclude raw_customers+-dbt_cloud_cli_selection_with_asset_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--exclude raw_customers stg_customers-dbt_cloud_cli_selection_with_op_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--exclude raw_customers stg_customers-dbt_cloud_cli_selection_with_asset_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--exclude resource_type:model-dbt_cloud_cli_selection_with_op_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--exclude resource_type:model-dbt_cloud_cli_selection_with_asset_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--exclude tag:does-not-exist-dbt_cloud_cli_selection_with_op_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--exclude tag:does-not-exist-dbt_cloud_cli_selection_with_asset_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--selector raw_customer_child_models-dbt_cloud_cli_selection_with_op_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_selections[--selector raw_customer_child_models-dbt_cloud_cli_selection_with_asset_execution_context]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_asset_checks_excluded_by_tag_unit_test
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_asset_decorator.py::test_dbt_cloud_asset_selection_selector_invalid
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_client.py::test_api_v2_url_strips_trailing_slash
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_client.py::test_destroy_job
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_client.py::test_request_error_logs_response_body
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_component.py::test_dbt_cloud_component_state_cycle
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_component.py::test_dbt_cloud_component_execution
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_component.py::test_dbt_cloud_component_from_yaml
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_component.py::test_dbt_cloud_component_from_yaml_with_env_vars
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_component.py::test_dbt_cloud_component_create_sensor
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_component.py::test_dbt_cloud_component_sensor_included_by_default
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_component.py::test_dbt_cloud_component_from_yaml_with_sensor
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_component.py::test_dbt_cloud_component_translation_none_by_default
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_component.py::test_dbt_cloud_component_translation_group_name_yaml
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_component.py::test_dbt_cloud_component_translation_applies_to_asset_specs
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_component.py::test_dbt_cloud_component_subclass_get_asset_spec
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_partitions.py::test_dbt_cloud_assets_accepts_partitions_def
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_partitions.py::test_dbt_cloud_assets_accepts_backfill_policy
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_partitions.py::test_dbt_cloud_assets_default_backfill_policy_for_time_window
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_partitions.py::test_dbt_cloud_assets_no_default_backfill_for_static_partitions
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_partitions.py::test_dbt_cloud_assets_without_partitions_unchanged
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_partitions.py::test_materialization_events_include_partition_key
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_partitions.py::test_events_without_partition_key_unchanged
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_partitions.py::test_cli_args_flow_to_steps_override
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_partitions.py::test_cli_args_with_select_and_vars
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_partitions.py::test_daily_partitioned_dbt_cloud_assets_e2e
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_partitions.py::test_static_partitioned_dbt_cloud_assets_e2e
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_partitions.py::test_weekly_partitioned_dbt_cloud_assets_e2e
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_basic_resource_request
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_get_or_create_dagster_adhoc_jobs
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_custom_adhoc_job_name
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_cli_invocation
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_cli_invocation_in_asset_decorator
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_cli_invocation_with_custom_indirect_selection
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_cli_invocation_wait_timeout
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_poll_run[poll_short_success]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_poll_run[poll_short_error]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_poll_run[poll_short_cancelled]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_poll_run[poll_medium_success]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_poll_run[poll_medium_error]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_poll_run[poll_medium_cancelled]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_poll_run[poll_long_success]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_get_or_create_dagster_adhoc_jobs_pool_creates_all
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_get_or_create_dagster_adhoc_jobs_pool_reuses_existing
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_get_or_create_dagster_adhoc_jobs_pool_custom_prefix
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_pick_available_adhoc_job_id_single_no_api_call
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_pick_available_adhoc_job_id_picks_first_free
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_pick_available_adhoc_job_id_overflow_returns_pool_member
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_pick_available_adhoc_job_id_fail_raises
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_get_active_job_ids
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_get_active_job_ids_empty_input
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_resources.py::test_poll_run_cancels_on_dagster_interrupt
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_run_events.py::test_default_asset_events_from_run_results
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_run_events.py::test_default_asset_events_from_run_results_missing_failures_key
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_run_events.py::test_default_asset_events_from_run_results_seed_missing_materialized_config
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_run_events.py::test_default_asset_events_from_run_results_noop_status
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_run_logs.py::test_get_run_logs_extracts_from_run_steps
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_run_logs.py::test_get_run_logs_handles_empty_logs
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_run_logs.py::test_run_handler_get_run_logs
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_run_logs.py::test_cli_invocation_prints_logs_to_stdout
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_sensor.py::test_sensor_name
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_sensor.py::test_asset_materializations
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_sensor.py::test_runs_triggered_by_dagster
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_sensor.py::test_runs_triggered_by_stale_dagster_job
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_sensor.py::test_no_runs
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_sensor.py::test_cursor
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_specs.py::test_fetch_dbt_cloud_workspace_data
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_specs.py::test_load_asset_specs
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_specs.py::test_load_asset_specs_preserve_translator_attributes
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_specs.py::test_load_asset_specs_select
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_specs.py::test_load_asset_specs_exclude
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_specs.py::test_load_asset_specs_selector
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_specs.py::test_load_check_specs
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_specs.py::test_load_check_specs_select
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_specs.py::test_load_check_specs_exclude
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_specs.py::test_load_check_specs_selector
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud_v2/test_reconstruction.py::test_cacheable_dbt_cloud_workspace_data
+
+=============================== warnings summary ===============================
+dagster_dbt_tests/core/test_asset_decorator.py:513
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_decorator.py:513: BetaWarning: Class `MultiPartitionMapping` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    MultiPartitionMapping(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+396/807 tests collected (411 deselected) in 2.60s

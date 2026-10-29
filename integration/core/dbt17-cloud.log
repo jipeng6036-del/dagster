@@ -1,0 +1,387 @@
+py312-dbt17-core-main: commands[0]> python -m pytest --ignore=./kitchen-sink --durations 10 --reruns 3 -m cloud -vv dagster_dbt_tests/cloud/test_asset_defs.py
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- <ENV_ROOT>/.tox/py312-dbt17-core-main/bin/python
+cachedir: <ENV_ROOT>/.tox/py312-dbt17-core-main/.pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: syrupy-5.1.0, xdist-3.6.1, timeout-2.4.0, split-0.11.0, mock-3.14.0, cov-5.0.0, asyncio-1.3.0, anyio-4.14.2, rerunfailures-16.1, order-1.4.0
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+collecting ... collected 226 items
+
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [  0%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [  0%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [  1%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [  1%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [  2%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [  2%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [  3%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [  3%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [  3%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [  4%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [  4%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [  5%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [  5%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [  6%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [  6%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [  7%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [  7%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [  7%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [  8%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [  8%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [  9%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [  9%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 10%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 10%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 11%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 11%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 11%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 12%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 12%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 13%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 13%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 14%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 14%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 15%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 15%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 15%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 16%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 16%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 17%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d *x---select a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 17%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 18%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 18%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 19%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 19%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 19%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 20%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 20%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---exclude e:f g:h---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 21%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 21%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 22%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 22%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 23%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 23%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 23%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 24%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource---selector x:y---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 24%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 25%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 25%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 26%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 26%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 26%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 27%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 27%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y---select a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 28%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_null_job[dbt_cloud_resource] PASSED [ 28%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_null_job[DbtCloudClientResource] PASSED [ 29%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 29%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 30%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 30%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 30%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 31%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 31%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 32%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 32%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 33%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 33%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 34%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 34%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 34%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 35%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 35%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 36%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 36%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 37%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 37%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 38%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 38%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 38%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 39%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 39%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 40%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 40%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 41%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 41%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 42%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 42%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 42%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 43%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 43%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 44%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 44%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 45%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 45%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 46%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 46%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 46%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 47%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 47%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 48%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 48%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 49%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 49%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 50%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 50%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 50%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 51%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 51%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 52%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 52%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 53%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 53%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 53%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0] PASSED [ 54%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1] PASSED [ 54%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0] PASSED [ 55%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1] PASSED [ 55%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command0] PASSED [ 56%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt run-before_dbt_materialization_command1] PASSED [ 56%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0] PASSED [ 57%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1] PASSED [ 57%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_cached_compile_run[dbt_cloud_resource] PASSED [ 57%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_cached_compile_run[DbtCloudClientResource] PASSED [ 58%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[dbt_cloud_resource-empty commands] PASSED [ 58%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[dbt_cloud_resource-no run/build step] PASSED [ 59%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[dbt_cloud_resource-multiple commands, no run/build step] PASSED [ 59%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[dbt_cloud_resource-has static variables] PASSED [ 60%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[DbtCloudClientResource-empty commands] PASSED [ 60%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[DbtCloudClientResource-no run/build step] PASSED [ 61%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[DbtCloudClientResource-multiple commands, no run/build step] PASSED [ 61%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[DbtCloudClientResource-has static variables] PASSED [ 61%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_empty_assets_dbt_cloud_job[dbt_cloud_resource] PASSED [ 62%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_empty_assets_dbt_cloud_job[DbtCloudClientResource] PASSED [ 62%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_custom_groups[dbt_cloud_resource] PASSED [ 63%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_custom_groups[DbtCloudClientResource] PASSED [ 63%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_node_info_to_asset_key[dbt_cloud_resource] PASSED [ 64%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_node_info_to_asset_key[DbtCloudClientResource] PASSED [ 64%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_custom_auto_materialize_policy[dbt_cloud_resource] PASSED [ 65%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_custom_auto_materialize_policy[DbtCloudClientResource] PASSED [ 65%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_partitions[dbt_cloud_resource] PASSED [ 65%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_partitions[DbtCloudClientResource] PASSED [ 66%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*--without non-selection commands-no selector] PASSED [ 66%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*--without non-selection commands-with selector] PASSED [ 67%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*--without non-selection commands-with --select args] PASSED [ 67%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*--with non-selection commands-no selector] PASSED [ 68%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*--with non-selection commands-with selector] PASSED [ 68%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*--with non-selection commands-with --select args] PASSED [ 69%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-sort_by_calories+--without non-selection commands-no selector] PASSED [ 69%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-sort_by_calories+--without non-selection commands-with selector] PASSED [ 69%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-sort_by_calories+--without non-selection commands-with --select args] PASSED [ 70%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-sort_by_calories+--with non-selection commands-no selector] PASSED [ 70%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-sort_by_calories+--with non-selection commands-with selector] PASSED [ 71%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-sort_by_calories+--with non-selection commands-with --select args] PASSED [ 71%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-no selector] PASSED [ 72%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with selector] PASSED [ 72%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with --select args] PASSED [ 73%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-no selector] PASSED [ 73%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with selector] PASSED [ 73%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with --select args] PASSED [ 74%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-no selector] PASSED [ 74%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with selector] PASSED [ 75%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with --select args] PASSED [ 75%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-no selector] PASSED [ 76%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with selector] PASSED [ 76%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[dbt_cloud_resource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with --select args] PASSED [ 76%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*--without non-selection commands-no selector] PASSED [ 77%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*--without non-selection commands-with selector] PASSED [ 77%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*--without non-selection commands-with --select args] PASSED [ 78%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*--with non-selection commands-no selector] PASSED [ 78%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*--with non-selection commands-with selector] PASSED [ 79%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*--with non-selection commands-with --select args] PASSED [ 79%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-sort_by_calories+--without non-selection commands-no selector] PASSED [ 80%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-sort_by_calories+--without non-selection commands-with selector] PASSED [ 80%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-sort_by_calories+--without non-selection commands-with --select args] PASSED [ 80%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-sort_by_calories+--with non-selection commands-no selector] PASSED [ 81%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-sort_by_calories+--with non-selection commands-with selector] PASSED [ 81%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-sort_by_calories+--with non-selection commands-with --select args] PASSED [ 82%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-no selector] PASSED [ 82%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with selector] PASSED [ 83%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with --select args] PASSED [ 83%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-no selector] PASSED [ 84%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with selector] PASSED [ 84%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-*hanger2-dagster_dbt_test_project.sort_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with --select args] PASSED [ 84%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-no selector] PASSED [ 85%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with selector] PASSED [ 85%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-without non-selection commands-with --select args] PASSED [ 86%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-no selector] PASSED [ 86%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with selector] PASSED [ 87%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_subsetting[DbtCloudClientResource-asset_selection3-dagster_dbt_test_project.sort_cold_cereals_by_calories,dagster_dbt_test_project.subdir.least_caloric-with non-selection commands-with --select args] PASSED [ 87%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_from_dbt_cloud_with_env_var[dbt_cloud_resource] PASSED [ 88%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_from_dbt_cloud_with_env_var[DbtCloudClientResource] PASSED [ 88%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_dbt_cloud_metadata_ids[dbt_cloud_resource] PASSED [ 88%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_dbt_cloud_metadata_ids[DbtCloudClientResource] PASSED [ 89%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-null-True] PASSED [ 89%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-null-False] PASSED [ 90%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-present-True] PASSED [ 90%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-present-False] PASSED [ 91%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-empty-True] PASSED [ 91%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-empty-False] PASSED [ 92%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-False-null-True] PASSED [ 92%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-False-null-False] PASSED [ 92%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-False-present-True] PASSED [ 93%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-False-present-False] PASSED [ 93%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-False-empty-True] PASSED [ 94%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-False-empty-False] PASSED [ 94%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-True-null-True] PASSED [ 95%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-True-null-False] PASSED [ 95%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-True-present-True] PASSED [ 96%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-True-present-False] PASSED [ 96%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-True-empty-True] PASSED [ 96%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-True-empty-False] PASSED [ 97%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-False-null-True] PASSED [ 97%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-False-null-False] PASSED [ 98%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-False-present-True] PASSED [ 98%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-False-present-False] PASSED [ 99%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-False-empty-True] PASSED [ 99%]
+dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[DbtCloudClientResource-False-empty-False] PASSED [100%]
+
+=============================== warnings summary ===============================
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 113 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/conftest.py:42: BetaWarning: Dagster resource `dbt_cloud_resource` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    return lambda **kwargs: dbt_cloud_resource(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 221 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/cloud/resources.py:696: BetaWarning: Class `DbtCloudResource` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    return DbtCloudResource(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 64 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:150: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 118 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/cloud/asset_defs.py:72: BetaWarning: Dagster resource `dbt_cloud_resource` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    else dbt_cloud_resource_def(build_init_resource_context())
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 356 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/cloud/resources.py:536: BetaWarning: Class `DbtCloudOutput` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    output = DbtCloudOutput(run_details=final_run_details, result=run_results)
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 102 warnings
+  <SOURCE>/python_modules/dagster/dagster/_core/execution/resources_init.py:180: BetaWarning: Dagster resource `dbt_cloud_resource` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    yield from manager.generate_setup_events()
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 112 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/conftest.py:18: BetaWarning: Class `DbtCloudClientResource` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    yield DbtCloudClientResource(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 113 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/conftest.py:34: BetaWarning: Class `DbtCloudClientResource` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    DbtCloudClientResource(  # ty: ignore[unresolved-attribute]
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 222 warnings
+  <SOURCE>/python_modules/dagster/dagster/_config/pythonic_config/resource.py:341: BetaWarning: Class `DbtCloudClientResource` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    out = self.__class__(**to_populate)
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 120 warnings
+  <SOURCE>/python_modules/dagster/dagster/_config/pythonic_config/resource.py:564: BetaWarning: Class `DbtCloudClientResource` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    return cls(  # noqa: SLF001
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_null_job[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_null_job[DbtCloudClientResource]
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:232: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 64 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:316: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_cached_compile_run[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_cached_compile_run[DbtCloudClientResource]
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:409: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[dbt_cloud_resource-empty commands]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[dbt_cloud_resource-no run/build step]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[dbt_cloud_resource-multiple commands, no run/build step]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[dbt_cloud_resource-has static variables]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[DbtCloudClientResource-empty commands]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[DbtCloudClientResource-no run/build step]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[DbtCloudClientResource-multiple commands, no run/build step]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_invalid_dbt_cloud_job_commands[DbtCloudClientResource-has static variables]
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:434: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_empty_assets_dbt_cloud_job[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_empty_assets_dbt_cloud_job[DbtCloudClientResource]
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:451: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_custom_groups[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_custom_groups[DbtCloudClientResource]
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:472: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_node_info_to_asset_key[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_node_info_to_asset_key[DbtCloudClientResource]
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:497: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_custom_auto_materialize_policy[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_custom_auto_materialize_policy[DbtCloudClientResource]
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:522: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_partitions[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_partitions[DbtCloudClientResource]
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:545: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_partitions[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_partitions[DbtCloudClientResource]
+  <SOURCE>/python_modules/dagster/dagster/_core/decorator_utils.py:232: BetaWarning: Parameter `partitions_def` of function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    return fn(*args, **kwargs)
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_partitions[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_partitions[DbtCloudClientResource]
+  <SOURCE>/python_modules/dagster/dagster/_core/decorator_utils.py:232: BetaWarning: Parameter `partition_key_to_vars_fn` of function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    return fn(*args, **kwargs)
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 48 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:651: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 12 warnings
+  <SOURCE>/python_modules/dagster/dagster/_core/definitions/antlr_asset_selection/antlr_asset_selection.py:100: BetaWarning: Parameter `include_sources` of function `AssetSelection.all` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    return AssetSelection.all(include_sources=self.include_sources)
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_from_dbt_cloud_with_env_var[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_from_dbt_cloud_with_env_var[DbtCloudClientResource]
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:727: BetaWarning: Class `DbtCloudClientResource` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud = DbtCloudClientResource(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_from_dbt_cloud_with_env_var[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_from_dbt_cloud_with_env_var[DbtCloudClientResource]
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:735: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_dbt_cloud_metadata_ids[dbt_cloud_resource]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_dbt_cloud_metadata_ids[DbtCloudClientResource]
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:762: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    dbt_cloud_cacheable_assets = load_assets_from_dbt_cloud_job(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 24 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:849: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    cacheable_assets = load_assets_from_dbt_cloud_job(dbt_cloud=dbt_cloud, job_id=DBT_CLOUD_JOB_ID)
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py: 12 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py:852: BetaWarning: Function `load_assets_from_dbt_cloud_job` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    cacheable_assets = load_assets_from_dbt_cloud_job(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 10 durations =============================
+1.27s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+1.27s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command1]
+1.27s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d *x-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+1.26s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command0-dbt run-before_dbt_materialization_command0]
+1.25s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_dbt_cloud_job_artifact_step[dbt_cloud_resource-True-empty-True]
+1.23s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource---exclude e:f g:h-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command1]
+1.23s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---exclude e:f g:h-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+1.19s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[DbtCloudClientResource--s a:b c:d --exclude e:f g:h --selector x:y-after_dbt_materialization_command1-dbt build-before_dbt_materialization_command0]
+1.18s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource---selector x:y-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command0]
+1.18s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/cloud/test_asset_defs.py::test_load_assets_from_cached_compile_run[dbt_cloud_resource--s a:b c:d *x-after_dbt_materialization_command0-dbt build-before_dbt_materialization_command1]
+================ 226 passed, 1733 warnings in 129.64s (0:02:09) ================
+  py312-dbt17-core-main: OK (133.16=setup[0.00]+cmd[133.16] seconds)
+  congratulations :) (133.18 seconds)

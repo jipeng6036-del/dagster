@@ -1,0 +1,1878 @@
+EXECUTION {"atUtc": "2026-10-29T16:22:53.893198+00:00", "jobId": "dagster-dg-cli-plus-3-12", "label": "candidate", "officialCommand": "tox -vv -e py312-plus", "executedArgv": ["tox", "--workdir", "<DG_RUNTIME>/.tox", "-vv", "-e", "py312-plus"], "cwd": "<SOURCE>/python_modules/libraries/dagster-dg-cli", "expandedOfficialPytest": "pytest ./dagster_dg_cli_tests/cli_tests/plus_tests -vv --durations 10", "reportOnlyAddopts": "--junitxml=<DG_RUNTIME>/results/candidate-dagster-dg-cli-plus-3-12.xml", "runtimeWorkdirOnlyAdjustment": true, "sharedGithubGateHeldByHost": true}
+ROOT: 113 D setup logging to DEBUG on pid 15544 [tox/report.py:229]
+py312-plus: 127 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+plus: 127 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+windows: 128 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+general: 128 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+slow: 129 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+serial: 129 D using bundled uv from: /usr/local/bin/uv [tox_uv/_venv.py:237]
+py312-plus: 133 W venv> /usr/local/bin/uv venv -p cpython3.12 --allow-existing '--prompt=dagster-dg-cli[py312-plus]' -v --python-preference system <DG_RUNTIME>/.tox/py312-plus [tox/tox_env/api.py:485]
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG Found workspace root: `<SOURCE>/python_modules/libraries/dagster-dg-cli`
+DEBUG Adding root workspace member: `<SOURCE>/python_modules/libraries/dagster-dg-cli`
+DEBUG Found workspace configuration at `<SOURCE>/python_modules/libraries/dagster-dg-cli/pyproject.toml`
+DEBUG Searching for user configuration in: `<HOME>/.config/uv/uv.toml`
+DEBUG uv 0.12.7 (x86_64-unknown-linux-gnu)
+DEBUG Found project root: `<SOURCE>/python_modules/libraries/dagster-dg-cli`
+DEBUG Using Python request `cpython@3.12` from explicit request
+DEBUG Searching for CPython 3.12 in search path or managed installations
+DEBUG Found `cpython-3.12.14-linux-x86_64-gnu` at `/usr/local/bin/python3.12` (first executable in the search path)
+Using CPython 3.12.14 interpreter at: /usr/local/bin/python3.12
+Creating virtual environment at: <DG_RUNTIME>/.tox/py312-plus
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Allowing existing directory due to `--allow-existing`
+DEBUG Detected parent process ID: 15544
+DEBUG Parent process executable: /usr/local/bin/python3.12
+DEBUG Parent process comm: tox
+DEBUG Could not determine shell from parent process
+py312-plus: 141 I exit 0 (0.01 seconds) <SOURCE>/python_modules/libraries/dagster-dg-cli> /usr/local/bin/uv venv -p cpython3.12 --allow-existing '--prompt=dagster-dg-cli[py312-plus]' -v --python-preference system <DG_RUNTIME>/.tox/py312-plus pid=15550 [tox/execute/api.py:311]
+py312-plus: 141 W uv-sync> /usr/local/bin/uv sync --python-preference system --extra ai --no-default-groups -v --group test --group test-plus --frozen -p cpython3.12 [tox/tox_env/api.py:485]
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG Found workspace root: `<SOURCE>/python_modules/libraries/dagster-dg-cli`
+DEBUG Adding root workspace member: `<SOURCE>/python_modules/libraries/dagster-dg-cli`
+DEBUG Found workspace configuration at `<SOURCE>/python_modules/libraries/dagster-dg-cli/pyproject.toml`
+DEBUG Searching for user configuration in: `<HOME>/.config/uv/uv.toml`
+DEBUG uv 0.12.7 (x86_64-unknown-linux-gnu)
+DEBUG Found project root: `<SOURCE>/python_modules/libraries/dagster-dg-cli`
+DEBUG Using Python request `cpython@3.12` from explicit request
+DEBUG Checking for Python environment at: `<DG_RUNTIME>/.tox/py312-plus`
+DEBUG The project environment's Python version satisfies the request: `CPython 3.12`
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 357282914 }), None, None, {}, {"src": None}. Most recently modified: pyproject.toml
+DEBUG Identified uncached distribution: dagster-dg-cli @ file://<SOURCE>/python_modules/libraries/dagster-dg-cli
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 85271682 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/create-dagster/pyproject.toml
+DEBUG Identified uncached distribution: create-dagster @ file://<SOURCE>/python_modules/libraries/create-dagster
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 81271517 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/dagster/pyproject.toml
+DEBUG Identified uncached distribution: dagster @ file://<SOURCE>/python_modules/dagster
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 209276802 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-cloud-cli/pyproject.toml
+DEBUG Identified uncached distribution: dagster-cloud-cli @ file://<SOURCE>/python_modules/libraries/dagster-cloud-cli
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 297280436 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-dbt/pyproject.toml
+DEBUG Identified uncached distribution: dagster-dbt @ file://<SOURCE>/python_modules/libraries/dagster-dbt
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 361283078 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-dg-core/pyproject.toml
+DEBUG Identified uncached distribution: dagster-dg-core @ file://<SOURCE>/python_modules/libraries/dagster-dg-core
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 397284565 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-fivetran/pyproject.toml
+DEBUG Identified uncached distribution: dagster-fivetran @ file://<SOURCE>/python_modules/libraries/dagster-fivetran
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288299, tv_nsec: 785259294 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/dagster-graphql/pyproject.toml
+DEBUG Identified uncached distribution: dagster-graphql @ file://<SOURCE>/python_modules/dagster-graphql
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288299, tv_nsec: 789259459 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/dagster-pipes/pyproject.toml
+DEBUG Identified uncached distribution: dagster-pipes @ file://<SOURCE>/python_modules/dagster-pipes
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 541290511 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-rest-resources/pyproject.toml
+DEBUG Identified uncached distribution: dagster-rest-resources @ file://<SOURCE>/python_modules/libraries/dagster-rest-resources
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 549290841 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-shared/pyproject.toml
+DEBUG Identified uncached distribution: dagster-shared @ file://<SOURCE>/python_modules/libraries/dagster-shared
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 565291503 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-sling/pyproject.toml
+DEBUG Identified uncached distribution: dagster-sling @ file://<SOURCE>/python_modules/libraries/dagster-sling
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288299, tv_nsec: 801259955 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/dagster-test/pyproject.toml
+DEBUG Directory source requirement already cached: dagster-test==1!0+dev (from file://<SOURCE>/python_modules/dagster-test)
+DEBUG Registry requirement already cached: pytest==9.1.1
+DEBUG Registry requirement already cached: pytest-xdist==3.6.1
+DEBUG Registry requirement already cached: syrupy==5.1.0
+DEBUG Registry requirement already cached: typer==0.25.1
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 157274655 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-aws/pyproject.toml
+DEBUG Identified uncached distribution: dagster-aws @ file://<SOURCE>/python_modules/libraries/dagster-aws
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 373283574 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-docker/pyproject.toml
+DEBUG Identified uncached distribution: dagster-docker @ file://<SOURCE>/python_modules/libraries/dagster-docker
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 429285886 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-k8s/pyproject.toml
+DEBUG Identified uncached distribution: dagster-k8s @ file://<SOURCE>/python_modules/libraries/dagster-k8s
+DEBUG Registry requirement already cached: requests==2.34.2
+DEBUG Registry requirement already cached: anthropic==0.101.0
+DEBUG Registry requirement already cached: claude-code-sdk==0.0.25
+DEBUG Registry requirement already cached: alembic==1.18.4
+DEBUG Registry requirement already cached: antlr4-python3-runtime==4.13.2
+DEBUG Registry requirement already cached: click==8.3.3
+DEBUG Registry requirement already cached: coloredlogs==14.0
+DEBUG Registry requirement already cached: docstring-parser==0.18.0
+DEBUG Registry requirement already cached: filelock==3.32.4
+DEBUG Registry requirement already cached: grpcio==1.80.0
+DEBUG Registry requirement already cached: grpcio-health-checking==1.80.0
+DEBUG Registry requirement already cached: jinja2==3.1.6
+DEBUG Registry requirement already cached: protobuf==6.33.6
+DEBUG Registry requirement already cached: python-dotenv==1.2.3
+DEBUG Registry requirement already cached: pytz==2026.2
+DEBUG Registry requirement already cached: rich==14.3.4
+DEBUG Registry requirement already cached: six==1.17.0
+DEBUG Registry requirement already cached: sqlalchemy==2.0.49
+DEBUG Registry requirement already cached: structlog==25.5.0
+DEBUG Registry requirement already cached: tabulate==0.9.0
+DEBUG Registry requirement already cached: tomli==2.4.1
+DEBUG Registry requirement already cached: toposort==1.10
+DEBUG Registry requirement already cached: tqdm==4.67.3
+DEBUG Registry requirement already cached: tzdata==2026.2
+DEBUG Registry requirement already cached: universal-pathlib==0.2.6
+DEBUG Registry requirement already cached: watchdog==6.0.0
+DEBUG Registry requirement already cached: docker==7.1.0
+DEBUG Registry requirement already cached: grpcio-tools==1.80.0
+DEBUG Registry requirement already cached: morefs==0.2.2
+DEBUG Registry requirement already cached: mypy-protobuf==5.1.0
+DEBUG Registry requirement already cached: objgraph==3.6.2
+DEBUG Registry requirement already cached: psutil==7.2.2
+DEBUG Registry requirement already cached: pytest-asyncio==1.3.0
+DEBUG Registry requirement already cached: pytest-cov==5.0.0
+DEBUG Registry requirement already cached: pytest-mock==3.14.0
+DEBUG Registry requirement already cached: pytest-rerunfailures==16.1
+DEBUG Registry requirement already cached: pytest-split==0.11.0
+DEBUG Registry requirement already cached: pytest-timeout==2.4.0
+DEBUG Registry requirement already cached: rapidfuzz==3.14.5
+DEBUG Registry requirement already cached: responses==0.23.1
+DEBUG Registry requirement already cached: ruff==0.17.2
+DEBUG Registry requirement already cached: tox==4.53.1
+DEBUG Registry requirement already cached: tox-uv==1.35.2
+DEBUG Registry requirement already cached: github3-py==4.0.1
+DEBUG Registry requirement already cached: gitpython==3.1.62
+DEBUG Registry requirement already cached: packaging==26.2
+DEBUG Registry requirement already cached: pyyaml==6.0.3
+DEBUG Registry requirement already cached: questionary==2.1.1
+DEBUG Registry requirement already cached: setuptools==84.0.0
+DEBUG Registry requirement already cached: validators==0.35.0
+DEBUG Registry requirement already cached: networkx==3.6.1
+DEBUG Registry requirement already cached: orjson==3.12.0
+DEBUG Registry requirement already cached: sqlglot==28.0.0
+DEBUG Registry requirement already cached: dbt-core==1.12.6
+DEBUG Registry requirement already cached: click-aliases==1.0.5
+DEBUG Registry requirement already cached: gql==4.0.0
+DEBUG Registry requirement already cached: jsonschema==4.26.0
+DEBUG Registry requirement already cached: markdown==3.10.3
+DEBUG Registry requirement already cached: tomlkit==0.13.2
+DEBUG Registry requirement already cached: typing-extensions==4.15.0
+DEBUG Registry requirement already cached: yaspin==3.4.0
+DEBUG Registry requirement already cached: freezegun==1.5.5
+DEBUG Registry requirement already cached: pydantic==2.13.4
+DEBUG Registry requirement already cached: graphene==3.4.3
+DEBUG Registry requirement already cached: starlette==1.6.0
+DEBUG Registry requirement already cached: httpx==0.28.1
+DEBUG Registry requirement already cached: platformdirs==4.9.6
+DEBUG Registry requirement already cached: sling==1.5.17
+DEBUG Registry requirement already cached: iniconfig==2.3.0
+DEBUG Registry requirement already cached: pluggy==1.6.0
+DEBUG Registry requirement already cached: pygments==2.21.0
+DEBUG Registry requirement already cached: execnet==2.1.2
+DEBUG Registry requirement already cached: annotated-doc==0.0.4
+DEBUG Registry requirement already cached: shellingham==1.5.4
+DEBUG Registry requirement already cached: boto3==1.43.6
+DEBUG Registry requirement already cached: docker-image-py==0.1.13
+DEBUG Registry requirement already cached: google-auth==2.52.0
+DEBUG Registry requirement already cached: kubernetes==35.0.0
+DEBUG Registry requirement already cached: certifi==2026.4.22
+DEBUG Registry requirement already cached: charset-normalizer==3.4.7
+DEBUG Registry requirement already cached: idna==3.19
+DEBUG Registry requirement already cached: urllib3==2.8.0
+DEBUG Registry requirement already cached: anyio==4.14.2
+DEBUG Registry requirement already cached: distro==1.9.0
+DEBUG Registry requirement already cached: jiter==0.14.0
+DEBUG Registry requirement already cached: sniffio==1.3.1
+DEBUG Registry requirement already cached: mcp==2.1.1
+DEBUG Registry requirement already cached: mako==1.4.1
+DEBUG Registry requirement already cached: humanfriendly==10.0
+DEBUG Registry requirement already cached: markupsafe==3.0.3
+DEBUG Registry requirement already cached: markdown-it-py==4.2.0
+DEBUG Registry requirement already cached: greenlet==3.5.0
+DEBUG Registry requirement already cached: fsspec==2024.3.0
+DEBUG Registry requirement already cached: aiofile==3.9.0
+DEBUG Registry requirement already cached: types-protobuf==7.34.1.20260508
+DEBUG Registry requirement already cached: coverage==7.14.0
+DEBUG Registry requirement already cached: types-pyyaml==6.0.12.20260510
+DEBUG Registry requirement already cached: cachetools==7.1.1
+DEBUG Registry requirement already cached: colorama==0.4.6
+DEBUG Registry requirement already cached: pyproject-api==1.10.0
+DEBUG Registry requirement already cached: python-discovery==1.6.0
+DEBUG Registry requirement already cached: tomli-w==1.2.0
+DEBUG Registry requirement already cached: virtualenv==21.14.0
+DEBUG Registry requirement already cached: tox-uv-bare==1.35.2
+DEBUG Registry requirement already cached: uv==0.12.7
+DEBUG Registry requirement already cached: pyjwt==2.15.1
+DEBUG Registry requirement already cached: python-dateutil==2.9.0.post0
+DEBUG Registry requirement already cached: uritemplate==4.2.0
+DEBUG Registry requirement already cached: gitdb==4.0.12
+DEBUG Registry requirement already cached: prompt-toolkit==3.0.52
+DEBUG Registry requirement already cached: sqlglotrs==0.7.3
+DEBUG Registry requirement already cached: agate==1.9.1
+DEBUG Registry requirement already cached: daff==1.4.2
+DEBUG Registry requirement already cached: dbt-adapters==1.24.5
+DEBUG Registry requirement already cached: dbt-common==1.39.0
+DEBUG Registry requirement already cached: dbt-core-experimental-parser==2.0.8
+DEBUG Registry requirement already cached: dbt-extractor==0.6.0
+DEBUG Registry requirement already cached: dbt-protos==1.0.615
+DEBUG Registry requirement already cached: mashumaro==3.17
+DEBUG Registry requirement already cached: metricflow==0.213.0
+DEBUG Registry requirement already cached: opentelemetry-api==1.44.0
+DEBUG Registry requirement already cached: pathspec==1.0.4
+DEBUG Registry requirement already cached: snowplow-tracker==1.1.0
+DEBUG Registry requirement already cached: sqlparse==0.6.0
+DEBUG Registry requirement already cached: backoff==2.2.1
+DEBUG Registry requirement already cached: graphql-core==3.2.8
+DEBUG Registry requirement already cached: yarl==1.23.0
+DEBUG Registry requirement already cached: requests-toolbelt==1.0.0
+DEBUG Registry requirement already cached: attrs==26.1.0
+DEBUG Registry requirement already cached: jsonschema-specifications==2025.9.1
+DEBUG Registry requirement already cached: referencing==0.37.0
+DEBUG Registry requirement already cached: rpds-py==0.30.0
+DEBUG Registry requirement already cached: termcolor==3.3.0
+DEBUG Registry requirement already cached: annotated-types==0.7.0
+DEBUG Registry requirement already cached: pydantic-core==2.46.4
+DEBUG Registry requirement already cached: typing-inspection==0.4.2
+DEBUG Registry requirement already cached: graphql-relay==3.2.0
+DEBUG Registry requirement already cached: httpcore==1.0.9
+DEBUG Registry requirement already cached: botocore==1.43.6
+DEBUG Registry requirement already cached: jmespath==1.1.0
+DEBUG Registry requirement already cached: s3transfer==0.17.0
+DEBUG Registry requirement already cached: regex==2026.5.9
+DEBUG Registry requirement already cached: cryptography==50.0.1
+DEBUG Registry requirement already cached: pyasn1-modules==0.4.2
+DEBUG Registry requirement already cached: durationpy==0.10
+DEBUG Registry requirement already cached: requests-oauthlib==2.0.0
+DEBUG Registry requirement already cached: websocket-client==1.9.0
+DEBUG Registry requirement already cached: httpx2==2.12.0
+DEBUG Registry requirement already cached: mcp-types==2.1.1
+DEBUG Registry requirement already cached: python-multipart==0.0.32
+DEBUG Registry requirement already cached: sse-starlette==3.4.2
+DEBUG Registry requirement already cached: uvicorn==0.46.0
+DEBUG Registry requirement already cached: mdurl==0.1.2
+DEBUG Registry requirement already cached: caio==0.9.25
+DEBUG Registry requirement already cached: distlib==0.4.0
+DEBUG Registry requirement already cached: smmap==5.0.3
+DEBUG Registry requirement already cached: wcwidth==0.7.0
+DEBUG Registry requirement already cached: babel==2.18.0
+DEBUG Registry requirement already cached: isodate==0.7.2
+DEBUG Registry requirement already cached: leather==0.4.1
+DEBUG Registry requirement already cached: parsedatetime==2.6
+DEBUG Registry requirement already cached: python-slugify==9.1.3
+DEBUG Registry requirement already cached: pytimeparse==1.1.10
+DEBUG Registry requirement already cached: deepdiff==8.6.2
+DEBUG Registry requirement already cached: msgpack==1.2.3
+DEBUG Registry requirement already cached: importlib-metadata==10.1.0
+DEBUG Registry requirement already cached: more-itertools==10.8.0
+DEBUG Registry requirement already cached: multidict==6.7.1
+DEBUG Registry requirement already cached: propcache==0.5.2
+DEBUG Registry requirement already cached: h11==0.16.0
+DEBUG Registry requirement already cached: cffi==2.0.0
+DEBUG Registry requirement already cached: pyasn1==0.6.4
+DEBUG Registry requirement already cached: oauthlib==4.0.0
+DEBUG Registry requirement already cached: httpcore2==2.12.0
+DEBUG Registry requirement already cached: truststore==0.10.4
+DEBUG Registry requirement already cached: text-unidecode==1.3
+DEBUG Registry requirement already cached: orderly-set==5.5.0
+DEBUG Registry requirement already cached: zipp==4.1.2
+DEBUG Registry requirement already cached: pycparser==3.0
+DEBUG Using request connect timeout of 10s and read timeout of 30s
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 357282914 }), None, None, {}, {"src": None}. Most recently modified: pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-dg-cli @ file://<SOURCE>/python_modules/libraries/dagster-dg-cli
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 85271682 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/create-dagster/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: create-dagster @ file://<SOURCE>/python_modules/libraries/create-dagster
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 81271517 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/dagster/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster @ file://<SOURCE>/python_modules/dagster
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 209276802 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-cloud-cli/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-cloud-cli @ file://<SOURCE>/python_modules/libraries/dagster-cloud-cli
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 297280436 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-dbt/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-dbt @ file://<SOURCE>/python_modules/libraries/dagster-dbt
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 361283078 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-dg-core/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-dg-core @ file://<SOURCE>/python_modules/libraries/dagster-dg-core
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 397284565 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-fivetran/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-fivetran @ file://<SOURCE>/python_modules/libraries/dagster-fivetran
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288299, tv_nsec: 785259294 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/dagster-graphql/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-graphql @ file://<SOURCE>/python_modules/dagster-graphql
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288299, tv_nsec: 789259459 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/dagster-pipes/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-pipes @ file://<SOURCE>/python_modules/dagster-pipes
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 541290511 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-rest-resources/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-rest-resources @ file://<SOURCE>/python_modules/libraries/dagster-rest-resources
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 549290841 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-shared/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-shared @ file://<SOURCE>/python_modules/libraries/dagster-shared
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 565291503 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-sling/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-sling @ file://<SOURCE>/python_modules/libraries/dagster-sling
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 157274655 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-aws/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-aws @ file://<SOURCE>/python_modules/libraries/dagster-aws
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 373283574 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-docker/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-docker @ file://<SOURCE>/python_modules/libraries/dagster-docker
+DEBUG Computed cache info: Timestamp(SystemTime { tv_sec: 1793288300, tv_nsec: 429285886 }), None, None, {}, {"src": None}. Most recently modified: <SOURCE>/python_modules/libraries/dagster-k8s/pyproject.toml
+DEBUG Cached revision does not match expected cache info for: dagster-k8s @ file://<SOURCE>/python_modules/libraries/dagster-k8s
+   Building dagster-dg-cli @ file://<SOURCE>/python_modules/libraries/dagster-dg-cli
+DEBUG Building: dagster-dg-cli @ file://<SOURCE>/python_modules/libraries/dagster-dg-cli
+   Building create-dagster @ file://<SOURCE>/python_modules/libraries/create-dagster
+DEBUG Building: create-dagster @ file://<SOURCE>/python_modules/libraries/create-dagster
+   Building dagster @ file://<SOURCE>/python_modules/dagster
+DEBUG Building: dagster @ file://<SOURCE>/python_modules/dagster
+   Building dagster-cloud-cli @ file://<SOURCE>/python_modules/libraries/dagster-cloud-cli
+DEBUG Building: dagster-cloud-cli @ file://<SOURCE>/python_modules/libraries/dagster-cloud-cli
+   Building dagster-dbt @ file://<SOURCE>/python_modules/libraries/dagster-dbt
+DEBUG Building: dagster-dbt @ file://<SOURCE>/python_modules/libraries/dagster-dbt
+   Building dagster-dg-core @ file://<SOURCE>/python_modules/libraries/dagster-dg-core
+DEBUG Building: dagster-dg-core @ file://<SOURCE>/python_modules/libraries/dagster-dg-core
+   Building dagster-fivetran @ file://<SOURCE>/python_modules/libraries/dagster-fivetran
+DEBUG Building: dagster-fivetran @ file://<SOURCE>/python_modules/libraries/dagster-fivetran
+   Building dagster-graphql @ file://<SOURCE>/python_modules/dagster-graphql
+DEBUG Building: dagster-graphql @ file://<SOURCE>/python_modules/dagster-graphql
+   Building dagster-pipes @ file://<SOURCE>/python_modules/dagster-pipes
+DEBUG Building: dagster-pipes @ file://<SOURCE>/python_modules/dagster-pipes
+   Building dagster-rest-resources @ file://<SOURCE>/python_modules/libraries/dagster-rest-resources
+DEBUG Building: dagster-rest-resources @ file://<SOURCE>/python_modules/libraries/dagster-rest-resources
+   Building dagster-shared @ file://<SOURCE>/python_modules/libraries/dagster-shared
+DEBUG Building: dagster-shared @ file://<SOURCE>/python_modules/libraries/dagster-shared
+   Building dagster-aws @ file://<SOURCE>/python_modules/libraries/dagster-aws
+DEBUG Building: dagster-aws @ file://<SOURCE>/python_modules/libraries/dagster-aws
+   Building dagster-sling @ file://<SOURCE>/python_modules/libraries/dagster-sling
+DEBUG Building: dagster-sling @ file://<SOURCE>/python_modules/libraries/dagster-sling
+   Building dagster-docker @ file://<SOURCE>/python_modules/libraries/dagster-docker
+DEBUG Building: dagster-docker @ file://<SOURCE>/python_modules/libraries/dagster-docker
+   Building dagster-k8s @ file://<SOURCE>/python_modules/libraries/dagster-k8s
+DEBUG Building: dagster-k8s @ file://<SOURCE>/python_modules/libraries/dagster-k8s
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-dg-cli @ file://<SOURCE>/python_modules/libraries/dagster-dg-cli
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Resolving build requirements
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: create-dagster @ file://<SOURCE>/python_modules/libraries/create-dagster
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.104484839Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster @ file://<SOURCE>/python_modules/dagster
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-cloud-cli @ file://<SOURCE>/python_modules/libraries/dagster-cloud-cli
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-dbt @ file://<SOURCE>/python_modules/libraries/dagster-dbt
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-dg-core @ file://<SOURCE>/python_modules/libraries/dagster-dg-core
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-fivetran @ file://<SOURCE>/python_modules/libraries/dagster-fivetran
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-graphql @ file://<SOURCE>/python_modules/dagster-graphql
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-pipes @ file://<SOURCE>/python_modules/dagster-pipes
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-rest-resources @ file://<SOURCE>/python_modules/libraries/dagster-rest-resources
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-shared @ file://<SOURCE>/python_modules/libraries/dagster-shared
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-aws @ file://<SOURCE>/python_modules/libraries/dagster-aws
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-sling @ file://<SOURCE>/python_modules/libraries/dagster-sling
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-docker @ file://<SOURCE>/python_modules/libraries/dagster-docker
+DEBUG Assessing Python executable as base candidate: /usr/local/bin/python3.12
+DEBUG Creating build environment for: dagster-k8s @ file://<SOURCE>/python_modules/libraries/dagster-k8s
+DEBUG Found stale response for: https://pypi.org/simple/hatchling/
+DEBUG Sending revalidation request for: https://pypi.org/simple/hatchling/
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.110969301Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.112145592Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.113115685Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.113913136Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.114715087Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.115794029Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.116590798Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.117776791Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.118910137Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.119634432Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.120893289Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.121989876Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+WARN `pyproject.toml` does not contain a `project` table: `<SOURCE>/pyproject.toml`
+DEBUG No workspace root found, using project root
+DEBUG Using base executable for virtual environment: /usr/local/bin/python3.12
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.122677255Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Resolving build requirements
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:54.123424829Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Found not-modified response for: https://pypi.org/simple/hatchling/
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/5f/80/91f51f439c05d4ec4623c22928ce16a938d6d793bf709477830823497859/hatchling-1.32.4-py3-none-any.whl.metadata
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Found stale response for: https://pypi.org/simple/packaging/
+DEBUG Sending revalidation request for: https://pypi.org/simple/packaging/
+DEBUG Found stale response for: https://pypi.org/simple/pathspec/
+DEBUG Sending revalidation request for: https://pypi.org/simple/pathspec/
+DEBUG Found stale response for: https://pypi.org/simple/pluggy/
+DEBUG Sending revalidation request for: https://pypi.org/simple/pluggy/
+DEBUG Found stale response for: https://pypi.org/simple/tomlkit/
+DEBUG Sending revalidation request for: https://pypi.org/simple/tomlkit/
+DEBUG Found stale response for: https://pypi.org/simple/trove-classifiers/
+DEBUG Sending revalidation request for: https://pypi.org/simple/trove-classifiers/
+DEBUG Found not-modified response for: https://pypi.org/simple/pathspec/
+DEBUG Found not-modified response for: https://pypi.org/simple/tomlkit/
+DEBUG Found not-modified response for: https://pypi.org/simple/trove-classifiers/
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/f1/d9/7fb5aa316bc299258e68c73ba3bddbc499654a07f151cba08f6153988714/pathspec-1.1.1-py3-none-any.whl.metadata
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/da/46/7d84138a60a8bd796825b2d38ebe92d0d16501ca57d501b7c5d677401bbc/tomlkit-0.15.2-py3-none-any.whl.metadata
+DEBUG Found not-modified response for: https://pypi.org/simple/packaging/
+DEBUG Found not-modified response for: https://pypi.org/simple/pluggy/
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/30/81/0da8afb52a71d0a4f2bd3152357b1a441e393b286374802b9d3addab4ab5/trove_classifiers-2026.9.21.13-py3-none-any.whl.metadata
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/40/9e/2b38731e0fc536806f16490e1a12d7f0dc2a1235aa8cc07bcc75416a7daa/pluggy-1.7.0-py3-none-any.whl.metadata
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl.metadata
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG marker environment resolution took 0.996s
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG marker environment resolution took 0.990s
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 1.006s
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG marker environment resolution took 0.994s
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG marker environment resolution took 0.992s
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 1.000s
+DEBUG marker environment resolution took 0.998s
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.993s
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpE1EoLU
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.999s
+DEBUG marker environment resolution took 0.988s
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.995s
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.997s
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG marker environment resolution took 0.992s
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.989s
+DEBUG Tried 6 versions: hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.989s
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpca4KW8
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpwiJH13
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpC1MIdw
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpaNqzer
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpoMJy1q
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmp8UxvH3
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpi50Doq
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmp7WB7yW
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmppIF1Ib
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmp6HUHrp
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpPK0LuL
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpiuGmrt
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpTKmJKS
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Installing in pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpJiwMr3
+DEBUG Registry requirement already cached: pluggy==1.7.0
+DEBUG Registry requirement already cached: hatchling==1.32.4
+DEBUG Registry requirement already cached: tomlkit==0.15.2
+DEBUG Registry requirement already cached: trove-classifiers==2026.9.21.13
+DEBUG Registry requirement already cached: packaging==26.3
+DEBUG Registry requirement already cached: pathspec==1.1.1
+DEBUG Installing build requirements: pluggy==1.7.0, hatchling==1.32.4, tomlkit==0.15.2, trove-classifiers==2026.9.21.13, packaging==26.3, pathspec==1.1.1
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:55.255445883Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Found stale response for: https://pypi.org/simple/editables/
+DEBUG Sending revalidation request for: https://pypi.org/simple/editables/
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:55.313811686Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Creating PEP 517 build environment
+DEBUG Calling `hatchling.build.get_requires_for_build_editable()`
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:55.45126158Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:55.45754102Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Found not-modified response for: https://pypi.org/simple/editables/
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Found fresh response for: https://files.pythonhosted.org/packages/cc/0e/d095533037fc9468f947b19f2da53f869804632b508808de41e86e801797/editables-0.6-py3-none-any.whl.metadata
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.252s
+DEBUG marker environment resolution took 0.193s
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.056s
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.050s
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpE1EoLU
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpca4KW8
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpwiJH13
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpC1MIdw
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmprbw0bT"), {}, None)`
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmpxnbT4m"), {}, None)`
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmpZtRcT4"), {}, None)`
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmpGWxX7P"), {}, None)`
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:55.560274577Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.000s
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpoMJy1q
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:55.562800894Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmpQHJY3q"), {}, None)`
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.000s
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpaNqzer
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmp78Ioo8"), {}, None)`
+DEBUG Installing extra requirements for build backend
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:56.222023562Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:56.222272348Z
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.000s
+DEBUG marker environment resolution took 0.000s
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpi50Doq
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmp8UxvH3
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmp1GmfVN"), {}, None)`
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmp6IOWmc"), {}, None)`
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:56.31539673Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.000s
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmp7WB7yW
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:56.317240953Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.000s
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmppIF1Ib
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmpbHB33P"), {}, None)`
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmpJ0Qn4M"), {}, None)`
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:56.407290463Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.000s
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmp6HUHrp
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmpezpK6g"), {}, None)`
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:56.414051293Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.000s
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpPK0LuL
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmpBFKKPm"), {}, None)`
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:56.495994596Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.000s
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpiuGmrt
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmpFkELkL"), {}, None)`
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:56.51187029Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.000s
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpJiwMr3
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmp9iTnvk"), {}, None)`
+DEBUG Installing extra requirements for build backend
+DEBUG Solving with installed Python version: 3.12.14
+DEBUG Solving with target Python version: >=3.12.14
+DEBUG Solving with exclude-newer: global: 2026-10-27T16:22:56.584681215Z
+DEBUG Adding direct dependency: hatchling>=1.19.0
+DEBUG Adding direct dependency: editables>=0.3, <1.dev0
+DEBUG Searching for a compatible version of hatchling (>=1.19.0)
+DEBUG Selecting: hatchling==1.32.4 [compatible] (hatchling-1.32.4-py3-none-any.whl)
+DEBUG Adding transitive dependency for hatchling==1.32.4: packaging>=24.2
+DEBUG Adding transitive dependency for hatchling==1.32.4: pathspec>=0.10.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: pluggy>=1.0.0
+DEBUG Adding transitive dependency for hatchling==1.32.4: tomlkit>=0.11.1
+DEBUG Adding transitive dependency for hatchling==1.32.4: trove-classifiers*
+DEBUG Searching for a compatible version of editables (>=0.3, <1.dev0)
+DEBUG Selecting: editables==0.6 [compatible] (editables-0.6-py3-none-any.whl)
+DEBUG Searching for a compatible version of packaging (>=24.2)
+DEBUG Selecting: packaging==26.3 [compatible] (packaging-26.3-py3-none-any.whl)
+DEBUG Searching for a compatible version of pathspec (>=0.10.1)
+DEBUG Selecting: pathspec==1.1.1 [compatible] (pathspec-1.1.1-py3-none-any.whl)
+DEBUG Searching for a compatible version of pluggy (>=1.0.0)
+DEBUG Selecting: pluggy==1.7.0 [compatible] (pluggy-1.7.0-py3-none-any.whl)
+DEBUG Searching for a compatible version of tomlkit (>=0.11.1)
+DEBUG Selecting: tomlkit==0.15.2 [compatible] (tomlkit-0.15.2-py3-none-any.whl)
+DEBUG Searching for a compatible version of trove-classifiers (*)
+DEBUG Selecting: trove-classifiers==2026.9.21.13 [compatible] (trove_classifiers-2026.9.21.13-py3-none-any.whl)
+DEBUG Tried 7 versions: editables 1, hatchling 1, packaging 1, pathspec 1, pluggy 1, tomlkit 1, trove-classifiers 1
+DEBUG marker environment resolution took 0.000s
+DEBUG Installing in pluggy==1.7.0, editables==0.6, tomlkit==0.15.2, packaging==26.3, trove-classifiers==2026.9.21.13, hatchling==1.32.4, pathspec==1.1.1 in <RUNTIME>/uv-cache/builds-v0/.tmpTKmJKS
+DEBUG Requirement already installed: pluggy==1.7.0
+DEBUG Registry requirement already cached: editables==0.6
+DEBUG Requirement already installed: tomlkit==0.15.2
+DEBUG Requirement already installed: packaging==26.3
+DEBUG Requirement already installed: trove-classifiers==2026.9.21.13
+DEBUG Requirement already installed: hatchling==1.32.4
+DEBUG Requirement already installed: pathspec==1.1.1
+DEBUG Installing build requirement: editables==0.6
+DEBUG Calling `hatchling.build.build_editable(__import__("os").fsdecode(b"<RUNTIME>/uv-cache/builds-v0/.tmpvXYsnx"), {}, None)`
+DEBUG Built `dagster-dg-core @ file://<SOURCE>/python_modules/libraries/dagster-dg-core` into `dagster_dg_core-1!0+dev-py3-none-any.whl`
+      Built dagster-dg-core @ file://<SOURCE>/python_modules/libraries/dagster-dg-core
+DEBUG Built `dagster-aws @ file://<SOURCE>/python_modules/libraries/dagster-aws` into `dagster_aws-1!0+dev-py3-none-any.whl`
+      Built dagster-aws @ file://<SOURCE>/python_modules/libraries/dagster-aws
+DEBUG Built `dagster-dg-cli @ file://<SOURCE>/python_modules/libraries/dagster-dg-cli` into `dagster_dg_cli-1!0+dev-py3-none-any.whl`
+      Built dagster-dg-cli @ file://<SOURCE>/python_modules/libraries/dagster-dg-cli
+DEBUG Built `create-dagster @ file://<SOURCE>/python_modules/libraries/create-dagster` into `create_dagster-1!0+dev-py3-none-any.whl`
+      Built create-dagster @ file://<SOURCE>/python_modules/libraries/create-dagster
+DEBUG Built `dagster-rest-resources @ file://<SOURCE>/python_modules/libraries/dagster-rest-resources` into `dagster_rest_resources-1!0+dev-py3-none-any.whl`
+      Built dagster-rest-resources @ file://<SOURCE>/python_modules/libraries/dagster-rest-resources
+DEBUG Built `dagster-graphql @ file://<SOURCE>/python_modules/dagster-graphql` into `dagster_graphql-1!0+dev-py3-none-any.whl`
+      Built dagster-graphql @ file://<SOURCE>/python_modules/dagster-graphql
+DEBUG Built `dagster-cloud-cli @ file://<SOURCE>/python_modules/libraries/dagster-cloud-cli` into `dagster_cloud_cli-1!0+dev-py3-none-any.whl`
+      Built dagster-cloud-cli @ file://<SOURCE>/python_modules/libraries/dagster-cloud-cli
+DEBUG Built `dagster-pipes @ file://<SOURCE>/python_modules/dagster-pipes` into `dagster_pipes-1!0+dev-py3-none-any.whl`
+      Built dagster-pipes @ file://<SOURCE>/python_modules/dagster-pipes
+DEBUG Built `dagster-k8s @ file://<SOURCE>/python_modules/libraries/dagster-k8s` into `dagster_k8s-1!0+dev-py3-none-any.whl`
+      Built dagster-k8s @ file://<SOURCE>/python_modules/libraries/dagster-k8s
+DEBUG Built `dagster-fivetran @ file://<SOURCE>/python_modules/libraries/dagster-fivetran` into `dagster_fivetran-1!0+dev-py3-none-any.whl`
+      Built dagster-fivetran @ file://<SOURCE>/python_modules/libraries/dagster-fivetran
+DEBUG Built `dagster @ file://<SOURCE>/python_modules/dagster` into `dagster-1!0+dev-py3-none-any.whl`
+      Built dagster @ file://<SOURCE>/python_modules/dagster
+DEBUG Built `dagster-sling @ file://<SOURCE>/python_modules/libraries/dagster-sling` into `dagster_sling-1!0+dev-py3-none-any.whl`
+      Built dagster-sling @ file://<SOURCE>/python_modules/libraries/dagster-sling
+DEBUG Built `dagster-shared @ file://<SOURCE>/python_modules/libraries/dagster-shared` into `dagster_shared-1!0+dev-py3-none-any.whl`
+      Built dagster-shared @ file://<SOURCE>/python_modules/libraries/dagster-shared
+DEBUG Built `dagster-docker @ file://<SOURCE>/python_modules/libraries/dagster-docker` into `dagster_docker-1!0+dev-py3-none-any.whl`
+      Built dagster-docker @ file://<SOURCE>/python_modules/libraries/dagster-docker
+DEBUG Built `dagster-dbt @ file://<SOURCE>/python_modules/libraries/dagster-dbt` into `dagster_dbt-1!0+dev-py3-none-any.whl`
+      Built dagster-dbt @ file://<SOURCE>/python_modules/libraries/dagster-dbt
+Prepared 15 packages in 3.35s
+Installed 199 packages in 38ms
+ + agate==1.9.1
+ + aiofile==3.9.0
+ + alembic==1.18.4
+ + annotated-doc==0.0.4
+ + annotated-types==0.7.0
+ + anthropic==0.101.0
+ + antlr4-python3-runtime==4.13.2
+ + anyio==4.14.2
+ + attrs==26.1.0
+ + babel==2.18.0
+ + backoff==2.2.1
+ + boto3==1.43.6
+ + botocore==1.43.6
+ + cachetools==7.1.1
+ + caio==0.9.25
+ + certifi==2026.4.22
+ + cffi==2.0.0
+ + charset-normalizer==3.4.7
+ + claude-code-sdk==0.0.25
+ + click==8.3.3
+ + click-aliases==1.0.5
+ + colorama==0.4.6
+ + coloredlogs==14.0
+ + coverage==7.14.0
+ + create-dagster==1!0+dev (from file://<SOURCE>/python_modules/libraries/create-dagster)
+ + cryptography==50.0.1
+ + daff==1.4.2
+ + dagster==1!0+dev (from file://<SOURCE>/python_modules/dagster)
+ + dagster-aws==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-aws)
+ + dagster-cloud-cli==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-cloud-cli)
+ + dagster-dbt==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dbt)
+ + dagster-dg-cli==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dg-cli)
+ + dagster-dg-core==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-dg-core)
+ + dagster-docker==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-docker)
+ + dagster-fivetran==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-fivetran)
+ + dagster-graphql==1!0+dev (from file://<SOURCE>/python_modules/dagster-graphql)
+ + dagster-k8s==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-k8s)
+ + dagster-pipes==1!0+dev (from file://<SOURCE>/python_modules/dagster-pipes)
+ + dagster-rest-resources==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-rest-resources)
+ + dagster-shared==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-shared)
+ + dagster-sling==1!0+dev (from file://<SOURCE>/python_modules/libraries/dagster-sling)
+ + dagster-test==1!0+dev (from file://<SOURCE>/python_modules/dagster-test)
+ + dbt-adapters==1.24.5
+ + dbt-common==1.39.0
+ + dbt-core==1.12.6
+ + dbt-core-experimental-parser==2.0.8
+ + dbt-extractor==0.6.0
+ + dbt-protos==1.0.615
+ + deepdiff==8.6.2
+ + distlib==0.4.0
+ + distro==1.9.0
+ + docker==7.1.0
+ + docker-image-py==0.1.13
+ + docstring-parser==0.18.0
+ + durationpy==0.10
+ + execnet==2.1.2
+ + filelock==3.32.4
+ + freezegun==1.5.5
+ + fsspec==2024.3.0
+ + gitdb==4.0.12
+ + github3-py==4.0.1
+ + gitpython==3.1.62
+ + google-auth==2.52.0
+ + gql==4.0.0
+ + graphene==3.4.3
+ + graphql-core==3.2.8
+ + graphql-relay==3.2.0
+ + greenlet==3.5.0
+ + grpcio==1.80.0
+ + grpcio-health-checking==1.80.0
+ + grpcio-tools==1.80.0
+ + h11==0.16.0
+ + httpcore==1.0.9
+ + httpcore2==2.12.0
+ + httpx==0.28.1
+ + httpx2==2.12.0
+ + humanfriendly==10.0
+ + idna==3.19
+ + importlib-metadata==10.1.0
+ + iniconfig==2.3.0
+ + isodate==0.7.2
+ + jinja2==3.1.6
+ + jiter==0.14.0
+ + jmespath==1.1.0
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + kubernetes==35.0.0
+ + leather==0.4.1
+ + mako==1.4.1
+ + markdown==3.10.3
+ + markdown-it-py==4.2.0
+ + markupsafe==3.0.3
+ + mashumaro==3.17
+ + mcp==2.1.1
+ + mcp-types==2.1.1
+ + mdurl==0.1.2
+ + metricflow==0.213.0
+ + more-itertools==10.8.0
+ + morefs==0.2.2
+ + msgpack==1.2.3
+ + multidict==6.7.1
+ + mypy-protobuf==5.1.0
+ + networkx==3.6.1
+ + oauthlib==4.0.0
+ + objgraph==3.6.2
+ + opentelemetry-api==1.44.0
+ + orderly-set==5.5.0
+ + orjson==3.12.0
+ + packaging==26.2
+ + parsedatetime==2.6
+ + pathspec==1.0.4
+ + platformdirs==4.9.6
+ + pluggy==1.6.0
+ + prompt-toolkit==3.0.52
+ + propcache==0.5.2
+ + protobuf==6.33.6
+ + psutil==7.2.2
+ + pyasn1==0.6.4
+ + pyasn1-modules==0.4.2
+ + pycparser==3.0
+ + pydantic==2.13.4
+ + pydantic-core==2.46.4
+ + pygments==2.21.0
+ + pyjwt==2.15.1
+ + pyproject-api==1.10.0
+ + pytest==9.1.1
+ + pytest-asyncio==1.3.0
+ + pytest-cov==5.0.0
+ + pytest-mock==3.14.0
+ + pytest-rerunfailures==16.1
+ + pytest-split==0.11.0
+ + pytest-timeout==2.4.0
+ + pytest-xdist==3.6.1
+ + python-dateutil==2.9.0.post0
+ + python-discovery==1.6.0
+ + python-dotenv==1.2.3
+ + python-multipart==0.0.32
+ + python-slugify==9.1.3
+ + pytimeparse==1.1.10
+ + pytz==2026.2
+ + pyyaml==6.0.3
+ + questionary==2.1.1
+ + rapidfuzz==3.14.5
+ + referencing==0.37.0
+ + regex==2026.5.9
+ + requests==2.34.2
+ + requests-oauthlib==2.0.0
+ + requests-toolbelt==1.0.0
+ + responses==0.23.1
+ + rich==14.3.4
+ + rpds-py==0.30.0
+ + ruff==0.17.2
+ + s3transfer==0.17.0
+ + setuptools==84.0.0
+ + shellingham==1.5.4
+ + six==1.17.0
+ + sling==1.5.17
+ + smmap==5.0.3
+ + sniffio==1.3.1
+ + snowplow-tracker==1.1.0
+ + sqlalchemy==2.0.49
+ + sqlglot==28.0.0
+ + sqlglotrs==0.7.3
+ + sqlparse==0.6.0
+ + sse-starlette==3.4.2
+ + starlette==1.6.0
+ + structlog==25.5.0
+ + syrupy==5.1.0
+ + tabulate==0.9.0
+ + termcolor==3.3.0
+ + text-unidecode==1.3
+ + tomli==2.4.1
+ + tomli-w==1.2.0
+ + tomlkit==0.13.2
+ + toposort==1.10
+ + tox==4.53.1
+ + tox-uv==1.35.2
+ + tox-uv-bare==1.35.2
+ + tqdm==4.67.3
+ + truststore==0.10.4
+ + typer==0.25.1
+ + types-protobuf==7.34.1.20260508
+ + types-pyyaml==6.0.12.20260510
+ + typing-extensions==4.15.0
+ + typing-inspection==0.4.2
+ + tzdata==2026.2
+ + universal-pathlib==0.2.6
+ + uritemplate==4.2.0
+ + urllib3==2.8.0
+ + uv==0.12.7
+ + uvicorn==0.46.0
+ + validators==0.35.0
+ + virtualenv==21.14.0
+ + watchdog==6.0.0
+ + wcwidth==0.7.0
+ + websocket-client==1.9.0
+ + yarl==1.23.0
+ + yaspin==3.4.0
+ + zipp==4.1.2
+py312-plus: 3654 I exit 0 (3.51 seconds) <SOURCE>/python_modules/libraries/dagster-dg-cli> /usr/local/bin/uv sync --python-preference system --extra ai --no-default-groups -v --group test --group test-plus --frozen -p cpython3.12 pid=15562 [tox/execute/api.py:311]
+py312-plus: 3655 W commands[0]> /bin/bash -c '! uv pip list --exclude-editable | grep -e dagster -e dagit' [tox/tox_env/api.py:485]
+Using Python 3.12.14 environment at: <DG_RUNTIME>/.tox/py312-plus
+py312-plus: 3667 I exit 0 (0.01 seconds) <SOURCE>/python_modules/libraries/dagster-dg-cli> /bin/bash -c '! uv pip list --exclude-editable | grep -e dagster -e dagit' pid=15908 [tox/execute/api.py:311]
+py312-plus: 3667 W commands[1]> npm install -g @action-validator/core @action-validator/cli --save-dev [tox/tox_env/api.py:485]
+
+added 3 packages in 6s
+
+1 package is looking for funding
+  run `npm fund` for details
+npm notice
+npm notice New major version of npm available! 10.9.9 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice
+py312-plus: 9752 I exit 0 (6.08 seconds) <SOURCE>/python_modules/libraries/dagster-dg-cli> npm install -g @action-validator/core @action-validator/cli --save-dev pid=15918 [tox/execute/api.py:311]
+py312-plus: 9752 W commands[2]> pytest ./dagster_dg_cli_tests/cli_tests/plus_tests -vv --durations 10 [tox/tox_env/api.py:485]
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- <DG_RUNTIME>/.tox/py312-plus/bin/python3
+cachedir: <DG_RUNTIME>/.tox/py312-plus/.pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: timeout-2.4.0, split-0.11.0, rerunfailures-16.1, mock-3.14.0, cov-5.0.0, asyncio-1.3.0, syrupy-5.1.0, xdist-3.6.1, anyio-4.14.2
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+collecting ... collected 118 items
+
+dagster_dg_cli_tests/cli_tests/plus_tests/test_create_ci_api_token.py::test_create_ci_api_token[Used in dagster-workspace GitHub Actions] PASSED [  0%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_create_ci_api_token.py::test_create_ci_api_token[None] PASSED [  1%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_integrations_dbt.py::test_discover_dbt_projects_from_file_named_dbt PASSED [  2%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_list_env_plus.py::test_list_env_succeeds PASSED [  3%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_list_env_plus.py::test_list_env_deployment_override PASSED [  4%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_pex_to_docker_serverless_v2.py::test_detects_platform_for_serverless_and_hybrid[SERVERLESS-ServerlessK8sUserCodeLauncher-DgPlusAgentPlatform.K8S] PASSED [  5%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_pex_to_docker_serverless_v2.py::test_detects_platform_for_serverless_and_hybrid[SERVERLESS-ServerlessEcsUserCodeLauncher-DgPlusAgentPlatform.ECS] PASSED [  5%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_pex_to_docker_serverless_v2.py::test_detects_platform_for_serverless_and_hybrid[HYBRID-K8sUserCodeLauncher-DgPlusAgentPlatform.K8S] PASSED [  6%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_pex_to_docker_serverless_v2.py::test_detects_platform_for_serverless_and_hybrid[HYBRID-EcsUserCodeLauncher-DgPlusAgentPlatform.ECS] PASSED [  7%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_pex_to_docker_serverless_v2.py::test_mixed_agents_resolve_to_k8s_deterministically PASSED [  8%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_pex_to_docker_serverless_v2.py::test_gql_client_none_without_credentials PASSED [  9%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_pex_to_docker_serverless_v2.py::test_pex_bundle_dockerfile_installs_into_default_site_packages PASSED [ 10%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_config_command.py::test_config_view_basic PASSED [ 11%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_config_command.py::test_config_view_show_token PASSED [ 11%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_config_command.py::test_config_view_no_config PASSED [ 12%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_config_command.py::test_config_view_partial_config PASSED [ 13%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_config_command.py::test_config_set_all_fields PASSED [ 14%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_config_command.py::test_config_set_partial_update PASSED [ 15%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_config_command.py::test_config_set_no_existing_config_missing_fields PASSED [ 16%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_config_command.py::test_config_set_via_env_vars PASSED [ 16%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_config_command.py::test_config_set_eu_region PASSED [ 17%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_config_command.py::test_config_set_url_override PASSED [ 18%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_command_agent_type_from_graphql PASSED [ 19%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_command_serverless PASSED [ 20%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_command_serverless_workspace PASSED [ 21%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_command_invalid_location PASSED [ 22%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_command_valid_location PASSED [ 22%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_command_no_login PASSED  [ 23%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_on_branch PASSED         [ 24%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_on_branch_with_snapshot_base_condition PASSED [ 25%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_cant_determine_branch PASSED [ 26%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_main_branch PASSED       [ 27%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_hybrid_no_build_yaml PASSED [ 27%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_hybrid_with_yaml_files PASSED [ 28%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_hybrid_with_workspace_yaml_files PASSED [ 29%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_hybrid_with_merged_yaml_files PASSED [ 30%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_subcommands PASSED       [ 31%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_subcommands_with_location PASSED [ 32%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_hybrid_with_build_yaml_scaffold PASSED [ 33%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_hybrid_with_workspace_build_yaml_scaffold PASSED [ 33%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_hybrid_with_agent_queue_in_pyproject PASSED [ 34%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_hybrid_with_image_in_pyproject PASSED [ 35%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_validation.py::test_deploy_start_validates_yaml_schema PASSED [ 36%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_validation.py::test_deploy_start_fails_on_invalid_yaml PASSED [ 37%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_validation.py::test_deploy_start_fails_on_missing_api_token PASSED [ 38%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_validation.py::test_deploy_start_fails_on_invalid_api_token PASSED [ 38%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_validation.py::test_deploy_start_succeeds_with_valid_config PASSED [ 39%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_validation.py::test_deploy_start_eu_region_url PASSED [ 40%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_validation.py::test_deploy_start_us_region_url PASSED [ 41%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_validation.py::test_deploy_start_skip_validation_bypasses_checks PASSED [ 42%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_validation.py::test_deploy_start_skip_validation_with_missing_token PASSED [ 43%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_validation.py::test_validation_errors_are_actionable PASSED [ 44%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_pull_env_command_no_auth PASSED [ 44%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_pull_env_command_auth_err PASSED [ 45%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_pull_env_command_python_err PASSED [ 46%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_pull_env_command_project PASSED [ 47%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_pull_env_command_workspace PASSED [ 48%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_pull_env_command_project_preserves_existing_env PASSED [ 49%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_pull_env_command_workspace_preserves_existing_env PASSED [ 50%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_pull_env_command_deployment_override PASSED [ 50%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_no_value_workspace PASSED [ 51%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_basic_success_workspace[direct] PASSED [ 52%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_basic_success_workspace[from-local-env] PASSED [ 53%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes_workspace[scopes0] PASSED [ 54%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes_workspace[scopes1] PASSED [ 55%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes_workspace[scopes2] PASSED [ 55%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes_workspace[scopes3] PASSED [ 56%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes_workspace[scopes4] PASSED [ 57%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes_workspace[scopes5] PASSED [ 58%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes_workspace[scopes6] PASSED [ 59%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_warn_if_existing_workspace[True] PASSED [ 60%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_warn_if_existing_workspace[False] PASSED [ 61%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_no_value PASSED [ 61%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_basic_success[direct] PASSED [ 62%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_basic_success[from-local-env] PASSED [ 63%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_basic_success[from-env-file] PASSED [ 64%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes[scopes0] PASSED [ 65%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes[scopes1] PASSED [ 66%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes[scopes2] PASSED [ 66%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes[scopes3] PASSED [ 67%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes[scopes4] PASSED [ 68%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes[scopes5] PASSED [ 69%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_scopes[scopes6] PASSED [ 70%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_basic_success_global PASSED [ 71%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_warn_if_global[True] PASSED [ 72%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_warn_if_global[False] PASSED [ 72%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_exception_if_multiple_locations PASSED [ 73%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_warn_if_existing[True] PASSED [ 74%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_warn_if_existing[False] PASSED [ 75%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_no_confirm PASSED [ 76%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_add_env_command_deployment_override PASSED [ 77%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_login_command.py::test_setup_command_web[setup_cloud_cli_config] PASSED [ 77%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_login_command.py::test_setup_command_web[setup_dg_cli_config] PASSED [ 78%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_login_command.py::test_setup_command_web[setup_dg_cli_config_additional_config] PASSED [ 79%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_login_command.py::test_setup_command_web[setup_dg_cli_config_custom_url] PASSED [ 80%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_build_artifacts_container_context_no_running_agent PASSED [ 81%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_build_artifacts_container_context_platforms[K8sUserCodeLauncher-DgPlusAgentPlatform.K8S-K8sContainerContext] PASSED [ 82%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_build_artifacts_container_context_platforms[EcsUserCodeLauncher-DgPlusAgentPlatform.ECS-EcsContainerContext] PASSED [ 83%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_build_artifacts_container_context_platforms[DockerUserCodeLauncher-DgPlusAgentPlatform.DOCKER-DockerContainerContext] PASSED [ 83%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_build_artifacts_container_context_platforms[ProcessUserCodeLauncher-DgPlusAgentPlatform.LOCAL-None] PASSED [ 84%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_build_artifacts_container_context_platforms[Unknown-DgPlusAgentPlatform.UNKNOWN-None] PASSED [ 85%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_build_artifacts_command_workspace PASSED [ 86%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_build_artifacts_command_project PASSED [ 87%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_deploy_configure_serverless_github_default_pex_sets_python_executable_strategy PASSED [ 88%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_success_serverless[None] PASSED [ 88%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_success_serverless[1.11.0] PASSED [ 89%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_success_project_serverless PASSED [ 90%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_no_plus_config_serverless PASSED [ 91%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_no_git_root_serverless PASSED [ 92%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_success_hybrid[ECR] PASSED [ 93%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_success_hybrid[DockerHub] PASSED [ 94%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_success_hybrid[GitHub Container Registry] PASSED [ 94%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_success_hybrid[Azure Container Registry] PASSED [ 95%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_success_hybrid[Google Container Registry] PASSED [ 96%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_success_project_hybrid PASSED [ 97%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_no_plus_config_hybrid PASSED [ 98%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_git_root_above_workspace PASSED [ 99%]
+dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_git_root_above_project PASSED [100%]
+
+- generated xml file: <DG_RUNTIME>/results/candidate-dagster-dg-cli-plus-3-12.xml -
+============================= slowest 10 durations =============================
+15.58s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_no_git_root_serverless
+11.42s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_hybrid_with_image_in_pyproject
+10.18s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_hybrid_with_agent_queue_in_pyproject
+7.08s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_validation.py::test_deploy_start_fails_on_invalid_yaml
+6.53s setup    python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_build_artifacts_container_context_platforms[K8sUserCodeLauncher-DgPlusAgentPlatform.K8S-K8sContainerContext]
+6.46s setup    python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_deploy_command.py::test_plus_deploy_command_agent_type_from_graphql
+6.10s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_pull_env_command_workspace_preserves_existing_env
+5.96s call     python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/plus_tests/test_plus_env_command.py::test_pull_env_command_workspace
+5.68s setup    python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_build_artifacts_container_context_platforms[Unknown-DgPlusAgentPlatform.UNKNOWN-None]
+5.65s setup    python_modules/libraries/dagster-dg-cli/dagster_dg_cli_tests/cli_tests/plus_tests/test_scaffold_plus_commands.py::test_scaffold_github_actions_command_no_plus_config_serverless
+======================= 118 passed in 298.01s (0:04:58) ========================
+py312-plus: 312645 I exit 0 (302.91 seconds) <SOURCE>/python_modules/libraries/dagster-dg-cli> pytest ./dagster_dg_cli_tests/cli_tests/plus_tests -vv --durations 10 pid=15937 [tox/execute/api.py:311]
+  [testenv:py312-plus] unused config key(s): download
+  [tox] unused config key(s): skipsdist
+  py312-plus: OK (312.53=setup[3.53]+cmd[0.01,6.08,302.91] seconds)
+  congratulations :) (312.55 seconds)

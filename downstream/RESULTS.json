@@ -1,0 +1,494 @@
+{
+  "status": "PASS_ALL9_OWNED_OFFICIAL_CHECKS",
+  "source": {
+    "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+    "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+    "trackedFiles": 14576,
+    "all9BeforeAfterBlobModeSizeSHA256TreeMatch": true,
+    "candidateSourceOrLockOrCheckerModified": false
+  },
+  "totals": {
+    "passedChecks": 9,
+    "failedChecks": 0,
+    "pytestPassed": 2014,
+    "pytestOriginalSkips": 3,
+    "manualSkipsAdded": 0,
+    "actualFailedTestJobs": 0,
+    "baselineWaivers": 0
+  },
+  "checks": [
+    {
+      "id": "ruff",
+      "status": "PASS",
+      "candidateExit": 0,
+      "log": "ruff-candidate.log",
+      "sourceReceipts": [
+        "ruff-candidate-source-prepare.json",
+        "ruff-candidate-source-verify.json"
+      ],
+      "officialCwd": ".",
+      "officialCommand": "just -f justfile check_ruff",
+      "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "sourceTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "formattedFiles": 7187
+    },
+    {
+      "id": "assets-smoke-test-3-12",
+      "status": "PASS",
+      "candidateExit": 0,
+      "log": "assets-smoke-test-3-12-candidate.log",
+      "sourceReceipts": [
+        "assets-smoke-test-3-12-candidate-source-prepare.json",
+        "assets-smoke-test-3-12-candidate-source-verify.json"
+      ],
+      "officialCwd": "examples/assets_smoke_test",
+      "officialCommand": "tox -vv -e py312",
+      "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "sourceTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "pythonEnvironment": "py312",
+      "pytestSummary": "1 passed in 19.65s",
+      "passed": 1,
+      "skipped": 0,
+      "toxRuntimeSeconds": 45.724103274998924,
+      "toxResult": "assets-smoke-test-3-12-candidate-tox-result.json"
+    },
+    {
+      "id": "project-fully-featured-3-10",
+      "status": "PASS",
+      "candidateExit": 0,
+      "log": "project-fully-featured-3-10-candidate.log",
+      "sourceReceipts": [
+        "project-fully-featured-3-10-candidate-source-prepare.json",
+        "project-fully-featured-3-10-candidate-source-verify.json"
+      ],
+      "officialCwd": "examples/project_fully_featured",
+      "officialCommand": "tox -vv -e py310",
+      "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "sourceTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "pythonEnvironment": "py310",
+      "pytestSummary": "15 passed, 2 skipped in 40.06s",
+      "passed": 15,
+      "skipped": 2,
+      "toxRuntimeSeconds": 202.87717131900354,
+      "toxResult": "project-fully-featured-3-10-candidate-tox-result.json"
+    },
+    {
+      "id": "assets-modern-data-stack-source-3-12",
+      "status": "PASS",
+      "candidateExit": 0,
+      "log": "assets-modern-data-stack-source-3-12-candidate.log",
+      "sourceReceipts": [
+        "assets-modern-data-stack-source-3-12-candidate-source-prepare.json",
+        "assets-modern-data-stack-source-3-12-candidate-source-verify.json"
+      ],
+      "officialCwd": "examples/assets_modern_data_stack",
+      "officialCommand": "tox -vv -e py312-source",
+      "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "sourceTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "pythonEnvironment": "py312-source",
+      "pytestSummary": "1 passed, 4 warnings in 11.26s",
+      "passed": 1,
+      "skipped": 0,
+      "toxRuntimeSeconds": 28.665164501999243,
+      "toxResult": "assets-modern-data-stack-source-3-12-candidate-tox-result.json"
+    },
+    {
+      "id": "assets-modern-data-stack-pypi-3-12",
+      "status": "PASS",
+      "candidateExit": 0,
+      "log": "assets-modern-data-stack-pypi-3-12-candidate-resume-20261029T154446Z.log",
+      "sourceReceipts": [
+        "assets-modern-data-stack-pypi-3-12-candidate-resume-20261029T154446Z-source-prepare.json",
+        "assets-modern-data-stack-pypi-3-12-candidate-resume-20261029T154446Z-source-verify.json"
+      ],
+      "officialCwd": "examples/assets_modern_data_stack",
+      "officialCommand": "tox -vv -e py312-pypi",
+      "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "sourceTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "pythonEnvironment": "py312-pypi",
+      "pytestSummary": "1 passed, 4 warnings in 10.37s",
+      "passed": 1,
+      "skipped": 0,
+      "toxRuntimeSeconds": 14.570033296000474,
+      "toxResult": "assets-modern-data-stack-pypi-3-12-candidate-resume-20261029T154446Z-tox-result.json"
+    },
+    {
+      "id": "assets-dbt-python-source-3-10",
+      "status": "PASS",
+      "candidateExit": 0,
+      "log": "assets-dbt-python-source-3-10-candidate-resume-20261029T154446Z.log",
+      "sourceReceipts": [
+        "assets-dbt-python-source-3-10-candidate-resume-20261029T154446Z-source-prepare.json",
+        "assets-dbt-python-source-3-10-candidate-resume-20261029T154446Z-source-verify.json"
+      ],
+      "officialCwd": "examples/assets_dbt_python",
+      "officialCommand": "tox -vv -e py310-source",
+      "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "sourceTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "pythonEnvironment": "py310-source",
+      "pytestSummary": "1 passed, 3 warnings in 39.69s",
+      "passed": 1,
+      "skipped": 0,
+      "toxRuntimeSeconds": 96.19976653499907,
+      "toxResult": "assets-dbt-python-source-3-10-candidate-resume-20261029T154446Z-tox-result.json"
+    },
+    {
+      "id": "assets-dbt-python-pypi-3-10",
+      "status": "PASS",
+      "candidateExit": 0,
+      "log": "assets-dbt-python-pypi-3-10-candidate-resume-20261029T154446Z.log",
+      "sourceReceipts": [
+        "assets-dbt-python-pypi-3-10-candidate-resume-20261029T154446Z-source-prepare.json",
+        "assets-dbt-python-pypi-3-10-candidate-resume-20261029T154446Z-source-verify.json"
+      ],
+      "officialCwd": "examples/assets_dbt_python",
+      "officialCommand": "tox -vv -e py310-pypi",
+      "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "sourceTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "pythonEnvironment": "py310-pypi",
+      "pytestSummary": "1 passed, 3 warnings in 23.58s",
+      "passed": 1,
+      "skipped": 0,
+      "toxRuntimeSeconds": 27.221025586000906,
+      "toxResult": "assets-dbt-python-pypi-3-10-candidate-resume-20261029T154446Z-tox-result.json"
+    },
+    {
+      "id": "automation-3-12",
+      "status": "PASS",
+      "candidateExit": 0,
+      "log": "automation-3-12-candidate-resume-20261029T154446Z.log",
+      "sourceReceipts": [
+        "automation-3-12-candidate-resume-20261029T154446Z-source-prepare.json",
+        "automation-3-12-candidate-resume-20261029T154446Z-source-verify.json"
+      ],
+      "officialCwd": "python_modules/automation",
+      "officialCommand": "tox -vv -e py312",
+      "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "sourceTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "pythonEnvironment": "py312",
+      "pytestSummary": "1994 passed, 1 skipped, 2 warnings in 239.38s (0:03:59)",
+      "passed": 1994,
+      "skipped": 1,
+      "toxRuntimeSeconds": 470.7069889520026,
+      "toxResult": "automation-3-12-candidate-resume-20261029T154446Z-tox-result.json"
+    },
+    {
+      "id": "docstring-validation-3-12",
+      "status": "PASS",
+      "candidateExit": 0,
+      "log": "docstring-validation-3-12-candidate-resume-20261029T154446Z.log",
+      "sourceReceipts": [
+        "docstring-validation-3-12-candidate-resume-20261029T154446Z-source-prepare.json",
+        "docstring-validation-3-12-candidate-resume-20261029T154446Z-source-verify.json"
+      ],
+      "officialCwd": "python_modules/automation",
+      "officialCommand": "python -m automation.dagster_docs.main check docstrings --all",
+      "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "sourceTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "symbolsProcessed": 1115,
+      "declaredPackages": 71,
+      "errors": 0,
+      "docstringWarnings": 1,
+      "excludedSymbols": 52,
+      "importWarningCount": 68,
+      "packagesNotImported": [
+        {
+          "package": "dagster_airbyte",
+          "reason": "No module named 'dagster_airbyte'"
+        },
+        {
+          "package": "dagster_airflow",
+          "reason": "No module named 'dagster_airflow'"
+        },
+        {
+          "package": "dagster_airlift",
+          "reason": "No module named 'dagster_airlift'"
+        },
+        {
+          "package": "dagster_aws",
+          "reason": "No module named 'dagster_aws'"
+        },
+        {
+          "package": "dagster_azure",
+          "reason": "No module named 'dagster_azure'"
+        },
+        {
+          "package": "dagster_celery",
+          "reason": "No module named 'dagster_celery'"
+        },
+        {
+          "package": "dagster_celery_docker",
+          "reason": "No module named 'dagster_celery_docker'"
+        },
+        {
+          "package": "dagster_celery_k8s",
+          "reason": "No module named 'dagster_celery_k8s'"
+        },
+        {
+          "package": "dagster_census",
+          "reason": "No module named 'dagster_census'"
+        },
+        {
+          "package": "dagster_clickhouse",
+          "reason": "No module named 'dagster_clickhouse'"
+        },
+        {
+          "package": "dagster_clickhouse_pandas",
+          "reason": "No module named 'dagster_clickhouse_pandas'"
+        },
+        {
+          "package": "dagster_clickhouse_polars",
+          "reason": "No module named 'dagster_clickhouse_polars'"
+        },
+        {
+          "package": "dagster_cloud_cli",
+          "reason": "No module named 'dagster_cloud_cli'"
+        },
+        {
+          "package": "dagster_dask",
+          "reason": "No module named 'dagster_dask'"
+        },
+        {
+          "package": "dagster_databricks",
+          "reason": "No module named 'dagster_databricks'"
+        },
+        {
+          "package": "dagster_datadog",
+          "reason": "No module named 'dagster_datadog'"
+        },
+        {
+          "package": "dagster_datahub",
+          "reason": "No module named 'dagster_datahub'"
+        },
+        {
+          "package": "dagster_dbt",
+          "reason": "No module named 'dagster_dbt'"
+        },
+        {
+          "package": "dagster_deltalake",
+          "reason": "No module named 'dagster_deltalake'"
+        },
+        {
+          "package": "dagster_deltalake_pandas",
+          "reason": "No module named 'dagster_deltalake_pandas'"
+        },
+        {
+          "package": "dagster_deltalake_polars",
+          "reason": "No module named 'dagster_deltalake_polars'"
+        },
+        {
+          "package": "dagster_dg_cli",
+          "reason": "No module named 'dagster_dg_cli'"
+        },
+        {
+          "package": "dagster_dg_core",
+          "reason": "No module named 'dagster_dg_core'"
+        },
+        {
+          "package": "dagster_dlt",
+          "reason": "No module named 'dagster_dlt'"
+        },
+        {
+          "package": "dagster_docker",
+          "reason": "No module named 'dagster_docker'"
+        },
+        {
+          "package": "dagster_duckdb",
+          "reason": "No module named 'dagster_duckdb'"
+        },
+        {
+          "package": "dagster_duckdb_pandas",
+          "reason": "No module named 'dagster_duckdb_pandas'"
+        },
+        {
+          "package": "dagster_duckdb_polars",
+          "reason": "No module named 'dagster_duckdb_polars'"
+        },
+        {
+          "package": "dagster_duckdb_pyspark",
+          "reason": "No module named 'dagster_duckdb_pyspark'"
+        },
+        {
+          "package": "dagster_fivetran",
+          "reason": "No module named 'dagster_fivetran'"
+        },
+        {
+          "package": "dagster_gcp",
+          "reason": "No module named 'dagster_gcp'"
+        },
+        {
+          "package": "dagster_gcp_pandas",
+          "reason": "No module named 'dagster_gcp_pandas'"
+        },
+        {
+          "package": "dagster_gcp_pyspark",
+          "reason": "No module named 'dagster_gcp_pyspark'"
+        },
+        {
+          "package": "dagster_ge",
+          "reason": "No module named 'dagster_ge'"
+        },
+        {
+          "package": "dagster_github",
+          "reason": "No module named 'dagster_github'"
+        },
+        {
+          "package": "dagster_hightouch",
+          "reason": "No module named 'dagster_hightouch'"
+        },
+        {
+          "package": "dagster_k8s",
+          "reason": "No module named 'dagster_k8s'"
+        },
+        {
+          "package": "dagster_looker",
+          "reason": "No module named 'dagster_looker'"
+        },
+        {
+          "package": "dagster_managed_elements",
+          "reason": "No module named 'dagster_managed_elements'"
+        },
+        {
+          "package": "dagster_mlflow",
+          "reason": "No module named 'dagster_mlflow'"
+        },
+        {
+          "package": "dagster_msteams",
+          "reason": "No module named 'dagster_msteams'"
+        },
+        {
+          "package": "dagster_mysql",
+          "reason": "No module named 'dagster_mysql'"
+        },
+        {
+          "package": "dagster_omni",
+          "reason": "No module named 'dagster_omni'"
+        },
+        {
+          "package": "dagster_openai",
+          "reason": "No module named 'dagster_openai'"
+        },
+        {
+          "package": "dagster_pagerduty",
+          "reason": "No module named 'dagster_pagerduty'"
+        },
+        {
+          "package": "dagster_pandas",
+          "reason": "No module named 'dagster_pandas'"
+        },
+        {
+          "package": "dagster_pandera",
+          "reason": "No module named 'dagster_pandera'"
+        },
+        {
+          "package": "dagster_papertrail",
+          "reason": "No module named 'dagster_papertrail'"
+        },
+        {
+          "package": "dagster_polytomic",
+          "reason": "No module named 'dagster_polytomic'"
+        },
+        {
+          "package": "dagster_postgres",
+          "reason": "No module named 'dagster_postgres'"
+        },
+        {
+          "package": "dagster_powerbi",
+          "reason": "No module named 'dagster_powerbi'"
+        },
+        {
+          "package": "dagster_prefect",
+          "reason": "No module named 'dagster_prefect'"
+        },
+        {
+          "package": "dagster_prometheus",
+          "reason": "No module named 'dagster_prometheus'"
+        },
+        {
+          "package": "dagster_pyspark",
+          "reason": "No module named 'dagster_pyspark'"
+        },
+        {
+          "package": "dagster_rest_resources",
+          "reason": "No module named 'dagster_rest_resources'"
+        },
+        {
+          "package": "dagster_sigma",
+          "reason": "No module named 'dagster_sigma'"
+        },
+        {
+          "package": "dagster_slack",
+          "reason": "No module named 'dagster_slack'"
+        },
+        {
+          "package": "dagster_sling",
+          "reason": "No module named 'dagster_sling'"
+        },
+        {
+          "package": "dagster_snowflake",
+          "reason": "No module named 'dagster_snowflake'"
+        },
+        {
+          "package": "dagster_snowflake_pandas",
+          "reason": "No module named 'dagster_snowflake_pandas'"
+        },
+        {
+          "package": "dagster_snowflake_polars",
+          "reason": "No module named 'dagster_snowflake_polars'"
+        },
+        {
+          "package": "dagster_snowflake_pyspark",
+          "reason": "No module named 'dagster_snowflake_pyspark'"
+        },
+        {
+          "package": "dagster_soda",
+          "reason": "No module named 'dagster_soda'"
+        },
+        {
+          "package": "dagster_spark",
+          "reason": "No module named 'dagster_spark'"
+        },
+        {
+          "package": "dagster_ssh",
+          "reason": "No module named 'dagster_ssh'"
+        },
+        {
+          "package": "dagster_tableau",
+          "reason": "No module named 'dagster_tableau'"
+        },
+        {
+          "package": "dagster_twilio",
+          "reason": "No module named 'dagster_twilio'"
+        },
+        {
+          "package": "dagster_wandb",
+          "reason": "No module named 'dagster_wandb'"
+        }
+      ],
+      "docstringWarningSymbol": "dagster.ComponentLoadContext.component_path",
+      "qualification": "Exact official command passed; ImportError is a builtin Warning-and-continue, so this is not evidence all71 integrations were imported/checked."
+    }
+  ],
+  "docstringBoundary": {
+    "symbolsProcessed": 1115,
+    "declaredPackages": 71,
+    "errors": 0,
+    "docstringWarnings": 1,
+    "importWarnings": 68,
+    "qualifiedAs": "Exact official command passed, with68 built-in import warnings; not all71 integrations checked."
+  },
+  "originalSkips": [
+    {
+      "suite": "project_fully_featured",
+      "count": 2,
+      "condition": "TEST_SNOWFLAKE != true",
+      "source": "project_fully_featured_tests/test_resources/test_snowflake_io_manager.py:53,70"
+    },
+    {
+      "suite": "automation",
+      "count": 1,
+      "condition": "Python >=3.12",
+      "source": "automation_tests/telemetry/test_resource_telemetry.py:27"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+py312-dbt18-core-derived-metadata: uv-sync> /usr/local/bin/uv sync --python-preference system --no-default-groups --group test --group test-dbt18 --frozen -p cpython3.12
+py312-dbt18-core-derived-metadata: freeze> /usr/local/bin/uv --color never pip freeze
+py312-dbt18-core-derived-metadata: commands[0]> /bin/bash -c '! uv pip list --exclude-editable | grep -e dagster'
+Using Python 3.12.14 environment at: <ENV_ROOT>/.tox/py312-dbt18-core-derived-metadata
+py312-dbt18-core-derived-metadata: commands[1]> pytest --ignore=./kitchen-sink --durations 10 --reruns 3 -m 'derived_metadata and not snowflake and not bigquery and not fusion' -vv --splits 3 --group 2 --durations-path .test_durations/dbt18-core-derived-metadata
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- <ENV_ROOT>/.tox/py312-dbt18-core-derived-metadata/bin/python3
+cachedir: <ENV_ROOT>/.tox/py312-dbt18-core-derived-metadata/.pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: syrupy-5.1.0, xdist-3.6.1, timeout-2.4.0, split-0.11.0, mock-3.14.0, cov-5.0.0, asyncio-1.3.0, anyio-4.14.2, rerunfailures-16.1, order-1.4.0
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+collecting ... 
+
+[pytest-split] Splitting tests with algorithm: duration_based_chunks
+[pytest-split] Running group 2/3 (estimated duration: 181.36s)
+
+collected 807 items / 765 deselected / 42 selected
+
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-duckdb-raw_customers] PASSED [  2%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-duckdb-stg_customers] PASSED [  4%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-duckdb-customers] PASSED [  7%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-duckdb-select_star_customers] PASSED [  9%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-snowflake-all] SKIPPEDses.) [ 11%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-snowflake-raw_customers] SKIPPEDses.) [ 14%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-snowflake-stg_customers] SKIPPEDses.) [ 16%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-snowflake-customers] SKIPPEDses.) [ 19%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-snowflake-select_star_customers] SKIPPED [ 21%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-trino-all] SKIPPEDses.) [ 23%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-trino-raw_customers] SKIPPEDses.) [ 26%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-trino-stg_customers] SKIPPEDses.) [ 28%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-trino-customers] SKIPPEDses.) [ 30%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-trino-select_star_customers] SKIPPEDses.) [ 33%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-bigquery-all] SKIPPEDses.) [ 35%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-bigquery-raw_customers] SKIPPEDses.) [ 38%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-bigquery-stg_customers] SKIPPEDses.) [ 40%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-bigquery-customers] SKIPPEDses.) [ 42%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-bigquery-select_star_customers] SKIPPED [ 45%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-databricks-all] SKIPPEDses.) [ 47%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-databricks-raw_customers] SKIPPEDses.) [ 50%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-databricks-stg_customers] SKIPPEDses.) [ 52%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-databricks-customers] SKIPPEDses.) [ 54%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-databricks-select_star_customers] SKIPPED [ 57%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-duckdb-all] PASSED [ 59%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-duckdb-raw_customers] SKIPPEDses.) [ 61%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-duckdb-stg_customers] SKIPPEDses.) [ 64%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-duckdb-customers] SKIPPEDses.) [ 66%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-duckdb-select_star_customers] SKIPPEDses.) [ 69%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-snowflake-all] SKIPPEDses.) [ 71%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-snowflake-raw_customers] SKIPPEDses.) [ 73%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-snowflake-stg_customers] SKIPPEDses.) [ 76%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-snowflake-customers] SKIPPEDses.) [ 78%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-snowflake-select_star_customers] SKIPPED [ 80%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-trino-all] SKIPPEDses.) [ 83%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-trino-raw_customers] SKIPPEDses.) [ 85%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-trino-stg_customers] SKIPPEDses.) [ 88%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-trino-customers] SKIPPEDses.) [ 90%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-trino-select_star_customers] SKIPPEDses.) [ 92%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_dbt_raw_cli_no_jinja_log_info[no empty jinja log info on parse] PASSED [ 95%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_dbt_raw_cli_no_jinja_log_info[no jinja log info on execution] PASSED [ 97%]
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_dependencies[False] PASSED [100%]
+
+=============================== warnings summary ===============================
+dagster_dbt_tests/core/test_asset_decorator.py:513
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_decorator.py:513: BetaWarning: Class `MultiPartitionMapping` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    MultiPartitionMapping(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 10 durations =============================
+14.42s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[legacy-duckdb-all]
+14.32s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-duckdb-stg_customers]
+14.23s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-duckdb-customers]
+13.91s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-duckdb-select_star_customers]
+13.28s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-duckdb-raw_customers]
+12.33s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_integration[async-duckdb-raw_customers]
+11.82s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_dependencies[False]
+9.00s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_dependencies[False]
+3.28s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_dbt_raw_cli_no_jinja_log_info[no jinja log info on execution]
+2.37s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_dbt_raw_cli_no_jinja_log_info[no empty jinja log info on parse]
+=========================== short test summary info ============================
+SKIPPED [34] dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py:735: Full integration matrix runs only on master; PRs use representative cases.
+===== 8 passed, 34 skipped, 765 deselected, 1 warning in 111.66s (0:01:51) =====
+  py312-dbt18-core-derived-metadata: OK (115.97=setup[0.04]+cmd[0.01,115.93] seconds)
+  congratulations :) (116.00 seconds)

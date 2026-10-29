@@ -1,0 +1,116 @@
+py312-dbt112-core-main: uv-sync> /usr/local/bin/uv sync --python-preference system --no-default-groups --group test --group test-dbt112 --frozen -p cpython3.12
+py312-dbt112-core-main: freeze> /usr/local/bin/uv --color never pip freeze
+py312-dbt112-core-main: commands[0]> /bin/bash -c '! uv pip list --exclude-editable | grep -e dagster'
+Using Python 3.12.14 environment at: <ENV_ROOT>/.tox/py312-dbt112-core-main
+py312-dbt112-core-main: commands[1]> pytest --ignore=./kitchen-sink --durations 10 -m 'core and not snowflake and not bigquery and not derived_metadata and not fusion' -vv dagster_dbt_tests/core/test_project.py dagster_dbt_tests/components/test_dbt_project_component.py
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- <ENV_ROOT>/.tox/py312-dbt112-core-main/bin/python3
+cachedir: <ENV_ROOT>/.tox/py312-dbt112-core-main/.pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: syrupy-5.1.0, xdist-3.6.1, timeout-2.4.0, split-0.11.0, mock-3.14.0, cov-5.0.0, asyncio-1.3.0, anyio-4.14.2, rerunfailures-16.1, order-1.4.0
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+collecting ... collected 62 items
+
+dagster_dbt_tests/core/test_project.py::test_local_dev PASSED            [  1%]
+dagster_dbt_tests/core/test_project.py::test_concurrent_processes PASSED [  3%]
+dagster_dbt_tests/core/test_project.py::test_invalidate_seeds_in_partial_parse PASSED [  4%]
+dagster_dbt_tests/core/test_project.py::test_invalidate_seeds_handles_missing_partial_parse PASSED [  6%]
+dagster_dbt_tests/core/test_project.py::test_prepare_twice_with_csv_unit_test_fixtures PASSED [  8%]
+dagster_dbt_tests/core/test_project.py::test_accepts_string_target_path PASSED [  9%]
+dagster_dbt_tests/core/test_project.py::test_prepare_runs_deps_when_packages_exist PASSED [ 11%]
+dagster_dbt_tests/core/test_project.py::test_prepare_skips_deps_when_install_deps_disabled PASSED [ 12%]
+dagster_dbt_tests/core/test_project.py::test_seed_command_succeeds_after_invalidation PASSED [ 14%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtOpCustomization::test_translation[name] PASSED [ 16%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtOpCustomization::test_translation[tags] PASSED [ 17%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtOpCustomization::test_translation[backfill_policy] PASSED [ 19%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_python_params[None] PASSED [ 20%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_python_params[single_run] PASSED [ 22%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_python_params[multi_run] PASSED [ 24%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_python_params[multi_run_with_max_partitions] PASSED [ 25%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_load_from_path PASSED [ 27%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_project_prepare_cli PASSED [ 29%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_dbt_subclass_additional_scope_fn PASSED [ 30%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_target_path_from_component_string PASSED [ 32%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[group_name] PASSED [ 33%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[owners] PASSED [ 35%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[tags] PASSED [ 37%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[kinds] PASSED [ 38%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[tags-and-kinds] PASSED [ 40%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[code-version] PASSED [ 41%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[description] PASSED [ 43%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[metadata] PASSED [ 45%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[deps] PASSED [ 46%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[automation_condition] PASSED [ 48%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[key] PASSED [ 50%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[key_prefix] PASSED [ 51%]
+dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtTranslation::test_translation[partitions_defs] PASSED [ 53%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_subselection PASSED [ 54%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_exclude PASSED [ 56%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_dependency_on_dbt_project PASSED [ 58%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_spec_is_available_in_scope PASSED [ 59%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_udf_map_spec[map_spec] PASSED [ 61%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_udf_map_spec[map_spec_to_attributes] PASSED [ 62%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_udf_map_spec[map_spec_to_attributes_dict] PASSED [ 64%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_state_path PASSED [ 66%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_cli_args[None-expected_args0] PASSED [ 67%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_cli_args[cli_args1-expected_args1] PASSED [ 69%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_cli_args[cli_args2-expected_args2] PASSED [ 70%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_python_interface PASSED [ 72%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_settings PASSED [ 74%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_resolution PASSED [ 75%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_disable_prep_if_dev PASSED [ 77%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_subclass_override_get_asset_spec PASSED [ 79%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_subclass_override_get_asset_spec_translator_metadata PASSED [ 80%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_subclass_with_yaml_translation_translates_dep_keys PASSED [ 82%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_basic_component_dev_mode PASSED [ 83%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_install_deps_flows_from_component_args PASSED [ 85%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_prepare_does_not_recurse_when_state_nested_in_project_dir PASSED [ 87%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_prepare_excludes_git_directory_from_snapshot PASSED [ 88%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_prepare_replaces_snapshot_containing_read_only_files PASSED [ 90%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_basic_component_non_dev_mode PASSED [ 91%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_subclass_with_op_config_schema PASSED [ 93%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_subclass_with_op_config_schema_and_custom_get_asset_spec PASSED [ 95%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_upstream_source_metadata_flows_to_stub_asset PASSED [ 96%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_include_metadata_insights_calls_with_insights PASSED [ 98%]
+dagster_dbt_tests/components/test_dbt_project_component.py::test_include_metadata_without_insights_does_not_call_with_insights PASSED [100%]
+
+=============================== warnings summary ===============================
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py: 261 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/dagster_dbt_translator.py:821: BetaWarning: Class `LocalFileCodeReference` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    LocalFileCodeReference(file_path=os.fspath(abs_path)),
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py: 261 warnings
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/dagster_dbt_translator.py:818: BetaWarning: Class `CodeReferencesMetadataValue` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    code_references=CodeReferencesMetadataValue(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py::test_load_from_path
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py::test_basic_component_dev_mode
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py::test_basic_component_non_dev_mode
+  <SOURCE>/python_modules/dagster/dagster/components/component/component.py:352: BetaWarning: Class `LocalFileCodeReference` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    LocalFileCodeReference(file_path=str(yaml_path), line_number=source_position.start.line)
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py::test_load_from_path
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py::test_basic_component_dev_mode
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py::test_basic_component_non_dev_mode
+  <SOURCE>/python_modules/dagster/dagster/components/core/defs_module.py:88: BetaWarning: Class `CodeReferencesMetadataValue` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    code_references=CodeReferencesMetadataValue(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 10 durations =============================
+20.09s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_project.py::test_prepare_skips_deps_when_install_deps_disabled
+14.75s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_project.py::test_prepare_runs_deps_when_packages_exist
+12.01s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_project.py::test_seed_command_succeeds_after_invalidation
+11.81s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_project.py::test_prepare_twice_with_csv_unit_test_fixtures
+11.31s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py::test_upstream_source_metadata_flows_to_stub_asset
+11.06s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py::test_install_deps_flows_from_component_args
+7.21s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_project.py::test_local_dev
+6.81s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py::test_basic_component_non_dev_mode
+6.61s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py::TestDbtOpCustomization::test_translation[name]
+6.53s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/components/test_dbt_project_component.py::test_dependency_on_dbt_project
+================= 62 passed, 528 warnings in 150.95s (0:02:30) =================
+  py312-dbt112-core-main: OK (153.73=setup[0.03]+cmd[0.01,153.69] seconds)
+  congratulations :) (153.76 seconds)

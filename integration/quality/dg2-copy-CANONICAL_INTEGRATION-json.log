@@ -1,0 +1,2 @@
+time="2026-10-29T10:57:19-07:00" level=error msg="Can't add file \\\\?\\<VALIDATION_ROOT>\\integration-ab2572\\quality-compat\\CANONICAL_INTEGRATION.json to tar: io: read/write on closed pipe"
+Error response from daemon: Could not find the file <DG_COMPAT_RUNTIME> in container pr1029-dagster-dg-cli-ram

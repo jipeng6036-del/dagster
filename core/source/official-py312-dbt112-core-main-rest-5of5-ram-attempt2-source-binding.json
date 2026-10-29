@@ -1,0 +1,11 @@
+{
+  "atUtc": "2026-10-29T16:10:51.457166+00:00",
+  "suite": "official-py312-dbt112-core-main-rest-5of5-ram-attempt2",
+  "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+  "canonicalTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "checkedTrackedFiles": 14576,
+  "testSideEffects": [],
+  "unresolved": [],
+  "allCanonicalTrackedBytesModesAfterRecovery": true,
+  "untrackedGeneratedArtifactsExcluded": true
+}

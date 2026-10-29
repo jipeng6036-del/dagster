@@ -1,0 +1,7 @@
+artifact_step_proof:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: proof.duckdb
+      threads: 1

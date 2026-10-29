@@ -1,0 +1,57 @@
+[
+  {
+    "label": "environment",
+    "argv": [
+      "<RUNTIME_ROOT>\\env-py312-dbt17\\Scripts\\python.exe",
+      "-c",
+      "import sys,json,importlib.metadata as m,dagster_dbt.cloud.asset_defs as s;print(json.dumps({'python':sys.version,'versions':{x:m.version(x) for x in ['dagster','dagster-dbt','dbt-core','dbt-duckdb','requests']},'source':s.__file__}))"
+    ],
+    "cwd": "<SOURCE>\\python_modules\\libraries\\dagster-dbt",
+    "startedAtUtc": "2026-10-29T15:58:24.056877+00:00",
+    "exit": 0,
+    "endedAtUtc": "2026-10-29T15:58:42.319124+00:00"
+  },
+  {
+    "label": "compare-http",
+    "argv": [
+      "<RUNTIME_ROOT>\\env-py312-dbt17\\Scripts\\python.exe",
+      "<PROOF>\\compare_http.py",
+      "--repo",
+      "<SOURCE>",
+      "--output",
+      "<PORTABLE_RUN>\\http"
+    ],
+    "cwd": "<SOURCE>\\python_modules\\libraries\\dagster-dbt",
+    "startedAtUtc": "2026-10-29T15:58:42.319644+00:00",
+    "exit": 0,
+    "endedAtUtc": "2026-10-29T16:01:51.643202+00:00"
+  },
+  {
+    "label": "generate-artifacts",
+    "argv": [
+      "<RUNTIME_ROOT>\\env-py312-dbt17\\Scripts\\python.exe",
+      "<PROOF>\\generate_artifacts.py",
+      "--output",
+      "<PORTABLE_RUN>\\artifacts"
+    ],
+    "cwd": "<SOURCE>\\python_modules\\libraries\\dagster-dbt",
+    "startedAtUtc": "2026-10-29T16:01:51.650258+00:00",
+    "exit": 0,
+    "endedAtUtc": "2026-10-29T16:02:19.715630+00:00"
+  },
+  {
+    "label": "real-artifacts-http",
+    "argv": [
+      "<RUNTIME_ROOT>\\env-py312-dbt17\\Scripts\\python.exe",
+      "<PROOF>\\reproduce_real_artifacts.py",
+      "--label",
+      "candidate",
+      "--output",
+      "<PORTABLE_RUN>\\artifacts"
+    ],
+    "cwd": "<SOURCE>\\python_modules\\libraries\\dagster-dbt",
+    "startedAtUtc": "2026-10-29T16:02:19.716171+00:00",
+    "exit": 0,
+    "endedAtUtc": "2026-10-29T16:02:37.800448+00:00"
+  }
+]

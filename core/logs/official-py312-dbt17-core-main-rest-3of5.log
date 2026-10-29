@@ -1,0 +1,195 @@
+py312-dbt17-core-main: uv-sync> /usr/local/bin/uv sync --python-preference system --no-default-groups --group test --group test-dbt17 --frozen -p cpython3.12
+py312-dbt17-core-main: freeze> /usr/local/bin/uv --color never pip freeze
+py312-dbt17-core-main: commands[0]> /bin/bash -c '! uv pip list --exclude-editable | grep -e dagster'
+Using Python 3.12.14 environment at: <ENV_ROOT>/.tox/py312-dbt17-core-main
+py312-dbt17-core-main: commands[1]> pytest --ignore=./kitchen-sink --durations 10 -m 'core and not snowflake and not bigquery and not derived_metadata and not fusion' -vv --splits 5 --group 3 --durations-path .test_durations/dbt17-core-main-rest --ignore=dagster_dbt_tests/core/test_resource.py --ignore=dagster_dbt_tests/core/test_asset_checks.py --ignore=dagster_dbt_tests/cli
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- <ENV_ROOT>/.tox/py312-dbt17-core-main/bin/python3
+cachedir: <ENV_ROOT>/.tox/py312-dbt17-core-main/.pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: syrupy-5.1.0, xdist-3.6.1, timeout-2.4.0, split-0.11.0, mock-3.14.0, cov-5.0.0, asyncio-1.3.0, anyio-4.14.2, rerunfailures-16.1, order-1.4.0
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+collecting ... 
+
+[pytest-split] Splitting tests with algorithm: duration_based_chunks
+[pytest-split] Running group 3/5 (estimated duration: 111.93s)
+
+collected 726 items / 654 deselected / 72 selected
+
+dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_with_semantic_models_and_saved_queries[tag:test] PASSED [  1%]
+dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_with_unit_tests[fqn:*] SKIPPED [  2%]
+dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_with_unit_tests[tag:test] SKIPPED [  4%]
+dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_with_functions[fqn:*] SKIPPED [  5%]
+dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_with_functions[tag:test] SKIPPED [  6%]
+dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_with_invalid_self_dependencies PASSED [  8%]
+dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_with_duplicate_asset_keys PASSED [  9%]
+dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_with_duplicate_source_asset_keys PASSED [ 11%]
+dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_enable_source_metadata_with_multiple_assets_defs PASSED [ 12%]
+dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_enable_source_metadata_across_distinct_manifests PASSED [ 13%]
+dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_enable_source_metadata_dedupes_collapsed_sources PASSED [ 15%]
+dagster_dbt_tests/core/test_asset_materialization_execution_duration.py::test_microbatch_log_model_result_to_asset PASSED [ 16%]
+dagster_dbt_tests/core/test_asset_materialization_execution_duration.py::test_incremental_log_model_result_to_asset PASSED [ 18%]
+dagster_dbt_tests/core/test_asset_materialization_execution_duration.py::test_success_equivalent_status_yields_materialization[no-op] PASSED [ 19%]
+dagster_dbt_tests/core/test_asset_materialization_execution_duration.py::test_success_equivalent_status_yields_materialization[reused] PASSED [ 20%]
+dagster_dbt_tests/core/test_asset_materialization_execution_duration.py::test_log_test_result_without_node_info PASSED [ 22%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection[--select fqn:*] PASSED [ 23%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection[--select raw_customers stg_customers] PASSED [ 25%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection[--select raw_customers+] PASSED [ 26%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection[--select resource_type:model] PASSED [ 27%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection[--select raw_customers+,resource_type:model] PASSED [ 29%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection[--exclude orders] PASSED [ 30%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection[--exclude raw_customers+] PASSED [ 31%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection[--exclude raw_customers stg_customers] PASSED [ 33%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection[--exclude resource_type:model] PASSED [ 34%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection[--exclude tag:does-not-exist] PASSED [ 36%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection_on_asset_definition_with_existing_selection[None-None-expected_dbt_resource_names0] PASSED [ 37%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection_on_asset_definition_with_existing_selection[raw_customers-None-expected_dbt_resource_names1] PASSED [ 38%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection_on_asset_definition_with_existing_selection[customers-None-expected_dbt_resource_names2] PASSED [ 40%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection_on_asset_definition_with_existing_selection[None-raw_customers-expected_dbt_resource_names3] PASSED [ 41%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection_manifest_argument PASSED [ 43%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection_equality PASSED [ 44%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection_selector PASSED [ 45%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection_path_selector_without_project_reproduces_issue PASSED [ 47%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection_path_selector_with_project SKIPPED [ 48%]
+dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection_selector_invalid PASSED [ 50%]
+dagster_dbt_tests/core/test_asset_selection.py::test_select_unique_ids_includes_isolated_fusion_models[isolated-model-by-name] PASSED [ 51%]
+dagster_dbt_tests/core/test_asset_selection.py::test_select_unique_ids_includes_isolated_fusion_models[select-all] PASSED [ 52%]
+dagster_dbt_tests/core/test_asset_selection.py::test_select_unique_ids_tolerates_hook_nodes_without_config PASSED [ 54%]
+dagster_dbt_tests/core/test_asset_specs.py::test_build_dbt_asset_specs_as_external_assets PASSED [ 55%]
+dagster_dbt_tests/core/test_asset_specs.py::test_build_dbt_asset_specs_preserves_translator_attributes PASSED [ 56%]
+dagster_dbt_tests/core/test_code_references.py::test_basic_attach_code_references PASSED [ 58%]
+dagster_dbt_tests/core/test_code_references.py::test_basic_attach_code_references_no_project_dir PASSED [ 59%]
+dagster_dbt_tests/core/test_code_references.py::test_with_source_code_references_wrapper PASSED [ 61%]
+dagster_dbt_tests/core/test_code_references.py::test_link_to_git_wrapper PASSED [ 62%]
+dagster_dbt_tests/core/test_code_references.py::test_attach_code_reference_with_string_project_dir PASSED [ 63%]
+dagster_dbt_tests/core/test_compat.py::test_status_enums_match_dbt_core PASSED [ 65%]
+dagster_dbt_tests/core/test_compat.py::test_fusion_test_result_to_check_evaluation[pass-True-AssetCheckSeverity.ERROR] PASSED [ 66%]
+dagster_dbt_tests/core/test_compat.py::test_fusion_test_result_to_check_evaluation[success-True-AssetCheckSeverity.ERROR] PASSED [ 68%]
+dagster_dbt_tests/core/test_compat.py::test_fusion_test_result_to_check_evaluation[fail-False-AssetCheckSeverity.ERROR] PASSED [ 69%]
+dagster_dbt_tests/core/test_compat.py::test_fusion_test_result_to_check_evaluation[error-False-AssetCheckSeverity.ERROR] PASSED [ 70%]
+dagster_dbt_tests/core/test_compat.py::test_fusion_test_result_to_check_evaluation[warn-False-AssetCheckSeverity.WARN] PASSED [ 72%]
+dagster_dbt_tests/core/test_compat.py::test_dbt_v2_and_dbt_core_conflict PASSED [ 73%]
+dagster_dbt_tests/core/test_dbt_cli_event.py::test_non_error_node_statuses_materialize[success] PASSED [ 75%]
+dagster_dbt_tests/core/test_dbt_cli_event.py::test_non_error_node_statuses_materialize[no-op] PASSED [ 76%]
+dagster_dbt_tests/core/test_dbt_cli_event.py::test_non_error_node_statuses_materialize[reused] PASSED [ 77%]
+dagster_dbt_tests/core/test_dbt_cli_event.py::test_non_error_node_statuses_materialize[warn] PASSED [ 79%]
+dagster_dbt_tests/core/test_dbt_cli_event.py::test_error_node_statuses_do_not_materialize[error] PASSED [ 80%]
+dagster_dbt_tests/core/test_dbt_cli_event.py::test_error_node_statuses_do_not_materialize[fail] PASSED [ 81%]
+dagster_dbt_tests/core/test_dbt_cli_event.py::test_error_node_statuses_do_not_materialize[skipped] PASSED [ 83%]
+dagster_dbt_tests/core/test_dbt_cli_event.py::test_error_node_statuses_do_not_materialize[runtime error] PASSED [ 84%]
+dagster_dbt_tests/core/test_dbt_cli_event.py::test_error_node_statuses_do_not_materialize[partial success] PASSED [ 86%]
+dagster_dbt_tests/core/test_dbt_cli_event.py::test_warn_on_a_test_is_still_a_warn_severity_check PASSED [ 87%]
+dagster_dbt_tests/core/test_dependencies.py::test_asset_downstream_of_dbt_asset PASSED [ 88%]
+dagster_dbt_tests/core/test_dependencies.py::test_get_asset_keys_by_output_name_for_source PASSED [ 90%]
+dagster_dbt_tests/core/test_dependencies.py::test_get_asset_keys_for_model PASSED [ 91%]
+dagster_dbt_tests/core/test_freshness_checks.py::test_dbt_last_update_freshness_checks PASSED [ 93%]
+dagster_dbt_tests/core/test_freshness_checks.py::test_dbt_time_partition_freshness_checks PASSED [ 94%]
+dagster_dbt_tests/core/test_freshness_checks.py::test_dbt_duplicate_assets_defs PASSED [ 95%]
+dagster_dbt_tests/core/test_freshness_checks.py::test_last_update_multiple_assets_defs PASSED [ 97%]
+dagster_dbt_tests/core/test_freshness_checks.py::test_time_partition_multiple_assets_defs PASSED [ 98%]
+dagster_dbt_tests/core/test_freshness_checks.py::test_mixed_freshness PASSED [100%]
+
+=============================== warnings summary ===============================
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py::test_with_source_code_references_wrapper
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py:88: BetaWarning: Function `with_source_code_references` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    defs = Definitions(assets=with_source_code_references([my_dbt_assets]))
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py::test_with_source_code_references_wrapper
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py::test_link_to_git_wrapper
+  <SOURCE>/python_modules/dagster/dagster/_core/definitions/metadata/source_code.py:94: BetaWarning: Class `LocalFileCodeReference` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    return LocalFileCodeReference(file_path=origin_file, line_number=origin_line)
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py::test_with_source_code_references_wrapper
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py::test_link_to_git_wrapper
+  <SOURCE>/python_modules/dagster/dagster/_core/definitions/metadata/source_code.py:189: BetaWarning: Class `CodeReferencesMetadataValue` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    code_references=CodeReferencesMetadataValue(code_references=sources_for_asset)
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py::test_link_to_git_wrapper
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py:116: BetaWarning: Function `with_source_code_references` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    with_source_code_references([my_dbt_assets]),
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py::test_link_to_git_wrapper
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py:119: BetaWarning: Class `AnchorBasedFilePathMapping` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    file_path_mapping=AnchorBasedFilePathMapping(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py::test_link_to_git_wrapper
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py:115: BetaWarning: Function `link_code_references_to_git` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    assets=link_code_references_to_git(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py::test_link_to_git_wrapper
+  <SOURCE>/python_modules/dagster/dagster/_core/definitions/metadata/source_code.py:285: BetaWarning: Class `UrlCodeReference` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    return UrlCodeReference(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py::test_link_to_git_wrapper
+  <SOURCE>/python_modules/dagster/dagster/_core/definitions/metadata/source_code.py:326: BetaWarning: Class `CodeReferencesMetadataValue` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    code_references=CodeReferencesMetadataValue(code_references=sources_for_asset)
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py::test_attach_code_reference_with_string_project_dir
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/dagster_dbt_translator.py:821: BetaWarning: Class `LocalFileCodeReference` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    LocalFileCodeReference(file_path=os.fspath(abs_path)),
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_code_references.py::test_attach_code_reference_with_string_project_dir
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/dagster_dbt_translator.py:818: BetaWarning: Class `CodeReferencesMetadataValue` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    code_references=CodeReferencesMetadataValue(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_dbt_last_update_freshness_checks
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py:26: SupersessionWarning: Function `build_freshness_checks_from_dbt_assets` is superseded and its usage is discouraged. Create `FreshnessPolicy` objects for your dbt models by overriding `get_asset_spec` in your `DagsterDbtTranslator`, or by updating the `translation` configuration of your `DbtProjectComponent` instead.
+    freshness_checks = build_freshness_checks_from_dbt_assets(dbt_assets=[my_dbt_assets])
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_dbt_last_update_freshness_checks
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_last_update_multiple_assets_defs
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_last_update_multiple_assets_defs
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_mixed_freshness
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/freshness_builder.py:139: SupersessionWarning: Function `build_last_update_freshness_checks` is superseded and its usage is discouraged. Attach `FreshnessPolicy` objects to your assets instead.
+    build_last_update_freshness_checks(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_dbt_time_partition_freshness_checks
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py:55: SupersessionWarning: Function `build_freshness_checks_from_dbt_assets` is superseded and its usage is discouraged. Create `FreshnessPolicy` objects for your dbt models by overriding `get_asset_spec` in your `DagsterDbtTranslator`, or by updating the `translation` configuration of your `DbtProjectComponent` instead.
+    freshness_checks = build_freshness_checks_from_dbt_assets(dbt_assets=[my_dbt_assets])
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_dbt_time_partition_freshness_checks
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_time_partition_multiple_assets_defs
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_time_partition_multiple_assets_defs
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_mixed_freshness
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt/freshness_builder.py:122: SupersessionWarning: Function `build_time_partition_freshness_checks` is superseded and its usage is discouraged. Attach `FreshnessPolicy` objects to your assets instead.
+    build_time_partition_freshness_checks(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_dbt_duplicate_assets_defs
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py:76: SupersessionWarning: Function `build_freshness_checks_from_dbt_assets` is superseded and its usage is discouraged. Create `FreshnessPolicy` objects for your dbt models by overriding `get_asset_spec` in your `DagsterDbtTranslator`, or by updating the `translation` configuration of your `DbtProjectComponent` instead.
+    build_freshness_checks_from_dbt_assets(dbt_assets=[my_dbt_assets, my_dbt_assets])
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_last_update_multiple_assets_defs
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py:90: SupersessionWarning: Function `build_freshness_checks_from_dbt_assets` is superseded and its usage is discouraged. Create `FreshnessPolicy` objects for your dbt models by overriding `get_asset_spec` in your `DagsterDbtTranslator`, or by updating the `translation` configuration of your `DbtProjectComponent` instead.
+    freshness_checks = build_freshness_checks_from_dbt_assets(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_time_partition_multiple_assets_defs
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py:147: SupersessionWarning: Function `build_freshness_checks_from_dbt_assets` is superseded and its usage is discouraged. Create `FreshnessPolicy` objects for your dbt models by overriding `get_asset_spec` in your `DagsterDbtTranslator`, or by updating the `translation` configuration of your `DbtProjectComponent` instead.
+    freshness_checks = build_freshness_checks_from_dbt_assets(
+
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_mixed_freshness
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py:198: SupersessionWarning: Function `build_freshness_checks_from_dbt_assets` is superseded and its usage is discouraged. Create `FreshnessPolicy` objects for your dbt models by overriding `get_asset_spec` in your `DagsterDbtTranslator`, or by updating the `translation` configuration of your `DbtProjectComponent` instead.
+    freshness_checks = build_freshness_checks_from_dbt_assets(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 10 durations =============================
+16.14s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_with_semantic_models_and_saved_queries[tag:test]
+13.60s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_enable_source_metadata_with_multiple_assets_defs
+10.49s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_with_duplicate_asset_keys
+10.40s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_with_invalid_self_dependencies
+10.30s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_decorator.py::test_dbt_with_duplicate_source_asset_keys
+10.29s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_dbt_time_partition_freshness_checks
+10.27s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_dbt_last_update_freshness_checks
+10.25s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_last_update_multiple_assets_defs
+10.23s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_freshness_checks.py::test_time_partition_multiple_assets_defs
+10.20s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_selection.py::test_dbt_asset_selection[--select fqn:*]
+=========================== short test summary info ============================
+SKIPPED [2] dagster_dbt_tests/core/test_asset_decorator.py:1167: dbt unit test support is only available in `dbt-core>=1.8.0`
+SKIPPED [2] dagster_dbt_tests/core/test_asset_decorator.py:1187: dbt udf support is only available in `dbt-core>=1.11.0`
+SKIPPED [1] dagster_dbt_tests/core/test_asset_selection.py:379: dbt-core 1.7 does not expose dbt_common project-root contextvars
+==== 67 passed, 5 skipped, 654 deselected, 26 warnings in 144.20s (0:02:24) ====
+  py312-dbt17-core-main: OK (145.91=setup[0.03]+cmd[0.01,145.86] seconds)
+  congratulations :) (145.93 seconds)

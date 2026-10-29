@@ -1,0 +1,357 @@
+{
+  "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+  "sourceTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "initialBatchAllPass": false,
+  "jobs": [
+    {
+      "id": "dagster-dg-cli-general-3-12",
+      "candidate": {
+        "jobId": "dagster-dg-cli-general-3-12",
+        "state": "candidate",
+        "outerExit": 0,
+        "officialCommand": "tox -vv -e py312-general",
+        "rawLog": "candidate-dagster-dg-cli-general-3-12.log",
+        "cases": 573,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 2,
+        "passed": 571,
+        "sourceBefore": "candidate-dagster-dg-cli-general-3-12-before-source-verify.json",
+        "sourceAfter": "candidate-dagster-dg-cli-general-3-12-after-source-verify.json"
+      }
+    },
+    {
+      "id": "dagster-dg-cli-1-4-slow-3-12",
+      "candidate": {
+        "jobId": "dagster-dg-cli-1-4-slow-3-12",
+        "state": "candidate",
+        "outerExit": 1,
+        "officialCommand": "tox -vv -e py312-slow -- --splits 4 --group 1 --durations-path .test_durations/slow",
+        "rawLog": "candidate-dagster-dg-cli-1-4-slow-3-12.log",
+        "cases": 5,
+        "failed": 1,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 4,
+        "sourceBefore": "candidate-dagster-dg-cli-1-4-slow-3-12-before-source-verify.json",
+        "sourceAfter": "candidate-dagster-dg-cli-1-4-slow-3-12-after-source-verify.json"
+      }
+    },
+    {
+      "id": "dagster-dg-cli-2-4-slow-3-12",
+      "candidate": {
+        "jobId": "dagster-dg-cli-2-4-slow-3-12",
+        "state": "candidate",
+        "outerExit": 0,
+        "officialCommand": "tox -vv -e py312-slow -- --splits 4 --group 2 --durations-path .test_durations/slow",
+        "rawLog": "candidate-dagster-dg-cli-2-4-slow-3-12.log",
+        "cases": 27,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 27,
+        "sourceBefore": "candidate-dagster-dg-cli-2-4-slow-3-12-before-source-verify.json",
+        "sourceAfter": "candidate-dagster-dg-cli-2-4-slow-3-12-after-source-verify.json"
+      }
+    },
+    {
+      "id": "dagster-dg-cli-3-4-slow-3-12",
+      "candidate": {
+        "jobId": "dagster-dg-cli-3-4-slow-3-12",
+        "state": "candidate",
+        "outerExit": 0,
+        "officialCommand": "tox -vv -e py312-slow -- --splits 4 --group 3 --durations-path .test_durations/slow",
+        "rawLog": "candidate-dagster-dg-cli-3-4-slow-3-12.log",
+        "cases": 44,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 44,
+        "sourceBefore": "candidate-dagster-dg-cli-3-4-slow-3-12-before-source-verify.json",
+        "sourceAfter": "candidate-dagster-dg-cli-3-4-slow-3-12-after-source-verify.json"
+      }
+    },
+    {
+      "id": "dagster-dg-cli-4-4-slow-3-12",
+      "candidate": {
+        "jobId": "dagster-dg-cli-4-4-slow-3-12",
+        "state": "candidate",
+        "outerExit": 0,
+        "officialCommand": "tox -vv -e py312-slow -- --splits 4 --group 4 --durations-path .test_durations/slow",
+        "rawLog": "candidate-dagster-dg-cli-4-4-slow-3-12.log",
+        "cases": 26,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 26,
+        "sourceBefore": "candidate-dagster-dg-cli-4-4-slow-3-12-before-source-verify.json",
+        "sourceAfter": "candidate-dagster-dg-cli-4-4-slow-3-12-after-source-verify.json"
+      }
+    },
+    {
+      "id": "dagster-dg-cli-serial-3-12",
+      "candidate": {
+        "jobId": "dagster-dg-cli-serial-3-12",
+        "state": "candidate",
+        "outerExit": 0,
+        "officialCommand": "tox -vv -e py312-serial",
+        "rawLog": "candidate-dagster-dg-cli-serial-3-12.log",
+        "cases": 6,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 6,
+        "sourceBefore": "candidate-dagster-dg-cli-serial-3-12-before-source-verify.json",
+        "sourceAfter": "candidate-dagster-dg-cli-serial-3-12-after-source-verify.json"
+      }
+    },
+    {
+      "id": "dagster-dg-cli-plus-3-12",
+      "candidate": {
+        "jobId": "dagster-dg-cli-plus-3-12",
+        "state": "candidate",
+        "outerExit": 0,
+        "officialCommand": "tox -vv -e py312-plus",
+        "rawLog": "candidate-dagster-dg-cli-plus-3-12.log",
+        "cases": 118,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 118,
+        "sourceBefore": "candidate-dagster-dg-cli-plus-3-12-before-source-verify.json",
+        "sourceAfter": "candidate-dagster-dg-cli-plus-3-12-after-source-verify.json"
+      }
+    }
+  ],
+  "controls": [
+    {
+      "control": "with-observer",
+      "originalOuterExit": 0,
+      "cases": 5,
+      "passed": 5,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "startupProbe": {
+        "sitecustomizeLoaded": true,
+        "computeTailWait": null
+      },
+      "captureIndexPresent": true,
+      "scopeUnchanged": true,
+      "sourceBefore": "control_with_observer-before-source-verify.json",
+      "sourceAfter": "control_with_observer-after-source-verify.json",
+      "diagnosticOnly": "Original slow1 candidate failure remains; these are explicit independently named controls, not hidden retries or an automatic qualification waiver.",
+      "sameExactFiveCaseIdentitiesAsOriginalSlow1": true,
+      "captureIndex": "controls/with-observer/capture-index.json",
+      "captureFileCount": 26,
+      "captureWithConfig7Count": 3,
+      "captureWatcherCpuSeconds": 0.801008895,
+      "captureWatcherWallSeconds": 53.3458880420003
+    },
+    {
+      "control": "without-observer",
+      "originalOuterExit": 0,
+      "cases": 5,
+      "passed": 5,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "startupProbe": {
+        "sitecustomizeLoaded": false,
+        "computeTailWait": null
+      },
+      "captureIndexPresent": true,
+      "scopeUnchanged": true,
+      "sourceBefore": "control_without_observer-before-source-verify.json",
+      "sourceAfter": "control_without_observer-after-source-verify.json",
+      "diagnosticOnly": "Original slow1 candidate failure remains; these are explicit independently named controls, not hidden retries or an automatic qualification waiver.",
+      "sameExactFiveCaseIdentitiesAsOriginalSlow1": true,
+      "captureIndex": "controls/without-observer/capture-index.json",
+      "captureFileCount": 26,
+      "captureWithConfig7Count": 3,
+      "captureWatcherCpuSeconds": 0.746144686,
+      "captureWatcherWallSeconds": 50.350137968001945
+    }
+  ],
+  "sourceBindings": [
+    {
+      "artifact": "baseline-dagster-dg-cli-1-4-slow-3-12-after-source-verify.json",
+      "head": "9f23277a83945062eec5f7d9c3b052bc91b5c7c6",
+      "tree": "f7cf8153ec16018cf264f4c2b04b1fa8fd158a70",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "baseline-dagster-dg-cli-1-4-slow-3-12-before-source-verify.json",
+      "head": "9f23277a83945062eec5f7d9c3b052bc91b5c7c6",
+      "tree": "f7cf8153ec16018cf264f4c2b04b1fa8fd158a70",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-1-4-slow-3-12-after-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-1-4-slow-3-12-before-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-2-4-slow-3-12-after-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-2-4-slow-3-12-before-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-3-4-slow-3-12-after-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-3-4-slow-3-12-before-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-4-4-slow-3-12-after-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-4-4-slow-3-12-before-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-general-3-12-after-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-general-3-12-before-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-plus-3-12-after-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-plus-3-12-before-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-serial-3-12-after-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "candidate-dagster-dg-cli-serial-3-12-before-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "control_without_observer-after-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "control_without_observer-before-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "control_with_observer-after-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "control_with_observer-before-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "dg-final-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    },
+    {
+      "artifact": "restored-candidate-after-dagster-dg-cli-1-4-slow-3-12-source-verify.json",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "count": 14576,
+      "matches": true
+    }
+  ],
+  "allSevenOriginalScrubsActuallyCleared": true,
+  "allSevenOuterEnvMetadataRecordPthStable": true,
+  "observerSourceSha256": "52079c2e67261a78db3e39647cabeec07a5d4eef53f0cb99b067a522a09a2ed8",
+  "directlyProvenCauseOfOriginalSlow1MissingLogs": false,
+  "diagnostic": {
+    "classification": "NOT_REPRODUCED_ON_SINGLE_DEFAULT_PROBE",
+    "diagnosticOnlyNotMandatoryTest": true,
+    "probeCount": 1,
+    "originalExit": 0,
+    "coreGitBlobs": {
+      "baseline": "83b298b1fb57c3e6d4afcf0834b99520c732ff3d",
+      "candidate": "83b298b1fb57c3e6d4afcf0834b99520c732ff3d"
+    },
+    "coreBlobIdenticalBaselineCandidate": true,
+    "coreSha256Before": "f7048d5814d76400e9853aef5841d5d9bb7e4afc9541f838e41437f376309ef4",
+    "coreSha256After": "f7048d5814d76400e9853aef5841d5d9bb7e4afc9541f838e41437f376309ef4",
+    "markerPresentInActualCaptureErr": true,
+    "markerPresentInSubprocessStderr": true,
+    "captureErrBytes": 38,
+    "stderrBytes": 38,
+    "captureErrSha256": "2ab5e2491a3703968048459379a5cb96b050638f9e100b8c546ab453e6de0237",
+    "stderrSha256": "2ab5e2491a3703968048459379a5cb96b050638f9e100b8c546ab453e6de0237",
+    "tailWaitEnv": null,
+    "boundary": "This tests the same unmodified native core mechanism once; it does not recover the original failed case capture file or prove that exact case was reproduced."
+  }
+}

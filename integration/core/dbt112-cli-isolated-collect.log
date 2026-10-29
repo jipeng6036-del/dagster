@@ -1,0 +1,13 @@
+py312-dbt112-core-main: commands[0]> python -m pytest --ignore=./kitchen-sink --collect-only -q -m 'core and not snowflake and not bigquery and not derived_metadata and not fusion' dagster_dbt_tests/cli/test_prepare_and_package.py
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package[prepare-for-deployment]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package[prepare-and-package]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package_with_dependencies
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package_with_packages
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package_runs_deps_when_packages_exist
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package_skips_deps_when_install_deps_disabled
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package_with_file_named_dbt
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package_with_state
+
+8 tests collected in 0.07s
+  py312-dbt112-core-main: OK (2.92=setup[0.00]+cmd[2.92] seconds)
+  congratulations :) (2.94 seconds)

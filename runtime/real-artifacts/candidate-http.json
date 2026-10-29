@@ -1,0 +1,180 @@
+{
+  "label": "candidate",
+  "python": "3.12.13 (main, Mar 10 2026, 18:15:39) [MSC v.1944 64 bit (AMD64)]",
+  "source": "<SOURCE>\\python_modules\\libraries\\dagster-dbt\\dagster_dbt\\cloud\\asset_defs.py",
+  "sourceSha256": "229b3d639533f33a61d0990ddde66db8b95d5cbbea77142de8b7308feda8ab1d",
+  "boundary": "Real SDK requests over TCP loopback and Dagster execute_in_process; dbt Cloud service is a local fixture, no cloud account, no paid calls.",
+  "cases": [
+    {
+      "generate_docs": true,
+      "rebuild_from_cache": true,
+      "resource": "modern",
+      "loopback_port": 4288,
+      "success": true,
+      "dagster_run_success": true,
+      "materialization_count": 1,
+      "actual_execution_time": 0.16512465476989746,
+      "expected_execution_time": 0.16512465476989746,
+      "actual_execution_duration": 0.105341,
+      "business_metadata_correct": true,
+      "http_calls": [
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/jobs/123/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v3/accounts/30000/projects/12/environment-variables/job",
+          "query": {
+            "job_definition_id": [
+              "123"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Generating software-defined assets for Dagster.",
+            "steps_override": [
+              "dbt compile "
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/manifest.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1000/artifacts/run_results.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "POST",
+          "path": "/api/v2/accounts/30000/jobs/123/run/",
+          "query": {},
+          "body": {
+            "cause": "Materializing software-defined assets in Dagster run 44e21344",
+            "steps_override": [
+              "dbt run"
+            ]
+          }
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/",
+          "query": {
+            "include_related": [
+              "job,trigger,run_steps"
+            ]
+          },
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/artifacts/run_results.json",
+          "query": {},
+          "body": null,
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/jobs/123/",
+          "query": {},
+          "body": null
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/artifacts/manifest.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        },
+        {
+          "method": "GET",
+          "path": "/api/v2/accounts/30000/runs/1001/artifacts/run_results.json",
+          "query": {
+            "step": [
+              "2"
+            ]
+          },
+          "body": {
+            "step": 2
+          },
+          "status": 200
+        }
+      ],
+      "runs": {
+        "1000": {
+          "commands": [
+            "dbt compile "
+          ],
+          "step": 2
+        },
+        "1001": {
+          "commands": [
+            "dbt run"
+          ],
+          "step": 2
+        }
+      }
+    }
+  ]
+}

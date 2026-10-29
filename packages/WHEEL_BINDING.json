@@ -1,0 +1,408 @@
+{
+  "sha256": "d986ce670a2f803f0239eb61ba73863ff15ad6bb8f7a4199f55ac277720fdf72",
+  "metadata": {
+    "Name": "dagster-dbt",
+    "Version": "1!0+dev",
+    "License": null,
+    "License-Expression": "Apache-2.0",
+    "Requires-Python": "<3.14,>=3.10"
+  },
+  "payload": [
+    {
+      "path": "dagster_dbt/__init__.py",
+      "sha256": "dd81d5e4587173c20b276b2ad99c3fccee4b4ef6701cd7cbca79e9b160870d54",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/asset_decorator.py",
+      "sha256": "381bb260b2c107162f40c40ed577da3b41a875f57cb1077453cd8c3e8254b7a8",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/asset_specs.py",
+      "sha256": "2456c472a8e5ec1c770fbbdab6ba25fd175abc02f976ec2cd0b4202335044249",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/asset_utils.py",
+      "sha256": "5dc54f562dd1a8345e65f2d94011422490105b2ac2eb97932434bc1d0c7ae640",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/compat.py",
+      "sha256": "666f4abd50f6ceab4559d4b8a360dc0763bd12d78ddca9ae2d8deb4f675b77e6",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/dagster_dbt_translator.py",
+      "sha256": "e21cd893fffa17b94daf5d3d38df6236340cf15ceecaa60a4194da89e648423d",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/dbt_core_version.py",
+      "sha256": "715aa7179e2a30995d1d432c4ec1e0bf8898c5b6c459190f1ee1f6eba0d4d813",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/dbt_manifest.py",
+      "sha256": "60cac45adfc0df0b366710d400d191d22eb74a4944c68b5adff335034fb2c1e5",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/dbt_manifest_asset_selection.py",
+      "sha256": "7cb86274b26035cd88b58c2da1d7f265a31745bfbbcce2d3ef99cd6ad21faf62",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/dbt_project.py",
+      "sha256": "32494d47c45025232897b0e7765e28f5cebf9ec7c3048194eedc83c5d2f4c3bc",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/dbt_project_manager.py",
+      "sha256": "32d7549ee530796a0ad49a9590dcea6901576dec371e94dd125665d6b840e31b",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/dbt_version.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gitMatches": true,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/errors.py",
+      "sha256": "cb6d6c5b403739d78a08b703914a2089cbaaa08759b1492bc2cf6ead7873568b",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/freshness_builder.py",
+      "sha256": "312ed856ca9a3052a3088b11955145e86fa56460add0b85e81a6a505b4523930",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/metadata_set.py",
+      "sha256": "7ebb383fb76d7c284a20f0a80017b6601659e61c2c83578e6d79c8186843042e",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/py.typed",
+      "sha256": "d8ec74014e053675c9d13e4bc9629cfc16c95e8a562495057bca3657b661be37",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/utils.py",
+      "sha256": "ecc42203cf3d997001b47f1f88c3a6ccc73f9fa06955c02d4637ffd6e08d0d42",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/version.py",
+      "sha256": "48b510f412da0c2150c7c1ad1f637bcb7aef2ea897149da6e8e393fa6fb500be",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cli/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gitMatches": true,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cli/app.py",
+      "sha256": "62fe49d61e680b410d629d98984402c9e681db06ae2333a188c8b81ca498a662",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud/__init__.py",
+      "sha256": "1b81f027dd0ea140ad58195dd53700835e4e964607fe8054b81b559d5a36bb76",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud/asset_defs.py",
+      "sha256": "229b3d639533f33a61d0990ddde66db8b95d5cbbea77142de8b7308feda8ab1d",
+      "gitMatches": true,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud/cli.py",
+      "sha256": "8558967c298582a73cf1143722e4d16e7f1a8d6e164df678cb672c04a3cddadd",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud/ops.py",
+      "sha256": "115ee8c1d1850b0e99629d0e755b7fb937e2de710f61dd0473470957e8ce0628",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud/resources.py",
+      "sha256": "58acd6700ab670d2fdfa5bfb913f004814f52974a1d9bc94d95f859f71e8bc75",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud/types.py",
+      "sha256": "a2cf1724662f8b82525e87b0fc601265de9bdd71a14fcd280b29dd35140cde47",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud/utils.py",
+      "sha256": "3465c7eeb371ba6af0b4d4362d9dbf342f1bba56ecd0b01b2e534eddf60d3159",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud_v2/__init__.py",
+      "sha256": "fccf955b001fa3c6034a52ca44a6a7cc76df9a8222837f6cbb9e4c3b5892df62",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud_v2/asset_decorator.py",
+      "sha256": "f0248f5450e001df2eafce5ec41afe060496df1a4dbd45d461c93515d164d21e",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud_v2/cli_invocation.py",
+      "sha256": "597f1ed8fef5215bcdbd37b1a7ea625f964de403d690ca8cca1a8119d4705b70",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud_v2/client.py",
+      "sha256": "d5dc47acc8c9db44ace12f88c8677bc6604b9f5f37568de709305ed221033ca5",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud_v2/resources.py",
+      "sha256": "36be9826ca481cbd3c457c95f6e6a8def58beb127bd39f65d6c9ad4de9df2811",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud_v2/run_handler.py",
+      "sha256": "281aec052b99eba8d796519a94d41e0112bacde3d2b8faff7f25b98f384df57b",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud_v2/sensor_builder.py",
+      "sha256": "316734537916bfd8292c57d6b2b897dc76994fcbdda3f6aa94ca1be3df5ce678",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud_v2/types.py",
+      "sha256": "f3fb71ea1519b13d36343ad2a27cb81afffb6bbf4ecb9e214363b77986e21970",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud_v2/component/__init__.py",
+      "sha256": "723101474fc24ac105ccd9740caa14bd9b7c4ddd71e6a250c01a5f27cb11f5e5",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/cloud_v2/component/dbt_cloud_component.py",
+      "sha256": "e138382af04e74a4ad51ce426da30c19ba26efd73a279c5c4ae3cf9f2a31d447",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/components/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gitMatches": true,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/components/dbt_component_utils.py",
+      "sha256": "8ea065678173286d57d6c136981255de3b72f54311fdafc618757ec9a5376c7b",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/components/dbt_project/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gitMatches": true,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/components/dbt_project/component.py",
+      "sha256": "4c1b9f7e8fecb8e43233b723cf89eaff5a6142b8e4be5be643669995f2034fae",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/components/dbt_project/scaffolder.py",
+      "sha256": "a69e4e955bf8781d19116e5300cbc304148fae31ff3fc1b1095c601ce4f77bc0",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/core/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gitMatches": true,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/core/dbt_cli_event.py",
+      "sha256": "ef91224a5532a296a61abd8ad07dae9dd6004b3054668fd86d49a52148958301",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/core/dbt_cli_invocation.py",
+      "sha256": "3e724d929d26141470d181ec72c1346a668a83a5c91c3356e79526da1c4bc488",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/core/dbt_event_iterator.py",
+      "sha256": "e82c6af543dcaa9468be709833f84d76950c729feea8ce524407a6bb599bf445",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/core/resource.py",
+      "sha256": "3ba39a1c62a891547b248d39b9d0e50cc556eceb880d79352a3ab2c28f54b050",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/core/utils.py",
+      "sha256": "8474e255a2c97a450fae5b4c6b4f24b978e33e57565ea04abcfa4c9c9d7fab24",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/include/__init__.py",
+      "sha256": "70b2f38ca6efbdda60cbfb84e3841fee08cd54ddd0dbb70e23b4b8a05dbb7d65",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/include/pyproject.toml.jinja",
+      "sha256": "20ac060e932a0fe1b35aa5fed6fd38fd74971e9dd2562c69aae8ce40f33318a6",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/include/setup.py.jinja",
+      "sha256": "e5841d9f5bd301ab29b2ff28a8292ecb0b965a46badaa543189c1542912a8553",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/include/scaffold/__init__.py.jinja",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gitMatches": true,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/include/scaffold/assets.py.jinja",
+      "sha256": "5bb9f2e717a8d464cd83ce80e60a6d98eaa18e8812df5df5ebb09d12d78f0c6e",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/include/scaffold/definitions.py.jinja",
+      "sha256": "d2a4516285f16181c790bcb961d49148d1f840542a1f4eab0df618699255fdc2",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/include/scaffold/project.py.jinja",
+      "sha256": "e66ea6de87bcf2f1c176a190d47de39d5878a279208642d31c35e663ee2fc781",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    },
+    {
+      "path": "dagster_dbt/include/scaffold/schedules.py.jinja",
+      "sha256": "c913710e415d17682659641522ba7475044bc1a628c28da05b6e0a5c7097c516",
+      "gitMatches": false,
+      "gitMatchesAfterCRLFNormalization": true,
+      "installedMatches": true
+    }
+  ],
+  "installedPayloadFiles": 56,
+  "allInstalledBytesMatchWheel": true,
+  "sourceFilesRequiringCRLFToLFComparison": 49,
+  "boundary": "Installed bytes equal wheel. 49 other source payloads match Git after CRLF-to-LF comparison; do not interpret all56 as raw-Git-byte equality."
+}

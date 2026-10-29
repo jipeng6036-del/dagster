@@ -1,0 +1,14 @@
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_fusion_support.py::test_basic[True]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_fusion_support.py::test_basic[False]
+python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_fusion_support.py::test_adapter_backed_postprocessing_is_skipped
+
+=============================== warnings summary ===============================
+dagster_dbt_tests/core/test_asset_decorator.py:513
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_decorator.py:513: BetaWarning: Class `MultiPartitionMapping` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    MultiPartitionMapping(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] dagster_dbt_tests/core/test_asset_check_selection.py:9: could not import 'dbt.version': No module named 'dbt.version'
+SKIPPED [1] dagster_dbt_tests/core/test_asset_checks.py:32: could not import 'dbt.version': No module named 'dbt.version'
+3/769 tests collected (766 deselected) in 1.45s

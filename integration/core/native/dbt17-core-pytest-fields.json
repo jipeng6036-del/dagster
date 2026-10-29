@@ -1,0 +1,19 @@
+{
+  "sourceToxJsonSha256": "e39284fd0fdb738b78d8fa51ac4434e163b92fdc6178551247303b294d78fd8b",
+  "originalPytestExit": 0,
+  "command": [
+    "<ENV_ROOT>/.tox/py312-dbt17-core-main/bin/pytest",
+    "--ignore=./kitchen-sink",
+    "--durations",
+    "10",
+    "-m",
+    "core and not snowflake and not bigquery and not derived_metadata and not fusion",
+    "-vv",
+    "dagster_dbt_tests/core/test_project.py",
+    "dagster_dbt_tests/components/test_dbt_project_component.py",
+    "dagster_dbt_tests/cli/test_prepare_and_package.py"
+  ],
+  "stdout": "",
+  "stderr": "Exception during reset or similar\nTraceback (most recent call last):\n  File \"<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py\", line 986, in _finalize_fairy\n    fairy._reset(\n  File \"<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py\", line 1441, in _reset\n    pool._dialect.do_rollback(self)\n  File \"<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/engine/default.py\", line 712, in do_rollback\n    dbapi_connection.rollback()\nsqlite3.ProgrammingError: Cannot operate on a closed database.\nException during reset or similar\nTraceback (most recent call last):\n  File \"<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py\", line 986, in _finalize_fairy\n    fairy._reset(\n  File \"<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py\", line 1441, in _reset\n    pool._dialect.do_rollback(self)\n  File \"<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/engine/default.py\", line 712, in do_rollback\n    dbapi_connection.rollback()\nsqlite3.ProgrammingError: Cannot operate on a closed database.\nException during reset or similar\nTraceback (most recent call last):\n  File \"<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py\", line 986, in _finalize_fairy\n    fairy._reset(\n  File \"<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py\", line 1441, in _reset\n    pool._dialect.do_rollback(self)\n  File \"<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/engine/default.py\", line 712, in do_rollback\n    dbapi_connection.rollback()\nsqlite3.ProgrammingError: Cannot operate on a closed database.\nException during reset or similar\nTraceback (most recent call last):\n  File \"<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py\", line 986, in _finalize_fairy\n    fairy._reset(\n  File \"<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/pool/base.py\", line 1441, in _reset\n    pool._dialect.do_rollback(self)\n  File \"<ENV_ROOT>/.tox/py312-dbt17-core-main/lib/python3.12/site-packages/sqlalchemy/engine/default.py\", line 712, in do_rollback\n    dbapi_connection.rollback()\nsqlite3.ProgrammingError: Cannot operate on a closed database.\n",
+  "boundary": "Full native stdout/stderr fields retained without filtering; this is an explicit field projection, not a reconstructed original Tox JSON."
+}

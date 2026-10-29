@@ -1,0 +1,11 @@
+{
+  "atUtc": "2026-10-29T17:07:43.660928+00:00",
+  "suite": "official-py312-dbt110-core-derived-metadata-3of3",
+  "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+  "canonicalTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "checkedTrackedFiles": 14576,
+  "testSideEffects": [],
+  "unresolved": [],
+  "allCanonicalTrackedBytesModesAfterRecovery": true,
+  "untrackedGeneratedArtifactsExcluded": true
+}

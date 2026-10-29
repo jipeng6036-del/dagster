@@ -1,0 +1,59 @@
+py312-dbt111-core-derived-metadata: uv-sync> /usr/local/bin/uv sync --python-preference system --no-default-groups --group test --group test-dbt111 --frozen -p cpython3.12
+py312-dbt111-core-derived-metadata: freeze> /usr/local/bin/uv --color never pip freeze
+py312-dbt111-core-derived-metadata: commands[0]> /bin/bash -c '! uv pip list --exclude-editable | grep -e dagster'
+Using Python 3.12.14 environment at: <ENV_ROOT>/.tox/py312-dbt111-core-derived-metadata
+py312-dbt111-core-derived-metadata: commands[1]> pytest --ignore=./kitchen-sink --durations 10 --reruns 3 -m 'derived_metadata and not snowflake and not bigquery and not fusion' -vv --splits 3 --group 3 --durations-path .test_durations/dbt111-core-derived-metadata
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0 -- <ENV_ROOT>/.tox/py312-dbt111-core-derived-metadata/bin/python3
+cachedir: <ENV_ROOT>/.tox/py312-dbt111-core-derived-metadata/.pytest_cache
+rootdir: <SOURCE>
+configfile: pyproject.toml
+plugins: syrupy-5.1.0, xdist-3.6.1, timeout-2.4.0, split-0.11.0, mock-3.14.0, cov-5.0.0, asyncio-1.3.0, anyio-4.14.2, rerunfailures-16.1, order-1.4.0
+timeout: 240.0s
+timeout method: signal
+timeout func_only: False
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=session, asyncio_default_test_loop_scope=function
+collecting ... 
+
+[pytest-split] Splitting tests with algorithm: duration_based_chunks
+[pytest-split] Running group 3/3 (estimated duration: 87.93s)
+
+collected 807 items / 793 deselected / 14 selected
+
+dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py::test_column_lineage_snapshot SKIPPED [  7%]
+dagster_dbt_tests/core/test_def_metadata.py::test_materialization_type PASSED [ 14%]
+dagster_dbt_tests/core/test_def_metadata.py::test_storage_address PASSED [ 21%]
+dagster_dbt_tests/core/test_def_metadata.py::test_storage_address_alias PASSED [ 28%]
+dagster_dbt_tests/core/test_def_metadata.py::test_dbt_core_project_id_metadata PASSED [ 35%]
+dagster_dbt_tests/core/test_def_metadata.py::test_storage_kind PASSED    [ 42%]
+dagster_dbt_tests/core/test_postprocessing.py::test_no_row_count PASSED  [ 50%]
+dagster_dbt_tests/core/test_postprocessing.py::test_row_count[duckdb] PASSED [ 57%]
+dagster_dbt_tests/core/test_postprocessing.py::test_insights_skips_unsupported_adapter PASSED [ 64%]
+dagster_dbt_tests/core/test_postprocessing.py::test_postprocessing_without_an_adapter PASSED [ 71%]
+dagster_dbt_tests/core/test_postprocessing.py::test_row_count_does_not_obscure_errors[duckdb] PASSED [ 78%]
+dagster_dbt_tests/core/test_postprocessing.py::test_row_count_err PASSED [ 85%]
+dagster_dbt_tests/core/test_postprocessing.py::test_attach_metadata PASSED [ 92%]
+dagster_dbt_tests/core/test_postprocessing.py::test_row_count_with_relative_path_in_profile PASSED [100%]
+
+=============================== warnings summary ===============================
+dagster_dbt_tests/core/test_asset_decorator.py:513
+  <SOURCE>/python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_asset_decorator.py:513: BetaWarning: Class `MultiPartitionMapping` is currently in beta, and may have breaking changes in minor version releases, with behavior changes in patch releases.
+    MultiPartitionMapping(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============================= slowest 10 durations =============================
+15.40s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_postprocessing.py::test_row_count_does_not_obscure_errors[duckdb]
+10.58s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_postprocessing.py::test_row_count[duckdb]
+8.06s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_def_metadata.py::test_materialization_type
+6.15s setup    python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_def_metadata.py::test_storage_address_alias
+5.81s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_postprocessing.py::test_row_count_err
+5.60s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_postprocessing.py::test_no_row_count
+5.27s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_postprocessing.py::test_insights_skips_unsupported_adapter
+5.10s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_postprocessing.py::test_postprocessing_without_an_adapter
+5.08s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_postprocessing.py::test_row_count_with_relative_path_in_profile
+4.94s call     python_modules/libraries/dagster-dbt/dagster_dbt_tests/core/test_postprocessing.py::test_attach_metadata
+=========================== short test summary info ============================
+SKIPPED [1] dagster_dbt_tests/core/dbt_packages/test_columns_metadata.py:947: dbt only writes compiled SQL for snapshots in 1.12 and later.
+===== 13 passed, 1 skipped, 793 deselected, 1 warning in 101.30s (0:01:41) =====
+  py312-dbt111-core-derived-metadata: OK (105.42=setup[0.05]+cmd[0.01,105.36] seconds)
+  congratulations :) (105.45 seconds)

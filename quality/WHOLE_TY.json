@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "command": "just -f justfile ty",
+  "expandedOfficialCommand": "python scripts/run-ty.py --all",
+  "originalExitCode": 0,
+  "candidateHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+  "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "trackedFiles": 14576,
+  "bindings": {
+    "prepare": {
+      "atUtc": "2026-10-29T14:22:21.922278+00:00",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "expectedTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "actualFullFilesystemTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "fileCount": 14576,
+      "allGitBlobModeSizeSha256Match": true,
+      "failures": [],
+      "source": "<SOURCE>",
+      "sourceFilesystem": "independent container Linux overlay ext4",
+      "status": "PASS"
+    },
+    "before": {
+      "atUtc": "2026-10-29T14:29:36.459414+00:00",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "expectedTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "actualFullFilesystemTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "fileCount": 14576,
+      "allGitBlobModeSizeSha256Match": true,
+      "failures": [],
+      "source": "<SOURCE>",
+      "sourceFilesystem": "independent container Linux overlay ext4",
+      "status": "PASS"
+    },
+    "after": {
+      "atUtc": "2026-10-29T14:58:37.927748+00:00",
+      "head": "c824e2ed45f16cbde49458638821f7eef6d76433",
+      "expectedTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "actualFullFilesystemTree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+      "fileCount": 14576,
+      "allGitBlobModeSizeSha256Match": true,
+      "failures": [],
+      "source": "<SOURCE>",
+      "sourceFilesystem": "independent container Linux overlay ext4",
+      "status": "PASS"
+    }
+  },
+  "environments": {
+    "airflow": {
+      "atUtc": "2026-10-29T14:54:49.057221+00:00",
+      "command": "uv tool run --from ty==0.0.91 ty check --config-file=<SOURCE>/.ty-airflow.toml --python=<SOURCE>/ty/airflow/.venv/bin/python --force-exclude --output-format=gitlab --error-on-warning -v",
+      "cwd": "<SOURCE>",
+      "returncode": 0,
+      "filesAnalyzed": 286,
+      "errorCount": 0,
+      "warningCount": 0,
+      "diagnosticCount": 0,
+      "observation": "Original subprocess.run called once with unchanged positional and keyword arguments; original result returned unchanged.",
+      "installedPackagesFreezeExit": 0,
+      "actualInstalledPackageCount": 395,
+      "lockPackageCount": 400
+    },
+    "master": {
+      "atUtc": "2026-10-29T14:55:30.617959+00:00",
+      "command": "uv tool run --from ty==0.0.91 ty check --config-file=<SOURCE>/.ty-master.toml --python=<SOURCE>/ty/master/.venv/bin/python --force-exclude --output-format=gitlab --error-on-warning -v",
+      "cwd": "<SOURCE>",
+      "returncode": 0,
+      "filesAnalyzed": 4625,
+      "errorCount": 0,
+      "warningCount": 0,
+      "diagnosticCount": 0,
+      "observation": "Original subprocess.run called once with unchanged positional and keyword arguments; original result returned unchanged.",
+      "installedPackagesFreezeExit": 0,
+      "actualInstalledPackageCount": 803,
+      "lockPackageCount": 813
+    }
+  },
+  "totalFilesAnalyzed": 4911,
+  "totalErrors": 0,
+  "totalWarnings": 0,
+  "officialReportedVersion": "ty ty 0.0.91",
+  "sourceHashes": {
+    "scripts/run-ty.py": "4f3746e54311ca77ac375cca6187e4958c915e6be1fbd196c343f9d486acba7f",
+    "justfile": "584d87fc9dc0e8fea780343f0c6421f7adfbdbb74a321a251df385fdaec3bdae",
+    "python_modules/dagster/pyproject.toml": "83db57b0cb0d928aa8044d282027ffaed88df80f8a8418f65d940a01b57875e4",
+    "ty/airflow/pyproject.toml": "6cccd291a1db8514d2d31152d97af9e3297d419bd49df275f260786d613e9bb7",
+    "ty/airflow/uv.lock": "00a1f4809703f6dd2229af31ec6628a405e1a33853d46e7d0800ae4cb23dd7f3",
+    "ty/master/pyproject.toml": "16e08c6cb667c73eefe59d4fa1b8006d7a25ab299c75fe9e306eef979f46e03a",
+    "ty/master/uv.lock": "56442f6435210cf79bdf2d806e012a55e2a2e61eb69435b49599f0be739312ca",
+    "CANONICAL_EXPORT.json": "bdff01da4acc241b2ac9278ef942c96c6172f1cc19ea89b7d6fda1dfa844eba0",
+    "candidate-canonical.tar.gz": "246f98a3a76fb13af6a194d8f0cd3d9265b947d583aa8a6269e4bf2589709220"
+  },
+  "observer": {
+    "source": "observer/sitecustomize.py",
+    "sha256": "382d6983a06e7569b48d7594f567a99ec8aeb78d5c8865e006632b4672bd0088",
+    "runtimeSha256": "382d6983a06e7569b48d7594f567a99ec8aeb78d5c8865e006632b4672bd0088",
+    "runtimeCopyMatches": true,
+    "pureObservationApprovedByRoot": true,
+    "callsAndResultsUnchanged": true
+  }
+}

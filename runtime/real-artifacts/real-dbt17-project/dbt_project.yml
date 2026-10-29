@@ -1,0 +1,5 @@
+name: artifact_step_proof
+version: "1.0"
+config-version: 2
+profile: artifact_step_proof
+model-paths: [models]

@@ -1,0 +1,35 @@
+{
+  "atUtc": "2026-10-29T16:58:59.924859+00:00",
+  "status": "PASS_ON_EXPLICIT_FULL_SCOPE_REEXECUTION_WITH_PRESERVED_PRIOR_FAILURE",
+  "sourceHead": "c824e2ed45f16cbde49458638821f7eef6d76433",
+  "tree": "cdc032f582f52f73ac5f8359c858061dbaa85aff",
+  "requiredJobs": 7,
+  "uniqueCases": 799,
+  "currentQualification": {
+    "passed": 797,
+    "originalSkipped": 2
+  },
+  "initialValidBatch": {
+    "passed": 796,
+    "failed": 1,
+    "originalSkipped": 2
+  },
+  "failedJob": "dagster-dg-cli-1-4-slow-3-12",
+  "explicitFullScopeCandidateControls": [
+    {
+      "observer": true,
+      "passed": 5,
+      "exit": 0
+    },
+    {
+      "observer": false,
+      "passed": 5,
+      "exit": 0
+    }
+  ],
+  "sameScopeAndTimeout": true,
+  "automaticRetryOrTailDelayAdded": false,
+  "causeOfOriginalStderrFailureProven": false,
+  "limitations": "Original stderr assertion failed despite successful run. Two explicit complete candidate controls passed; one bounded mirror diagnostic did not reproduce it. Do not label an established flake or claim the initial batch green.",
+  "rootDecision": "Current full job coverage genuinely passed, with manual reexecution allowed by CI. Retain/disclose earlier failure and unknown exact cause; no arbitrary perpetual gate or baseline waiver."
+}

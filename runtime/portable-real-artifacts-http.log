@@ -1,0 +1,19 @@
+2026-10-29 09:02:26 -0700 - dagster - INFO - system - Initializing run for job with job_id=123
+2026-10-29 09:02:26 -0700 - dagster - INFO - system - Run initialized with run_id=1000. View this run in the dbt Cloud UI: http://127.0.0.1:4288/runs/1000/
+2026-10-29 09:02:26 -0700 - dagster - INFO - system - Polled run 1000. Status: [Success]
+2026-10-29 09:02:29 -0700 - dagster - DEBUG - loopback_materialize - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - 52984 - RUN_START - Started execution of run for "loopback_materialize".
+2026-10-29 09:02:29 -0700 - dagster - DEBUG - loopback_materialize - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - 52984 - ENGINE_EVENT - Executing steps in process (pid: 52984)
+2026-10-29 09:02:29 -0700 - dagster - DEBUG - loopback_materialize - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - 52984 - dbt_cloud_job_123 - RESOURCE_INIT_STARTED - Starting initialization of resources [dbt_cloud, io_manager].
+2026-10-29 09:02:32 -0700 - dagster - DEBUG - loopback_materialize - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - 52984 - dbt_cloud_job_123 - RESOURCE_INIT_SUCCESS - Finished initialization of resources [dbt_cloud, io_manager].
+2026-10-29 09:02:32 -0700 - dagster - DEBUG - loopback_materialize - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - 52984 - LOGS_CAPTURED - Capturing logs for process (pid: 52984).
+2026-10-29 09:02:32 -0700 - dagster - DEBUG - loopback_materialize - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - 52984 - dbt_cloud_job_123 - STEP_START - Started execution of step "dbt_cloud_job_123".
+2026-10-29 09:02:32 -0700 - dagster - INFO - resource:dbt_cloud - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - dbt_cloud_job_123 - Initializing run for job with job_id=123
+2026-10-29 09:02:32 -0700 - dagster - INFO - resource:dbt_cloud - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - dbt_cloud_job_123 - Run initialized with run_id=1001. View this run in the dbt Cloud UI: http://127.0.0.1:4288/runs/1001/
+2026-10-29 09:02:32 -0700 - dagster - INFO - resource:dbt_cloud - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - dbt_cloud_job_123 - Polled run 1001. Status: [Success]
+2026-10-29 09:02:32 -0700 - dagster - DEBUG - loopback_materialize - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - 52984 - dbt_cloud_job_123 - STEP_OUTPUT - Yielded output "proof" of type "Nothing". (Type check passed).
+2026-10-29 09:02:32 -0700 - dagster - DEBUG - loopback_materialize - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - 52984 - dbt_cloud_job_123 - ASSET_MATERIALIZATION - Materialized value proof.
+2026-10-29 09:02:32 -0700 - dagster - DEBUG - loopback_materialize - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - 52984 - dbt_cloud_job_123 - STEP_SUCCESS - Finished execution of step "dbt_cloud_job_123" in 107ms.
+2026-10-29 09:02:35 -0700 - dagster - DEBUG - loopback_materialize - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - 52984 - ENGINE_EVENT - Finished steps in process (pid: 52984) in 5.29s
+2026-10-29 09:02:35 -0700 - dagster - DEBUG - loopback_materialize - 44e21344-9b08-4166-9137-6ea0ebe4c3a7 - 52984 - RUN_SUCCESS - Finished execution of run for "loopback_materialize".
+{"generate_docs": true, "rebuild_from_cache": true, "resource": "modern", "loopback_port": 4288, "success": true, "dagster_run_success": true, "materialization_count": 1, "actual_execution_time": 0.16512465476989746, "expected_execution_time": 0.16512465476989746, "actual_execution_duration": 0.105341, "business_metadata_correct": true}
+successes 1 of 1

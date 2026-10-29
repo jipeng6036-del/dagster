@@ -1,0 +1,8 @@
+py312-dbt112-core-main: venv> <RUNTIME_ROOT>\env-py312-dbt112\Scripts\uv.exe venv -p cpython3.12 --allow-existing --prompt=dagster-dbt[py312-dbt112-core-main] --python-preference system <VALIDATION_ROOT>\core-validation\tox-work\py312-dbt112-core-main
+py312-dbt112-core-main: uv-sync> <RUNTIME_ROOT>\env-py312-dbt112\Scripts\uv.exe sync --python-preference system --no-default-groups --group test --group test-dbt112 --frozen -p cpython3.12
+py312-dbt112-core-main: freeze> <RUNTIME_ROOT>\env-py312-dbt112\Scripts\uv.exe --color never pip freeze
+py312-dbt112-core-main: commands[0]> /bin/bash -c "! uv pip list --exclude-editable | grep -e dagster"
+py312-dbt112-core-main: Exception running subprocess [WinError 2] 系统找不到指定的文件。
+py312-dbt112-core-main: exit 2 (0.00 seconds) <SOURCE>\python_modules\libraries\dagster-dbt> /bin/bash -c "! uv pip list --exclude-editable | grep -e dagster"
+  py312-dbt112-core-main: FAIL code 2 (21.11=setup[21.11]+cmd[0.00] seconds)
+  evaluation failed :( (21.20 seconds)

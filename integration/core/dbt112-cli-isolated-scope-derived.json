@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "actualRunLabel": "dbt112-cli-isolated",
+  "files": [
+    "dagster_dbt_tests/cli/test_prepare_and_package.py"
+  ],
+  "marker": "core and not snowflake and not bigquery and not derived_metadata and not fusion",
+  "selectedCount": 8,
+  "outcomes": {
+    "dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package[prepare-for-deployment]": "PASSED",
+    "dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package[prepare-and-package]": "PASSED",
+    "dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package_with_dependencies": "PASSED",
+    "dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package_with_packages": "PASSED",
+    "dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package_runs_deps_when_packages_exist": "PASSED",
+    "dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package_skips_deps_when_install_deps_disabled": "PASSED",
+    "dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package_with_file_named_dbt": "PASSED",
+    "dagster_dbt_tests/cli/test_prepare_and_package.py::test_prepare_and_package_with_state": "PASSED"
+  },
+  "actualArgv": [
+    "<DOCKER_EXECUTABLE>",
+    "exec",
+    "-w",
+    "<SOURCE>/python_modules/libraries/dagster-dbt",
+    "-e",
+    "UV_CACHE_DIR=<RUNTIME>/uv-cache",
+    "-e",
+    "UV_LINK_MODE=symlink",
+    "-e",
+    "UV_PYTHON_DOWNLOADS=never",
+    "-e",
+    "GIT_TERMINAL_PROMPT=0",
+    "pr1029-dagster-ci-ram1",
+    "python",
+    "-m",
+    "tox",
+    "run",
+    "--workdir",
+    "<ENV_ROOT>/.tox",
+    "--result-json",
+    "<EVIDENCE>/integration-ab2572/core-compat/dbt112-cli-isolated-result.json",
+    "-e",
+    "py312-dbt112-core-main",
+    "--",
+    "dagster_dbt_tests/cli/test_prepare_and_package.py"
+  ],
+  "exit": 0,
+  "rawLog": "<VALIDATION_ROOT>\\integration-ab2572\\core-compat\\dbt112-cli-isolated.log",
+  "rawLogSha256": "9beaec9b4c1a1630c434873fd94dc27c4ce4247be58368bf3e1b6a58ee2d5ccc",
+  "beforeBinding": "dbt112-cli-isolated-source-before.json",
+  "afterBinding": "dbt112-cli-isolated-source-after.json",
+  "all14577BeforeAfter": true
+}

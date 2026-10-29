@@ -1,0 +1,83 @@
+{
+  "atUtc": "2026-10-29T18:05:12.228491+00:00",
+  "tyInstalledFreezeComparisons": [
+    {
+      "environment": "airflow",
+      "actualCommand": [
+        "<DOCKER_EXECUTABLE>",
+        "exec",
+        "pr1029-dagster-full-ty",
+        "uv",
+        "pip",
+        "freeze",
+        "--python",
+        "<SOURCE>/ty/airflow/.venv/bin/python"
+      ],
+      "exit": 0,
+      "originalInstalledFreezeSha256": "044dc42d0561cf216591768fc53dc392abe8b5f4997cc53b760429f41aaf1baa",
+      "afterFreezeSha256": "044dc42d0561cf216591768fc53dc392abe8b5f4997cc53b760429f41aaf1baa",
+      "beforePackageLines": 395,
+      "afterPackageLines": 395,
+      "added": [],
+      "removed": [],
+      "qualification": "Original sealed installed freeze versus actual post-integration official frozen sync; no pre-overlay snapshot was fabricated."
+    },
+    {
+      "environment": "master",
+      "actualCommand": [
+        "<DOCKER_EXECUTABLE>",
+        "exec",
+        "pr1029-dagster-full-ty",
+        "uv",
+        "pip",
+        "freeze",
+        "--python",
+        "<SOURCE>/ty/master/.venv/bin/python"
+      ],
+      "exit": 0,
+      "originalInstalledFreezeSha256": "c6f0e90049a5f8e4b709390e5c23cbfd88feac8386c882d12441b1b00dcb6155",
+      "afterFreezeSha256": "c6f0e90049a5f8e4b709390e5c23cbfd88feac8386c882d12441b1b00dcb6155",
+      "beforePackageLines": 803,
+      "afterPackageLines": 803,
+      "added": [],
+      "removed": [],
+      "qualification": "Original sealed installed freeze versus actual post-integration official frozen sync; no pre-overlay snapshot was fabricated."
+    }
+  ],
+  "additionalDocsAudit": {
+    "atUtc": "2026-10-29T18:05:12.228491+00:00",
+    "classification": "ADDITIONAL_FULL_MASTER_EDITABLE_ENVIRONMENT_AUDIT_FAILURE_PRESERVED",
+    "officialCommandExit": 1,
+    "symbolsProcessed": 1286,
+    "declaredPackages": 71,
+    "errors": 4,
+    "warnings": 2,
+    "sourceAfter14577MatchesIntegration": true,
+    "unchangedErrorSourceFiles": {
+      "python_modules/libraries/dagster-azure/dagster_azure/components/adls2.py": {
+        "path": "python_modules/libraries/dagster-azure/dagster_azure/components/adls2.py",
+        "mode": "100644",
+        "blob": "0bf275f0f4ab39681a6ca2846041c1d1cec09bcd",
+        "size": 2160,
+        "sha256": "57af33c310641cfb56ab1119b3751e3b43770e94b2965012d107f0c3fbd4107c"
+      },
+      "python_modules/libraries/dagster-azure/dagster_azure/components/blob.py": {
+        "path": "python_modules/libraries/dagster-azure/dagster_azure/components/blob.py",
+        "mode": "100644",
+        "blob": "a81dc3276a6c7e55c0fce7c61b5965c3abd5e227",
+        "size": 2034,
+        "sha256": "83f373905826a3932979dcb2c88e173725acb35e81af166ed7e05e4369e99591"
+      },
+      "python_modules/libraries/dagster-snowflake-pyspark/dagster_snowflake_pyspark/snowflake_pyspark_type_handler.py": {
+        "path": "python_modules/libraries/dagster-snowflake-pyspark/dagster_snowflake_pyspark/snowflake_pyspark_type_handler.py",
+        "mode": "100644",
+        "blob": "ebd4c2d7e3161a9c204e79757f695e316bdad25c",
+        "size": 12743,
+        "sha256": "f91e47758f3ac82c27d6789c3a7b44bd822ebe643afad8a32c7f9bbe9e58cf33"
+      }
+    },
+    "boundary": "These Azure/Snowflake public modules are present in the additional803-package full-master editable environment. Original official docs setup has only dagster/pipes/shared public editables and warns for68 unimported packages. No modules/packages were removed, mocked or excluded to obtain a result. This failure is preserved and does not serve as a baseline waiver; correct original CI entry is separately rerun on the integrated source.",
+    "rawLog": "official-docstrings.log"
+  },
+  "noPaidCloudCallsOrSecretCredentials": true
+}

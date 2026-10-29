@@ -1,0 +1,19 @@
+   Building dagster @ file://<SOURCE>/python_modules/dagster
+      Built dagster @ file://<SOURCE>/python_modules/dagster
+Prepared 1 package in 2.93s
+Uninstalled 1 package in 88ms
+Installed 1 package in 2ms
+ ~ dagster==1!0+dev (from file://<SOURCE>/python_modules/dagster)
+Uninstalled 1 package in 45ms
+Installed 1 package in 6ms
+ ~ dagster==1!0+dev (from file://<SOURCE>/python_modules/dagster)
+Running ty for environment `airflow`...
+  uv tool run --from ty==0.0.91 ty check --config-file=<SOURCE>/.ty-airflow.toml --python=<SOURCE>/ty/airflow/.venv/bin/python --force-exclude --output-format=gitlab --error-on-warning -v
+Running ty for environment `master`...
+  uv tool run --from ty==0.0.91 ty check --config-file=<SOURCE>/.ty-master.toml --python=<SOURCE>/ty/master/.venv/bin/python --force-exclude --output-format=gitlab --error-on-warning -v
+
+ty ty 0.0.91
+Finished in 20.52 seconds
+Analyzed 4911 files
+Found 0 errors
+Found 0 warnings
